@@ -6,6 +6,7 @@
   python3 herramientas/redes.py marcar <id> <redes> <fecha_programada> [enlace_metricool]
                                                         anota la publicación en redes/publicadas.json (redes separadas por coma)
   python3 herramientas/redes.py video <id> [id2 id3]    crea el reel (video 9:16, 1 a 3 notas) en redes/video/ y muestra el enlace (JSON)
+  python3 herramientas/redes.py cancelar <id> [motivo]   la publicación no salió: la nota vuelve a quedar pendiente
   python3 herramientas/redes.py hoy                     publicaciones programadas hoy (hora de Nueva York)
 """
 import glob, json, os, re, subprocess, sys, unicodedata
@@ -60,9 +61,9 @@ def url_nota(id_):
 
 
 def pendientes(horas=36):
-    hechas = {r["id"] for r in registro()}
+    ya = hechas()
     ahora = datetime.now(NY)
-    c = [n for n in notas() if n["id"] not in hechas and ahora - cuando(n) <= timedelta(hours=horas)]
+    c = [n for n in notas() if n["id"] not in ya and ahora - cuando(n) <= timedelta(hours=horas)]
     prio = lambda n: (-(n.get("peso") or 1), -int(n.get("tag") == "Momento"), -int(bool(n.get("minuto"))), -int(bool(n.get("propia"))), -cuando(n).timestamp())
     for n in sorted(c, key=prio):
         print(json.dumps({k: n.get(k) for k in ("id", "date", "hora", "sec", "tag", "peso", "propia", "title")}, ensure_ascii=False))
@@ -75,11 +76,12 @@ def preparar(id_):
     if not n:
         sys.exit(f"no existe la nota {id_}")
     os.makedirs(IMG, exist_ok=True)
-    tmp = P("redes", "_nota.json")
-    json.dump(n, open(tmp, "w", encoding="utf-8"), ensure_ascii=False)
-    subprocess.run([sys.executable, P("herramientas", "ig.py"), tmp, P("marca", "fuentes"), IMG, P("marca.json")], check=True,
-                   stdout=subprocess.DEVNULL)
-    os.remove(tmp)
+    sys.path.insert(0, P("herramientas"))
+    import series
+    from PIL import Image
+    portada = os.environ.get("PORTADA") or ("negro" if len(hechas()) % 2 else "rojo")
+    hechos = series.generar(series.desde_nota(n, portada), IMG)
+    series.historia(Image.open(hechos[0]), os.path.join(IMG, id_ + "-story.jpg"))
     titulo, dek = limpio(n["title"]), limpio(n.get("dek"))
     puntos = [limpio(b) for b in (n.get("brief") or [])][:4]
     fuentes = ", ".join(dict.fromkeys(re.split(r"\s+[—–-]\s+|:\s", s[0])[0].strip() for s in (n.get("src") or [])))
@@ -94,12 +96,12 @@ def preparar(id_):
         corto = titulo[: 280 - len(url) - 4].rstrip() + "…\n\n" + url
     print(json.dumps({
         "id": id_, "url": url,
-        "carrusel": [RAW + id_ + "-1.jpg", RAW + id_ + "-2.jpg"],
+        "carrusel": [RAW + id_ + f"-s{i}.jpg" for i in (1, 2, 3)],
         "historia": RAW + id_ + "-story.jpg",
-        "alt": [f"Portada de El Coro: {titulo}", "Lo esencial: " + " ".join(puntos)],
+        "alt": [f"Portada de El Coro: {titulo}", "Lo esencial: " + " ".join(puntos), "La nota completa en elcoromagazine.com."],
         "texto_ig": texto_ig, "texto_link": texto_link, "texto_corto": corto,
         "titulo_90": titulo[:90],
-        "archivos": [os.path.relpath(os.path.join(IMG, id_ + s), R) for s in ("-1.jpg", "-2.jpg", "-story.jpg")],
+        "archivos": [os.path.relpath(os.path.join(IMG, id_ + s), R) for s in ("-s1.jpg", "-s2.jpg", "-s3.jpg", "-story.jpg")],
     }, ensure_ascii=False, indent=1))
 
 
@@ -143,9 +145,29 @@ def marcar(id_, redes, fecha, enlace=""):
     print(f"anotada: {id_} → {redes} ({fecha}) · total {len(r)}")
 
 
+def cancelar(id_, motivo=""):
+    """Anota que una publicación programada se canceló antes de salir: la nota vuelve a estar pendiente."""
+    r = registro()
+    r.append({"id": id_, "cancelada": True, "motivo": motivo, "registrada": datetime.now(NY).strftime("%Y-%m-%d %H:%M")})
+    json.dump(r, open(REG, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print(f"cancelada: {id_}")
+
+
+def hechas():
+    est = {}
+    for x in registro():
+        est[x["id"]] = not x.get("cancelada")
+    return {k for k, v in est.items() if v}
+
+
 def hoy():
     d = datetime.now(NY).strftime("%Y-%m-%d")
-    h = [x for x in registro() if x["programada"].startswith(d)]
+    canc = {}
+    for x in registro():
+        if x.get("cancelada"):
+            canc[x["id"]] = x["registrada"]
+    h = [x for x in registro() if not x.get("cancelada") and x["programada"].startswith(d)
+         and not (x["id"] in canc and canc[x["id"]] >= x["registrada"])]
     for x in h:
         print(json.dumps(x, ensure_ascii=False))
     print(f"{len(h)} publicaciones programadas hoy ({d})")
@@ -163,6 +185,8 @@ if __name__ == "__main__":
         marcar(*a[1:])
     elif a[0] == "video" and 2 <= len(a) <= 4:
         video(a[1:])
+    elif a[0] == "cancelar" and len(a) in (2, 3):
+        cancelar(*a[1:])
     elif a[0] == "hoy":
         hoy()
     else:

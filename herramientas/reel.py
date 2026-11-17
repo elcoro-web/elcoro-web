@@ -112,15 +112,17 @@ TEMAS = {
                      chip=((10, 10, 10), (255, 212, 0)), acento=(225, 18, 11), caja=(240, 196, 0)),
     "noche":    dict(bg=(10, 10, 10), hero=(255, 212, 0), txt=(255, 212, 0), suave=(242, 242, 242), gris=(150, 150, 150),
                      chip=((255, 212, 0), (10, 10, 10)), acento=(255, 212, 0), caja=(38, 38, 38)),
+    "negrorojo": dict(bg=(10, 10, 10), hero=(225, 18, 11), txt=(242, 242, 242), suave=(205, 205, 205), gris=(140, 140, 140),
+                      chip=((225, 18, 11), (255, 255, 255)), acento=(225, 18, 11), caja=(38, 38, 38)),
     "rojo":     dict(bg=(225, 18, 11), hero=(255, 255, 255), txt=(255, 255, 255), suave=(255, 230, 228), gris=(255, 190, 186),
                      chip=((255, 255, 255), (225, 18, 11)), acento=(10, 10, 10), caja=(200, 14, 8)),
 }
-ROTACION = ["blanco", "negro", "amarillo", "noche"]
+ROTACION = ["negrorojo", "rojo"]  # identidad negro y rojo
 
 
 def tema_de(n, i, usados):
     bg = ((n.get("cov") or {}).get("bg") or "").lower()
-    pref = {"#e3120b": "blanco", "#0a0a0a": "negro", "#000": "negro", "#ffd400": "amarillo"}.get(bg)
+    pref = None
     if pref and pref not in usados:
         return pref
     for t in ROTACION[i:] + ROTACION[:i]:

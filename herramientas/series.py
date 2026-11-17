@@ -37,6 +37,7 @@ TEMAS = {
     "rojo": dict(banda=RED, banda_txt=WHITE, fondo=INK, txt=WHITE, acento=RED, suave=(170, 170, 170)),
     "amarillo": dict(banda=YEL, banda_txt=INK, fondo=INK, txt=WHITE, acento=YEL, suave=(170, 170, 170)),
     "blanco": dict(banda=INK, banda_txt=WHITE, fondo=WHITE, txt=INK, acento=RED, suave=(95, 95, 95)),
+    "negro": dict(banda=INK, banda_txt=WHITE, fondo=INK, txt=WHITE, acento=RED, suave=(170, 170, 170), grande_c=RED),
     "crema": dict(banda=RED, banda_txt=WHITE, fondo=CREAM, txt=INK, acento=RED, suave=(95, 90, 80)),
 }
 CASILLAS = [(225, 18, 11), (255, 212, 0), (30, 58, 160), (16, 110, 72), (240, 235, 225), (12, 12, 12), (232, 90, 40),
@@ -173,17 +174,21 @@ def l_portada(L, T, n, total, S):
     while size > 80:
         fg = F(BS, size, 900)
         gb = d.textbbox((0, 0), g, font=fg)
-        if gb[2] - gb[0] <= X1 - X0 and gb[3] - gb[1] <= 470:
+        if gb[2] - gb[0] <= X1 - X0 and gb[3] - gb[1] <= L.get("alto_grande", 470):
             break
         size -= 8
-    d.text((X0 - gb[0], 420 - gb[1]), g, font=fg, fill=c)
+    d.text((X0 - gb[0], 420 - gb[1]), g, font=fg, fill=T.get("grande_c", c))
     y = 420 + (gb[3] - gb[1]) + 50
-    f, ls, lh = cabe(d, L["titulo"].upper(), BS, 800, X1 - X0, 230, 92, 54, 1.0, 3)
+    f, ls, lh = cabe(d, L["titulo"].upper(), BS, 800, X1 - X0, max(170, H - 230 - y), 124, 54, 0.98, 3)
     for l in ls:
         d.text((X0, y), l, font=f, fill=c)
         y += lh
     if L.get("bajada"):
-        d.text((X0, y + 18), L["bajada"], font=F(IN, 34, 500), fill=c)
+        fb = F(IN, 34, 500)
+        y += 14
+        for l in wrap(d, L["bajada"], fb, X1 - X0)[:2]:
+            d.text((X0, y), l, font=fb, fill=c)
+            y += 44
     yb = H - 110
     d.rectangle([X0, yb, X1, yb + 3], fill=c)
     esp(d, (X0, yb + 28), "DESLIZA →", F(MO, 26), c, 0.3)
@@ -362,16 +367,106 @@ def l_cierre(L, T, n, total, S):
 
 TIPOS = dict(portada=l_portada, lista=l_lista, nominados=l_nominados, barras=l_barras, cierre=l_cierre)
 
-if __name__ == "__main__":
-    S = json.load(open(sys.argv[1], encoding="utf-8"))
-    out = sys.argv[2]
+def l_esencial(L, T, n, total, S):
+    im = Image.new("RGB", (W, H), T["fondo"])
+    d = ImageDraw.Draw(im)
+    banda(im, d, T, "LO ESENCIAL", None, L.get("sub"), alto=300)
+    pts = L["puntos"][:4]
+    y0, y1 = 380, H - 150
+    gap = 44
+    for size in range(54, 30, -2):
+        f = F(IN, size, 600)
+        lh = int(size * 1.28)
+        bl = [wrap(d, p, f, X1 - X0 - 120) for p in pts]
+        if sum(len(b) for b in bl) * lh + gap * (len(pts) - 1) <= y1 - y0:
+            break
+    total_h = sum(len(b) for b in bl) * lh + gap * (len(pts) - 1)
+    y = y0 + max(0, (y1 - y0 - total_h) // 2)
+    fnum = F(BS, 76, 900)
+    for i, b in enumerate(bl):
+        d.text((X0, y - 8), f"{i + 1:02d}", font=fnum, fill=T["acento"])
+        for l in b:
+            d.text((X0 + 120, y), l, font=f, fill=T["txt"])
+            y += lh
+        y += gap
+    pie(im, d, T, n, total, S.get("fuente"))
+    return im
+
+
+TIPOS_EXTRA = dict(esencial=l_esencial)
+
+ETIQUETAS = {"noticias": "NOTICIA", "premios": "PREMIOS", "listas": "LISTAS", "lanzamientos": "ESTRENOS",
+             "critica": "CRÍTICA", "industria": "INDUSTRIA", "artistas": "PARA ARTISTAS"}
+
+
+def limpio(t):
+    t = re.sub(r"<br\s*/?>", " ", t or "")
+    t = re.sub(r"<[^>]+>", "", t)
+    for k, v in (("&amp;", "&"), ("&nbsp;", " "), ("&quot;", '"'), ("&#39;", "'")):
+        t = t.replace(k, v)
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def desde_nota(n, portada="rojo"):
+    """Serie estándar de una nota: portada + lo esencial + cierre (negro y rojo)."""
+    aj = {}
+    pa = os.path.join(RAIZ, "redes", "reel", n["id"] + ".json")
+    if os.path.exists(pa):
+        aj = json.load(open(pa, encoding="utf-8"))
+    titulo = limpio(n["title"])
+    tit, baj = titulo, ""
+    if ";" in titulo:
+        tit, baj = [x.strip() for x in titulo.split(";", 1)]
+    elif ":" in titulo and len(titulo.split(":")[0]) <= 42:
+        tit, baj = [x.strip() for x in titulo.split(":", 1)]
+    if baj:
+        baj = baj[0].upper() + baj[1:] + ("" if baj.endswith(".") else ".")
+    cov = n.get("cov") or {}
+    fuentes = ", ".join(dict.fromkeys(re.split(r"\s+[—–-]\s+|:\s", s[0])[0].strip() for s in (n.get("src") or [])))
+    primeras = [x.strip() for x in fuentes.split(",") if x.strip()]
+    corto = ", ".join(primeras[:2]) if len(", ".join(primeras[:2])) <= 26 else (primeras[0][:22] if primeras else "")
+    if len(primeras) > 2 or (primeras and corto == primeras[0][:22] and len(primeras) > 1):
+        corto += " y otros"
+    puntos = [limpio(b) for b in (n.get("brief") or [])][:4] or [limpio(n.get("dek", ""))]
+    return {"id": n["id"], "tema": "rojo", "fuente": "" if n.get("propia") else corto, "laminas": [
+        {"tipo": "portada", "tema": portada, "chip": n.get("tag", ""), "etiqueta": ETIQUETAS.get(n["sec"], "NOTICIA"),
+         "grande": aj.get("hero", limpio(cov.get("f", "")) or n.get("tag", "")), "alto_grande": 430,
+         "titulo": aj.get("titular", tit), "bajada": aj.get("bajada", baj)},
+        {"tipo": "esencial", "sub": (n.get("tag") or "").upper(), "puntos": puntos},
+        {"tipo": "cierre", "lineas": ["LA NOTA COMPLETA,", "EN LA WEB."]},
+    ]}
+
+
+def historia(portada_img, salida):
+    """Historia 9:16: la portada sobre fondo negro y el botón."""
+    im = Image.new("RGB", (1080, 1920), INK)
+    p = portada_img.resize((960, 1200), Image.LANCZOS)
+    im.paste(p, (60, 230))
+    d = ImageDraw.Draw(im)
+    bw, bh, by = 600, 100, 1530
+    bx = (1080 - bw) // 2
+    d.rounded_rectangle([bx, by, bx + bw, by + bh], radius=50, fill=RED)
+    t = "LEE LA NOTA · LINK EN LA BIO"
+    f = F(IN, 30, 800)
+    d.text((bx + (bw - d.textlength(t, font=f)) / 2, by + 34), t, font=f, fill=WHITE)
+    esp(d, (540, 1680), "ELCOROMAGAZINE.COM", F(MO, 28), WHITE, 0.25, centro=True)
+    im.save(salida, quality=92, optimize=True)
+
+
+def generar(S, out):
     os.makedirs(out, exist_ok=True)
     total = len(S["laminas"])
     hechos = []
     for i, L in enumerate(S["laminas"], 1):
         T = TEMAS[L.get("tema", S.get("tema", "rojo"))]
-        im = TIPOS[L["tipo"]](L, T, i, total, S)
+        fn = TIPOS.get(L["tipo"]) or TIPOS_EXTRA[L["tipo"]]
+        im = fn(L, T, i, total, S)
         p = os.path.join(out, f"{S['id']}-s{i}.jpg")
         im.save(p, quality=92, optimize=True)
         hechos.append(p)
-    print(json.dumps(hechos))
+    return hechos
+
+
+if __name__ == "__main__":
+    S = json.load(open(sys.argv[1], encoding="utf-8"))
+    print(json.dumps(generar(S, sys.argv[2])))

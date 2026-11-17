@@ -1,6 +1,5 @@
 # Redes de El Coro: guía de publicación automática
 
-> **PAUSA (17 nov 2026): no se programa nada en redes hasta que Rilo lo autorice.** El perfil se está relanzando con el concepto negro y rojo. Si lees esto en una ejecución automática, termina sin publicar y dilo en una línea.
 
 Las redes llevan gente a la web. Cada publicación presenta una nota ya publicada en elcoromagazine.com, con la identidad de El Coro, y manda a leerla completa.
 
@@ -19,6 +18,12 @@ Las redes llevan gente a la web. Cada publicación presenta una nota ya publicad
   - historias solo para la noticia grande del día (peso 3), máximo 2 por día;
   - `python3 herramientas/redes.py hoy` muestra lo ya programado hoy, y `getScheduledPosts` lo confirma en Metricool.
 - Nunca nada sobre la música de Rilo ni sobre bares o coctelería.
+
+## Estilo: negro y rojo (desde el 17 nov 2026)
+- Todo sale con la identidad negro y rojo: portada con la etiqueta en caja (NOTICIA, PREMIOS, LISTAS, ESTRENOS, CRÍTICA, INDUSTRIA, PARA ARTISTAS), la cifra o palabra gigante y el titular en mayúsculas condensadas; "Lo esencial" en negro con números rojos; cierre rojo con "link en la bio".
+- `preparar` ya genera ese carrusel de 3 láminas (`-s1`, `-s2`, `-s3`) y la historia, y alterna sola la portada roja y la negra para que el perfil se vea como tablero. No cambies ese orden.
+- Si el titular de la nota es largo, antes de `preparar` crea `redes/reel/<id>.json` con `titular` (unas 7 palabras como máximo) y `bajada`, sacados de la nota. El mismo archivo sirve para el reel.
+- Revisa las 3 láminas y la historia con Read antes de subir.
 
 ## Carrusel o reel
 - **Reel resumen** ("3 noticias que tienes que saber"): una vez al día, en la primera publicación del día, junta 3 notas pendientes de temas distintos: `python3 herramientas/redes.py video <id1> <id2> <id3>`. Las 3 se anotan con `instagram-reel`.
@@ -49,7 +54,7 @@ Además de la nota suelta, El Coro tiene formatos fijos que se reconocen en el f
 2. **Sube las imágenes a GitHub antes de programar**, porque Metricool las descarga de esos enlaces: `git add redes/ && git commit -m "Redes: <id>" && git push origin main`. Si el push es rechazado, haz `git pull --rebase origin main` y vuelve a empujar.
 3. Programa en Metricool con `createScheduledPost` (blogId de El Coro, zona horaria America/New_York):
    - **Instagram reel:** en el texto de un resumen, una línea por nota (1️⃣ 2️⃣ 3️⃣) con su titular; `media` con el `video`, `videoThumbnailUrl` con `portada_video`, `texto_ig` e `instagramData` `{"type":"REEL","showReelOnFeed":true,"isAiGenerated":false}`.
-   - **Instagram carrusel:** carrusel de feed con `carrusel` (las dos imágenes), `texto_ig`, `mediaAltText` con `alt` e `instagramData` `{"type":"POST"}`.
+   - **Instagram carrusel:** carrusel de feed con `carrusel` (las tres láminas), `texto_ig`, `mediaAltText` con `alt` e `instagramData` `{"type":"POST"}`.
    - **Historia (solo peso 3):** otra publicación con `historia`, sin texto y `instagramData` `{"type":"STORY"}`.
    - **Facebook:** publicación aparte con `carrusel`, `texto_link` (lleva el enlace a la nota) y `facebookData` `{"type":"POST"}`.
    - **Threads:** publicación aparte con la imagen `-1` y `texto_corto`.

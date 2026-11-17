@@ -1,0 +1,6 @@
+{"id": "elcoro-presentacion", "tema": "rojo", "fuente": "",
+ "laminas": [
+  {"tipo": "portada", "tema": "negro", "chip": "Hecha en Nueva York", "etiqueta": "LA REVISTA", "grande": "EL CORO", "alto_grande": 380, "titulo": "La revista de música de los artistas", "bajada": "Noticias al instante, premios, listas, estrenos y consejos para artistas."},
+  {"tipo": "esencial", "sub": "QUÉ ENCUENTRAS", "puntos": ["Al instante: las noticias de la música apenas pasan, confirmadas y con fuentes.", "Premios y listas: Grammy, Latin Grammy, Billboard y Spotify, explicados.", "Viernes de estrenos: lo que sale cada semana, con foco en lo latino.", "Para artistas: regalías, lanzamientos, prensa y derechos, paso a paso."]},
+  {"tipo": "cierre", "lineas": ["SÍGUENOS:", "@ELCOROMAGAZINE"]}
+ ]}
