@@ -15,7 +15,8 @@ Revista de música hecha en Nueva York. Escribe en español con un resumen en in
 3. **Derechos de autor.**
    - Todo se escribe con palabras propias. Máximo una cita de menos de 15 palabras por fuente.
    - Nunca se copian párrafos ni letras de canciones, ni siquiera un verso.
-   - Nunca se descargan fotos.
+   - La redacción automática nunca descarga fotos por su cuenta.
+   - Fotos de prensa: solo las que entrega Rilo, de una sala de prensa oficial, del equipo del artista o con licencia. Van en `web/fotos/<id-de-la-nota>.jpg` con `web/fotos/<id-de-la-nota>.json` (`alt`, `altEn`, `credito`, `creditoEn`, `pie`, `pos`). Siempre con crédito visible, sin recortes que cambien el sentido y sin filtros ni retoques. Sin foto, la nota usa la portada tipográfica.
 4. **Titulares que cumplen.** El titular dice lo que pasó. Nada de "no vas a creer", signos de exclamación ni misterio inventado.
 5. **Conflicto de interés.**
    - El Coro no cubre la música de Rilo (el director), ni la menciona.
@@ -146,7 +147,7 @@ El público también quiere enterarse al instante de lo que pasa con los artista
   - Lista: `<ul class="list"><li><span>Izquierda</span><span>Derecha</span></li></ul>`
   - Barras: `<div class="bars" role="img" aria-label="Gráfica"><div><span>Nombre</span><i style="width:100%"></i><span>11</span></div><div><span>Otro</span><i style="width:82%"></i><span>9</span></div></div>` (el ancho es valor ÷ máximo).
   - Nota de método o crédito: `<p class="mono g">...</p>`
-- `cov` (portada tipográfica; no hay fotos):
+- `cov` (portada tipográfica; si la nota tiene foto de prensa en `web/fotos/`, la foto la reemplaza):
   - `f`: cifra o palabra corta (máximo 5 caracteres o 2 líneas con `<br>`); `<i>palabra</i>` para cursiva.
   - `c`: etiqueta; `e`: nombre.
   - Si `f` es larga, agrega `"fs": "min(40cqw,360px)"`.

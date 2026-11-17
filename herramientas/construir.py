@@ -38,7 +38,25 @@ def main():
     A = [{k: v for k, v in n.items() if k != "cov"} for n in N]
     COV = {n["id"]: n["cov"] for n in N if n.get("cov")}
     js = lambda o: json.dumps(o, ensure_ascii=False).replace("</", "<\\/")
-    completo = plantilla.replace("/*@@NOTAS@@*/[]", "/*@@A*/" + js(A) + "/*A@@*/").replace("/*@@PORTADAS@@*/{}", js(COV))
+    # fotos de prensa con crédito: web/fotos/<id>.jpg + web/fotos/<id>.json (alt, credito, pie, pos)
+    FOT = {}
+    if os.path.isdir(P("web", "fotos")):
+        from PIL import Image
+        for f in sorted(os.listdir(P("web", "fotos"))):
+            fid = f[:-5] if f.endswith(".json") else None
+            if fid and fid in ids:
+                meta = json.load(open(P("web", "fotos", f), encoding="utf-8"))
+                img = P("web", "fotos", fid + ".jpg")
+                if not os.path.exists(img):
+                    sys.exit(f"falta la foto web/fotos/{fid}.jpg")
+                if not meta.get("credito") or not meta.get("alt"):
+                    sys.exit(f"{fid}: la foto necesita 'credito' y 'alt'")
+                meta["w"], meta["h"] = Image.open(img).size
+                FOT[fid] = meta
+        if FOT:
+            paso(f"fotos con crédito: {len(FOT)}")
+    completo = (plantilla.replace("/*@@NOTAS@@*/[]", "/*@@A*/" + js(A) + "/*A@@*/").replace("/*@@PORTADAS@@*/{}", js(COV))
+                .replace("/*@@FOTOS@@*/{}", js(FOT)))
     open(P("web", "_completo.html"), "w", encoding="utf-8").write(completo)
 
     # 2. imágenes para compartir: solo las que faltan
@@ -65,6 +83,10 @@ def main():
         for f in os.listdir(P("web", "raiz")):
             if not f.startswith(".") and f != "LEEME.txt":
                 shutil.copy(P("web", "raiz", f), os.path.join(tmp, f))
+    if FOT:
+        os.makedirs(os.path.join(tmp, "assets", "fotos"), exist_ok=True)
+        for fid in FOT:
+            shutil.copy(P("web", "fotos", fid + ".jpg"), os.path.join(tmp, "assets", "fotos", fid + ".jpg"))
     for f in os.listdir(P("marca", "iconos")):
         shutil.copy(P("marca", "iconos", f), os.path.join(tmp, "favicon.ico" if f == "favicon.ico" else os.path.join("assets", f)))
 

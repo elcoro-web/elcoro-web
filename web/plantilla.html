@@ -235,6 +235,8 @@ a:hover .cv .f{transform:scale(1.035)}
 .share a:hover,.share button:hover{border-color:var(--ink)}
 .share #enBtn{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 .art-cv{margin:0 auto}
+.cv.ft{padding:0;background:#0a0a0a}.cv.ft::after{display:none}.cv.ft img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1)}a:hover .cv.ft img{transform:scale(1.035)}
+.art-foto{max-width:960px}.art-foto img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;background:#0a0a0a}@media (max-width:700px){.art-foto img{aspect-ratio:1/1}}
 figcaption{font:500 12.5px/1.5 var(--f-ui);color:var(--mute);padding-top:10px}
 .body{display:grid;grid-template-columns:minmax(0,680px) 300px;justify-content:center;gap:72px;padding-block:44px 30px}
 .body aside{min-width:0}
@@ -473,6 +475,7 @@ en:`<p class="lede">Conditions for using {{DOMINIO}}.</p><h2>Content</h2><p>{{NO
 };
 
 const COV=/*@@PORTADAS@@*/{};
+const FOTOS=/*@@FOTOS@@*/{};
 const SUBS={premios:[["Grammy 2027","#premios"],["Latin Grammy 2026","#latin-grammy-ganadores"]],lanzamientos:[["Estrenos latinos","#estrenos-latinos"],["Estrenos en el mundo","#estrenos-mundo"]],listas:[["Más nominados Grammy 2027","#lista-nominados"],["Más premiados Latin Grammy","#lista-latin-grammy"]]};
 let lang="es";try{lang=localStorage.getItem("{{SLUG}}-lang")||"es"}catch(e){}
 try{const th=localStorage.getItem("{{SLUG}}-theme");if(th)document.documentElement.dataset.theme=th}catch(e){}
@@ -510,7 +513,7 @@ const fshort=d=>{const x=dt(d);return lang==="es"?`${x.getDate()} ${MON.es[x.get
 function dayLabel(d){const x=dt(d);return lang==="es"?`${DAYS.es[x.getDay()]} ${x.getDate()} de ${MON.es[x.getMonth()]}`:`${DAYS.en[x.getDay()]}, ${MON.en[x.getMonth()]} ${x.getDate()}`}
 function today(){let s="";try{s=new Intl.DateTimeFormat(lang==="es"?"es-US":"en-US",{weekday:"long",day:"numeric",month:"long",year:"numeric",timeZone:"America/New_York"}).format(new Date())}catch(e){}return s?s.charAt(0).toUpperCase()+s.slice(1)+" · "+(lang==="es"?"Nueva York":"New York"):""}
 
-function cv(a,cls=""){const c=COV[a.id]||{f:"{{NOMBRE}}",bg:"#0b0b0b",fg:"#fff",c:a.tag,e:""};
+function cv(a,cls=""){const ph=FOTOS[a.id];if(ph)return `<div class="cv ft ${cls}"><img src="/assets/fotos/${a.id}.jpg" alt="" width="${ph.w}" height="${ph.h}" loading="lazy" decoding="async" style="object-position:${ph.pos||"50% 30%"}"></div>`;const c=COV[a.id]||{f:"{{NOMBRE}}",bg:"#0b0b0b",fg:"#fff",c:a.tag,e:""};
  return `<div class="cv ${cls}" style="background:${c.bg};color:${c.fg};${c.bd?"box-shadow:inset 0 0 0 1px var(--rule);":""}${c.fs?`--fs:${c.fs};`:""}${c.al?`--al:${c.al};`:""}" aria-hidden="true"><div class="c"><b>{{LOGO}}</b><span>${a.tag}</span></div><div class="f">${c.f}</div><div class="c"><span>${c.e}</span><span>${c.c}</span></div></div>`}
 const kl=a=>`<div class="kline"><a class="k" href="#${a.sec}">${t().sections[a.sec]}</a>${a.tag!==T.es.sections[a.sec]?`<span class="dot">·</span><a class="kt" href="#t-${slug(a.tag)}">${a.tag}</a>`:""}</div>`;
 const by=a=>`<div class="by">${u().by} <b>${u().newsroom}</b> · <time datetime="${a.date}">${fdate(a.date)}</time> · ${a.min} ${t().read}</div>`;
@@ -561,7 +564,7 @@ function article(a){const url=location.href,enc=encodeURIComponent;
   const rel=A.filter(b=>b.id!==a.id&&b.sec===a.sec).concat(A.filter(b=>b.id!==a.id&&b.sec!==a.sec)).slice(0,4);
   return `<article class="art"><header class="w art-h">${kl(a)}<h1 class="h h-art">${title(a)}</h1><p class="dek dek-art">${a.dek}</p>
   <div class="byrow">${by(a)}<div class="share" aria-label="${u().share}"><button type="button" id="enBtn">${lang==="es"?"English":"Español"} ⇄</button><a href="https://wa.me/?text=${enc(title(a)+" "+url)}" target="_blank" rel="noopener">WhatsApp</a><a href="https://twitter.com/intent/tweet?text=${enc(title(a))}&amp;url=${enc(url)}" target="_blank" rel="noopener">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=${enc(url)}" target="_blank" rel="noopener">Facebook</a><button type="button" id="copy">${u().copy}</button></div></div></header>
-  <figure class="w art-cv">${cv(a,"cine")}<figcaption>${COV[a.id]&&COV[a.id].e?COV[a.id].e+" · ":""}${a.tag} · ${u().cover}</figcaption></figure>
+  ${FOTOS[a.id]?`<figure class="w art-cv art-foto"><img src="/assets/fotos/${a.id}.jpg" alt="${lang==="es"?FOTOS[a.id].alt:(FOTOS[a.id].altEn||FOTOS[a.id].alt)}" width="${FOTOS[a.id].w}" height="${FOTOS[a.id].h}" fetchpriority="high" style="object-position:${FOTOS[a.id].pos||"50% 30%"}"><figcaption>${FOTOS[a.id].pie?FOTOS[a.id].pie+". ":""}${lang==="es"?FOTOS[a.id].credito:(FOTOS[a.id].creditoEn||FOTOS[a.id].credito)}</figcaption></figure>`:`<figure class="w art-cv">${cv(a,"cine")}<figcaption>${COV[a.id]&&COV[a.id].e?COV[a.id].e+" · ":""}${a.tag} · ${u().cover}</figcaption></figure>`}
   <div class="w body"><div class="prose">${a.body}${(a.correcciones||[]).map(c=>`<p class="mono g">${c.tipo==="actualizacion"?(lang==="es"?"Actualización":"Update"):(lang==="es"?"Corrección":"Correction")} (${c.fecha}): ${c.nota}</p>`).join("")}<div class="en"><span class="k">${t().enNote}</span><p>${a.en}</p></div>
   <details class="src"><summary><span>${t().sources}</span><span class="n">${a.src.length}</span></summary><ol>${a.src.map(([n,s])=>`<li><a href="${s}" target="_blank" rel="noopener">${n}</a></li>`).join("")}</ol></details></div>
   <aside><div class="brief"><span class="k">${t().brief}</span><ul>${a.brief.map(b=>`<li>${b}</li>`).join("")}</ul></div></aside></div></article>
