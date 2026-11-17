@@ -1,0 +1,17 @@
+{"id": "top10-billboard200-21nov", "nota": "rodrigo-quinta-semana", "tema": "rojo", "fuente": "Billboard / Luminate",
+ "laminas": [
+  {"tipo": "portada", "chip": "Semana del 21 nov", "etiqueta": "TOP 10", "grande": "200", "titulo": "Los discos más escuchados en EE. UU.", "bajada": "Billboard 200 · lista del 21 de noviembre de 2026"},
+  {"tipo": "lista", "etiqueta": "TOP", "grande": "1-5", "sub": "Billboard 200 · 21 nov 2026", "columna": "Unidades", "filas": [
+    {"pos": 1, "nombre": "Olivia Rodrigo", "detalle": "you seem pretty sad for a girl so in love", "dato": "62K", "chip": "5 semanas en el No. 1"},
+    {"pos": 2, "nombre": "Lil Baby", "detalle": "FRESH", "dato": "59K", "chip": "Debut"},
+    {"pos": 3, "nombre": "Morgan Wallen", "detalle": "I'm the Problem", "dato": "50K"},
+    {"pos": 4, "nombre": "P1Harmony", "detalle": "BLOW UP", "dato": "45K", "chip": "Debut"},
+    {"pos": 5, "nombre": "Ella Langley", "detalle": "Dandelion", "dato": "45K"}]},
+  {"tipo": "lista", "etiqueta": "TOP", "grande": "6-10", "sub": "Billboard 200 · 21 nov 2026", "columna": "Unidades", "filas": [
+    {"pos": 6, "nombre": "Noah Kahan", "detalle": "The Great Divide", "dato": "44K"},
+    {"pos": 7, "nombre": "Noah Kahan", "detalle": "Stick Season", "dato": "35K"},
+    {"pos": 8, "nombre": "Olivia Dean", "detalle": "The Art of Loving", "dato": "32K"},
+    {"pos": 9, "nombre": "SZA", "detalle": "SOS", "dato": "31K"},
+    {"pos": 10, "nombre": "Michael Jackson", "detalle": "Thriller", "dato": "29K"}]},
+  {"tipo": "cierre", "lineas": ["CÓMO SE CUENTA", "CADA SEMANA,", "EN LA NOTA."]}
+ ]}

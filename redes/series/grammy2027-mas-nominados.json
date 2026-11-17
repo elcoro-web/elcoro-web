@@ -1,0 +1,8 @@
+{"id": "grammy2027-mas-nominados", "nota": "raye-11", "tema": "rojo", "fuente": "Recording Academy",
+ "laminas": [
+  {"tipo": "barras", "etiqueta": "GRAMMY", "grande": "2027", "sub": "Los más nominados", "filas": [
+    {"nombre": "RAYE", "valor": 11}, {"nombre": "Rosalía", "valor": 9}, {"nombre": "Ella Langley", "valor": 7},
+    {"nombre": "Miranda Lambert", "valor": 7}, {"nombre": "Olivia Rodrigo", "valor": 7}, {"nombre": "Phoebe Bridgers", "valor": 7},
+    {"nombre": "Bruno Mars", "valor": 6}, {"nombre": "Leon Thomas", "valor": 6}, {"nombre": "Olivia Dean", "valor": 6},
+    {"nombre": "Taylor Swift", "valor": 5}]}
+ ]}

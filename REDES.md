@@ -26,6 +26,14 @@ Las redes llevan gente a la web. Cada publicación presenta una nota ya publicad
 - Antes de subirlo, saca un cuadro de cada pantalla y míralos con Read para comprobar que nada se corte ni se monte: `ffmpeg -v error -ss <segundo> -i redes/video/<archivo>.mp4 -frames:v 1 /tmp/cuadro-<segundo>.png`. En un resumen de 3, los segundos 7, 13 y 20; en un reel de una nota, el 5.
 - El video lleva una base rítmica original generada por la herramienta (sin canciones de terceros).
 
+## Series con concepto (listas y nominados)
+Además de la nota suelta, El Coro tiene formatos fijos que se reconocen en el feed. Se arman con `python3 herramientas/series.py redes/series/<id>.json redes/img` a partir de un JSON con los datos de una nota publicada (ver los ejemplos en `redes/series/`):
+- **TOP 10** (`lista`): cada semana, cuando salga la nota del Billboard 200 o del Hot 100, un carrusel portada + 1-5 + 6-10 + cierre, con chips como "DEBUT" o "5 SEMANAS EN EL NO. 1".
+- **NOMINADOS** (`nominados`): en temporada de premios, una lámina por categoría con las casillas tipográficas de cada obra.
+- **LOS MÁS** (`barras`): rankings con barras (más nominados, más semanas, más reproducciones).
+- Sin fotos de artistas ni portadas de discos: las casillas son tipográficas.
+- Cuentan como una publicación de feed. Úsalas cuando la nota lo permita; al menos una serie por semana.
+
 ## Cómo se arma cada publicación
 1. `python3 herramientas/redes.py preparar <id>` crea las imágenes en `redes/img/`:
    - `-1`: portada del carrusel, 4:5;

@@ -1,0 +1,25 @@
+{"id": "grammy2027-latinos", "nota": "latinos-nominados-grammy-2027-lista", "tema": "amarillo", "fuente": "Recording Academy / EFE",
+ "laminas": [
+  {"tipo": "portada", "chip": "Grammy 2027", "etiqueta": "NOMINADOS", "grande": "26", "titulo": "Los discos latinos que pelean un Grammy", "bajada": "Cinco categorías. La gala es el 7 de febrero."},
+  {"tipo": "nominados", "tema": "rojo", "evento": "GRAMMY 2027", "sub": "Categorías latinas", "categoria": "Mejor álbum de pop latino", "nominados": [
+    {"obra": "No me arrepiento de sentir tanto", "artista": "Karol G"}, {"obra": "Femme Fatale", "artista": "Mon Laferte"},
+    {"obra": "Muda", "artista": "Carín León"}, {"obra": "¿Dónde Es El After?", "artista": "Rawayana"},
+    {"obra": "Bendito Verano", "artista": "Elena Rose"}]},
+  {"tipo": "nominados", "tema": "rojo", "desfase": 2, "evento": "GRAMMY 2027", "sub": "Categorías latinas", "categoria": "Mejor álbum de música urbana", "nominados": [
+    {"obra": "Cosa Nuestra: Capítulo 0", "artista": "Rauw Alejandro"}, {"obra": "Omerta", "artista": "J Balvin y Ryan Castro"},
+    {"obra": "Hopi Sendé", "artista": "Ryan Castro"}, {"obra": "Omakase", "artista": "Álvaro Díaz"},
+    {"obra": "El green print: La Saga", "artista": "Feid"}, {"obra": "Do Not Disturb: Late Checkout", "artista": "Young Miko"}]},
+  {"tipo": "nominados", "tema": "rojo", "desfase": 4, "evento": "GRAMMY 2027", "sub": "Categorías latinas", "categoria": "Mejor álbum de música mexicana", "nominados": [
+    {"obra": "Lo que me falta por llorar", "artista": "Grupo Frontera"}, {"obra": "Aunque Me Duela", "artista": "Lupita Infante"},
+    {"obra": "La Madrina", "artista": "Mari Nobre"}, {"obra": "Dinastía (Deluxe)", "artista": "Peso Pluma y Tito Double P"},
+    {"obra": "¡Vida México!", "artista": "Carlos Rivera"}]},
+  {"tipo": "nominados", "tema": "rojo", "desfase": 1, "evento": "GRAMMY 2027", "sub": "Categorías latinas", "categoria": "Mejor álbum de rock latino o alternativo", "nominados": [
+    {"obra": "Free Spirits", "artista": "CA7RIEL y Paco Amoroso"}, {"obra": "Taracá", "artista": "Jorge Drexler"},
+    {"obra": "La Vida Era Más Corta", "artista": "Milo J"}, {"obra": "JuanesTeban", "artista": "Juanes"},
+    {"obra": "Shine", "artista": "Fito Páez"}]},
+  {"tipo": "nominados", "tema": "rojo", "desfase": 3, "evento": "GRAMMY 2027", "sub": "Categorías latinas", "categoria": "Mejor álbum de música tropical", "nominados": [
+    {"obra": "Portátil", "artista": "Rubén Blades y Orquesta"}, {"obra": "El Alma en Clave", "artista": "Luis Enrique"},
+    {"obra": "Antes Que El Tiempo Se Vaya", "artista": "Fonseca"}, {"obra": "Más Que Palabras", "artista": "Grupo Niche"},
+    {"obra": "El Último Disco Vol. 1", "artista": "Carlos Vives"}]},
+  {"tipo": "cierre", "lineas": ["¿QUIÉN SE LO", "LLEVA? LA LISTA", "COMPLETA, EN LA NOTA."]}
+ ]}
