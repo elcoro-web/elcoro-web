@@ -112,18 +112,19 @@ def main():
         os.makedirs(os.path.join(tmp, "assets", "fotos"), exist_ok=True)
         os.makedirs(os.path.join(tmp, "assets", "banco"), exist_ok=True)
 
-        def chica(src, dst):
+        def chica(src, base):
+            """Web liviana: base.jpg (1200 px, para compartir), base.webp (1200 px) y base-s.webp (560 px, tarjetas y celulares)."""
             im = Image.open(src).convert("RGB")
-            im.thumbnail((1600, 1600))
-            im.save(dst, quality=82, optimize=True, progressive=True)
+            g = im.copy(); g.thumbnail((1200, 1200))
+            g.save(base + ".jpg", quality=72, optimize=True, progressive=True)
+            g.save(base + ".webp", quality=68, method=6)
+            c = im.copy(); c.thumbnail((560, 560))
+            c.save(base + "-s.webp", quality=66, method=6)
         for fid in FOT:
             src = P("redes", "fotos", AUTO[fid] + ".jpg") if fid in AUTO else P("web", "fotos", fid + ".jpg")
-            if fid in AUTO:
-                chica(src, os.path.join(tmp, "assets", "fotos", fid + ".jpg"))
-            else:
-                shutil.copy(src, os.path.join(tmp, "assets", "fotos", fid + ".jpg"))
+            chica(src, os.path.join(tmp, "assets", "fotos", fid))
         for slug in BANCO:
-            chica(P("redes", "fotos", slug + ".jpg"), os.path.join(tmp, "assets", "banco", slug + ".jpg"))
+            chica(P("redes", "fotos", slug + ".jpg"), os.path.join(tmp, "assets", "banco", slug))
     for f in os.listdir(P("marca", "iconos")):
         shutil.copy(P("marca", "iconos", f), os.path.join(tmp, "favicon.ico" if f == "favicon.ico" else os.path.join("assets", f)))
 
