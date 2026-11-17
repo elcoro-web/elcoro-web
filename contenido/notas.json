@@ -1,5 +1,98 @@
 [
  {
+  "id": "westlife-norteamerica-2027",
+  "date": "2026-11-17",
+  "hora": "05:45",
+  "sec": "noticias",
+  "tag": "Agenda",
+  "min": 3,
+  "title": "Westlife anuncia 12 fechas en Norteamérica en 2027 y tocará por primera vez en Madison Square Garden",
+  "titleEn": "Westlife announces 12 North American dates for 2027, including its first Madison Square Garden show",
+  "dek": "El grupo irlandés extiende su gira de 25 aniversario con una vuelta por Estados Unidos y Canadá en marzo. Cierra en Nueva York el 19 de marzo, con O-Town como invitado.",
+  "brief": [
+   "Westlife hará 12 conciertos en Estados Unidos y Canadá entre el 1 y el 19 de marzo de 2027.",
+   "La gira termina el 19 de marzo en Madison Square Garden, su primera vez en esa sala.",
+   "La venta general empieza el viernes 20 de noviembre a las 10 de la mañana, hora local."
+  ],
+  "en": "Westlife will play 12 shows in the U.S. and Canada from March 1 to March 19, 2027, as part of its 25th-anniversary world tour, with O-Town as special guest. The run closes with the group's first-ever Madison Square Garden concert. Presales open Nov. 17; general on-sale is Friday, Nov. 20, at 10 a.m. local time.",
+  "body": "<p>Westlife vuelve a Norteamérica. El grupo irlandés anunció 12 conciertos en Estados Unidos y Canadá para marzo de 2027 dentro de <em>Westlife 25: The Anniversary World Tour</em>, la gira con la que celebra 25 años. Empieza el 1 de marzo en el YouTube Theater de Inglewood, California, y termina el 19 de marzo en Madison Square Garden, en Nueva York. Según el comunicado de Live Nation, será la primera vez que la banda toque en esa sala. El grupo estadounidense O-Town abrirá los conciertos.</p>\n<h2>Las fechas</h2>\n<ul class=\"list\"><li><span>Inglewood — YouTube Theater</span><span>1 de marzo</span></li><li><span>San Francisco — Bill Graham Civic Auditorium</span><span>2 de marzo</span></li><li><span>Edmonton — Northern Alberta Jubilee Auditorium</span><span>4 de marzo</span></li><li><span>Calgary — Southern Alberta Jubilee Auditorium</span><span>5 de marzo</span></li><li><span>Vancouver — Rogers Arena</span><span>6 de marzo</span></li><li><span>Uncasville — Mohegan Sun Arena</span><span>9 de marzo</span></li><li><span>Boston — MGM Music Hall at Fenway</span><span>10 de marzo</span></li><li><span>Orlando — Addition Financial Arena</span><span>13 de marzo</span></li><li><span>Irving, Texas — The Pavilion at Toyota Music Factory</span><span>14 de marzo</span></li><li><span>Toronto — Scotiabank Arena</span><span>16 de marzo</span></li><li><span>Rosemont, Illinois — Allstate Arena</span><span>17 de marzo</span></li><li><span>Nueva York — Madison Square Garden</span><span>19 de marzo</span></li></ul>\n<p>El concierto del 17 de marzo, cerca de Chicago, cae en el Día de San Patricio.</p>\n<h2>Boletas</h2>\n<p>Hay preventa de Citi en Estados Unidos y de American Express en Canadá desde hoy, martes 17 de noviembre, a las 10 de la mañana, hora local, hasta el miércoles 18 a las 10 de la noche. La venta general abre el viernes 20 de noviembre a las 10 de la mañana, hora local, en la web del grupo.</p>\n<blockquote>Un grupo que nunca conquistó Estados Unidos llega a su sala más famosa 25 años después.</blockquote>\n<h2>El contexto</h2>\n<p>Es la segunda gira norteamericana de Westlife. La primera, en 2024, agotó entradas e incluyó un concierto en el Radio City Music Hall de Nueva York. En entrevista con Billboard, Nicky Byrne admitió que para el grupo \"MSG was always out of reach\" (el Garden siempre estuvo fuera de alcance), porque nunca lograron despegar del todo en Estados Unidos. Kian Egan lo describió como uno de los momentos más emocionantes de su carrera.</p>\n<p>La gira de aniversario suma más de 90 conciertos en el mundo. El grupo acaba de terminar 42 fechas en Reino Unido e Irlanda y tiene programadas etapas en Europa, Asia, México, Australia y Nueva Zelanda. Según Live Nation, Westlife ha vendido más de 55 millones de discos y tiene 14 sencillos No. 1 en Reino Unido.</p>\n<p class=\"mono g\">Fechas, sedes y preventas confirmadas en el comunicado de Live Nation y en Billboard. Las preventas pueden variar según la ciudad.</p>",
+  "src": [
+   [
+    "Live Nation — Westlife announce March 2027 North American dates",
+    "https://news.livenationentertainment.com/news/westlife-announce-march-2027-north-american-dates-for-westlife-25-the-anniversary-world-tour"
+   ],
+   [
+    "Billboard (vía Yahoo) — Westlife Sets 2027 North America Tour: Exclusive",
+    "https://www.yahoo.com/entertainment/music/concerts/articles/westlife-sets-2027-north-america-110000944.html"
+   ]
+  ],
+  "cov": {
+   "f": "MSG",
+   "bg": "#1d3ea0",
+   "fg": "#ffffff",
+   "c": "Primera vez en el Garden",
+   "e": "Westlife"
+  },
+  "minuto": [
+   "Westlife hará 12 fechas en Norteamérica en marzo de 2027 y debutará en Madison Square Garden.",
+   "Westlife books 12 North American dates for March 2027, closing with its first MSG show."
+  ],
+  "peso": 2,
+  "propia": false
+ },
+ {
+  "id": "clapton-europa-2027",
+  "date": "2026-11-17",
+  "hora": "05:45",
+  "sec": "noticias",
+  "tag": "Agenda",
+  "min": 3,
+  "title": "Eric Clapton suma cuatro fechas en Europa del Este en 2027, con su primer concierto en Bulgaria",
+  "titleEn": "Eric Clapton adds four Eastern European dates for 2027, including his first concert in Bulgaria",
+  "dek": "El guitarrista tocará en Zagreb, Sofía, Budapest y Łódź en mayo, antes de sus cinco conciertos ya anunciados en Birmingham y el Royal Albert Hall.",
+  "brief": [
+   "Eric Clapton anunció conciertos en Zagreb, Sofía, Budapest y Łódź entre el 5 y el 12 de mayo de 2027.",
+   "Será su primer concierto en Bulgaria y su regreso a Zagreb tras casi 48 años.",
+   "La venta general de las cuatro fechas abre el viernes 20 de noviembre."
+  ],
+  "en": "Eric Clapton has added four 2027 concerts in Zagreb (May 5), Sofia (May 7), Budapest (May 10) and Łódź (May 12), ahead of his previously announced Birmingham date and four nights at London's Royal Albert Hall. The Sofia show will be his first in Bulgaria. General on-sale is Friday, Nov. 20. No U.S. dates have been announced for 2027.",
+  "body": "<p>Eric Clapton amplió su calendario de 2027 con cuatro conciertos en Europa central y del Este. Tocará el 5 de mayo en el Arena Zagreb, en Croacia; el 7 en la Arena 8888 de Sofía, en Bulgaria; el 10 en el MVM Dome de Budapest, en Hungría, y el 12 en el Atlas Arena de Łódź, en Polonia. Las nuevas fechas preceden a los cinco conciertos en Reino Unido que anunció en octubre.</p>\n<h2>El calendario completo</h2>\n<ul class=\"list\"><li><span>Zagreb — Arena Zagreb</span><span>5 de mayo</span></li><li><span>Sofía — Arena 8888</span><span>7 de mayo</span></li><li><span>Budapest — MVM Dome</span><span>10 de mayo</span></li><li><span>Łódź — Atlas Arena</span><span>12 de mayo</span></li><li><span>Birmingham — bp pulse LIVE</span><span>17 de mayo</span></li><li><span>Londres — Royal Albert Hall</span><span>20, 21, 23 y 24 de mayo</span></li></ul>\n<p>El concierto de Sofía será el primero de Clapton en Bulgaria. En Zagreb no tocaba desde octubre de 1979, cuando se presentó en el Dom sportova, hace casi 48 años.</p>\n<h2>Boletas</h2>\n<p>La preventa del club de fans para las cuatro fechas nuevas abre el miércoles 18 de noviembre a las 11 de la mañana, hora local. Sofía, Budapest y Łódź tienen además preventas propias el miércoles 18 y el jueves 19. La venta general empieza el viernes 20 de noviembre al mediodía, hora local. Las fechas británicas salieron a la venta en octubre.</p>\n<blockquote>A los 81 años, Clapton todavía encuentra países donde nunca ha tocado.</blockquote>\n<h2>Sin Estados Unidos, por ahora</h2>\n<p>Ultimate Classic Rock señala que Clapton no ha anunciado conciertos en Estados Unidos para 2027, después de ocho fechas en ese país este año. En Londres, según la revista Louder, la última de sus cuatro noches en el Royal Albert Hall será su concierto número 220 en esa sala.</p>\n<p>Mientras tanto, el viernes 20 de noviembre sale una edición ampliada de <em>The Road to Escondido</em>, el disco que grabó con J.J. Cale en 2006. La versión de 20 aniversario, en doble CD, suma tres canciones de estudio inéditas, tres temas en vivo y notas nuevas. El 4 de diciembre llega además una reedición en doble vinilo de <em>Riding With The King</em>.</p>\n<p class=\"mono g\">Fechas confirmadas en Ultimate Classic Rock, That Eric Alper y Croatia Week. Preventas según el sitio de fans Where's Eric!; pueden variar por ciudad.</p>",
+  "src": [
+   [
+    "Ultimate Classic Rock — Eric Clapton Announces Expanded 2027 Tour Dates",
+    "https://ultimateclassicrock.com/eric-clapton-2027-tour-dates/"
+   ],
+   [
+    "That Eric Alper — Eric Clapton expands 2027 European tour with four new shows",
+    "https://www.thatericalper.com/2026/11/16/eric-clapton-expands-2027-european-tour-with-four-new-shows-before-royal-albert-hall-return/"
+   ],
+   [
+    "Croatia Week (vía Bytes Europe) — Eric Clapton to play Zagreb concert after 48 years",
+    "https://www.byteseu.com/2525824/"
+   ],
+   [
+    "Where's Eric! — Eric Clapton Announces 2027 EU Shows",
+    "https://whereseric.com/eric-clapton-news/303-eric-clapton-announces-2027-eu-shows/"
+   ],
+   [
+    "Louder — Eric Clapton announces return to the Royal Albert Hall",
+    "https://www.loudersound.com/bands-artists/eric-clapton-announces-return-to-the-royal-albert-hall"
+   ]
+  ],
+  "cov": {
+   "f": "1979",
+   "bg": "#0a0a0a",
+   "fg": "#ffd400",
+   "c": "Su último concierto en Zagreb",
+   "e": "Eric Clapton"
+  },
+  "minuto": [
+   "Eric Clapton suma Zagreb, Sofía, Budapest y Łódź a su gira de mayo de 2027.",
+   "Eric Clapton adds Zagreb, Sofia, Budapest and Łódź to his May 2027 tour."
+  ],
+  "propia": false
+ },
+ {
   "id": "john-summit-grammys",
   "date": "2026-11-17",
   "hora": "04:40",
