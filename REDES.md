@@ -40,6 +40,7 @@ Además de la nota suelta, El Coro tiene formatos fijos que se reconocen en el f
 - **LOS MÁS** (`barras`): rankings con barras (más nominados, más semanas, más reproducciones).
 - Identidad de las series: **negro y rojo** (tema `rojo`: banda roja, fondo negro). Es la firma de El Coro en el feed; otros temas solo como excepción.
 - Fotos: solo las que Rilo deje en `redes/fotos/` y confirme como prensa oficial o con licencia. Con foto, la portada usa el tipo `foto` de `series.py` (foto arriba, degradado a negro, etiqueta roja, titular). Por ahora sin crédito de foto (decisión de Rilo). Nunca se descargan fotos de internet.
+- Banco de fotos: `redes/fotos/<artista>.jpg` (ej. `ella-langley.jpg`, `karol-g.jpg`, `aria-vega.jpg`). Si la nota es sobre un artista que tiene foto ahí, la portada del carrusel va con foto (tipo `foto`, ver `redes/series/quien-es-aria-vega-foto.json`) y la foto se agrega también a la nota en la web (`web/fotos/<id>.jpg` + `.json`, copiando el formato de las que ya existen).
 - Sin foto aprobada, las casillas y portadas son tipográficas.
 - Cuentan como una publicación de feed. Úsalas cuando la nota lo permita; al menos una serie por semana.
 
