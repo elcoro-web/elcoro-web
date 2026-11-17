@@ -1,5 +1,87 @@
 [
  {
+  "id": "rodrigo-quinta-semana",
+  "date": "2026-11-17",
+  "hora": "02:40",
+  "sec": "listas",
+  "tag": "Billboard 200",
+  "min": 3,
+  "title": "Olivia Rodrigo suma su quinta semana en el No. 1 del Billboard 200; Lil Baby debuta en el No. 2",
+  "titleEn": "Olivia Rodrigo scores a fifth week at No. 1 on the Billboard 200; Lil Baby debuts at No. 2",
+  "dek": "“you seem pretty sad for a girl so in love” iguala el récord de semanas en la cima de SOUR. Lil Baby queda a 3.000 unidades y P1Harmony entra en el No. 4.",
+  "brief": [
+   "Olivia Rodrigo vuelve al No. 1 del Billboard 200 con 62.000 unidades, su quinta semana en la cima.",
+   "Lil Baby debuta en el No. 2 con FRESH y 59.000 unidades.",
+   "El grupo coreano P1Harmony entra en el No. 4 con BLOW UP, casi todo en ventas."
+  ],
+  "en": "Olivia Rodrigo’s “you seem pretty sad for a girl so in love” earns a fifth nonconsecutive week at No. 1 on the Billboard 200 dated Nov. 21, with 62,000 units, tying SOUR. Lil Baby’s FRESH debuts at No. 2 with 59,000 and P1Harmony’s BLOW UP enters at No. 4.",
+  "body": "<p>El disco <em>you seem pretty sad for a girl so in love</em> de Olivia Rodrigo vuelve al No. 1 del Billboard 200 en la lista con fecha del 21 de noviembre. Es su quinta semana en la cima, no consecutiva, con 62.000 unidades equivalentes, un 9% más que la semana anterior, según los datos de Luminate que publicó Billboard. La semana de conteo cerró el 12 de noviembre.</p>\n<h2>Igual que SOUR</h2>\n<p>Con cinco semanas, el disco iguala a <em>SOUR</em> (2021) como el álbum de Rodrigo con más tiempo en el No. 1. También supera las cuatro semanas de <em>ICEMAN</em> de Drake y se convierte en el disco lanzado en 2026 con más semanas en la cima este año. En el total de 2026 empata con <em>The Life of a Showgirl</em> de Taylor Swift, que sumó cinco de sus semanas en el No. 1 durante este año.</p>\n<p>De las 62.000 unidades, 51.000 vienen del streaming, unos 54,5 millones de reproducciones a pedido, y 11.000 de ventas del álbum, que subieron un 53%.</p>\n<blockquote>Un disco de junio que sigue mandando en noviembre.</blockquote>\n<h2>Lil Baby, a 3.000 unidades</h2>\n<p>Lil Baby debuta en el No. 2 con <em>FRESH</em>, que salió el 6 de noviembre. Sumó 59.000 unidades, casi todas de streaming (55.000, con unos 56,8 millones de reproducciones). Es su octavo álbum en el top 10, y todos han entrado directo entre los cinco primeros.</p>\n<h2>P1Harmony, a punta de ventas</h2>\n<p>El grupo de K-pop P1Harmony entra en el No. 4 con <em>BLOW UP</em> y 45.000 unidades, de las cuales 43.500 son ventas del álbum. Iguala su mejor puesto, el No. 4 de <em>UNIQUE</em> en marzo, y es su tercer disco en el top 10. Además debutó en el No. 1 de Top Album Sales, su primer número uno en esa lista.</p>\n<h2>El resto del top 10</h2>\n<ul class=\"list\"><li><span>1. Olivia Rodrigo — you seem pretty sad for a girl so in love</span><span>62.000</span></li><li><span>2. Lil Baby — FRESH (debut)</span><span>59.000</span></li><li><span>3. Morgan Wallen — I’m the Problem</span><span>50.000</span></li><li><span>4. P1Harmony — BLOW UP (debut)</span><span>45.000</span></li><li><span>5. Ella Langley — Dandelion</span><span>45.000</span></li><li><span>6. Noah Kahan — The Great Divide</span><span>44.000</span></li><li><span>7. Noah Kahan — Stick Season</span><span>35.000</span></li><li><span>8. Olivia Dean — The Art of Loving</span><span>32.000</span></li><li><span>9. SZA — SOS</span><span>31.000</span></li><li><span>10. Michael Jackson — Thriller</span><span>29.000</span></li></ul>\n<p><em>Thriller</em> cae del No. 2 al No. 10 tras el salto de la semana pasada. Ella Langley, la de <a href=\"#choosin-texas-28\" style=\"text-decoration:underline\">“Choosin’ Texas”</a>, baja un puesto.</p>\n<p class=\"mono g\">Cifras en unidades equivalentes de álbum (ventas + streaming + descargas de canciones), según Luminate y Billboard.</p>",
+  "src": [
+   [
+    "Billboard (vía Yahoo) — Olivia Rodrigo’s ‘you seem pretty sad for a girl so in love’ Scores Fifth Week at No. 1 on Billboard 200",
+    "https://www.yahoo.com/entertainment/music/articles/olivia-rodrigo-seem-pretty-sad-200009866.html"
+   ],
+   [
+    "Rockum — Olivia Rodrigo Tops Billboard 200 for Fifth Week as Lil Baby and P1Harmony Make Top 4 Debuts",
+    "https://www.rockumweb.com/reportes/2786/olivia-rodrigo-tops-billboard-200-for-fifth-week-as-lil-baby-and-p1harmony-make-top-4-debuts"
+   ],
+   [
+    "Hip-Hop Vibe — Lil Baby scores his fifth straight top 3 album with “FRESH”",
+    "https://hip-hopvibe.com/news/lil-baby-earns-his-fifth-straight-top-3-album-with-fresh/"
+   ]
+  ],
+  "cov": {
+   "f": "5",
+   "bg": "#1d3ea0",
+   "fg": "#ffd400",
+   "c": "Semanas en el No. 1",
+   "e": "Olivia Rodrigo"
+  },
+  "minuto": [
+   "Olivia Rodrigo suma su quinta semana en el No. 1 del Billboard 200; Lil Baby debuta segundo.",
+   "Olivia Rodrigo earns a fifth week atop the Billboard 200; Lil Baby debuts at No. 2."
+  ],
+  "peso": 3,
+  "propia": false
+ },
+ {
+  "id": "pitch-a-medios",
+  "date": "2026-11-17",
+  "hora": "02:40",
+  "sec": "artistas",
+  "tag": "Para artistas",
+  "min": 4,
+  "title": "Cómo escribirle a un medio para que reseñe tu música",
+  "titleEn": "How to pitch your music to a music outlet",
+  "dek": "Un correo corto, un enlace que funcione y una razón para escribir hoy. La guía de {{NOMBRE}} para conseguir prensa sin agencia.",
+  "brief": [
+   "Escribe a una persona concreta que cubra tu género, no a una lista genérica.",
+   "En cinco líneas: quién eres, qué lanzas, cuándo y por qué importa.",
+   "Manda un enlace privado de escucha, no archivos adjuntos, con al menos tres semanas de margen."
+  ],
+  "en": "A practical guide to pitching press as an independent artist: target the right writer, keep the email to five lines, send a private streaming link instead of attachments, pitch at least three weeks ahead and follow up only once.",
+  "body": "<p class=\"lede\">Los periodistas de música reciben decenas de correos al día. La mayoría no se abren o se cierran en diez segundos. No hace falta una agencia para que el tuyo pase ese filtro: hace falta que sea fácil de leer, fácil de escuchar y fácil de publicar.</p>\n<h2>1. Elige a la persona, no al medio</h2>\n<p>Antes de escribir, lee lo que publica cada medio en el último mes. Busca a quien firma notas sobre tu género o tu ciudad y escríbele a esa persona por su nombre. Un correo a “Estimado equipo” que habla de reguetón y llega a quien cubre jazz se borra sin abrir. Diez correos bien dirigidos valen más que doscientos al azar.</p>\n<h2>2. El asunto dice qué es</h2>\n<p>El asunto tiene que contar la noticia en una línea: nombre del artista, tipo de lanzamiento y fecha. Por ejemplo: “Estreno: [Artista] publica su EP [Título] el 5 de diciembre”. Nada de mayúsculas, emojis ni “¡Tienes que oír esto!”.</p>\n<h2>3. Cinco líneas, no cinco párrafos</h2>\n<p>Quédate por debajo de 200 o 300 palabras. El cuerpo del correo responde cuatro preguntas, en este orden:</p>\n<ul class=\"list\"><li><span>Quién eres</span><span>Una frase: de dónde, qué haces</span></li><li><span>Qué lanzas</span><span>Canción, EP o disco, y su fecha</span></li><li><span>Por qué importa</span><span>Un dato real: una colaboración, una cifra, una historia</span></li><li><span>Qué ofreces</span><span>Estreno exclusivo, entrevista o sesión</span></li></ul>\n<p>La bio larga, las fotos y los créditos van en tu press kit, enlazado al final. Si el periodista quiere más, lo busca ahí.</p>\n<blockquote>Si tu correo necesita scroll, todavía no está listo.</blockquote>\n<h2>4. Un enlace, nunca un adjunto</h2>\n<p>Comparte la música con un enlace privado de escucha (SoundCloud privado, Dropbox, Google Drive o la herramienta de tu distribuidora) que no pida registrarse ni descargar nada. Los archivos adjuntos pesados llenan bandejas y muchos filtros los mandan a spam. Revisa que el enlace funcione en una ventana privada antes de enviar.</p>\n<h2>5. Escribe con tiempo</h2>\n<p>Escribe al menos tres semanas antes de la fecha. La prensa local puede moverse en una o dos semanas, pero un medio nacional o internacional puede necesitar un mes o más. Envía de martes a jueves en la mañana, no de noche ni en fin de semana. Si escribes el mismo día del lanzamiento, ya llegaste tarde para casi cualquier medio con calendario. Si ofreces un estreno exclusivo, ofrécelo a un solo medio a la vez y dale un plazo claro para responder.</p>\n<h2>6. Un seguimiento, y ya</h2>\n<p>Si no hay respuesta en una semana, manda un solo recordatorio corto en el mismo hilo, con algún dato nuevo si lo tienes (un video, una fecha en vivo). Después, suelta. Insistir tres veces no cambia un no; solo hace que el próximo correo tampoco se abra.</p>\n<h2>7. Haz fácil el trabajo de quien publica</h2>\n<p>Ten listos los créditos completos, la ortografía oficial de todos los nombres, fotos horizontales y verticales con crédito del fotógrafo, y los enlaces a tus redes. Cuando la nota salga, compártela y da las gracias. Los periodistas recuerdan a los artistas con los que fue fácil trabajar.</p>\n<h2>Lo que no hay que hacer</h2>\n<ul class=\"list\"><li><span>Copia oculta masiva</span><span>Se nota y parece spam</span></li><li><span>Pedir “una oportunidad”</span><span>Mejor da una razón para escribir</span></li><li><span>Pagar por reseñas</span><span>Un medio serio no las vende</span></li></ul>\n<p>Antes de salir a buscar prensa, revisa también <a href=\"#antes-de-lanzar\" style=\"text-decoration:underline\">las cinco cosas que tienes que hacer antes de lanzar</a>.</p>\n<p class=\"mono g\">Guía editorial de {{NOMBRE}}, con base en las guías de prensa de CD Baby y Spotify for Artists, enlazadas en Fuentes.</p>",
+  "src": [
+   [
+    "CD Baby DIY Musician — How to get press coverage on your next release",
+    "https://diymusician.cdbaby.com/music-marketing/guide-to-press-coverage/"
+   ],
+   [
+    "Spotify for Artists — Understanding Press and How to Get It",
+    "https://artists.spotify.com/en/blog/understanding-press-and-how-to-get-it"
+   ]
+  ],
+  "cov": {
+   "f": "<i>Pitch</i>",
+   "bg": "#0a0a0a",
+   "fg": "#ffd400",
+   "c": "Para artistas",
+   "e": "Guía",
+   "fs": "min(30cqw,300px)"
+  },
+  "propia": true
+ },
+ {
   "id": "raye-11",
   "date": "2026-11-16",
   "hora": "09:00",
