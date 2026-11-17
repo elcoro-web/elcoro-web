@@ -17,6 +17,7 @@ Revista de música hecha en Nueva York. Escribe en español con un resumen en in
    - Nunca se copian párrafos ni letras de canciones, ni siquiera un verso.
    - La redacción automática nunca descarga fotos por su cuenta.
    - Fotos de prensa: solo las que entrega Rilo, de una sala de prensa oficial, del equipo del artista o con licencia. Van en `web/fotos/<id-de-la-nota>.jpg` con `web/fotos/<id-de-la-nota>.json` (`alt`, `altEn`, `credito`, `creditoEn`, `pie`, `pos`). Siempre con crédito visible, sin recortes que cambien el sentido y sin filtros ni retoques. Sin foto, la nota usa la portada tipográfica.
+   - Banco de fotos por artista: `redes/fotos/<slug>.jpg` + `redes/fotos/banco.json`. La web pone sola esas fotos dentro de las notas que nombran al artista (hasta 3, entre los subtítulos, y un bloque "En esta nota" si son 4 o más) y como portada si `cov.e` es ese artista. Por eso conviene escribir el nombre del artista exactamente como está en el banco.
 4. **Titulares que cumplen.** El titular dice lo que pasó. Nada de "no vas a creer", signos de exclamación ni misterio inventado.
 5. **Conflicto de interés.**
    - El Coro no cubre la música de Rilo (el director), ni la menciona.

@@ -39,7 +39,7 @@ def main():
     COV = {n["id"]: n["cov"] for n in N if n.get("cov")}
     js = lambda o: json.dumps(o, ensure_ascii=False).replace("</", "<\\/")
     # fotos de prensa con crédito: web/fotos/<id>.jpg + web/fotos/<id>.json (alt, credito, pie, pos)
-    FOT = {}
+    FOT, BANCO, AUTO = {}, {}, {}
     if os.path.isdir(P("web", "fotos")):
         from PIL import Image
         for f in sorted(os.listdir(P("web", "fotos"))):
@@ -55,8 +55,32 @@ def main():
                 FOT[fid] = meta
         if FOT:
             paso(f"fotos con crédito: {len(FOT)}")
+    # banco de fotos de prensa por artista (redes/fotos/banco.json): portada automática y fotos dentro de las notas
+    BANCO, AUTO = {}, {}
+    bj = P("redes", "fotos", "banco.json")
+    if os.path.exists(bj):
+        from PIL import Image
+        for slug, v in json.load(open(bj, encoding="utf-8")).items():
+            img = P("redes", "fotos", slug + ".jpg")
+            if slug.startswith("_") or not os.path.exists(img):
+                continue
+            w, h = Image.open(img).size
+            BANCO[slug] = {"n": v["n"], "a": v.get("a", []), "pos": v.get("pos", "50% 25%"), "w": w, "h": h}
+        nombre = {}
+        for slug, v in BANCO.items():
+            for x in [v["n"]] + v["a"]:
+                nombre[x.lower()] = slug
+        for n in N:
+            e = ((n.get("cov") or {}).get("e") or "").strip().lower()
+            hit = nombre.get(e) or next((sl for nm, sl in nombre.items() if e.startswith(nm + " ") or e.startswith(nm + " ·")), None)
+            if n["id"] not in FOT and hit:
+                b = BANCO[hit]
+                AUTO[n["id"]] = hit
+                FOT[n["id"]] = {"alt": b["n"] + ", foto de prensa", "altEn": b["n"] + ", press photo", "credito": "Foto: cortesía de prensa",
+                                "creditoEn": "Photo: press handout", "pie": b["n"], "pos": b["pos"], "w": b["w"], "h": b["h"]}
+        paso(f"banco de fotos: {len(BANCO)} artistas · portadas automáticas: {len(AUTO)}")
     completo = (plantilla.replace("/*@@NOTAS@@*/[]", "/*@@A*/" + js(A) + "/*A@@*/").replace("/*@@PORTADAS@@*/{}", js(COV))
-                .replace("/*@@FOTOS@@*/{}", js(FOT)))
+                .replace("/*@@FOTOS@@*/{}", js(FOT)).replace("/*@@BANCO@@*/{}", js(BANCO)))
     open(P("web", "_completo.html"), "w", encoding="utf-8").write(completo)
 
     # 2. imágenes para compartir: solo las que faltan
@@ -83,10 +107,23 @@ def main():
         for f in os.listdir(P("web", "raiz")):
             if not f.startswith(".") and f != "LEEME.txt":
                 shutil.copy(P("web", "raiz", f), os.path.join(tmp, f))
-    if FOT:
+    if FOT or BANCO:
+        from PIL import Image
         os.makedirs(os.path.join(tmp, "assets", "fotos"), exist_ok=True)
+        os.makedirs(os.path.join(tmp, "assets", "banco"), exist_ok=True)
+
+        def chica(src, dst):
+            im = Image.open(src).convert("RGB")
+            im.thumbnail((1600, 1600))
+            im.save(dst, quality=82, optimize=True, progressive=True)
         for fid in FOT:
-            shutil.copy(P("web", "fotos", fid + ".jpg"), os.path.join(tmp, "assets", "fotos", fid + ".jpg"))
+            src = P("redes", "fotos", AUTO[fid] + ".jpg") if fid in AUTO else P("web", "fotos", fid + ".jpg")
+            if fid in AUTO:
+                chica(src, os.path.join(tmp, "assets", "fotos", fid + ".jpg"))
+            else:
+                shutil.copy(src, os.path.join(tmp, "assets", "fotos", fid + ".jpg"))
+        for slug in BANCO:
+            chica(P("redes", "fotos", slug + ".jpg"), os.path.join(tmp, "assets", "banco", slug + ".jpg"))
     for f in os.listdir(P("marca", "iconos")):
         shutil.copy(P("marca", "iconos", f), os.path.join(tmp, "favicon.ico" if f == "favicon.ico" else os.path.join("assets", f)))
 
