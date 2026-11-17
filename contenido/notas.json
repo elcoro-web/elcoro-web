@@ -1,5 +1,49 @@
 [
  {
+  "id": "foo-fighters-europa-2027",
+  "date": "2026-11-17",
+  "hora": "10:50",
+  "sec": "noticias",
+  "tag": "Agenda",
+  "min": 3,
+  "title": "Foo Fighters anuncia 15 conciertos en Europa en 2027, con dos noches en Wembley y Queens of the Stone Age como invitado",
+  "titleEn": "Foo Fighters announce 15 European shows for summer 2027, including two nights at Wembley",
+  "dek": "La banda de Dave Grohl seguirá con su gira Take Cover entre junio y septiembre de 2027 en 12 países. Empieza el 9 de junio en Reikiavik y cierra el 18 de septiembre en Dublín.",
+  "brief": [
+   "Foo Fighters tocará 15 veces en Europa entre el 9 de junio y el 18 de septiembre de 2027.",
+   "La parte británica incluye dos noches en el estadio de Wembley, en Londres, el 9 y el 11 de septiembre.",
+   "La venta general en el Reino Unido abre el viernes 20 de noviembre a las 10 de la mañana."
+  ],
+  "en": "Foo Fighters will extend their Take Cover Tour with 15 European shows in 12 countries in summer 2027, from June 9 in Reykjavik to September 18 at Dublin's Croke Park, including two nights at London's Wembley Stadium. Queens of the Stone Age, the Hives, Garbage, St. Vincent and Iggy Pop will open select dates. UK presales start Nov. 18 and general sale is Friday, Nov. 20, at 10 a.m. GMT.",
+  "body": "<p>Foo Fighters ya tiene plan para el verano europeo de 2027. La banda de Dave Grohl anunció 15 conciertos y presentaciones en festivales en 12 países, como continuación de su gira <em>Take Cover</em>. La primera fecha es el 9 de junio en Reikiavik, Islandia, y la última, el 18 de septiembre en Croke Park, Dublín. En el medio hay dos noches en el estadio de Wembley, en Londres, el 9 y el 11 de septiembre.</p>\n<p>Entre los invitados que abrirán algunas fechas están Queens of the Stone Age, The Hives, Garbage, St. Vincent e Iggy Pop. La gira sigue presentando <em>Your Favorite Toy</em>, el disco que compite por mejor álbum de rock en los Grammy 2027, mientras que su canción del mismo nombre está nominada a mejor canción de rock (ver <a href=\"#raye-11\" style=\"text-decoration:underline\">las nominaciones</a>).</p>\n<h2>Las fechas</h2>\n<ul class=\"list\"><li><span>Reikiavik — Nýja-Laugardalshöll</span><span>9 de junio</span></li><li><span>Helsinki — Estadio Olímpico</span><span>12 de junio</span></li><li><span>Copenhague — Valbyparken</span><span>15 de junio</span></li><li><span>Düsseldorf — Merkur Spiel-Arena</span><span>17 de junio</span></li><li><span>Werchter, Bélgica — Werchter Parklife</span><span>19 de junio</span></li><li><span>Berna — Stadion Wankdorf</span><span>22 de junio</span></li><li><span>Florencia — Firenze Rocks</span><span>25 de junio</span></li><li><span>Zagreb — INmusic Festival</span><span>27 de junio</span></li><li><span>Sofía — Estadio Vasil Levski</span><span>30 de junio</span></li><li><span>Atenas — Ejekt Festival</span><span>2 de julio</span></li><li><span>Londres — Wembley</span><span>9 de septiembre</span></li><li><span>Londres — Wembley</span><span>11 de septiembre</span></li><li><span>Darlington — The Darlington Arena</span><span>14 de septiembre</span></li><li><span>Edimburgo — Murrayfield</span><span>16 de septiembre</span></li><li><span>Dublín — Croke Park</span><span>18 de septiembre</span></li></ul>\n<p>Según TicketNews, Queens of the Stone Age acompañará a la banda en Florencia; Iggy Pop y The Hives, en Werchter, y St. Vincent, en la segunda noche de Wembley. El medio también indica que el concierto de Dublín todavía depende de un permiso de las autoridades.</p>\n<h2>Boletas</h2>\n<p>En el Reino Unido, las preventas para Wembley y Edimburgo empiezan el miércoles 18 de noviembre a las 10 de la mañana, hora de Londres. La venta general de los cuatro estadios británicos abre el viernes 20 de noviembre a la misma hora. En Dublín, la venta general también es el 20 de noviembre. Para el resto de Europa, cada fecha tiene su propio calendario, publicado en la web oficial de la banda.</p>\n<h2>Lo que hay que saber</h2>\n<p>La gira no pasa por España ni por Latinoamérica en este tramo. Islandia, Bulgaria y Grecia aparecen en la lista, y varias fechas son festivales de verano y no conciertos propios. No hay anuncio de disco nuevo.</p>\n<p class=\"mono g\">Datos confirmados en TicketNews, Ultimate Classic Rock y Parade. Hora de la venta: Londres (GMT).</p>",
+  "src": [
+   [
+    "TicketNews — Foo Fighters Announce 2027 UK and European Tour With Wembley Stadium Dates",
+    "https://www.ticketnews.com/2026/11/foo-fighters-2027-uk-european-tour-wembley/"
+   ],
+   [
+    "Ultimate Classic Rock — Foo Fighters Announce 2027 Summer Tour",
+    "https://ultimateclassicrock.com/foo-fighters-2027-summer-tour/"
+   ],
+   [
+    "Parade (vía Yahoo) — Foo Fighters' 2027 European Tour: 15 Dates",
+    "https://www.yahoo.com/entertainment/music/concerts/articles/foo-fighters-2027-european-tour-032537492.html"
+   ]
+  ],
+  "cov": {
+   "f": "15",
+   "bg": "#0a0a0a",
+   "fg": "#ffd400",
+   "c": "Conciertos en Europa en 2027",
+   "e": "Foo Fighters"
+  },
+  "minuto": [
+   "Foo Fighters anuncia 15 conciertos en Europa en 2027, con dos noches en Wembley.",
+   "Foo Fighters set 15 European shows for 2027, including two Wembley nights."
+  ],
+  "propia": false
+ },
+ {
   "id": "jesus-lopez-deja-universal-latin",
   "date": "2026-11-17",
   "hora": "09:50",
