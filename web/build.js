@@ -16,6 +16,9 @@ const style = raw.match(/<style>([\s\S]*?)<\/style>/)[1];
 const markup = raw.slice(raw.indexOf("</style>") + 8, raw.indexOf("<script>")).trim();
 let script = raw.slice(raw.indexOf("<script>") + 8, raw.lastIndexOf("</script>"));
 const fontsLink = raw.match(/<link rel="stylesheet" href="https:\/\/fonts[^>]+>/)[0];
+// fuentes sin bloquear la página: se ve con letra del sistema y cambia apenas llega la fuente
+const fontsHref = fontsLink.match(/href="([^"]+)"/)[1];
+const fontsAsync = `<link rel="preload" as="style" href="${fontsHref}"><link rel="stylesheet" href="${fontsHref}" media="print" onload="this.media='all'"><noscript>${fontsLink}</noscript>`;
 
 // ---- pass 1: extract data ----
 const vc = new VirtualConsole(); // silence "not implemented" noise
@@ -117,7 +120,7 @@ ${extra}
 <link rel="alternate" type="application/rss+xml" title="${M.nombre_largo}" href="/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-${fontsLink}
+${fontsAsync}
 <link rel="stylesheet" href="/assets/estilo.css?v=${VER}">`;
 }
 
@@ -134,6 +137,16 @@ function render(key, file) {
   if (nota) { const inl = d.createElement("script"); inl.textContent = "window.__NOTA=" + jsonSafe(nota) + ";"; ext.before(inl); }
   // move JSON-LD into head for crawlers (app updates it by id)
   const ld = d.getElementById("ld"); if (ld) d.head.appendChild(ld);
+  // la foto principal empieza a bajar junto con el estilo, sin esperar al resto
+  const hero = d.querySelector('img[fetchpriority="high"]');
+  if (hero) {
+    const pl = d.createElement("link");
+    pl.setAttribute("rel", "preload"); pl.setAttribute("as", "image"); pl.setAttribute("fetchpriority", "high");
+    pl.setAttribute("href", hero.getAttribute("src"));
+    if (hero.getAttribute("srcset")) { pl.setAttribute("imagesrcset", hero.getAttribute("srcset")); pl.setAttribute("imagesizes", hero.getAttribute("sizes") || "100vw"); }
+    const css = d.head.querySelector('link[href^="/assets/estilo.css"]');
+    d.head.insertBefore(pl, css || null);
+  }
   let out = "<!DOCTYPE html>\n" + d.documentElement.outerHTML;
   out = out.replace(/href="#([^"]+)"/g, (m, k) => ROUTE[k] ? `href="${ROUTE[k]}"` : m);
   const fp = path.join(OUT, file || (ROUTE[key] + "index.html"));
