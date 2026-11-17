@@ -22,6 +22,27 @@ Revista de música hecha en Nueva York. Escribe en español con un resumen en in
    - Nada sobre coctelería ni bares.
 6. **Sin repetir.** Antes de escribir, revisa los títulos de las 60 notas más recientes de `contenido/notas.json`. Si el tema ya está publicado, solo vale la pena si hay un hecho nuevo importante: entonces haz una nota nueva que lo diga en el titular.
 
+## Calidad: lo que Google premia y lo que castiga
+Google castiga a toda la web, no solo a una nota, cuando publica mucho contenido automático que solo repite lo que dijeron otros. Para que El Coro crezca y no lo penalicen:
+
+1. **Cada nota aporta algo propio.** No basta con contar la noticia con otras palabras. Suma al menos una de estas cosas:
+   - contexto: antecedentes, récords anteriores, cifras históricas;
+   - qué significa para el público latino o hispanohablante;
+   - una lista o tabla ordenada;
+   - una explicación clara de cómo funciona algo.
+
+   Va bajo un subtítulo `<h2>` como "Por qué importa", "Contexto" o "Qué sigue". El validador exige al menos un `<h2>`.
+2. **Síntesis de varias fuentes, nunca la reescritura de una sola.** Mínimo 2 fuentes, con la información cruzada y ordenada a tu manera.
+3. **Revisión final obligatoria.** Antes de publicar, relee cada nota contra las fuentes que abriste: nombres, cifras, fechas, cargos, títulos de canciones. Si un dato no está en una fuente, se quita. Si dudas, no se publica.
+4. **Calidad antes que volumen.** Mejor 2 notas muy buenas que 4 flojas. El validador:
+   - bloquea notas de menos de 200 palabras (350 las propias);
+   - bloquea notas casi iguales a una ya publicada;
+   - pone un tope de 20 notas por día (se puede subir cuando el medio gane confianza en Google); solo la noticia grande (`"peso": 3`) puede pasarlo.
+5. **Sin relleno para Google.** Nada de repetir palabras clave, ni párrafos vacíos, ni titulares que prometen lo que la nota no da. Se escribe para lectores.
+6. **Enlaces internos.** Cada nota enlaza 1 o 2 notas relacionadas de El Coro con `<a href="#id">`, cuando existan y vengan al caso.
+7. **Actualizar en vez de repetir.** Si el tema ya tiene una nota y hay un dato nuevo, se actualiza esa nota con `corregir_nota.py ... actualizacion`. Solo se escribe una nota nueva si el hecho nuevo es en sí una noticia, y el titular lo dice.
+8. **Temas sensibles** (muertes, salud, delitos, demandas): tono sobrio, solo hechos confirmados por 2 medios grandes, sin especular y sin titulares morbosos.
+
 ## Una parte de lo publicado: lo que la gente busca
 El trabajo normal de noticias sigue igual. Además, en cada vuelta que tenga material, **una de las notas** debe responder algo que la gente está buscando en Google sobre música, en español o en inglés, con fuentes. Como guía, una de cada tres notas. Si no hay un tema de búsqueda claro, no se fuerza.
 
@@ -71,7 +92,7 @@ El cambio queda visible como "Actualización".
 - `artistas`: **consejos prácticos para artistas independientes** (lanzar, pitch, derechos, regalías, distribución, prensa, redes, conciertos, sync, presupuestos, contratos). Son piezas propias (`"propia": true`) con pasos claros. Cuando hay datos oficiales, se citan (Spotify for Artists, YouTube, ASCAP, BMI, SAYCO, SACM, SGAE, Copyright Office).
 
 ## Cuánto publicar en cada vuelta
-- Publica de 0 a 4 notas, según lo que de verdad sea nuevo. Si no hay nada nuevo que valga la pena, no publiques noticias.
+- Publica de 0 a 4 notas, idealmente 2 o 3, según lo que de verdad sea nuevo y valga la pena. Si no hay nada nuevo, no publiques noticias.
 - **Piezas propias:** si en las últimas 6 horas no se publicó ninguna pieza propia (`"propia": true`), escribe una. Puede ser un consejo para artistas, una lista ("Las 10 canciones latinas de la semana"), una explicación ("Cómo se cuenta una semana en el Hot 100") o el contexto de un tema del momento.
 - Prioridad de las noticias: noticia grande del día > premios y listas > estrenos y giras > industria > piezas propias. Aparte, en cada vuelta con material, una nota orientada a lo que la gente busca (ver la sección de arriba). Las piezas propias también deben responder preguntas que la gente busca.
 

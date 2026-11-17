@@ -62,7 +62,15 @@ const app = shim + script;
 fs.mkdirSync(path.join(OUT, "assets/og"), { recursive: true });
 for (const id in OGMAP) fs.copyFileSync(path.join(OGDIR, id + ".jpg"), path.join(OUT, "assets/og", id + ".jpg"));
 fs.writeFileSync(path.join(OUT, "assets/estilo.css"), style.trim() + "\n");
-fs.writeFileSync(path.join(OUT, "assets/app.js"), app);
+// app.js lleva solo el índice liviano de las notas; el texto completo va en la página de cada nota (window.__NOTA)
+const LITE = ["id", "date", "hora", "sec", "tag", "min", "title", "titleEn", "dek", "peso", "minuto", "propia"];
+const jsonSafe = o => JSON.stringify(o).replace(/</g, "\\u003c");
+const ia = app.indexOf("/*@@A*/"), ja = app.indexOf("/*A@@*/");
+if (ia < 0 || ja < 0) throw new Error("faltan los marcadores de notas en la plantilla");
+const appLite = app.slice(0, ia) + jsonSafe(A.map(a => Object.fromEntries(LITE.filter(k => a[k] !== undefined).map(k => [k, a[k]])))) + app.slice(ja + 7);
+fs.writeFileSync(path.join(OUT, "assets/app.js"), appLite);
+const tagCount = {}; for (const a of A) tagCount[a.tag] = (tagCount[a.tag] || 0) + 1;
+const thinTag = key => { const tg = key.startsWith("t-") ? tags.find(x => "t-" + slug(x) === key) : null; return !!tg && tagCount[tg] < 3; };
 
 // ---- page meta ----
 const esc = s => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
@@ -78,7 +86,7 @@ function metaFor(key) {
     title = `${a.title} | ${M.nombre_largo}`; desc = a.dek; type = "article";
     extra = `<meta property="article:published_time" content="${a.date}T${a.hora || "09:00"}:00-05:00">\n<meta property="article:section" content="${esc(T.es.sections[a.sec])}">\n<meta property="article:tag" content="${esc(a.tag)}">`;
   } else if (pg) { title = `${pg.t.es} | ${M.nombre_largo}`; desc = strip(pg.body.es).slice(0, 155); }
-  else if (tg) { title = `Tema: ${tg} | ${M.nombre_largo}`; desc = `Todas las notas de ${M.nombre} sobre ${tg}.`; }
+  else if (tg) { title = `Tema: ${tg} | ${M.nombre_largo}`; desc = `Todas las notas de ${M.nombre} sobre ${tg}.`; if (thinTag(key)) robots = "noindex,follow"; }
   else if (sec && key !== "inicio") {
     title = `${sec} | ${M.nombre_largo}`; desc = `${sec}: lo último en ${M.nombre_largo}, la música del mundo en tiempo real.`;
     if (["envivo", "cultura"].includes(key)) robots = "noindex,follow";
@@ -121,6 +129,8 @@ function render(key, file) {
   // the app sets <title>; keep our SEO title instead
   d.title = d.head.querySelector("title").textContent;
   const s = d.getElementById("__app"); const ext = d.createElement("script"); ext.src = "/assets/app.js"; s.replaceWith(ext);
+  const nota = A.find(x => x.id === key);
+  if (nota) { const inl = d.createElement("script"); inl.textContent = "window.__NOTA=" + jsonSafe(nota) + ";"; ext.before(inl); }
   // move JSON-LD into head for crawlers (app updates it by id)
   const ld = d.getElementById("ld"); if (ld) d.head.appendChild(ld);
   let out = "<!DOCTYPE html>\n" + d.documentElement.outerHTML;
@@ -136,7 +146,7 @@ render("inicio", "404.html");
 
 // ---- sitemap, news sitemap, rss, robots, manifest ----
 const lastmod = A.reduce((m, a) => a.date > m ? a.date : m, "");
-const sitemapKeys = Object.keys(ROUTE).filter(k => !["envivo", "cultura"].includes(k));
+const sitemapKeys = Object.keys(ROUTE).filter(k => !["envivo", "cultura"].includes(k) && !thinTag(k));
 fs.writeFileSync(path.join(OUT, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
   sitemapKeys.map(k => { const a = A.find(x => x.id === k); return `  <url><loc>${SITE}${ROUTE[k]}</loc><lastmod>${a ? a.date : lastmod}</lastmod></url>`; }).join("\n") + `\n</urlset>\n`);

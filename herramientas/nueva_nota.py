@@ -3,7 +3,7 @@
 Uso: python3 herramientas/nueva_nota.py nota1.json [nota2.json ...]
 Cada archivo trae una nota (objeto) o una lista de notas. El formato está en REDACCION.md.
 """
-import json, os, re, sys
+import difflib, json, os, re, sys, unicodedata
 
 R = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 NOTAS = os.path.join(R, "contenido", "notas.json")
@@ -12,11 +12,21 @@ COLORES = {"#0a0a0a", "#0b0b0b", "#ffffff", "#fff", "#e3120b", "#ffd400", "#1d3e
            "#f3f3f3", "#2b2b2b", "#f2f2f2"}
 
 
+TOPE_DIARIO = 20          # máximo de notas por día (hora de Nueva York): calidad antes que volumen. Una nota con peso 3 (la noticia grande) puede pasarlo
+PARECIDO_MAX = 0.80       # títulos más parecidos que esto a una nota reciente se bloquean por repetidos
+
+
+def normal(t):
+    t = unicodedata.normalize("NFD", t.lower())
+    t = "".join(c for c in t if unicodedata.category(c) != "Mn")
+    return re.sub(r"[^a-z0-9 ]+", " ", t).strip()
+
+
 def error(n, msg):
     sys.exit(f"✗ {n.get('id', '?')}: {msg}")
 
 
-def validar(n, existentes):
+def validar(n, existentes, recientes):
     for k in ("id", "date", "hora", "sec", "tag", "min", "title", "titleEn", "dek", "brief", "en", "body", "src", "cov"):
         if k not in n or n[k] in ("", None):
             error(n, f"falta el campo '{k}'")
@@ -47,8 +57,15 @@ def validar(n, existentes):
     if "peso" in n and n["peso"] not in (1, 2, 3):
         error(n, "peso: 1, 2 o 3")
     palabras = len(re.sub(r"<[^>]+>", " ", n["body"]).split())
-    if palabras < 120:
-        error(n, f"body muy corto ({palabras} palabras)")
+    minimo = 350 if n.get("propia") else 200
+    if palabras < minimo:
+        error(n, f"body muy corto ({palabras} palabras; mínimo {minimo}). Agrega contexto propio, no relleno")
+    if "<h2" not in n["body"]:
+        error(n, "falta al menos un subtítulo <h2> de contexto (por ejemplo: Por qué importa, Contexto, Qué sigue)")
+    for rid, rt in recientes:
+        r = difflib.SequenceMatcher(None, normal(n["title"]), normal(rt)).ratio()
+        if r >= PARECIDO_MAX:
+            error(n, f"se parece demasiado a una nota ya publicada ({rid}: {rt}). Si hay un dato nuevo, actualiza esa nota con corregir_nota.py ... actualizacion")
     return palabras
 
 
@@ -57,11 +74,15 @@ def main():
         sys.exit(__doc__)
     N = json.load(open(NOTAS, encoding="utf-8"))
     existentes = {n["id"] for n in N}
+    recientes = [(x["id"], x["title"]) for x in N[:300]]
     nuevas = []
     for f in sys.argv[1:]:
         d = json.load(open(f, encoding="utf-8"))
         for n in (d if isinstance(d, list) else [d]):
-            p = validar(n, existentes | {x["id"] for x in nuevas})
+            p = validar(n, existentes | {x["id"] for x in nuevas}, recientes + [(x["id"], x["title"]) for x in nuevas])
+            del_dia = sum(1 for x in N + nuevas if x["date"] == n["date"])
+            if del_dia >= TOPE_DIARIO and n.get("peso") != 3:
+                error(n, f"tope diario alcanzado ({TOPE_DIARIO} notas el {n['date']}). Mejor pocas notas muy buenas: publica esta mañana o actualiza una existente")
             nuevas.append(n)
             print(f"✓ {n['id']} · {n['sec']} · {p} palabras · {len(n['src'])} fuentes")
     nuevas.sort(key=lambda n: n["date"] + n["hora"], reverse=True)

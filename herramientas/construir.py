@@ -38,7 +38,7 @@ def main():
     A = [{k: v for k, v in n.items() if k != "cov"} for n in N]
     COV = {n["id"]: n["cov"] for n in N if n.get("cov")}
     js = lambda o: json.dumps(o, ensure_ascii=False).replace("</", "<\\/")
-    completo = plantilla.replace("/*@@NOTAS@@*/[]", js(A)).replace("/*@@PORTADAS@@*/{}", js(COV))
+    completo = plantilla.replace("/*@@NOTAS@@*/[]", "/*@@A*/" + js(A) + "/*A@@*/").replace("/*@@PORTADAS@@*/{}", js(COV))
     open(P("web", "_completo.html"), "w", encoding="utf-8").write(completo)
 
     # 2. imágenes para compartir: solo las que faltan
