@@ -1,5 +1,49 @@
 [
  {
+  "id": "sam-fender-gira-2027",
+  "date": "2026-11-17",
+  "hora": "03:45",
+  "sec": "noticias",
+  "tag": "Agenda",
+  "min": 2,
+  "title": "Sam Fender anuncia 10 fechas en Norteamérica en 2027, con Radio City el 22 de abril",
+  "titleEn": "Sam Fender announces 10 North American dates for 2027, including Radio City on April 22",
+  "dek": "El británico, ganador del Mercury Prize con People Watching, hará sus conciertos más grandes en la región entre abril y mayo. La preventa abre hoy.",
+  "brief": [
+   "Sam Fender tocará 10 fechas en Norteamérica entre el 20 de abril y el 9 de mayo de 2027.",
+   "En Nueva York se presenta el 22 de abril en el Radio City Music Hall.",
+   "La preventa abre este martes 17 a las 10 de la mañana, hora local; la venta general, el jueves 19."
+  ],
+  "en": "Sam Fender will play 10 North American dates from April 20 (Boston) to May 9 (Vancouver), 2027, his biggest headline shows in the region so far. The New York date is April 22 at Radio City Music Hall. Presale opens Tuesday, Nov. 17, at 10 a.m. local time; general sale is Thursday, Nov. 19.",
+  "body": "<p>Sam Fender vuelve a Norteamérica en la primavera de 2027 con una gira de 10 fechas que empieza el 20 de abril en Boston y termina el 9 de mayo en Vancouver. En Nueva York toca el 22 de abril en el Radio City Music Hall. Según Complex y The Music Universe, son sus conciertos como cabeza de cartel más grandes en la región hasta ahora, e incluyen su primera vez encabezando en Red Rocks, Colorado.</p>\n<h2>Las fechas</h2>\n<ul class=\"list\"><li><span>Boston — MGM Music Hall at Fenway</span><span>20 de abril</span></li><li><span>Nueva York — Radio City Music Hall</span><span>22 de abril</span></li><li><span>Toronto — Scotiabank Arena</span><span>24 de abril</span></li><li><span>Milwaukee — The Rave / Eagles Ballroom</span><span>27 de abril</span></li><li><span>Morrison, Colorado — Red Rocks</span><span>29 de abril</span></li><li><span>Tempe, Arizona — Mullett Arena</span><span>1 de mayo</span></li><li><span>Los Ángeles — Greek Theatre</span><span>3 de mayo</span></li><li><span>Portland — sede por anunciar</span><span>5 de mayo</span></li><li><span>Seattle — WAMU Theater</span><span>7 de mayo</span></li><li><span>Vancouver — Rogers Arena</span><span>9 de mayo</span></li></ul>\n<h2>Boletas</h2>\n<p>La preventa para quienes se registraron en la lista de correo abre hoy, martes 17 de noviembre, a las 10 de la mañana, hora local, y la de su comunidad de Discord, al mediodía. La venta general empieza el jueves 19 de noviembre a las 10 de la mañana, hora local, en Ticketmaster. Portland tiene un calendario de venta aparte.</p>\n<blockquote>De Webster Hall a Radio City en dos años: así crece un artista que se hizo en vivo.</blockquote>\n<h2>El contexto</h2>\n<p>El cantante de North Shields presenta <em>People Watching</em>, su tercer disco, publicado en febrero de 2025 y ganador del Mercury Prize. En su gira norteamericana anterior, a comienzos de 2025, abrió en el Webster Hall de Nueva York, una sala mucho más pequeña. Para el verano de 2027 tiene además una gira de estadios en Reino Unido e Irlanda, y The Music Universe informa que planea publicar música nueva el año próximo.</p>\n<p class=\"mono g\">Fechas y sedes confirmadas en Complex, TicketNews y The Music Universe. Las preventas pueden variar según la ciudad.</p>",
+  "src": [
+   [
+    "Complex — Sam Fender announces 2027 North America tour",
+    "https://www.complex.com/music/a/will-lavin/sam-fender-north-america-tour-2027-dates-buy-tickets"
+   ],
+   [
+    "TicketNews — Sam Fender 2027 North American tour",
+    "https://www.ticketnews.com/2026/11/sam-fender-2027-north-american-tour/"
+   ],
+   [
+    "The Music Universe — Sam Fender plots 2027 North American tour",
+    "https://themusicuniverse.com/sam-fender-plots-2027-north-american-tour/"
+   ]
+  ],
+  "cov": {
+   "f": "10",
+   "bg": "#1d3ea0",
+   "fg": "#ffd400",
+   "c": "Fechas en Norteamérica",
+   "e": "Sam Fender"
+  },
+  "minuto": [
+   "Sam Fender anuncia 10 fechas norteamericanas en 2027; en Nueva York, Radio City el 22 de abril.",
+   "Sam Fender sets 10 North American dates for 2027, with Radio City on April 22."
+  ],
+  "propia": false
+ },
+ {
   "id": "housewife-global",
   "date": "2026-11-17",
   "hora": "02:50",
