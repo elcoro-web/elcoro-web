@@ -1,5 +1,83 @@
 [
  {
+  "id": "mma-2026-bts",
+  "date": "2026-11-17",
+  "hora": "08:50",
+  "sec": "premios",
+  "tag": "MMA 2026",
+  "min": 3,
+  "title": "BTS gana seis premios en los Melon Music Awards 2026, incluido Artista del Año, sin estar en Seúl",
+  "titleEn": "BTS wins six Melon Music Awards, including Artist of the Year, without attending",
+  "dek": "La gala surcoreana se hizo por primera vez en dos noches. BTS se llevó Artista y Álbum del Año con ARIRANG; IVE ganó Canción del Año con “BANG BANG” y aespa estrenó el premio Global-K.",
+  "brief": [
+   "BTS ganó seis premios en los MMA 2026, entre ellos Artista del Año y Álbum del Año por ARIRANG.",
+   "El grupo no fue a la gala porque está de gira; RM agradeció en video.",
+   "IVE se llevó Canción del Año con “BANG BANG”, CORTIS Grabación del Año con “REDRED” y aespa el nuevo premio Global-K."
+  ],
+  "en": "BTS won six awards at the 2026 Melon Music Awards in Seoul, including Artist of the Year and Album of the Year for ARIRANG, without attending because the group is on its world tour. IVE won Song of the Year for “BANG BANG,” CORTIS took Record of the Year for “REDRED,” and aespa won the new Global-K Artist of the Year prize. The show ran over two nights for the first time.",
+  "body": "<p class=\"lede\">BTS fue el gran ganador de los Melon Music Awards 2026 (MMA2026), uno de los premios más seguidos del K-pop: sumó seis trofeos, entre ellos los dos más importantes de la noche, Artista del Año y Álbum del Año por <em>ARIRANG</em>. Lo hizo sin pisar el escenario, porque el grupo está de gira mundial.</p><h2>Dos noches por primera vez</h2><p>La gala, que organiza la plataforma de streaming surcoreana Melon, se hizo el sábado 14 y el domingo 15 de noviembre en el Gocheok Sky Dome de Seúl. Fue la primera vez que el evento se extendió a dos noches. Según Herald Business, pasaron por el escenario 26 actos y unas 36.000 personas en total.</p><h2>Los cinco grandes premios</h2><p>Los MMA reparten cinco <em>daesang</em>, los premios mayores. Este año quedaron así:</p><ul class=\"list\"><li><span>Artista del Año</span><span>BTS</span></li><li><span>Álbum del Año</span><span>BTS · ARIRANG</span></li><li><span>Canción del Año</span><span>IVE · “BANG BANG”</span></li><li><span>Grabación del Año</span><span>CORTIS · “REDRED”</span></li><li><span>Artista del Año Global-K</span><span>aespa</span></li></ul><p>El de aespa es un premio nuevo. Se basa en el Global-K Chart, una medición que cruza datos de Corea, China y Japón. El grupo lo ganó con “LEMONADE”, que encabezó esa lista en sus versiones diaria, semanal y mensual.</p><h2>BTS, desde la gira</h2><p>Además de los dos premios mayores, BTS ganó Escenario del Año, Mejor Grupo Masculino y entró en las dos listas de diez artistas más destacados del año (Top 10 y Global Top 10). El Korea Times explicó que el grupo no asistió porque sigue de gira; RM agradeció en un mensaje en video.</p><p>IVE fue el otro nombre fuerte: cinco premios, entre ellos Mejor Grupo Femenino y Mejor Video por “BANG BANG”. ILLIT y NCT WISH sumaron cuatro cada uno.</p><h2>Otros ganadores</h2><ul class=\"list\"><li><span>Artista Nuevo (compartido)</span><span>ALPHA DRIVE ONE y LNGSHOT</span></li><li><span>Mejor Solista Masculino</span><span>Lim Young-woong</span></li><li><span>Mejor Solista Femenina</span><span>Choi Ye-na</span></li><li><span>Mejor Compositor</span><span>Lee Chan-hyuk (AKMU)</span></li><li><span>Mejor Artista Pop</span><span>Bruno Mars</span></li></ul><p>El productor del año fue Kim Hyun-jung, vicepresidente de BigHit Music, el sello de BTS. La temporada de premios del K-pop sigue en las próximas semanas con los MAMA Awards, que ya estaban en <a href=\"#esta-semana-17nov\" style=\"text-decoration:underline\">nuestra agenda de la semana</a>.</p><p class=\"mono g\">Fuentes: Korea Times, Soompi y Herald Business. Los nombres de algunas categorías varían según la traducción.</p>",
+  "src": [
+   [
+    "The Korea Times — BTS, aespa take grand prizes on MMA2026 opening night",
+    "https://www.koreatimes.co.kr/entertainment/k-pop/20261115/bts-aespa-take-grand-prizes-on-mma2026-opening-night"
+   ],
+   [
+    "Soompi — Winners Of Melon Music Awards 2026 – Day 2",
+    "https://www.soompi.com/article/1887152wpp/winners-of-melon-music-awards-2026-day-2"
+   ],
+   [
+    "Herald Business — Two-day ceremony held for first time in 18 years",
+    "https://biz.heraldcorp.com/article/10937870"
+   ]
+  ],
+  "cov": {
+   "f": "6",
+   "bg": "#0a0a0a",
+   "fg": "#ffd400",
+   "c": "Premios en los MMA 2026",
+   "e": "BTS"
+  },
+  "minuto": [
+   "BTS ganó seis premios en los Melon Music Awards, incluido Artista del Año, sin ir a la gala.",
+   "BTS won six Melon Music Awards, including Artist of the Year, while on tour."
+  ],
+  "peso": 2,
+  "propia": false
+ },
+ {
+  "id": "press-kit-epk",
+  "date": "2026-11-17",
+  "hora": "08:50",
+  "sec": "artistas",
+  "tag": "Para artistas",
+  "min": 4,
+  "title": "Cómo armar un press kit que un periodista sí use",
+  "titleEn": "How to build a press kit journalists will actually use",
+  "dek": "Una página, siete piezas y todo listo para copiar. Así se arma un kit de prensa (EPK) sin diseñador ni agencia.",
+  "brief": [
+   "El press kit es una sola página con enlace fijo, no un PDF pesado.",
+   "Lleva bio corta y larga, fotos en alta, música, créditos, datos reales y contacto.",
+   "Todo tiene que poder usarse sin pedirte permiso ni escribirte de nuevo."
+  ],
+  "en": "A practical guide for independent artists to build an electronic press kit: one web page with a fixed link, short and long bios, high-resolution photos with credits, private and public listening links, song credits, a few verified facts, and a direct contact. Everything should be ready to use without emailing the artist again.",
+  "body": "<p class=\"lede\">Cuando un periodista abre tu correo y le gusta lo que escucha, lo siguiente que hace es buscar una foto, una bio y un dato para escribir. Si tiene que pedírtelos, tu nota se queda para después, y después muchas veces no llega. El press kit (o EPK, por <em>electronic press kit</em>) existe para que eso no pase: es el lugar donde está todo lo que alguien necesita para publicar sobre ti.</p><h2>1. Una página, no un PDF</h2><p>Haz tu press kit como una página web con un enlace fijo y corto, en tu sitio o en una herramienta gratuita. Un PDF pesado se queda viejo en cuanto cambias algo y no deja copiar texto ni bajar fotos con facilidad. Una página la actualizas una vez y el mismo enlace sirve en cada correo, en tu bio de redes y en tu firma.</p><h2>2. Las siete piezas</h2><ul class=\"list\"><li><span>Bio corta</span><span>Dos o tres frases, lista para copiar</span></li><li><span>Bio larga</span><span>Tres o cuatro párrafos, en tercera persona</span></li><li><span>Fotos</span><span>Tres o cuatro, en alta, horizontal y vertical, con crédito</span></li><li><span>Música</span><span>El lanzamiento nuevo y tus canciones clave</span></li><li><span>Créditos</span><span>Quién compuso, produjo, mezcló y masterizó</span></li><li><span>Datos</span><span>Cifras, fechas, conciertos y prensa que se puedan comprobar</span></li><li><span>Contacto</span><span>Un correo que alguien responde</span></li></ul><h2>3. La bio se escribe para que la copien</h2><p>Escríbela en tercera persona, como si ya fuera parte de una nota: de dónde eres, qué haces, qué lanzas y una o dos cosas que te distingan. Evita adjetivos que nadie puede comprobar (“único”, “revolucionario”) y pon hechos: una colaboración, un festival, una cifra real. Si tu público lee en dos idiomas, ten la bio en español y en inglés.</p><blockquote>Si un periodista tiene que escribirte para pedir una foto, tu press kit todavía no está terminado.</blockquote><h2>4. Fotos que se puedan publicar</h2><p>Sube fotos en alta resolución que se descarguen con un clic, con el nombre del fotógrafo en el nombre del archivo o junto a la imagen. Incluye al menos una horizontal y una vertical, porque una web y una historia de Instagram piden formatos distintos. Asegúrate de que tienes permiso del fotógrafo para que la prensa las use.</p><h2>5. La música, fácil de oír</h2><p>Pon tus canciones publicadas con enlaces a las plataformas. Si el lanzamiento todavía no sale, no lo dejes público en el kit: compártelo aparte con un enlace privado, como explicamos en <a href=\"#pitch-a-medios\" style=\"text-decoration:underline\">cómo escribirle a un medio</a>. Agrega los créditos de cada canción; a muchos medios les sirven para la nota y a ti te ayudan a que el trabajo de tu equipo quede registrado.</p><h2>6. Mantenlo vivo</h2><p>Revisa el kit antes de cada lanzamiento: cambia la bio corta, agrega la canción nueva, quita fechas pasadas y prueba que todos los enlaces funcionen en una ventana privada. Un press kit con una gira del año pasado dice que nadie lo está cuidando.</p><h2>Lista rápida antes de mandarlo</h2><ul class=\"list\"><li><span>¿El enlace abre sin registrarse?</span><span>Sí / No</span></li><li><span>¿Las fotos bajan en alta?</span><span>Sí / No</span></li><li><span>¿La bio corta cabe en un párrafo?</span><span>Sí / No</span></li><li><span>¿Hay un correo de contacto?</span><span>Sí / No</span></li></ul><p class=\"mono g\">Pieza propia de El Coro para artistas independientes. Complementa nuestra guía para escribirle a un medio.</p>",
+  "src": [
+   [
+    "El Coro — Cómo escribirle a un medio para que reseñe tu música",
+    "https://elcoromagazine.com/artistas/como-escribirle-a-un-medio-para-que-resene-tu-musica/"
+   ]
+  ],
+  "cov": {
+   "f": "<i>EPK</i>",
+   "bg": "#1d3ea0",
+   "fg": "#ffffff",
+   "c": "Para artistas",
+   "e": "Guía",
+   "fs": "min(30cqw,300px)"
+  },
+  "propia": true
+ },
+ {
   "id": "cma-2026-previa",
   "date": "2026-11-17",
   "hora": "07:40",
