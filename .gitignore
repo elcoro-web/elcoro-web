@@ -1,0 +1,8 @@
+node_modules/
+web/node_modules/
+web/_completo.html
+web/_og.json
+_public_tmp/
+web/_fuente_original.html
+__pycache__/
+*.pyc

@@ -1,0 +1,617 @@
+<title>{{NOMBRE_LARGO}}</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="{{NOMBRE_LARGO}}: noticias de música del mundo en tiempo real, en español e inglés. Grammy 2027, Latin Grammy 2026, lanzamientos, listas, crítica e industria.">
+<meta property="og:title" content="{{NOMBRE_LARGO}} — La música del mundo, en tiempo real">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,900;1,6..96,900&family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap">
+<style>
+/* Diseño 2.0 (17 nov 2026). Titulares en serif, portada por bloques (principal, lo esencial, un minuto, la lista, lo último), boletín y nota con compartir. */
+:root{
+  --paper:#ffffff; --ink:#0b0b0b; --grey:#545454; --mute:#8a8a8a; --rule:#e5e5e5; --line:#0b0b0b; --soft:#f5f4f0; --red:#e3120b; --onred:#ffffff;
+  --f-head:"Newsreader",Georgia,"Times New Roman",serif;
+  --f-disp:"Big Shoulders Display","Arial Narrow","Helvetica Neue Condensed",Impact,sans-serif;
+  --f-mast:"Bodoni Moda",Didot,Georgia,serif;
+  --f-ui:"Inter","Helvetica Neue",Arial,sans-serif;
+  --maxw:1280px;
+}
+:root[data-theme="dark"]{--paper:#0c0c0c;--ink:#f2f2f2;--grey:#b5b5b5;--mute:#8e8e8e;--rule:#272727;--line:#f2f2f2;--soft:#161616;--red:#ff4136;color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+html,body{overflow-x:hidden}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 var(--f-ui);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.w{max-width:var(--maxw);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+
+/* tipografía */
+.k{font:700 11.5px/1.25 var(--f-ui);letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.kt{font:600 11.5px/1.25 var(--f-ui);letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+a.k:hover,a.kt:hover{text-decoration:underline;text-underline-offset:3px}
+.kline{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.kline .dot{color:var(--mute);font-size:12px}
+.lbl{font:800 12.5px/1 var(--f-ui);letter-spacing:.16em;text-transform:uppercase;margin:0;display:flex;align-items:center;gap:10px}
+.lbl::before{content:"";width:9px;height:9px;background:var(--red);flex:none}
+.h{font-family:var(--f-head);font-weight:500;letter-spacing:-.018em;line-height:1.07;text-wrap:balance;margin:0;overflow-wrap:break-word}
+a:hover .h,a.h:hover{color:var(--red)}
+.h-xl{font-size:clamp(36px,4.9vw,72px);line-height:1.02;letter-spacing:-.026em}
+.h-l{font-size:clamp(28px,2.9vw,42px);line-height:1.05;letter-spacing:-.022em}
+.h-m{font-size:clamp(20px,1.65vw,24px);line-height:1.13}
+.h-s{font-size:18px;line-height:1.2;letter-spacing:-.01em}
+.dek{font:400 clamp(16px,1.35vw,19px)/1.5 var(--f-ui);color:var(--grey);margin:0;max-width:62ch}
+.by{font:500 13px/1.45 var(--f-ui);color:var(--mute)}
+.by b{color:var(--ink);font-weight:700}
+.disp{font:900 clamp(56px,10vw,150px)/.84 var(--f-disp);text-transform:uppercase;letter-spacing:-.01em;margin:0;overflow-wrap:break-word}
+
+/* cabecera */
+header.top{background:var(--paper);z-index:40;padding-top:env(safe-area-inset-top,0px)}
+.util{border-bottom:1px solid var(--rule);font:500 12.5px/1 var(--f-ui);color:var(--grey)}
+.util .w{display:flex;justify-content:space-between;align-items:center;min-height:40px;gap:16px}
+.util nav{display:flex;align-items:center;gap:6px}
+.util .lg{background:none;border:0;padding:6px 8px;cursor:pointer;font-weight:700;color:var(--mute);letter-spacing:.06em}
+.util .lg[aria-pressed="true"]{color:var(--ink)}
+.util .sep{width:1px;height:16px;background:var(--rule);margin:0 8px}
+.util a:hover{color:var(--ink)}
+.util .subb{background:var(--ink);color:var(--paper);border:0;padding:8px 14px;font-weight:700;cursor:pointer;margin-left:8px}
+.util .subb:hover{background:var(--red);color:#fff}
+.mast{display:grid;grid-template-columns:48px 1fr 48px;align-items:center;padding-block:22px 18px}
+.icon{width:44px;height:44px;display:grid;place-items:center;background:none;border:0;cursor:pointer;padding:0;color:var(--ink)}
+.icon svg{width:24px;height:24px;stroke:currentColor;stroke-width:1.8;fill:none}
+.brand{justify-self:center;text-align:center;display:grid;justify-items:center}
+.logo{font:900 clamp(44px,6.6vw,88px)/.9 var(--f-mast);letter-spacing:-.05em}
+.tagline{font:600 11.5px/1 var(--f-ui);letter-spacing:.26em;text-transform:uppercase;color:var(--grey);margin-top:12px}
+nav.secs{position:sticky;top:env(safe-area-inset-top,0px);z-index:39;background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.secs-in{display:grid;grid-template-columns:140px minmax(0,1fr) 140px;align-items:center;min-height:52px}
+.mlogo{font:900 25px/1 var(--f-mast);letter-spacing:-.05em;opacity:0;transition:opacity .2s;pointer-events:none;justify-self:start}
+body.sc .mlogo{opacity:1;pointer-events:auto}
+.secl{display:flex;justify-content:center;gap:30px;white-space:nowrap;overflow-x:auto;scrollbar-width:none}
+.secl::-webkit-scrollbar{display:none}
+.secl a{font:700 13.5px/1 var(--f-ui);letter-spacing:.06em;text-transform:uppercase;padding-block:18px 15px;border-bottom:3px solid transparent}
+.secl a:hover{color:var(--red)}
+.secl a[aria-current="page"]{border-bottom-color:var(--red)}
+.secs .icon{justify-self:end;width:40px;height:40px}
+.trend{display:flex;align-items:center;gap:24px;padding-block:13px;border-bottom:1px solid var(--rule);overflow-x:auto;scrollbar-width:none;white-space:nowrap}
+.trend::-webkit-scrollbar{display:none}
+.trend b{font:800 11.5px/1 var(--f-ui);letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+.trend a{font:600 13.5px/1 var(--f-ui);color:var(--grey)}
+.trend a:hover{color:var(--ink)}
+#rp{position:fixed;top:env(safe-area-inset-top,0px);left:0;height:3px;background:var(--red);z-index:45;width:0}
+@media (max-width:900px){
+  .util,.tagline,.mlogo,.secs .icon{display:none}
+  header.top{position:sticky;top:0;border-bottom:1px solid var(--line)}
+  .mast{padding-block:6px}
+  .logo{font-size:34px}
+  nav.secs{position:static;border-top:0}
+  .secs-in{display:block;min-height:0}
+  .secl{justify-content:flex-start;gap:22px}
+  .secl a{padding-block:15px 12px;font-size:12.5px}
+  .trend{gap:18px}
+}
+
+/* menú y búsqueda */
+.ov{position:fixed;inset:0;z-index:50;background:var(--paper);overflow:auto;padding-top:env(safe-area-inset-top,0px)}
+.ov .bar{display:grid;grid-template-columns:48px 1fr 48px;align-items:center;min-height:64px;border-bottom:1px solid var(--line)}
+.ov .bar .logo{justify-self:center;font-size:32px}
+.ov .btns{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding-block:22px}
+.ov .btns button,.ov .btns a{background:var(--soft);border:0;text-align:center;font:700 14px/1 var(--f-ui);letter-spacing:.06em;text-transform:uppercase;padding:16px;cursor:pointer}
+.ov .btns button:hover,.ov .btns a:hover{background:var(--ink);color:var(--paper)}
+.acc{border-top:1px solid var(--rule)}
+.acc>button{width:100%;display:flex;justify-content:space-between;align-items:center;background:none;border:0;padding:20px max(20px,env(safe-area-inset-right,0px)) 20px max(20px,env(safe-area-inset-left,0px));font:500 28px/1 var(--f-head);letter-spacing:-.015em;cursor:pointer;text-align:left}
+.acc>button i{font:300 30px/1 var(--f-ui);font-style:normal;color:var(--red)}
+.acc .sub{background:var(--soft);padding-block:6px}
+.acc .sub a{display:block;padding:13px max(20px,env(safe-area-inset-left,0px));font:500 16px/1.35 var(--f-ui);color:var(--grey)}
+.acc .sub a:hover{color:var(--ink)}
+.search{padding-block:30px}
+.search input{width:100%;font:500 clamp(30px,4.6vw,52px)/1.1 var(--f-head);letter-spacing:-.02em;border:0;border-bottom:2px solid var(--ink);background:none;padding:10px 0;color:var(--ink);outline:none}
+.search ol{list-style:none;padding:0;margin:20px 0 0}
+.search li a{display:grid;gap:6px;padding:16px 0;border-bottom:1px solid var(--rule)}
+.search li b{font:500 22px/1.15 var(--f-head);letter-spacing:-.01em}
+.search li a:hover b{color:var(--red)}
+.search .none{color:var(--grey);font:500 15px var(--f-ui);margin-top:18px}
+
+/* portadas tipográficas */
+.cv{position:relative;overflow:hidden;container-type:inline-size;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(12px,3.6cqw,26px);aspect-ratio:4/3;max-width:100%;isolation:isolate}
+.cv::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.22;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.cv .f{font:900 var(--fs,min(52cqw,420px))/.8 var(--f-disp);letter-spacing:-.02em;text-transform:uppercase;align-self:var(--al,flex-start);transition:transform .7s cubic-bezier(.2,.7,.2,1);transform-origin:left bottom}
+.cv .f i{font:italic 900 1em/.8 var(--f-mast);text-transform:none;letter-spacing:-.04em}
+.cv .c{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;font:600 10.5px/1.3 var(--f-ui);letter-spacing:.16em;text-transform:uppercase}
+.cv .c b{font:900 clamp(13px,5cqw,28px)/1 var(--f-mast);letter-spacing:-.04em;text-transform:none}
+a:hover .cv .f{transform:scale(1.035)}
+@container (max-width:220px){.cv .c{display:none}.cv .f{margin-top:auto}}
+.sq{aspect-ratio:1/1}.wide{aspect-ratio:16/9}.cine{aspect-ratio:21/9}
+@media (max-width:700px){.cine{aspect-ratio:4/3}}
+@media (prefers-reduced-motion:reduce){.cv .f{transition:none}}
+
+/* portada: bloque principal */
+.topg{display:grid;grid-template-columns:minmax(0,2.15fr) minmax(0,1fr);gap:44px;padding-block:34px 0}
+.lead-t{display:grid;gap:14px;padding-top:22px}
+.ess{border-left:1px solid var(--rule);padding-left:32px;display:flex;flex-direction:column}
+.ess .lbl{margin-bottom:4px}
+.mini-row{display:grid;grid-template-columns:minmax(0,1fr) 92px;gap:16px;padding-block:18px;border-bottom:1px solid var(--rule);align-items:start}
+.mini-row:last-child{border-bottom:0}
+.mini-row .h{margin-top:7px}
+@media (max-width:1000px){.topg{grid-template-columns:1fr;gap:28px}.ess{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:18px}}
+.row4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;padding-block:30px 44px;margin-top:30px;border-top:1px solid var(--rule)}
+.card{display:flex;flex-direction:column;gap:14px;min-width:0}
+.card-t{display:grid;gap:8px}
+.card .dek{font-size:15px}
+@media (max-width:1100px){.row4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){
+  .row4{grid-template-columns:1fr;gap:0;padding-block:6px 30px}
+  .row4 .card{display:grid;grid-template-columns:minmax(0,1fr) 104px;gap:16px;padding-block:16px;border-bottom:1px solid var(--rule)}
+  .row4 .card .cv{grid-column:2;grid-row:1;aspect-ratio:1/1}
+  .row4 .card .card-t{grid-column:1;grid-row:1}
+  .row4 .card .h{font-size:19px}
+}
+
+/* un minuto */
+.minute{background:var(--soft)}
+.minute .w{padding-block:30px 34px}
+.minute-h{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+.minute-h .h{font-size:clamp(26px,2.3vw,32px)}
+.minute ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:28px;counter-reset:m}
+.minute li a{display:grid;gap:10px;font:500 15px/1.45 var(--f-ui)}
+.minute li a::before{counter-increment:m;content:counter(m,decimal-leading-zero);font:900 32px/1 var(--f-disp);color:var(--red)}
+.minute li a:hover span{text-decoration:underline;text-underline-offset:3px}
+@media (max-width:1000px){.minute ol{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.minute ol{grid-template-columns:1fr;gap:16px}.minute li a{grid-template-columns:42px minmax(0,1fr);align-items:baseline}}
+
+/* banda negra: la lista */
+.band{background:#0b0b0b;color:#f2f2f2}
+.band .w{padding-block:54px 58px}
+.band-h{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;border-bottom:1px solid #3a3a3a;padding-bottom:18px;margin-bottom:8px}
+.band-s{display:flex;gap:18px;align-items:baseline;font:600 12.5px/1.3 var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:#bdbdbd}
+.band-s a{color:#fff;border-bottom:1px solid #fff;padding-bottom:2px}
+.chart{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 48px}
+.chart li{display:grid;grid-template-columns:58px minmax(0,1fr) 50px;gap:16px;align-items:center;padding-block:15px;border-bottom:1px solid #262626}
+.chart .n{font:900 44px/1 var(--f-disp);color:#fff}
+.chart li:first-child .n{color:var(--red)}
+.chart .a{font:500 22px/1.1 var(--f-head);letter-spacing:-.01em}
+.chart .bar2{height:3px;background:#2a2a2a;margin-top:10px}.chart .bar2 i{display:block;height:100%;background:#f2f2f2}
+.chart li:first-child .bar2 i{background:var(--red)}
+.chart .v{font:900 34px/1 var(--f-disp);text-align:right;font-variant-numeric:tabular-nums}
+@media (max-width:860px){.chart{grid-template-columns:1fr}}
+
+/* bloques, río y columna */
+.blk{padding-block:48px 8px}
+.blkh{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-bottom:14px;margin-bottom:6px;border-bottom:1px solid var(--line)}
+.blkh a{font:600 13px var(--f-ui);color:var(--grey)}
+.blkh a:hover{color:var(--red)}
+.river{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:60px}
+@media (max-width:1000px){.river{grid-template-columns:minmax(0,1fr)}}
+.day{font:700 11.5px/1 var(--f-ui);letter-spacing:.16em;text-transform:uppercase;color:var(--mute);padding:28px 0 4px}
+.item{display:grid;grid-template-columns:minmax(0,1fr) 210px;gap:30px;padding-block:22px;border-bottom:1px solid var(--rule);align-items:start}
+.item>div{display:grid;gap:10px}
+.item .h{font-size:clamp(22px,2vw,28px)}
+.item .dek{font-size:15.5px}
+@media (max-width:600px){.item{grid-template-columns:minmax(0,1fr) 100px;gap:16px}.item .dek{display:none}.item .h{font-size:20px}}
+.more{display:block;width:100%;margin-top:28px;background:none;color:var(--ink);border:1px solid var(--ink);font:700 13px/1 var(--f-ui);letter-spacing:.12em;text-transform:uppercase;padding:18px;cursor:pointer}
+.more:hover{background:var(--ink);color:var(--paper)}
+.more[disabled]{opacity:.35;cursor:default;background:none;color:var(--ink)}
+.count{font:500 12.5px var(--f-ui);color:var(--mute);margin-top:12px}
+.side{display:flex;flex-direction:column;gap:36px;padding-top:22px}
+.side .box{display:grid;gap:12px}
+.num{list-style:none;margin:0;padding:0;counter-reset:n}
+.num li{border-bottom:1px solid var(--rule)}
+.num li a{display:grid;grid-template-columns:34px minmax(0,1fr);gap:8px;padding:13px 0;font:500 17px/1.3 var(--f-head);letter-spacing:-.005em}
+.num li a::before{counter-increment:n;content:counter(n);font:900 26px/1 var(--f-disp);color:var(--red)}
+.num li a:hover{color:var(--red)}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags a{font:600 12.5px var(--f-ui);border:1px solid var(--rule);border-radius:999px;padding:7px 12px}
+.tags a:hover{border-color:var(--ink)}
+.promo{background:var(--ink);color:var(--paper);padding:24px;display:grid;gap:10px}
+.promo .k{color:#ff6a60}
+.promo p{margin:0;font:400 14.5px/1.5 var(--f-ui);opacity:.85}
+.promo .h{font-size:24px;opacity:1}
+.btn{justify-self:start;font:700 12.5px/1 var(--f-ui);letter-spacing:.1em;text-transform:uppercase;border-bottom:2px solid currentColor;padding-bottom:4px;margin-top:4px}
+.duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px;padding-top:24px}
+.duo .cv{aspect-ratio:16/10}
+.duo .h{font-size:clamp(24px,2.3vw,32px)}
+@media (max-width:760px){.duo{grid-template-columns:1fr}}
+.mani ul{list-style:none;margin:0;padding:24px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 36px}
+.mani li{display:grid;gap:6px;min-width:0}
+.mani .n{font:900 28px/1 var(--f-disp);color:var(--red)}
+.mani b{font:500 21px/1.15 var(--f-head);letter-spacing:-.01em}
+.mani li>span:last-child{font:400 14.5px/1.5 var(--f-ui);color:var(--grey)}
+@media (max-width:860px){.mani ul{grid-template-columns:1fr}}
+
+/* páginas de sección y tema */
+.sech{padding-block:44px 26px;border-bottom:1px solid var(--line);display:grid;gap:16px}
+.secd{font:400 clamp(17px,1.5vw,20px)/1.45 var(--f-ui);color:var(--grey);max-width:60ch;margin:0}
+.feat-top{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:40px;padding-block:34px;border-bottom:1px solid var(--rule);align-items:center}
+.feat-top .ft-t{display:grid;gap:14px}
+@media (max-width:860px){.feat-top{grid-template-columns:1fr;gap:20px}}
+
+/* nota */
+.art-h{max-width:1000px;padding-block:40px 30px}
+.h-art{font-size:clamp(34px,5vw,70px);line-height:1.03;letter-spacing:-.026em;margin:16px 0 18px}
+.dek-art{font-size:clamp(18px,1.6vw,22px);max-width:56ch}
+.byrow{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:26px;padding-top:18px;border-top:1px solid var(--rule)}
+.share{display:flex;gap:8px;flex-wrap:wrap}
+.share a,.share button{display:inline-flex;align-items:center;height:36px;padding:0 14px;border:1px solid var(--rule);border-radius:999px;background:none;font:600 12.5px var(--f-ui);cursor:pointer}
+.share a:hover,.share button:hover{border-color:var(--ink)}
+.share #enBtn{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.art-cv{margin:0 auto}
+figcaption{font:500 12.5px/1.5 var(--f-ui);color:var(--mute);padding-top:10px}
+.body{display:grid;grid-template-columns:minmax(0,680px) 300px;justify-content:center;gap:72px;padding-block:44px 30px}
+.body aside{min-width:0}
+.brief{border-top:3px solid var(--red);background:var(--soft);padding:20px 22px;position:sticky;top:76px;display:grid;gap:10px}
+.brief ul{margin:0;padding-left:18px;font:400 15.5px/1.5 var(--f-ui)}
+.brief li{margin:6px 0}
+.pnav ul{list-style:none;padding:0}
+.pnav a[aria-current="page"]{color:var(--red);font-weight:700}
+@media (max-width:1000px){.body{grid-template-columns:minmax(0,1fr);gap:28px;padding-top:28px}.body aside{order:-1}.brief{position:static}}
+.prose{min-width:0;font:400 20px/1.7 var(--f-head)}
+.prose p{margin:0 0 1.15em}
+.prose>p:first-child:not(.lede)::first-letter{float:left;font:600 4.3em/.8 var(--f-head);margin:.07em .1em 0 0;color:var(--red)}
+.prose .lede{font:500 clamp(21px,1.9vw,24px)/1.45 var(--f-head);letter-spacing:-.01em}
+.prose h2{font:500 clamp(25px,2.2vw,31px)/1.14 var(--f-head);letter-spacing:-.02em;margin:1.8em 0 .55em}
+.prose blockquote{margin:1.6em 0;padding:2px 0 2px 24px;border-left:4px solid var(--red);font:italic 500 clamp(25px,2.5vw,33px)/1.2 var(--f-head);letter-spacing:-.016em;text-wrap:balance}
+.prose a{color:var(--red);text-decoration:underline;text-underline-offset:3px}
+.prose .mono{font:500 13px/1.55 var(--f-ui);color:var(--mute)}
+.prose ul.list{list-style:none;padding:0;margin:0 0 1.4em;border-top:1px solid var(--line)}
+.prose ul.list li{display:flex;justify-content:space-between;gap:18px;border-bottom:1px solid var(--rule);padding:12px 0;font:500 15.5px/1.4 var(--f-ui)}
+.prose ul.list li span:first-child{font-weight:600}
+.prose ul.list li span:last-child{color:var(--grey);text-align:right}
+.page ul.list li span:first-child{font-weight:500}
+.bars{display:grid;gap:11px;margin:.4em 0 1.6em}
+.bars div{display:grid;grid-template-columns:170px minmax(0,1fr) 34px;gap:14px;align-items:center;font:600 14px/1.3 var(--f-ui)}
+.bars i{display:block;height:10px;background:var(--ink)}
+.bars div:first-child i{background:var(--red)}
+.bars span:last-child{text-align:right;font:900 22px/1 var(--f-disp)}
+@media (max-width:520px){.bars div{grid-template-columns:112px minmax(0,1fr) 26px}}
+.g{color:var(--grey)}
+.en{margin-top:2.2em;background:var(--soft);padding:20px 22px;display:grid;gap:8px}
+.en p{margin:0;font:400 15.5px/1.55 var(--f-ui)}
+.src{margin-top:2em;border-top:1px solid var(--line);padding-top:14px}
+.src summary{display:flex;align-items:center;gap:12px;cursor:pointer;list-style:none;font:800 12.5px/1 var(--f-ui);letter-spacing:.16em;text-transform:uppercase;padding:6px 0}
+.src summary::-webkit-details-marker{display:none}
+.src summary::after{content:"+";margin-left:auto;font:300 26px/1 var(--f-ui);color:var(--red)}
+.src[open] summary::after{content:"−"}
+.src .n{background:var(--soft);padding:4px 8px;font-size:11.5px;letter-spacing:.06em}
+.src ol{padding-left:20px;font:400 14.5px/1.55 var(--f-ui);color:var(--grey)}
+.src ol a{color:var(--grey);text-decoration:underline;text-underline-offset:3px}
+.src li{margin:6px 0}
+
+/* boletín */
+.nl{background:var(--red);color:#fff;margin-top:56px}
+.nl-in{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;align-items:center;padding-block:48px}
+.nl .k{color:#fff;opacity:.85}
+.nl h2{font-size:clamp(28px,3vw,44px);margin:10px 0 10px;color:#fff}
+.nl p{margin:0;font:400 16px/1.5 var(--f-ui);opacity:.92}
+.nl-row{display:flex;gap:0}
+.nl input[type=email]{flex:1;min-width:0;height:54px;border:0;padding:0 18px;background:#fff;color:#0b0b0b;font:500 16px var(--f-ui);border-radius:0}
+.nl button{height:54px;border:0;background:#0b0b0b;color:#fff;padding:0 22px;font:700 13px/1 var(--f-ui);letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+.nl button:hover{background:#2a2a2a}
+.nl small{display:block;margin-top:12px;font:500 12.5px/1.4 var(--f-ui);opacity:.9}
+@media (max-width:820px){.nl-in{grid-template-columns:minmax(0,1fr);gap:20px;padding-block:38px}}
+.nl-row input[type=email]{width:100%}
+
+/* pie */
+footer{background:#0b0b0b;color:#f2f2f2}
+footer .w{padding-block:48px 64px;display:grid;gap:28px}
+footer .logo{justify-self:start;font-size:clamp(64px,9vw,120px)}
+.fslog{font:500 italic clamp(20px,2vw,26px)/1.3 var(--f-head);color:#cfcfcf;margin:-10px 0 0}
+.fcols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px;border-top:1px solid #333;padding-top:28px}
+@media (max-width:760px){.fcols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+footer h5{font:700 11.5px var(--f-ui);letter-spacing:.16em;text-transform:uppercase;color:#9b9b9b;margin:0 0 14px}
+.fmail{font:500 14.5px var(--f-ui);margin:14px 0 0;color:#ddd}
+footer nav{display:flex;flex-direction:column;gap:10px}
+footer nav a{font:500 15px var(--f-ui);color:#e8e8e8}
+footer nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:3px}
+footer small{font:500 12.5px var(--f-ui);color:#9b9b9b}
+</style>
+
+<header class="top" id="hdr">
+  <div class="util"><div class="w"><span id="today"></span><nav aria-label="Idioma"><button class="lg" id="lgEs" type="button" aria-pressed="true">ES</button><button class="lg" id="lgEn" type="button" aria-pressed="false">EN</button><span class="sep" aria-hidden="true"></span><a href="https://www.instagram.com/{{IG}}" target="_blank" rel="noopener">Instagram</a><button class="subb" id="subBtn" type="button">Suscríbete</button></nav></div></div>
+  <div class="w mast">
+    <button class="icon" id="menuBtn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="ov"><svg viewBox="0 0 24 24"><path d="M3 6.5h18M3 12h18M3 17.5h18"/></svg></button>
+    <a class="brand" href="#inicio" aria-label="{{NOMBRE}}, portada"><span class="logo">{{LOGO}}</span><span class="tagline" id="tagline">La música del mundo, en tiempo real</span></a>
+    <button class="icon" id="searchBtn" type="button" aria-label="Buscar"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg></button>
+  </div>
+</header>
+<nav class="secs" id="secs" aria-label="Secciones"><div class="w secs-in"><a class="mlogo" href="#inicio" aria-label="{{NOMBRE}}, portada">{{LOGO}}</a><div class="secl" id="secnav"></div><button class="icon" id="searchBtn3" type="button" aria-label="Buscar"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg></button></div></nav>
+<div class="w trend" id="trend"></div>
+<div id="rp" aria-hidden="true"></div>
+
+<div class="ov" id="ov" hidden role="dialog" aria-modal="true" aria-label="Menú">
+  <div class="bar w"><button class="icon" id="closeBtn" type="button" aria-label="Cerrar menú"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></svg></button><a class="logo" href="#inicio">{{LOGO}}</a><button class="icon" id="searchBtn2" type="button" aria-label="Buscar"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg></button></div>
+  <div class="w btns"><a href="#quienes-somos" id="mBtn">Quiénes somos</a><button id="langBtn" type="button">English</button></div>
+  <div id="acc"></div>
+  <div class="w btns"><button id="themeBtn" type="button">Modo claro / oscuro</button><a href="#inicio" id="homeBtn">Portada</a></div>
+</div>
+
+<div class="ov" id="sv" hidden role="dialog" aria-modal="true" aria-label="Buscar">
+  <div class="bar w"><button class="icon" id="closeS" type="button" aria-label="Cerrar búsqueda"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></svg></button><a class="logo" href="#inicio">{{LOGO}}</a><span></span></div>
+  <div class="w search"><label for="q" class="k" id="qLbl">Buscar en {{NOMBRE}}</label><input id="q" type="search" autocomplete="off" placeholder="Rosalía, Grammy, Feid…"><ol id="res"></ol></div>
+</div>
+
+<main id="app"></main>
+
+<section class="nl" id="nl" aria-labelledby="nlH"><div class="w nl-in">
+  <div><span class="k" id="nlK">Boletín</span><h2 class="h" id="nlH">La música del mundo, cada semana en tu correo.</h2><p id="nlP">Lo esencial en cinco minutos, en español y con resumen en inglés. Gratis.</p></div>
+  <form name="boletin" method="POST" action="/suscribir.php" id="nlForm">
+    <p hidden><label>No llenar <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+    <label for="nlMail" class="sr" id="nlL">Tu correo</label>
+    <div class="nl-row"><input id="nlMail" name="email" type="email" required autocomplete="email" placeholder="tu@correo.com"><button type="submit" id="nlB">Suscribirme</button></div>
+    <small id="nlS" aria-live="polite">Sin spam. Puedes darte de baja cuando quieras.</small>
+  </form>
+</div></section>
+
+<footer><div class="w"><span class="logo">{{LOGO}}</span><p class="fslog" id="fslog">La música del mundo, en tiempo real.</p><div class="fcols"><div><h5 id="fh1">Secciones</h5><nav id="fnav"></nav></div><div><h5>{{NOMBRE}}</h5><nav id="fabout"></nav></div><div><h5>Legal</h5><nav id="flegal"></nav></div><div><h5 id="fh4">Síguenos</h5><nav><a href="https://www.instagram.com/{{IG}}" target="_blank" rel="noopener">Instagram</a><a href="/feed.xml">RSS</a></nav><p class="fmail">{{EMAIL}}</p></div></div><small id="foot">© 2026 {{NOMBRE_LARGO}} · Nueva York</small></div></footer>
+
+<script>
+const L=r=>`<ul class="list">${r.map(([a,b])=>`<li><span>${a}</span><span>${b||""}</span></li>`).join("")}</ul>`;
+const B=(r,m)=>`<div class="bars" role="img" aria-label="Gráfica">${r.map(([n,v])=>`<div><span>${n}</span><i style="width:${v/m*100}%"></i><span>${v}</span></div>`).join("")}</div>`;
+const SRC={
+ stereo:["Stereogum — Album of the Year nominees 2027","https://stereogum.com/2518141/album-of-the-year-grammy-nominees-2027-include-rosalia-phoebe-bridgers-taylor-swift/news"],
+ deseret:["Deseret News — Grammy awards 2027: the full list of nominees","https://www.deseret.com/entertainment/2026/11/16/grammy-award-nominations-2027/"],
+ grammyAOTY:["GRAMMY.com — Meet the 2027 Album of the Year nominees","https://www.grammy.com/news/grammy-award-for-album-of-the-year-meet-the-2027-nominees/"],
+ grammyDate:["GRAMMY.com — 2027 GRAMMYs show date and nominations announcement","https://www.grammy.com/news/2027-grammys-show-air-date-nominations-announced/"],
+ yahooLG:["Yahoo Entertainment — Latin Grammy Awards 2026 winners","https://www.yahoo.com/entertainment/music/articles/latin-grammy-awards-2026-winners-050832928.html"],
+ rsLG:["Rolling Stone — Latin Grammys 2026 winners: the complete list","https://www.rollingstone.com/music/music-latin/latin-grammys-2026-winners-complete-list-1235655791/"],
+ bmi:["BMI — Congratulations to the 2026 Latin GRAMMY winners","https://www.bmi.com/news/bmi-congratulates-its-2026-latin-grammy-winners"],
+ metro:["Metro Puerto Rico / EFE — Kany García, Rauw Alejandro, Feid, Ivy Queen y Latin Mafia, entre los estrenos latinos","https://www.metro.pr/entretenimiento/2026/11/14/kany-garcia-rauw-alejandro-feid-ivy-queen-y-latin-mafia-entre-los-estrenos-latinos/"],
+ hola:["¡HOLA! USA — Viernes de Música Nueva, 13 de noviembre de 2026","https://www.hola.com/us-es/entretenimiento/20261113934984/majo-aguilar-latin-mafia-viernes-de-musica-nueva/"],
+ jam:["JamBase — U2's new album includes Dolly Parton's last recorded vocal performance","https://www.jambase.com/article/u2-new-album-carnaval-de-luz-dolly-parton"],
+ wcax:["WCAX — U2's new album will feature the last song Dolly Parton recorded","https://www.wcax.com/2026/09/27/u2s-new-album-will-feature-last-song-dolly-parton-recorded-before-her-death/"],
+ will:["Williamson Source — New Music this Week, November 16, 2026","https://williamsonsource.com/new-music-this-week-november-16-2026"],
+ rsuk:["Rolling Stone UK — Rosalía 'Lux' review","https://www.rollingstone.co.uk/music/rosalia-lux-album-review-london-contemporary-orchestra-bjork-55549"],
+ pitch:["Sportskeeda — Pitchfork rates Rosalía's LUX 8.6","https://widgets.sportskeeda.com/us/music/news-so-basically-album-year-internet-reacts-pitchfork-rates-lux-rosalia-8-6-10"],
+ euro:["Euronews — Edgar Barrera domina los Latin Grammy 2026 con diez nominaciones","https://es.euronews.com/cultura/2026/09/16/edgar-barrera-domina-los-latin-grammy-2026-con-diez-nominaciones"],
+ billboard:["CelebrityAccess — RAYE leads 2027 Grammy nominations with 11 nods, Rosalía follows with nine","https://celebrityaccess.com/2026/11/16/raye-leads-2027-grammy-nominations-with-11-nods-rosalia-follows-with-nine/"],
+ cpr:["NPR / CPR — RAYE and Rosalía lead the 2027 Grammy nominations","https://www.cpr.org/2026/11/16/raye-and-rosalia-lead-the-2027-grammy-nominations/"],
+ qz:["Quartz — 7 Grammy snubs and surprises of 2027","https://qz.com/2027-grammy-snubs-surprises"],
+ abc7:["ABC7 / AP — Lista completa de ganadores del Latin Grammy 2026","https://abc7.com/post/lista-completa-de-ganadores-del-latin-grammy-2026/20037510/"],
+ grammyLive:["GRAMMY.com — 2027 GRAMMYs nominations: official live blog","https://www.grammy.com/live-blog/"],
+ rsU2:["Rolling Stone — U2 announce new album 'Carnaval de Luz,' out Nov. 13","https://www.rollingstone.com/music/music-news/u2-new-album-carnaval-de-luz-interview-1235630567/"],
+ diario:["Diario.mx / Agencia Reforma — Los mexicanos que van por el Grammy 2027","https://diario.mx/espectaculos/2026/nov/16/los-mexicanos-que-van-por-el-grammy-2027-1148966.html"],
+ holaGr:["¡HOLA! USA — 2027 Grammy nominations: Latino stars competing for Latin Music categories and beyond","https://www.hola.com/us/entertainment/20261116935312/2027-grammy-nominations-latino-stars-latin-music/"],
+ excel:["Excélsior — Latin Grammy 2026: conoce la lista de nominados","https://www.excelsior.com.mx/espectaculos/latin-grammy-2026-conoce-lista-nominados"],
+ vist25:["Vistazo — Latin Grammy 2025: lista de ganadores en categorías principales","https://www.vistazo.com/tendencias/2025-11-16-latin-grammy-lista-ganadores-categorias-principales-LG10430759"],
+ hola26:["¡HOLA! — Grammys 2026: la lista completa de ganadores","https://www.hola.com/actualidad/20260202881342/grammys-2026-ganadores"],
+ bbHot:["Billboard — Hot 100 Top 10 Countdown, semana del 21 de noviembre de 2026","https://www.billboard.com/video/billboard-hot-100-top-10-countdown-for-november-21st-2026/"],
+ hype:["Hypebeast — “Choosin' Texas” rompe el récord histórico del Hot 100 con su semana 23 en el No. 1","https://hypebeast.com/2026/9/ella-langley-choosin-texas-breaks-all-time-billboard-hot-100-record-23rd-week-no-1-news"],
+ fox:["Fox Carolina — “Choosin' Texas” se convierte en el No. 1 más largo del Hot 100","https://www.foxcarolina.com/2026/09/22/ella-langleys-choosin-texas-becomes-longest-running-no-1-song-billboard-hot-100-beating-mariah-carey/"],
+ wdbo:["WDBO — Ella Langley marca récord con su semana 23 en el No. 1","https://www.wdbo.com/news/trending/ella-langleys-choosin-texas-sets-record-with-23rd-week-no-1/T25BFDXML5AYNACBLWBJ34NJSA/"],
+ q93:["93Q Country — “Choosin' Texas” iguala el récord de 19 semanas","https://93qcountry.com/1708080/ella-langley-choosin-texas-billboard-hot-100-record-2/"],
+ thr:["The Hollywood Reporter — Grammy nominations snubs and surprises","https://www.hollywoodreporter.com/music/music-news/grammys-2027-snubs-surprises-harry-styles-noah-kahan-1236756402/"],
+ yahooSn:["Yahoo Entertainment — Biggest snubs and surprises from the 2027 Grammy nominations","https://www.yahoo.com/entertainment/music/articles/biggest-snubs-surprises-2027-grammy-181351070.html"],
+ wmag:["W Magazine — The biggest snubs and surprises of the 2027 Grammy nominations","https://www.wmagazine.com/culture/grammy-nominations-2027-snubs-surprises"],
+ eon:["E! Online — Grammys 2027 nominations: snubs and surprises","https://www.eonline.com/photos/38415/grammys-2027-nominations-snubs-and-surprises"],
+ bbSn:["Billboard — Snubs & surprises in the 2027 Grammy nominations","https://www.billboard.com/lists/2027-grammy-nominations-snubs-surprises/"],
+ rs27:["Rolling Stone — Raye, Rosalía and Ella Langley lead 2027 Grammy nominees","https://www.rollingstone.com/music/music-news/grammy-nominations-2027-full-list-1235658661/"],
+ inmus:["InMusic — Karol G alcanza su puesto más alto en el Hot 100 con “BbY WOW”","https://inmusicblog.com/latin/karol-g-bby-wow-highest-billboard-hot-100/"],
+ cplx:["Complex — Karol G earns her 11th Hot Latin Songs No. 1 with “Bby Wow”","https://www.complex.com/music/a/will-lavin/karol-g-bby-wow-hot-latin-songs-number-one"],
+ quees:["Que.es — Judeline, número 1 en Spotify con “BbY WOW”","https://www.que.es/2026/08/31/judeline-numero-1-spotify-bby-wow/"],
+ bbCal:["Billboard — Music Industry Events Calendar","https://www.billboard.com/pro/music-industry-events-calendar-festivals-awards-conferences/"],
+ spot:["Spotify for Artists — Pitching music to playlist editors","https://support.spotify.com/artists/article/pitching-music-to-playlist-editors/"],
+ bmiEB:["BMI — Latin Spotlight: Edgar Barrera","https://www.bmi.com/news/entry/bmi-latin-spotlight-edgar-barrera"]
+};
+const T={es:{
+  sections:{inicio:"Portada",noticias:"Noticias",premios:"Premios",listas:"Listas",lanzamientos:"Lanzamientos",critica:"Crítica",industria:"Industria",artistas:"Para artistas",manifiesto:"Manifiesto"},
+  latest:"Lo último", all:"Ver todo", brief:"En 20 segundos", sources:"Fuentes", read:"min de lectura",
+  manifestTitle:"Así hacemos {{NOMBRE}}.",
+  empty:"Esta sección abre con la edición N.º 002.", enNote:"English brief"
+},en:{
+  sections:{inicio:"Front page",noticias:"News",premios:"Awards",listas:"Lists",lanzamientos:"Releases",critica:"Criticism",industria:"Industry",artistas:"For artists",manifiesto:"Manifesto"},
+  latest:"Latest", all:"See all", brief:"In 20 seconds", sources:"Sources", read:"min read",
+  manifestTitle:"This is how we make {{NOMBRE}}.",
+  empty:"This section opens with Issue No. 002.", enNote:"English brief"
+}};
+const SOON=[];
+const RULES={es:[
+  ["Sin ventanas emergentes","Nada de muros de cookies, suscripciones forzadas ni anuncios que tapan la nota."],
+  ["Nada se reproduce solo","El sonido empieza cuando tú quieres. Nunca un video que grita al abrir la página."],
+  ["Lo esencial primero","Cada nota abre con un resumen de 20 segundos. Si solo tienes un minuto, ya estás al día."],
+  ["Las fuentes a la vista","Cada dato dice de dónde viene. Si no lo pudimos confirmar, no lo publicamos."],
+  ["Titulares que cumplen","El titular dice lo que pasó. Sin “no vas a creer” ni misterio inventado."],
+  ["Dos idiomas, una casa","Escrito en español, con resumen en inglés, para quien vive entre los dos."]
+],en:[
+  ["No pop-ups","No cookie walls, forced sign-ups or ads covering the story."],
+  ["Nothing autoplays","Sound starts when you choose. Never a video shouting at you on load."],
+  ["The essentials first","Every story opens with a 20-second brief. One minute is enough to be caught up."],
+  ["Sources in plain sight","Every fact says where it comes from. If we couldn't confirm it, we don't run it."],
+  ["Headlines that deliver","The headline says what happened. No “you won't believe” and no fake mystery."],
+  ["Two languages, one home","Written in Spanish with an English brief, for people who live between both."]
+]};
+
+const A=/*@@NOTAS@@*/[];
+const TICK=[];
+
+const PAGES={
+"quienes-somos":{k:{es:"{{NOMBRE}}",en:"{{NOMBRE}}"},t:{es:"Quiénes somos",en:"About us"},body:{es:`<p class="lede">{{NOMBRE}} es una revista de música hecha en Nueva York, en español y en inglés. Cubrimos la música del mundo con la mirada de quienes viven entre dos idiomas y dos países.</p>
+<h2>Lo que hacemos</h2><p>Noticias, premios, lanzamientos, listas, crítica e industria. Contamos lo que pasa en la música con datos verificados, contexto y fuentes a la vista. Cada nota abre con un resumen de 20 segundos y termina con las fuentes que la respaldan.</p>
+<h2>Por qué existimos</h2><p>Los grandes medios en inglés cubren la música latina como un nicho. Los medios latinos rara vez cubren la conversación global. {{NOMBRE}} ocupa ese espacio: toda la música, para un público que se mueve entre los dos mundos.</p>
+<h2>Cómo trabajamos</h2><p>Publicamos solo lo que podemos confirmar, citamos siempre nuestras fuentes y corregimos a la vista cuando nos equivocamos. Lee nuestra <a href="#politica-editorial">política editorial</a>.</p>
+<h2>Masthead</h2><ul class="list"><li><span>Dirección editorial</span><span>Ricardo López</span></li><li><span>Redacción</span><span>Redacción {{NOMBRE}} · Nueva York</span></li><li><span>Colaboradores</span><span>Convocatoria abierta</span></li></ul>
+<h2>Escribe para {{NOMBRE}}</h2><p>Buscamos periodistas, críticos y fotógrafos que vivan la música en su ciudad. Envía tu propuesta y dos muestras de tu trabajo a <b>{{EMAIL}}</b> con el asunto “Colabora”.</p>
+<h2>Contacto</h2><p>Prensa, publicistas y sellos: <b>{{EMAIL}}</b>. Más opciones en <a href="#contacto">Contacto</a>.</p>`,
+en:`<p class="lede">{{NOMBRE}} is a music magazine made in New York, in Spanish and English. We cover the world's music through the eyes of people who live between two languages and two countries.</p>
+<h2>What we do</h2><p>News, awards, releases, lists, criticism and industry, with verified facts, context and sources in plain sight. Every story opens with a 20-second brief and ends with its sources.</p>
+<h2>Why we exist</h2><p>Big English-language outlets cover Latin music as a niche. Latin outlets rarely cover the global conversation. {{NOMBRE}} fills that space.</p>
+<h2>How we work</h2><p>We only publish what we can confirm, always cite our sources and correct in public. Read our <a href="#politica-editorial">editorial policy</a>.</p>
+<h2>Masthead</h2><ul class="list"><li><span>Editorial director</span><span>Ricardo López</span></li><li><span>Newsroom</span><span>{{NOMBRE}} Newsroom · New York</span></li><li><span>Contributors</span><span>Open call</span></li></ul>
+<h2>Write for {{NOMBRE}}</h2><p>We're looking for journalists, critics and photographers who live music in their city. Send your pitch and two clips to <b>{{EMAIL}}</b>, subject “Contribute”.</p>
+<h2>Contact</h2><p>Press, publicists and labels: <b>{{EMAIL}}</b>.</p>`}},
+"contacto":{k:{es:"{{NOMBRE}}",en:"{{NOMBRE}}"},t:{es:"Contacto",en:"Contact"},body:{es:`<p class="lede">Escríbenos. Leemos todo.</p>
+<ul class="list"><li><span>Prensa y publicistas</span><span>{{EMAIL}}</span></li><li><span>Comunicados y lanzamientos</span><span>{{EMAIL}} · Asunto: “Lanzamiento”</span></li><li><span>Correcciones</span><span>{{EMAIL}} · Asunto: “Corrección”</span></li><li><span>Publicidad y alianzas</span><span>{{EMAIL}} · Asunto: “Alianzas”</span></li><li><span>Instagram</span><span>@{{IG}}</span></li></ul>
+<h2>Para publicistas y sellos</h2><p>Envía el comunicado en el cuerpo del correo, enlaces a la música y fotos de prensa con crédito. Indica si hay embargo y hasta cuándo. Respetamos los embargos.</p>
+<p class="mono g">Nueva York, NY · Estados Unidos</p>`,
+en:`<p class="lede">Write to us. We read everything.</p>
+<ul class="list"><li><span>Press and publicists</span><span>{{EMAIL}}</span></li><li><span>Releases</span><span>Subject: “Release”</span></li><li><span>Corrections</span><span>Subject: “Correction”</span></li><li><span>Advertising and partnerships</span><span>Subject: “Partnerships”</span></li><li><span>Instagram</span><span>@{{IG}}</span></li></ul>
+<h2>For publicists and labels</h2><p>Send the release in the email body, links to the music and credited press photos. Tell us about any embargo. We honor embargoes.</p>`}},
+"politica-editorial":{k:{es:"{{NOMBRE}}",en:"{{NOMBRE}}"},t:{es:"Política editorial",en:"Editorial policy"},body:{es:`<p class="lede">Las reglas que seguimos en cada nota.</p>
+<h2>Verificación</h2><p>Publicamos solo información que podemos confirmar en fuentes oficiales o en medios reconocidos. Cada nota enlaza sus fuentes.</p>
+<h2>Correcciones</h2><p>Si cometemos un error, lo corregimos en la misma nota y lo señalamos con la fecha de la corrección. Escríbenos a {{EMAIL}} con el asunto “Corrección”.</p>
+<h2>Independencia</h2><p>Ningún artista, sello o anunciante decide lo que publicamos. El contenido patrocinado, cuando exista, irá marcado como tal.</p>
+<h2>Conflictos de interés</h2><p>Nuestro director editorial también es músico. {{NOMBRE}} no cubre su obra; si algún día lo hiciera, lo indicaremos de forma visible en la nota.</p>
+<h2>Crítica</h2><p>Nuestras reseñas son opinión de quien las firma. Cuando resumimos la opinión de otros medios, lo decimos y los citamos.</p>
+<h2>Imágenes</h2><p>Usamos fotos de prensa con su crédito, imágenes propias o portadas tipográficas de {{NOMBRE}}. No usamos imágenes sin permiso.</p>`,
+en:`<p class="lede">The rules behind every story.</p><h2>Verification</h2><p>We only publish what we can confirm in official sources or reputable outlets, and link every source.</p><h2>Corrections</h2><p>We fix errors in the story itself and note the date. Email {{EMAIL}}, subject “Correction”.</p><h2>Independence</h2><p>No artist, label or advertiser decides what we publish. Sponsored content, if any, will be labeled.</p><h2>Conflicts of interest</h2><p>Our editorial director is also a musician. {{NOMBRE}} does not cover his work; if it ever did, we would disclose it clearly.</p><h2>Criticism</h2><p>Reviews are the opinion of the writer. When we summarize other outlets, we say so and cite them.</p><h2>Images</h2><p>We use credited press photos, our own images or {{NOMBRE}} typographic covers.</p>`}},
+"anunciate":{k:{es:"{{NOMBRE}}",en:"{{NOMBRE}}"},t:{es:"Anúnciate",en:"Advertise"},body:{es:`<p class="lede">Lleva tu marca a una audiencia bilingüe que vive la música.</p>
+<h2>Nuestra audiencia</h2><p>Lectores en Estados Unidos y Latinoamérica que siguen la música en español y en inglés, con foco en Nueva York.</p>
+<h2>Formatos</h2><ul class="list"><li><span>Alianzas editoriales</span><span>Contenido marcado como patrocinado</span></li><li><span>Newsletter</span><span>Próximamente</span></li><li><span>Eventos y sesiones</span><span>Próximamente</span></li></ul>
+<p>Escríbenos a <b>{{EMAIL}}</b> con el asunto “Alianzas” y te enviamos nuestro media kit.</p>`,
+en:`<p class="lede">Reach a bilingual audience that lives music.</p><h2>Formats</h2><ul class="list"><li><span>Editorial partnerships</span><span>Labeled as sponsored</span></li><li><span>Newsletter</span><span>Coming soon</span></li><li><span>Events and sessions</span><span>Coming soon</span></li></ul><p>Email <b>{{EMAIL}}</b>, subject “Partnerships”, for our media kit.</p>`}},
+"privacidad":{k:{es:"Legal",en:"Legal"},t:{es:"Política de privacidad",en:"Privacy policy"},body:{es:`<p class="lede">Respetamos tu privacidad. Esta es la versión corta.</p>
+<h2>Qué datos recogemos</h2><p>No pedimos registro para leer {{NOMBRE}}. Si nos escribes por correo, usamos tu dirección solo para responderte. Si te suscribes al boletín, usamos tu correo solo para enviártelo, y puedes darte de baja cuando quieras. Podemos usar herramientas de medición anónima del tráfico para saber qué notas se leen más.</p>
+<h2>Qué no hacemos</h2><p>No vendemos tus datos ni los compartimos con terceros con fines comerciales. No mostramos ventanas emergentes ni muros de cookies.</p>
+<h2>Tus derechos</h2><p>Puedes pedir que borremos cualquier dato tuyo escribiendo a {{EMAIL}}.</p>
+<p class="mono g">Última actualización: 16 de noviembre de 2026.</p>`,
+en:`<p class="lede">We respect your privacy.</p><h2>What we collect</h2><p>No sign-up is needed to read {{NOMBRE}}. If you email us, we use your address only to reply. If you subscribe to the newsletter, we use your email only to send it, and you can unsubscribe anytime. We may use anonymous analytics.</p><h2>What we don't do</h2><p>We don't sell or share your data for commercial purposes. No pop-ups, no cookie walls.</p><h2>Your rights</h2><p>Ask us to delete your data at {{EMAIL}}.</p><p class="mono g">Last updated: November 16, 2026.</p>`}},
+"terminos":{k:{es:"Legal",en:"Legal"},t:{es:"Términos de uso",en:"Terms of use"},body:{es:`<p class="lede">Las condiciones para usar {{DOMINIO}}.</p>
+<h2>Contenido</h2><p>Los textos, el diseño y las portadas tipográficas de {{NOMBRE}} son propiedad de {{NOMBRE_LARGO}}. Puedes citar fragmentos breves con enlace a la nota original.</p>
+<h2>Enlaces externos</h2><p>Enlazamos a fuentes y sitios de terceros. No somos responsables de su contenido.</p>
+<h2>Marcas</h2><p>Los nombres de premios, artistas y marcas mencionados pertenecen a sus dueños. Su mención no implica afiliación ni respaldo.</p>
+<p class="mono g">Última actualización: 16 de noviembre de 2026.</p>`,
+en:`<p class="lede">Conditions for using {{DOMINIO}}.</p><h2>Content</h2><p>{{NOMBRE}}'s texts, design and typographic covers belong to {{NOMBRE_LARGO}}. Short quotes with a link are welcome.</p><h2>External links</h2><p>We are not responsible for third-party content.</p><h2>Trademarks</h2><p>Award, artist and brand names belong to their owners. Mention implies no affiliation or endorsement.</p><p class="mono g">Last updated: November 16, 2026.</p>`}}
+};
+
+const COV=/*@@PORTADAS@@*/{};
+const SUBS={premios:[["Grammy 2027","#premios"],["Latin Grammy 2026","#latin-grammy-ganadores"]],lanzamientos:[["Estrenos latinos","#estrenos-latinos"],["Estrenos en el mundo","#estrenos-mundo"]],listas:[["Más nominados Grammy 2027","#lista-nominados"],["Más premiados Latin Grammy","#lista-latin-grammy"]]};
+let lang="es";try{lang=localStorage.getItem("{{SLUG}}-lang")||"es"}catch(e){}
+try{const th=localStorage.getItem("{{SLUG}}-theme");if(th)document.documentElement.dataset.theme=th}catch(e){}
+
+/* ===== PORTADA AUTOMÁTICA: se arma sola con las notas más nuevas de contenido/notas.json.
+   "peso": 3 manda una nota a principal (si está entre las 6 más nuevas); "peso": 2 la pone en Esenciales.
+   "minuto": ["frase en español","English line"] la pone en Hoy en un minuto. ===== */
+const ORD=l=>l.slice().sort((a,b)=>((b.date||"")+(b.hora||"")).localeCompare((a.date||"")+(a.hora||""))||A.indexOf(a)-A.indexOf(b));
+const HOME=(()=>{
+  const S=ORD(A);
+  const lead=((S.slice(0,6).find(a=>(a.peso||0)>=3))||S[0]||{}).id;
+  const rest=S.filter(a=>a.id!==lead);
+  const first=k=>(S.find(a=>a.sec===k)||{}).id;
+  const picks=S.slice(0,60).filter(a=>(a.peso||0)>=2).map(a=>a.id);
+  for(const a of S){if(picks.length>=5)break;if(!picks.includes(a.id))picks.push(a.id)}
+  const cnt={};S.slice(0,40).forEach(a=>cnt[a.tag]=(cnt[a.tag]||0)+1);
+  return {lead,ess:rest.slice(0,4).map(a=>a.id),row:rest.slice(4,8).map(a=>a.id),
+    duo:[first("artistas"),first("critica")||first("industria")].filter(Boolean),
+    picks:picks.slice(0,5),trend:Object.keys(cnt).sort((x,y)=>cnt[y]-cnt[x]).slice(0,8),
+    min:S.filter(a=>a.minuto).slice(0,5).map(a=>[a.id,a.minuto[0],a.minuto[1]])};
+})();
+const SECD={es:{noticias:"Lo que pasa en la música hoy, confirmado y con fuentes.",premios:"Grammy, Latin Grammy y cada temporada de premios, con contexto.",listas:"Billboard, récords y los números que mueven la industria.",lanzamientos:"Los estrenos que importan cada viernes, en español y en el mundo.",critica:"Discos y canciones, escuchados con calma.",industria:"Cómo funciona el negocio de la música, para artistas y para curiosos.",artistas:"Consejos prácticos para lanzar, cobrar, sonar y crecer como artista independiente."},
+en:{noticias:"What's happening in music today, confirmed and sourced.",premios:"The Grammys, the Latin Grammys and every awards season, with context.",listas:"Billboard, records and the numbers that move the industry.",lanzamientos:"The releases that matter every Friday, in Spanish and around the world.",critica:"Albums and songs, listened to carefully.",industria:"How the music business works, for artists and the curious.",artistas:"Practical advice to release, get paid, get heard and grow as an independent artist."}};
+const U={es:{tagline:"La música del mundo, en tiempo real",trending:"Tendencias",essential:"Lo esencial",minute:"Hoy en un minuto",minuteSub:"Lo que hay que saber de la música, en cinco frases.",latest:"Lo último",essentials:"Esenciales",topics:"Temas",promoK:"Para artistas y sellos",promoH:"¿Tienes un lanzamiento?",promoP:"Envíanos el comunicado, la música y fotos con crédito. Leemos todo.",promoA:"Escríbenos",listsH:"La lista",listsS:"Más nominados · Grammy 2027",keep:"Sigue leyendo",moreIn:"Más en {{NOMBRE}}",share:"Compartir",copy:"Copiar enlace",copied:"Enlace copiado",by:"Por",newsroom:"Redacción {{NOMBRE}}",topic:"Tema",section:"Sección",more:"Cargar más",cover:"Portada tipográfica {{NOMBRE}}",duoH:"Para artistas · Lectura",nlK:"Boletín",nlH:"La música del mundo, cada semana en tu correo.",nlP:"Lo esencial en cinco minutos, en español y con resumen en inglés. Gratis.",nlL:"Tu correo",nlB:"Suscribirme",nlS:"Sin spam. Puedes darte de baja cuando quieras.",nlOk:"Listo. Ya estás en la lista.",nlErr:"No se pudo enviar. Escríbenos a {{EMAIL}}.",nlPrev:"Vista previa: el formulario funciona cuando la web esté publicada.",sub:"Suscríbete",search:"Buscar en {{NOMBRE}}",about:"Quiénes somos",theme:"Modo claro / oscuro",home:"Portada",none:"No encontramos notas con esa búsqueda.",slogan:"La música del mundo, en tiempo real.",sections:"Secciones",follow:"Síguenos",menu:"Abrir menú",shown:(n,m)=>`Mostrando ${n} de ${m} notas`,all:v=>"Todo en "+v},
+en:{tagline:"The world's music, in real time",trending:"Trending",essential:"The essentials",minute:"Today in one minute",minuteSub:"What you need to know in music, in five sentences.",latest:"Latest",essentials:"Essentials",topics:"Topics",promoK:"For artists and labels",promoH:"Got a release?",promoP:"Send us the press release, the music and credited photos. We read everything.",promoA:"Write to us",listsH:"The list",listsS:"Most nominated · Grammy 2027",keep:"Keep reading",moreIn:"More from {{NOMBRE}}",share:"Share",copy:"Copy link",copied:"Link copied",by:"By",newsroom:"{{NOMBRE}} Newsroom",topic:"Topic",section:"Section",more:"Load more",cover:"{{NOMBRE}} typographic cover",duoH:"For artists · Reading",nlK:"Newsletter",nlH:"The world's music, in your inbox every week.",nlP:"The essentials in five minutes, in Spanish with an English brief. Free.",nlL:"Your email",nlB:"Subscribe",nlS:"No spam. Unsubscribe anytime.",nlOk:"Done. You're on the list.",nlErr:"Couldn't send. Email us at {{EMAIL}}.",nlPrev:"Preview: the form works once the site is live.",sub:"Subscribe",search:"Search {{NOMBRE}}",about:"About us",theme:"Light / dark mode",home:"Front page",none:"No stories match that search.",slogan:"The world's music, in real time.",sections:"Sections",follow:"Follow us",menu:"Open menu",shown:(n,m)=>`Showing ${n} of ${m} stories`,all:v=>"All "+v}};
+
+const $=s=>document.querySelector(s);const t=()=>T[lang];const u=()=>U[lang];const title=a=>lang==="en"?a.titleEn:a.title;
+const byId=id=>A.find(x=>x.id===id);const pick=l=>l.map(byId).filter(Boolean);
+const slug=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+const DAYS={es:["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"],en:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]};
+const MON={es:["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],en:["January","February","March","April","May","June","July","August","September","October","November","December"]};
+const dt=d=>new Date(d+"T12:00:00");
+const fdate=d=>{const x=dt(d);return lang==="es"?`${x.getDate()} de ${MON.es[x.getMonth()]} de ${x.getFullYear()}`:`${MON.en[x.getMonth()]} ${x.getDate()}, ${x.getFullYear()}`};
+const fshort=d=>{const x=dt(d);return lang==="es"?`${x.getDate()} ${MON.es[x.getMonth()].slice(0,3)}`:`${MON.en[x.getMonth()].slice(0,3)} ${x.getDate()}`};
+function dayLabel(d){const x=dt(d);return lang==="es"?`${DAYS.es[x.getDay()]} ${x.getDate()} de ${MON.es[x.getMonth()]}`:`${DAYS.en[x.getDay()]}, ${MON.en[x.getMonth()]} ${x.getDate()}`}
+function today(){let s="";try{s=new Intl.DateTimeFormat(lang==="es"?"es-US":"en-US",{weekday:"long",day:"numeric",month:"long",year:"numeric",timeZone:"America/New_York"}).format(new Date())}catch(e){}return s?s.charAt(0).toUpperCase()+s.slice(1)+" · "+(lang==="es"?"Nueva York":"New York"):""}
+
+function cv(a,cls=""){const c=COV[a.id]||{f:"{{NOMBRE}}",bg:"#0b0b0b",fg:"#fff",c:a.tag,e:""};
+ return `<div class="cv ${cls}" style="background:${c.bg};color:${c.fg};${c.bd?"box-shadow:inset 0 0 0 1px var(--rule);":""}${c.fs?`--fs:${c.fs};`:""}${c.al?`--al:${c.al};`:""}" aria-hidden="true"><div class="c"><b>{{LOGO}}</b><span>${a.tag}</span></div><div class="f">${c.f}</div><div class="c"><span>${c.e}</span><span>${c.c}</span></div></div>`}
+const kl=a=>`<div class="kline"><a class="k" href="#${a.sec}">${t().sections[a.sec]}</a>${a.tag!==T.es.sections[a.sec]?`<span class="dot">·</span><a class="kt" href="#t-${slug(a.tag)}">${a.tag}</a>`:""}</div>`;
+const by=a=>`<div class="by">${u().by} <b>${u().newsroom}</b> · <time datetime="${a.date}">${fdate(a.date)}</time> · ${a.min} ${t().read}</div>`;
+const card=(a,dek)=>`<a class="card" href="#${a.id}">${cv(a)}<div class="card-t"><span class="k">${t().sections[a.sec]}</span><h3 class="h h-m">${title(a)}</h3>${dek?`<p class="dek">${a.dek}</p>`:""}</div></a>`;
+const mini=a=>`<a class="mini-row" href="#${a.id}"><div><span class="k">${a.tag}</span><h3 class="h h-s">${title(a)}</h3></div>${cv(a,"sq")}</a>`;
+const SECKEYS=()=>Object.keys(t().sections).filter(k=>!["inicio","manifiesto"].includes(k));
+function secLinks(cur){return SECKEYS().map(k=>`<a href="#${k}"${k===cur?' aria-current="page"':""}>${t().sections[k]}</a>`).join("")}
+function trend(){const have=new Set(A.map(a=>a.tag));return `<b>${u().trending}</b>`+HOME.trend.filter(x=>have.has(x)).map(x=>`<a href="#t-${slug(x)}">${x}</a>`).join("")}
+function acc(){
+  return SECKEYS().map(k=>{const v=t().sections[k];const items=[[u().all(v),"#"+k],...(SUBS[k]||[]).map(x=>[x[0],x[1]]),...A.filter(a=>a.sec===k&&!(SUBS[k]||[]).some(s=>s[1]==="#"+a.id)).slice(0,3).map(a=>[title(a),"#"+a.id])];
+    return `<div class="acc"><button type="button" aria-expanded="false" aria-controls="sub-${k}">${v}<i aria-hidden="true">+</i></button><div class="sub" id="sub-${k}" hidden>${items.map(([n,h])=>`<a href="${h}">${n}</a>`).join("")}</div></div>`}).join("");
+}
+function chart(list,max){return `<ol class="chart">${list.map(([n,v],i)=>`<li><span class="n">${i+1}</span><div><div class="a">${n}</div><div class="bar2"><i style="width:${v/max*100}%"></i></div></div><span class="v">${v}</span></li>`).join("")}</ol>`}
+const TOPN=[["RAYE",11],["Rosalía",9],["Ella Langley",7],["Miranda Lambert",7],["Olivia Rodrigo",7],["Phoebe Bridgers",7],["Bruno Mars",6],["Leon Thomas",6],["Olivia Dean",6],["Taylor Swift",5]];
+function mani(){return `<section class="blk mani"><div class="blkh"><h2 class="lbl">${t().manifestTitle}</h2><a href="#politica-editorial">${t().all} →</a></div><ul>${RULES[lang].map(([b,s],i)=>`<li><span class="n">${String(i+1).padStart(2,"0")}</span><b>${b}</b><span>${s}</span></li>`).join("")}</ul></section>`}
+
+function home(){
+  const a=byId(HOME.lead)||A[0];
+  return `<div class="w"><section class="topg">
+   <article class="lead"><a href="#${a.id}" tabindex="-1">${cv(a,"wide")}</a><div class="lead-t">${kl(a)}<a href="#${a.id}"><h1 class="h h-xl">${title(a)}</h1></a><p class="dek">${a.dek}</p>${by(a)}</div></article>
+   <aside class="ess"><h2 class="lbl">${u().essential}</h2>${pick(HOME.ess).map(mini).join("")}</aside></section>
+   <section class="row4">${pick(HOME.row).map(x=>card(x,false)).join("")}</section></div>
+  <section class="minute"><div class="w"><div class="minute-h"><h2 class="h">${u().minute}</h2><span class="by">${u().minuteSub}</span></div><ol>${HOME.min.filter(m=>byId(m[0])).map(m=>`<li><a href="#${m[0]}"><span>${lang==="es"?m[1]:m[2]}</span></a></li>`).join("")}</ol></div></section>
+  <div class="w"><section class="blk"><div class="blkh"><h2 class="lbl">${u().latest}</h2></div>${river(A.filter(x=>x.id!==a.id))}</section></div>
+  <section class="band" style="margin-top:56px"><div class="w"><div class="band-h"><h2 class="disp">${u().listsH}</h2><div class="band-s"><span>${u().listsS}</span><a href="#lista-nominados">${t().all}</a></div></div>${chart(TOPN,11)}</div></section>
+  <div class="w"><section class="blk"><div class="blkh"><h2 class="lbl">${u().duoH}</h2></div><div class="duo">${pick(HOME.duo).map(x=>card(x,true)).join("")}</div></section>
+  ${mani()}</div>`;
+}
+const PAGE=8;
+const sorted=ORD;
+let riverList=[],riverShown=0;
+function item(a){return `<a class="item" href="#${a.id}"><div><div class="kline"><span class="k">${t().sections[a.sec]}</span>${a.tag!==T.es.sections[a.sec]?`<span class="dot">·</span><span class="kt">${a.tag}</span>`:""}</div><h3 class="h">${title(a)}</h3><p class="dek">${a.dek}</p><div class="by">${fshort(a.date)} · ${a.min} ${t().read}</div></div>${cv(a,"sq")}</a>`}
+function riverChunk(from,to){let h="",last=from?riverList[from-1].date:null;for(const a of riverList.slice(from,to)){if(a.date!==last){h+=`<div class="day">${dayLabel(a.date)}</div>`;last=a.date}h+=item(a)}return h}
+const counter=()=>u().shown(riverShown,riverList.length);
+function river(list){riverList=sorted(list);riverShown=Math.min(PAGE,riverList.length);
+  return `<div class="river"><div><div id="feed">${riverChunk(0,riverShown)}</div>${riverList.length>PAGE?`<button class="more" id="more" type="button">${u().more}</button>`:""}<div class="count" id="count">${counter()}</div></div>${sidebar()}</div>`}
+function sidebar(){const tags=[...new Set(A.map(a=>a.tag))];
+  return `<aside class="side"><div class="box"><h4 class="lbl">${u().essentials}</h4><ol class="num">${pick(HOME.picks).map(a=>`<li><a href="#${a.id}">${title(a)}</a></li>`).join("")}</ol></div>
+  <div class="box"><h4 class="lbl">${u().topics}</h4><div class="tags">${tags.map(x=>`<a href="#t-${slug(x)}">${x}</a>`).join("")}</div></div>
+  <div class="promo"><span class="k">${u().promoK}</span><p class="h">${u().promoH}</p><p>${u().promoP}</p><a class="btn" href="#contacto">${u().promoA} →</a></div></aside>`}
+function listPage(kick,name,desc,l){const f=l[0];const rest=l.slice(1);const others=A.filter(x=>!l.includes(x)).slice(0,4);
+  return `<div class="w"><header class="sech"><span class="k">${kick}</span><h1 class="disp">${name}</h1>${desc?`<p class="secd">${desc}</p>`:""}</header>
+  ${f?`<section class="feat-top"><a href="#${f.id}" tabindex="-1">${cv(f,"wide")}</a><div class="ft-t">${kl(f)}<a href="#${f.id}"><h2 class="h h-l">${title(f)}</h2></a><p class="dek">${f.dek}</p>${by(f)}</div></section>`:""}
+  ${rest.length?`<section class="blk" style="padding-top:0">${river(rest)}</section>`:""}
+  ${l.length<4?`<section class="blk"><div class="blkh"><h2 class="lbl">${u().moreIn}</h2></div><div class="row4" style="border-top:0;margin-top:0">${others.map(x=>card(x,false)).join("")}</div></section>`:""}</div>`}
+function section(k){return listPage(u().section,t().sections[k],(SECD[lang]||{})[k],sorted(A.filter(a=>a.sec===k)))}
+function article(a){const url=location.href,enc=encodeURIComponent;
+  const rel=A.filter(b=>b.id!==a.id&&b.sec===a.sec).concat(A.filter(b=>b.id!==a.id&&b.sec!==a.sec)).slice(0,4);
+  return `<article class="art"><header class="w art-h">${kl(a)}<h1 class="h h-art">${title(a)}</h1><p class="dek dek-art">${a.dek}</p>
+  <div class="byrow">${by(a)}<div class="share" aria-label="${u().share}"><button type="button" id="enBtn">${lang==="es"?"English":"Español"} ⇄</button><a href="https://wa.me/?text=${enc(title(a)+" "+url)}" target="_blank" rel="noopener">WhatsApp</a><a href="https://twitter.com/intent/tweet?text=${enc(title(a))}&amp;url=${enc(url)}" target="_blank" rel="noopener">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=${enc(url)}" target="_blank" rel="noopener">Facebook</a><button type="button" id="copy">${u().copy}</button></div></div></header>
+  <figure class="w art-cv">${cv(a,"cine")}<figcaption>${COV[a.id]&&COV[a.id].e?COV[a.id].e+" · ":""}${a.tag} · ${u().cover}</figcaption></figure>
+  <div class="w body"><div class="prose">${a.body}${(a.correcciones||[]).map(c=>`<p class="mono g">${lang==="es"?"Corrección":"Correction"} (${c.fecha}): ${c.nota}</p>`).join("")}<div class="en"><span class="k">${t().enNote}</span><p>${a.en}</p></div>
+  <details class="src"><summary><span>${t().sources}</span><span class="n">${a.src.length}</span></summary><ol>${a.src.map(([n,s])=>`<li><a href="${s}" target="_blank" rel="noopener">${n}</a></li>`).join("")}</ol></details></div>
+  <aside><div class="brief"><span class="k">${t().brief}</span><ul>${a.brief.map(b=>`<li>${b}</li>`).join("")}</ul></div></aside></div></article>
+  <div class="w"><section class="blk"><div class="blkh"><h2 class="lbl">${u().keep}</h2></div><div class="row4" style="border-top:0;margin-top:0">${rel.map(x=>card(x,false)).join("")}</div></section></div>`;
+}
+function page(p){return `<article class="art"><header class="w art-h"><span class="k">${p.k[lang]}</span><h1 class="h h-art">${p.t[lang]}</h1></header><div class="w body"><div class="prose page">${p.body[lang]}</div><aside><nav class="brief pnav"><span class="k">{{NOMBRE}}</span><ul>${Object.entries(PAGES).map(([k,v])=>`<li><a href="#${k}"${location.hash==="#"+k?' aria-current="page"':""}>${v.t[lang]}</a></li>`).join("")}</ul></nav></aside></div></article>`}
+function openOv(id,open){const o=$(id);o.hidden=!open;document.body.style.overflow=open?"hidden":"";if(id==="#ov")$("#menuBtn").setAttribute("aria-expanded",open);if(open&&id==="#sv")setTimeout(()=>$("#q").focus(),50)}
+function chrome(){
+  const x=(id,v)=>{const e=$(id);if(e)e.textContent=v};
+  x("#today",today());x("#tagline",u().tagline);x("#subBtn",u().sub);x("#fslog",u().slogan);x("#fh1",u().sections);x("#fh4",u().follow);
+  x("#langBtn",lang==="es"?"English":"Español");x("#mBtn",u().about);x("#themeBtn",u().theme);x("#homeBtn",u().home);x("#qLbl",u().search);
+  x("#nlK",u().nlK);x("#nlH",u().nlH);x("#nlP",u().nlP);x("#nlL",u().nlL);x("#nlB",u().nlB);x("#nlS",u().nlS);
+  $("#lgEs").setAttribute("aria-pressed",lang==="es");$("#lgEn").setAttribute("aria-pressed",lang==="en");$("#menuBtn").setAttribute("aria-label",u().menu);
+}
+function route(){
+  const h=(location.hash||"#inicio").slice(1);const a=A.find(x=>x.id===h);const s=a?a.sec:(T.es.sections[h]?h:"inicio");
+  $("#secnav").innerHTML=secLinks(s);$("#acc").innerHTML=acc();$("#trend").innerHTML=trend();
+  $("#fnav").innerHTML=secLinks();
+  const pl=ks=>ks.map(k=>`<a href="#${k}">${PAGES[k].t[lang]}</a>`).join("");$("#fabout").innerHTML=pl(["quienes-somos","contacto","politica-editorial","anunciate"]);$("#flegal").innerHTML=pl(["privacidad","terminos"]);
+  chrome();
+  const tg=h.startsWith("t-")?[...new Set(A.map(x=>x.tag))].find(x=>"t-"+slug(x)===h):null;
+  const pg=PAGES[h];
+  $("#app").innerHTML=pg?page(pg):tg?listPage(u().topic,tg,"",sorted(A.filter(x=>x.tag===tg))):a?article(a):s==="inicio"?home():section(s);
+  openOv("#ov",false);openOv("#sv",false);document.documentElement.lang=lang;scrollTo(0,0);
+  document.title=a?`${title(a)} | {{NOMBRE_LARGO}}`:pg?`${pg.t[lang]} | {{NOMBRE_LARGO}}`:"{{NOMBRE_LARGO}}";
+  let ld=document.getElementById("ld");if(!ld){ld=document.createElement("script");ld.type="application/ld+json";ld.id="ld";document.body.appendChild(ld)}
+  ld.textContent=JSON.stringify(a?{"@context":"https://schema.org","@type":"NewsArticle",headline:a.title,description:a.dek,datePublished:a.date,inLanguage:"es",articleSection:T.es.sections[a.sec],author:{"@type":"Organization",name:"Redacción {{NOMBRE}}"},publisher:{"@type":"NewsMediaOrganization",name:"{{NOMBRE_LARGO}}"},citation:a.src.map(x=>x[1])}:{"@context":"https://schema.org","@type":"NewsMediaOrganization",name:"{{NOMBRE_LARGO}}",url:"https://{{DOMINIO}}",email:"{{EMAIL}}",slogan:"La música del mundo, en tiempo real.",sameAs:["https://www.instagram.com/{{IG}}"]});
+}
+function setLang(){lang=lang==="es"?"en":"es";try{localStorage.setItem("{{SLUG}}-lang",lang)}catch(e){}route()}
+$("#menuBtn").onclick=()=>openOv("#ov",true);$("#closeBtn").onclick=()=>openOv("#ov",false);
+$("#searchBtn").onclick=$("#searchBtn2").onclick=$("#searchBtn3").onclick=()=>{openOv("#ov",false);openOv("#sv",true)};$("#closeS").onclick=()=>openOv("#sv",false);
+$("#langBtn").onclick=setLang;
+$("#lgEs").onclick=()=>{if(lang!=="es")setLang()};$("#lgEn").onclick=()=>{if(lang!=="en")setLang()};
+$("#subBtn").onclick=()=>{const n=$("#nl");if(n){n.scrollIntoView({behavior:"smooth"});setTimeout(()=>$("#nlMail").focus({preventScroll:true}),600)}};
+$("#themeBtn").onclick=()=>{const r=document.documentElement,c=r.dataset.theme==="dark"?"light":"dark";r.dataset.theme=c;try{localStorage.setItem("{{SLUG}}-theme",c)}catch(e){}};
+document.addEventListener("click",e=>{
+  const b=e.target.closest(".acc>button");if(b){const o=b.getAttribute("aria-expanded")==="true";b.setAttribute("aria-expanded",!o);b.querySelector("i").textContent=o?"+":"−";b.nextElementSibling.hidden=o}
+  if(e.target.closest("#enBtn"))setLang();
+  if(e.target.closest("#more")){const n=Math.min(riverShown+PAGE,riverList.length);$("#feed").insertAdjacentHTML("beforeend",riverChunk(riverShown,n));riverShown=n;$("#count").textContent=counter();if(riverShown>=riverList.length)$("#more").disabled=true}
+  const c=e.target.closest("#copy");if(c){const done=()=>c.textContent=u().copied;if(navigator.clipboard)navigator.clipboard.writeText(location.href).then(done,()=>c.textContent=location.href);else c.textContent=location.href}
+  const l=e.target.closest(".ov a");if(l&&l.getAttribute("href")===location.hash){openOv("#ov",false);openOv("#sv",false)}
+});
+$("#nlForm").addEventListener("submit",e=>{e.preventDefault();const f=e.target,msg=$("#nlS");
+  const live=location.hostname.endsWith("{{DOMINIO}}");
+  if(!live){msg.textContent=u().nlPrev;return}
+  fetch("/suscribir.php",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams(new FormData(f)).toString()}).then(r=>r.json()).then(j=>{if(!j.ok)throw 0;f.reset();msg.textContent=u().nlOk}).catch(()=>{msg.textContent=u().nlErr})});
+$("#q").addEventListener("input",e=>{const q=e.target.value.trim().toLowerCase();const norm=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+  const r=q?A.filter(a=>norm(a.title+" "+a.titleEn+" "+a.dek+" "+a.tag).includes(norm(q))):[];
+  $("#res").innerHTML=r.map(a=>`<li><a href="#${a.id}"><span class="k">${a.tag}</span><b>${title(a)}</b></a></li>`).join("")+(q&&!r.length?`<p class="none">${u().none}</p>`:"")});
+addEventListener("keydown",e=>{if(e.key==="Escape"){openOv("#ov",false);openOv("#sv",false)}});
+addEventListener("hashchange",route);
+addEventListener("scroll",()=>{const art=!!document.querySelector(".art .prose");const d=document.documentElement;$("#rp").style.width=art?(100*d.scrollTop/Math.max(1,d.scrollHeight-d.clientHeight))+"%":"0";document.body.classList.toggle("sc",scrollY>(($("#hdr")||{}).offsetHeight||160))},{passive:true});
+route();
+</script>
