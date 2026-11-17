@@ -81,7 +81,7 @@ def main():
         for n in (d if isinstance(d, list) else [d]):
             p = validar(n, existentes | {x["id"] for x in nuevas}, recientes + [(x["id"], x["title"]) for x in nuevas])
             del_dia = sum(1 for x in N + nuevas if x["date"] == n["date"])
-            if del_dia >= TOPE_DIARIO and n.get("peso") != 3:
+            if del_dia >= TOPE_DIARIO and n.get("peso") != 3 and not os.environ.get("ENCARGO_DIRECTOR"):  # encargo directo de Rilo
                 error(n, f"tope diario alcanzado ({TOPE_DIARIO} notas el {n['date']}). Mejor pocas notas muy buenas: publica esta mañana o actualiza una existente")
             nuevas.append(n)
             print(f"✓ {n['id']} · {n['sec']} · {p} palabras · {len(n['src'])} fuentes")

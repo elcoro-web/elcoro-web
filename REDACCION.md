@@ -37,7 +37,7 @@ Google castiga a toda la web, no solo a una nota, cuando publica mucho contenido
 4. **Calidad antes que volumen.** Mejor 2 notas muy buenas que 4 flojas. El validador:
    - bloquea notas de menos de 200 palabras (350 las propias);
    - bloquea notas casi iguales a una ya publicada;
-   - pone un tope de 20 notas por día (se puede subir cuando el medio gane confianza en Google); solo la noticia grande (`"peso": 3`) puede pasarlo.
+   - pone un tope de 20 notas por día (se puede subir cuando el medio gane confianza en Google); solo la noticia grande (`"peso": 3`) puede pasarlo. Las notas que Rilo pide directamente se agregan con `ENCARGO_DIRECTOR=1`; la redacción automática nunca usa esa variable.
 5. **Sin relleno para Google.** Nada de repetir palabras clave, ni párrafos vacíos, ni titulares que prometen lo que la nota no da. Se escribe para lectores.
 6. **Enlaces internos.** Cada nota enlaza 1 o 2 notas relacionadas de El Coro con `<a href="#id">`, cuando existan y vengan al caso.
 7. **Actualizar en vez de repetir.** Si el tema ya tiene una nota y hay un dato nuevo, se actualiza esa nota con `corregir_nota.py ... actualizacion`. Solo se escribe una nota nueva si el hecho nuevo es en sí una noticia, y el titular lo dice.

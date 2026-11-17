@@ -1,5 +1,54 @@
 [
  {
+  "id": "quien-es-aria-vega",
+  "date": "2026-11-17",
+  "hora": "15:22",
+  "sec": "premios",
+  "tag": "Latin Grammy",
+  "min": 3,
+  "title": "Quién es Aria Vega, la barranquillera que ganó el Latin Grammy a Mejor Nuevo Artista",
+  "titleEn": "Who is Aria Vega, the Barranquilla singer who won the Latin Grammy for Best New Artist",
+  "dek": "Mariana Padilla, Aria Vega en el escenario, ganó en su primera nominación con una mezcla de afrobeat, ritmos urbanos y jerga costeña que ella llama «Costeñita Core».",
+  "brief": [
+   "Aria Vega ganó el Latin Grammy a Mejor Nuevo Artista el 12 de noviembre en Las Vegas, en su primera nominación.",
+   "Es de Barranquilla, le dicen «La Nena de Quilla» y llama «Costeñita Core» a su estilo.",
+   "«Chévere», su remix con Ryan Castro, fue No. 1 del Billboard Colombia Hot 100 durante 14 semanas."
+  ],
+  "en": "Colombian singer Aria Vega, born Mariana Padilla in Barranquilla, won Best New Artist at the 2026 Latin Grammys in Las Vegas on November 12, her first nomination. Her remix of “Chévere” with Ryan Castro spent 14 weeks at No. 1 on the Billboard Colombia Hot 100 and topped Latin Airplay.",
+  "body": "<p>Aria Vega ganó el Latin Grammy a Mejor Nuevo Artista el jueves 12 de noviembre en el MGM Grand Garden Arena de Las Vegas. Era su primera nominación. La cantante, que se llama Mariana Padilla y nació en Barranquilla en 1997, subió al escenario a hablar de su ciudad: dijo que la Costa Caribe colombiana tiene muchísimo talento, pero no tiene industria musical, según recogieron El Heraldo y Semana.</p><p>Su frase más repetida después de la gala fue esta: «Los sueños no conocen de geografía». Cerró con un agradecimiento a la Costa Caribe, a Barranquilla y a Colombia. Fue uno de los premios de una noche que contamos en <a href=\"#latin-grammy-ganadores\" style=\"text-decoration:underline\">los ganadores de los Latin Grammy 2026</a>.</p><h2>«La Nena de Quilla» y el Costeñita Core</h2><p>En redes le dicen «La Nena de Quilla». Ella llama «Costeñita Core» a su propuesta: una mezcla de afrobeat, ritmos urbanos y del Caribe con la jerga, la moda y la forma de hablar de las mujeres de la costa colombiana, según El País de Cali. Sus títulos lo dejan claro: «Costeñita», con DEKKO; «Agua e' coco»; «Ay mama (mi tiburón)».</p><p>Estudió Comunicación Social en la Universidad del Norte, cantó en bares y restaurantes de Barranquilla y después se fue a Bogotá. En 2020 empezó a trabajar su proyecto de forma profesional, según Semana. El Heraldo reporta que firmó con Warner Music Latina.</p><h2>Los números que la llevaron al Grammy</h2><ul class=\"list\"><li><span>«Chévere», con Ryan Castro</span><span>No. 1 en Billboard Colombia Hot 100</span></li><li><span>Semanas en el No. 1 en Colombia</span><span>14</span></li><li><span>Latin Airplay y Latin Rhythm Airplay</span><span>No. 1</span></li><li><span>«COMPA COLETO»</span><span>Debut en el No. 2 en Colombia</span></li></ul><p>El remix de «Chévere» con Ryan Castro fue su gran salto: 14 semanas seguidas en el No. 1 del Billboard Colombia Hot 100 y primer No. 1 en las listas de radio latina de Billboard. Según El País, también fue telonera de Shakira en Madrid y llenó sus primeras fechas propias en Madrid y Barcelona.</p><h2>Por qué importa</h2><p>Mejor Nuevo Artista es la categoría que suele anticipar quién va a marcar los próximos años de la música latina. Que la gane una artista que canta con acento y palabras de Barranquilla, y que lo diga en el escenario, pone a la Costa Caribe en el mapa de una industria que casi siempre mira a Medellín, Miami o San Juan.</p><p class=\"mono g\">Con información de El Heraldo, Semana, El País (Cali) y La Opinión.</p>",
+  "src": [
+   [
+    "El Heraldo — Aria Vega hace historia con su primer Latin Grammy",
+    "https://www.elheraldo.co/sociedad/2026/11/13/aria-vega-hace-historia-con-su-primer-latin-grammy/"
+   ],
+   [
+    "Semana — “Gracias, Barranquilla”: Aria Vega celebra su primer Latin Grammy",
+    "https://www.semana.com/gente/articulo/gracias-barranquilla-aria-vega-celebra-su-primer-latin-grammy-y-exalta-el-talento-de-colombia-y-el-caribe/202615/"
+   ],
+   [
+    "El País — Aria Vega lleva el Costeñita Core a lo más alto de los Latin Grammy",
+    "https://www.elpais.com.co/entretenimiento/los-suenos-no-conocen-de-miedos-aria-vega-lleva-el-costenita-core-a-lo-mas-alto-de-los-latin-grammy-1346.html"
+   ],
+   [
+    "La Opinión — ¿Quién es Aria Vega?",
+    "https://laopinion.com/2026/11/13/quien-es-aria-vega-la-colombiana-que-gano-el-latin-grammy-a-mejor-nuevo-artista-2026/"
+   ]
+  ],
+  "cov": {
+   "f": "14",
+   "bg": "#ffd400",
+   "fg": "#0a0a0a",
+   "c": "Semanas en el No. 1",
+   "e": "Aria Vega"
+  },
+  "minuto": [
+   "Quién es Aria Vega, la barranquillera que ganó el Latin Grammy a Mejor Nuevo Artista.",
+   "Who is Aria Vega, the Latin Grammys' Best New Artist."
+  ],
+  "peso": 2,
+  "propia": false
+ },
+ {
   "id": "santana-gira-2027-fechas-boletas",
   "date": "2026-11-17",
   "hora": "11:35",
