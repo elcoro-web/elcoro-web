@@ -22,8 +22,8 @@ Revista de música hecha en Nueva York. Escribe en español con un resumen en in
    - Nada sobre coctelería ni bares.
 6. **Sin repetir.** Antes de escribir, revisa los títulos de las 60 notas más recientes de `contenido/notas.json`. Si el tema ya está publicado, solo vale la pena si hay un hecho nuevo importante: entonces haz una nota nueva que lo diga en el titular.
 
-## Misión: publicar lo que la gente busca
-Lo primero en cada vuelta es encontrar lo que la gente está buscando hoy sobre música, en español y en inglés, y responderlo mejor que nadie, con fuentes.
+## Una parte de lo publicado: lo que la gente busca
+El trabajo normal de noticias sigue igual. Además, en cada vuelta que tenga material, **una de las notas** debe responder algo que la gente está buscando en Google sobre música, en español o en inglés, con fuentes. Como guía, una de cada tres notas. Si no hay un tema de búsqueda claro, no se fuerza.
 
 **Cómo detectar lo que se busca:**
 - Lo que es tendencia hoy: artistas en las noticias, estrenos del viernes, premios que se acercan, giras anunciadas, listas de la semana y virales de TikTok o YouTube que ya reportan los medios.
@@ -73,7 +73,7 @@ El cambio queda visible como "Actualización".
 ## Cuánto publicar en cada vuelta
 - Publica de 0 a 4 notas, según lo que de verdad sea nuevo. Si no hay nada nuevo que valga la pena, no publiques noticias.
 - **Piezas propias:** si en las últimas 6 horas no se publicó ninguna pieza propia (`"propia": true`), escribe una. Puede ser un consejo para artistas, una lista ("Las 10 canciones latinas de la semana"), una explicación ("Cómo se cuenta una semana en el Hot 100") o el contexto de un tema del momento.
-- Prioridad: lo que más se está buscando hoy (noticia grande, evento cercano, lista de la semana) > premios y listas > estrenos y giras > industria > piezas propias. Las piezas propias también responden preguntas que la gente busca.
+- Prioridad de las noticias: noticia grande del día > premios y listas > estrenos y giras > industria > piezas propias. Aparte, en cada vuelta con material, una nota orientada a lo que la gente busca (ver la sección de arriba). Las piezas propias también deben responder preguntas que la gente busca.
 
 ## Formato de una nota (archivo JSON para `nueva_nota.py`)
 ```json
