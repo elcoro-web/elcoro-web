@@ -1,5 +1,86 @@
 [
  {
+  "id": "isrc-iswc",
+  "date": "2026-11-17",
+  "hora": "02:35",
+  "sec": "artistas",
+  "tag": "Para artistas",
+  "min": 4,
+  "title": "ISRC e ISWC: los dos códigos que necesita tu canción para cobrar",
+  "titleEn": "ISRC and ISWC: the two codes your song needs to get paid",
+  "dek": "Uno identifica la grabación y el otro la composición. Si faltan o están mal, el dinero de tus reproducciones puede quedar sin dueño.",
+  "brief": [
+   "El ISRC identifica una grabación; el ISWC identifica la obra musical, es decir, la composición.",
+   "El ISRC lo asigna el dueño de la grabación o su distribuidora; el ISWC, una agencia autorizada, normalmente a través de tu sociedad de autores.",
+   "Un remix o una edición necesitan un ISRC nuevo; un código nunca se reutiliza."
+  ],
+  "en": "Every released song carries two identifiers: the ISRC for the sound recording and the ISWC for the underlying composition. ISRCs are assigned by the recording owner or their distributor; ISWCs only by authorized registration agencies, usually through your rights society. Remixes and edits need a new ISRC.",
+  "body": "<p class=\"lede\">Cuando una plataforma reporta que alguien escuchó tu canción, ese reporte viaja con códigos, no con nombres. Hay dos que importan: el ISRC, que identifica la grabación, y el ISWC, que identifica la composición. Entender la diferencia es el primer paso para no perder regalías.</p>\n<h2>Grabación y obra no son lo mismo</h2>\n<p>Toda canción publicada tiene dos derechos distintos. Uno es la <strong>grabación</strong>: el audio concreto que suena, que pertenece a quien la produjo o a su sello. El otro es la <strong>obra</strong>: la melodía y la letra, que pertenecen a quienes la escribieron. Si alguien hace un cover, la obra es la misma pero la grabación es nueva. Por eso cada derecho tiene su propio código.</p>\n<h2>El ISRC: el código de la grabación</h2>\n<p>El ISRC (International Standard Recording Code) identifica grabaciones de sonido y videos musicales. No identifica composiciones, productos ni intérpretes. Tiene 12 caracteres alfanuméricos divididos en tres partes:</p>\n<ul class=\"list\"><li><span>Prefijo</span><span>5 caracteres, asignados por la agencia ISRC</span></li><li><span>Año</span><span>2 dígitos, el año en que se asigna</span></li><li><span>Designación</span><span>5 dígitos, únicos para ese titular y ese año</span></li></ul>\n<p>Según la organización internacional del ISRC, solo el dueño de los derechos de la grabación puede asignarlo, aunque puede delegarlo. En la práctica, la mayoría de los artistas independientes lo recibe de su distribuidora al subir la canción. No hace falta ser miembro de ninguna asociación para tenerlo.</p>\n<h2>Cuándo necesitas un ISRC nuevo</h2>\n<p>Cada versión distinta de una grabación lleva su propio código. Un remix o una edición necesitan un ISRC nuevo, y también un cambio de duración de más de 10 segundos. Una remasterización, en general, conserva el código original salvo que tenga cambios creativos importantes. Y un ISRC que ya se usó no se vuelve a usar nunca, aunque la canción se haya retirado.</p>\n<blockquote>Una versión nueva, un código nuevo. Siempre.</blockquote>\n<h2>El ISWC: el código de la composición</h2>\n<p>El ISWC (International Standard Musical Work Code) es un número único y permanente para identificar obras musicales. Lo administra la CISAC, la confederación internacional de sociedades de autores, como autoridad designada por ISO.</p>\n<p>A diferencia del ISRC, tú no puedes asignarlo. Solo lo dan las agencias de registro autorizadas en cada país o región, y para una obra nueva no hay que pedirlo aparte: se genera cuando la registras en tu sociedad de autores (ASCAP o BMI en Estados Unidos, SACM en México, SAYCO en Colombia, SGAE en España). Un detalle clave: solo se asigna cuando todos los autores de la obra están identificados.</p>\n<h2>Qué hacer, paso a paso</h2>\n<ul class=\"list\"><li><span>1. Al distribuir</span><span>Guarda el ISRC de cada canción y cada versión</span></li><li><span>2. Antes de lanzar</span><span>Registra la obra en tu sociedad con todos los coautores</span></li><li><span>3. Después</span><span>Revisa que el ISWC aparezca en tu catálogo</span></li><li><span>4. Siempre</span><span>Usa los mismos nombres y porcentajes en todos los registros</span></li></ul>\n<p>Un ISWC incompleto, por un coautor sin registrar o un nombre escrito de dos formas, es una de las razones más comunes por las que el dinero de una canción se queda sin repartir. Para el resto de la preparación, revisa <a href=\"#antes-de-lanzar\" style=\"text-decoration:underline\">las cinco cosas que tienes que hacer antes de lanzar</a>.</p>\n<p class=\"mono g\">Guía editorial de {{NOMBRE}}, con datos de la organización internacional del ISRC (IFPI) y del sitio oficial del ISWC (CISAC), enlazados en Fuentes.</p>",
+  "src": [
+   [
+    "IFPI — International Standard Recording Code (ISRC)",
+    "https://isrc.ifpi.org/en/"
+   ],
+   [
+    "IFPI — ISRC: preguntas frecuentes",
+    "https://isrc.ifpi.org/faqs"
+   ],
+   [
+    "ISWC (CISAC) — How to get an ISWC number?",
+    "https://www.iswc.org/get-iswc"
+   ]
+  ],
+  "cov": {
+   "f": "ISRC<br>ISWC",
+   "bg": "#f0ece4",
+   "fg": "#0a0a0a",
+   "c": "Para artistas",
+   "e": "Guía",
+   "fs": "min(22cqw,200px)"
+  },
+  "propia": true
+ },
+ {
+  "id": "regalias-explicadas",
+  "date": "2026-11-17",
+  "hora": "02:35",
+  "sec": "artistas",
+  "tag": "Para artistas",
+  "min": 4,
+  "title": "Quién te paga cuando suena tu canción: las regalías explicadas",
+  "titleEn": "Who pays you when your song plays: royalties explained",
+  "dek": "Una misma reproducción puede generar dinero por la composición y por la grabación, y lo cobran organizaciones distintas. Aquí está el mapa.",
+  "brief": [
+   "Las sociedades de autores como ASCAP y BMI cobran por la ejecución pública de la composición.",
+   "SoundExchange cobra en EE. UU. por la grabación cuando suena en servicios como Pandora, SiriusXM o iHeartRadio.",
+   "Si no tienes editorial, eres tu propio editor y puedes registrarte también como tal."
+  ],
+  "en": "A single play can generate royalties for both the composition and the recording. Performing rights organizations like ASCAP and BMI collect public performance royalties for songwriters; SoundExchange collects US digital performance royalties for recordings from services like Pandora and SiriusXM. Registering with each is how independent artists avoid leaving money unclaimed.",
+  "body": "<p class=\"lede\">Muchos artistas independientes creen que su distribuidora les paga todo lo que genera su música. No es así. La distribuidora paga una parte. Otras partes las cobran organizaciones distintas, y si no te registras en ellas, ese dinero no llega.</p>\n<h2>Dos derechos, dos caminos</h2>\n<p>Cada canción tiene una <strong>composición</strong> (letra y melodía, de quienes la escriben) y una <strong>grabación</strong> (el audio, de quien la produce o su sello). Cada uno genera regalías por su lado. Lo explicamos en detalle en <a href=\"#isrc-iswc\" style=\"text-decoration:underline\">nuestra guía sobre ISRC e ISWC</a>.</p>\n<h2>1. Lo que paga tu distribuidora</h2>\n<p>Cuando subes tu música a plataformas a través de una distribuidora, ella te pasa lo que las plataformas pagan por la grabación, menos su comisión o su cuota. Es el dinero que ves en tu panel. Pero solo cubre el lado de la grabación en esas plataformas.</p>\n<h2>2. La ejecución pública: ASCAP, BMI y las demás</h2>\n<p>Cada vez que una composición suena en público (radio, televisión, conciertos, locales, plataformas) se generan regalías de ejecución pública para autores y editores. En Estados Unidos las cobran sociedades como ASCAP y BMI; en América Latina y España, entidades como SACM, SAYCO o SGAE. Tienes que elegir una sola como autor.</p>\n<ul class=\"list\"><li><span>BMI</span><span>Su página de afiliación no indica cuota para autores</span></li><li><span>ASCAP</span><span>Cuota única de 50 dólares para autores y editores</span></li></ul>\n<p>Un dato que muchos pasan por alto: según ASCAP, si no le cediste tus derechos editoriales a nadie, eres tu propio editor. Eso significa que puedes cobrar también la parte editorial, pero para eso tienes que registrarte como editor, además de como autor.</p>\n<blockquote>Si no tienes editorial, la editorial eres tú.</blockquote>\n<h2>3. La grabación en radio digital: SoundExchange</h2>\n<p>En Estados Unidos, SoundExchange es la única organización designada por el gobierno para administrar la licencia de la sección 114, que cubre la ejecución digital de grabaciones. Cobra y reparte lo que pagan servicios como Pandora, SiriusXM e iHeartRadio, entre miles más, y también regalías de ejecución internacionales a través de acuerdos con otros países.</p>\n<p>Esa plata va a los artistas y a los dueños de las grabaciones. Si eres independiente y tus grabaciones son tuyas, eres las dos cosas. Registrarse en su servicio SoundExchange Direct es gratis.</p>\n<h2>4. Las mecánicas</h2>\n<p>Existe un cuarto tipo: las regalías mecánicas, que se pagan a autores y editores por la reproducción de la composición, por ejemplo en descargas, discos o streaming. Según el país, las cobra una entidad distinta o tu misma sociedad de autores. Pregunta en la tuya cómo funcionan donde vives.</p>\n<h2>Tu lista de registro</h2>\n<ul class=\"list\"><li><span>Distribuidora</span><span>Grabación en plataformas</span></li><li><span>Sociedad de autores</span><span>Como autor y, si aplica, como editor</span></li><li><span>SoundExchange</span><span>Si tienes grabaciones que suenan en EE. UU.</span></li><li><span>Mecánicas</span><span>Según tu país</span></li></ul>\n<p class=\"mono g\">Guía editorial de {{NOMBRE}}, con datos de las páginas oficiales de ASCAP, BMI y SoundExchange, enlazadas en Fuentes. Las cuotas pueden cambiar: confírmalas antes de registrarte.</p>",
+  "src": [
+   [
+    "ASCAP — Join ASCAP",
+    "https://www.ascap.com/join"
+   ],
+   [
+    "BMI — Join BMI",
+    "https://www.bmi.com/join"
+   ],
+   [
+    "SoundExchange — Connecting creators to their royalties",
+    "https://www.soundexchange.com/"
+   ]
+  ],
+  "cov": {
+   "f": "$",
+   "bg": "#0f6b3f",
+   "fg": "#ffffff",
+   "c": "Para artistas",
+   "e": "Regalías"
+  },
+  "propia": true
+ },
+ {
   "id": "rodrigo-quinta-semana",
   "date": "2026-11-17",
   "hora": "02:40",
