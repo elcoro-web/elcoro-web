@@ -1,0 +1,16 @@
+{
+ "id": "quien-es-aria-vega-foto",
+ "tema": "rojo",
+ "fuente": "",
+ "laminas": [
+  {
+   "tipo": "foto",
+   "foto": "redes/fotos/aria-vega.jpg",
+   "foco_y": 0.12,
+   "chip": "Latin Grammy",
+   "etiqueta": "QUIÉN ES",
+   "titulo": "Aria Vega, la nueva artista del año",
+   "bajada": "La barranquillera ganó el Latin Grammy a Mejor Nuevo Artista en su primera nominación."
+  }
+ ]
+}
