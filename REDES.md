@@ -13,10 +13,16 @@ Las redes llevan gente a la web. Cada publicación presenta una nota ya publicad
 - `python3 herramientas/redes.py pendientes` ordena las notas de las últimas 36 horas que aún no salieron: primero la noticia grande (peso 3), luego las de "Hoy en un minuto" y las piezas propias, y después las más recientes.
 - Usa tu criterio con esa lista. Elige la nota que más le interesa al público de Instagram (grandes artistas, latinos, premios, estrenos, giras con fechas en EE. UU. o Latinoamérica, consejos útiles para artistas). Sáltate las notas que ya perdieron vigencia, como la previa de un evento que ya pasó.
 - **Ritmo:**
-  - máximo 3 publicaciones de feed por día en Instagram, separadas al menos 3 horas;
+  - máximo 3 publicaciones de feed por día en Instagram (carruseles y reels cuentan igual), separadas al menos 3 horas de cualquier otra publicación de feed ya programada ese día, antes o después;
   - historias solo para la noticia grande del día (peso 3), máximo 2 por día;
   - `python3 herramientas/redes.py hoy` muestra lo ya programado hoy, y `getScheduledPosts` lo confirma en Metricool.
 - Nunca nada sobre la música de Rilo ni sobre bares o coctelería.
+
+## Carrusel o reel
+- **Reel** (video 9:16 con la portada, lo esencial y el cierre) para: la noticia grande (peso 3), los momentos (`"tag": "Momento"`) y, si en el día todavía no hay ningún reel programado, la nota que elijas. Así sale al menos un reel al día.
+- **Carrusel** para lo demás.
+- El reel se crea con `python3 herramientas/redes.py video <id>`, que deja el video en `redes/video/` y devuelve `video` y `portada_video`. Antes de subirlo, saca 3 cuadros y míralos con Read para comprobar que el texto no se corte: `ffmpeg -v error -ss <segundo> -i redes/video/<id>-reel.mp4 -frames:v 1 /tmp/cuadro-<segundo>.png` en los segundos 3, 8 y el final menos 1.
+- El video no lleva música: se publica sin audio, que Instagram acepta.
 
 ## Cómo se arma cada publicación
 1. `python3 herramientas/redes.py preparar <id>` crea las imágenes en `redes/img/`:
@@ -24,19 +30,22 @@ Las redes llevan gente a la web. Cada publicación presenta una nota ya publicad
    - `-2`: Lo esencial, 4:5;
    - `-story`: historia, 9:16.
 
+   Si toca reel, crea también el video (ver "Carrusel o reel").
+
    También devuelve los textos y los enlaces públicos de las imágenes.
 2. **Sube las imágenes a GitHub antes de programar**, porque Metricool las descarga de esos enlaces: `git add redes/ && git commit -m "Redes: <id>" && git push origin main`. Si el push es rechazado, haz `git pull --rebase origin main` y vuelve a empujar.
 3. Programa en Metricool con `createScheduledPost` (blogId de El Coro, zona horaria America/New_York):
-   - **Instagram:** carrusel de feed con `carrusel` (las dos imágenes), `texto_ig`, `mediaAltText` con `alt` e `instagramData` `{"type":"POST"}`.
+   - **Instagram reel:** `media` con el `video`, `videoThumbnailUrl` con `portada_video`, `texto_ig` e `instagramData` `{"type":"REEL","showReelOnFeed":true,"isAiGenerated":false}`.
+   - **Instagram carrusel:** carrusel de feed con `carrusel` (las dos imágenes), `texto_ig`, `mediaAltText` con `alt` e `instagramData` `{"type":"POST"}`.
    - **Historia (solo peso 3):** otra publicación con `historia`, sin texto y `instagramData` `{"type":"STORY"}`.
    - **Facebook:** publicación aparte con `carrusel`, `texto_link` (lleva el enlace a la nota) y `facebookData` `{"type":"POST"}`.
    - **Threads:** publicación aparte con la imagen `-1` y `texto_corto`.
-   - **TikTok (si está conectado):** publicación aparte con `carrusel`, `texto_ig` y `tiktokData` con `title` = `titulo_90`.
+   - **TikTok (si está conectado):** si hay reel, publicación aparte con el `video`; si no, con `carrusel`; `texto_ig` y `tiktokData` con `title` = `titulo_90`.
    - **Hora:**
      - consulta `getBestTimeToPostByNetwork` (instagram, el día de hoy) y usa la mejor franja de las próximas 3 horas, al menos 20 minutos en el futuro;
      - si la hora buena ya pasó, usa la siguiente franja buena;
      - nunca programes para la madrugada (entre 00:00 y 07:00).
-4. Anota la publicación con `python3 herramientas/redes.py marcar <id> instagram,facebook,... <fecha ISO programada> <plannerUrl>`. Luego `git add redes/ && git commit -m "Redes: programada <id>" && git push origin main`.
+4. Anota la publicación con `python3 herramientas/redes.py marcar <id> instagram,facebook,... <fecha ISO programada> <plannerUrl>`; si salió como reel, usa `instagram-reel` en vez de `instagram`. Luego `git add redes/ && git commit -m "Redes: programada <id>" && git push origin main`.
 
 ## Textos
 - Usa los textos que da `preparar`. Puedes ajustar la redacción para que suene natural en redes, pero sin agregar datos que no estén en la nota y sin cambiar cifras, nombres ni fechas.

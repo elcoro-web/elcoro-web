@@ -73,6 +73,28 @@ El trabajo normal de noticias sigue igual. Además, en cada vuelta que tenga mat
 `python3 herramientas/corregir_nota.py <id> cambios.json "Qué se actualizó" actualizacion`
 El cambio queda visible como "Actualización".
 
+## Lo que está pasando ahora: momentos y farándula confirmada
+El público también quiere enterarse al instante de lo que pasa con los artistas. En cada vuelta, además de las noticias, revisa qué momentos se están moviendo en las últimas horas y publica los que estén confirmados.
+
+**Qué entra** (sección `noticias`, `"tag": "Momento"`):
+- momentos virales de conciertos y premios: invitados sorpresa, caídas o fallas en escena que el artista comentó, discursos, récords en vivo;
+- anuncios que el artista hizo en sus redes: pausa, regreso, nuevo proyecto, colaboración, separación de un grupo;
+- cruces públicos entre artistas (respuestas, indirectas en canciones, disculpas), contados con lo que cada uno dijo en público;
+- relaciones, bodas, nacimientos o rupturas **solo si los propios artistas lo confirmaron** en público o por su equipo;
+- lo que ya reportan los medios de entretenimiento de un video viral en TikTok o YouTube.
+
+**Qué no entra, aunque esté en todas partes:**
+- rumores, "fuentes cercanas", filtraciones y lo que solo dice una cuenta de chismes o de fans;
+- especular sobre romances, embarazos, salud, adicciones, sexualidad o vida privada;
+- menores de edad, familiares que no son figuras públicas y cualquier cosa que humille a alguien.
+
+**Cómo se confirma y se escribe:**
+- Rápido pero confirmado: basta 1 fuente oficial (la publicación del artista en su cuenta verificada o un comunicado de su equipo) más 1 medio, o 2 medios. Si es un tema sensible (salud, delitos, demandas, muertes), aplica la regla de 2 medios grandes.
+- Se cuenta lo que pasó y lo que dijo cada parte, con palabras propias. Si alguien no ha respondido, se dice.
+- Titular que dice el hecho, sin "polémica", "explota", "rompe el silencio", "no vas a creer" ni signos de exclamación.
+- Lleva el `<h2>` de contexto como cualquier nota: qué pasó antes, por qué importa.
+- `"peso": 2` si es lo más comentado del día; nunca `"peso": 3` salvo que sea la noticia más grande del día.
+
 ## Dónde buscar (en todos lados)
 - **Listas:** Billboard (Hot 100, Billboard 200, Hot Latin Songs, Global 200), Spotify Charts, Apple Music, YouTube.
 - **Premios:** grammy.com, latingrammy.com, Billboard Latin Music Awards, Premios Lo Nuestro, Premios Juventud, MTV, BRIT, Gardel, Heat y otros.
@@ -80,6 +102,7 @@ El cambio queda visible como "Actualización".
 - **Medios en español:** Billboard Español, Rolling Stone en Español, Remezcla, El País, El Tiempo, Infobae, Clarín, La Nación, Milenio, El Universal, Hola USA, People en Español, Telemundo, Univision, EFE.
 - **Industria:** RIAA, IFPI, Luminate, MIDiA, sellos (Universal, Sony, Warner, Rimas, Dale Play, Sony Latin), distribuidoras y plataformas.
 - **Estrenos:** los viernes, con lo que sale en todo el mundo, en especial lo latino.
+- **Momentos y entretenimiento:** People, People en Español, Hola USA, E! News, Variety, Billboard, Rolling Stone, Telemundo, Univision, Infobae y las cuentas verificadas de los artistas (solo para confirmar lo que ellos mismos dijeron).
 - **En vivo:** giras, festivales (Coachella, Vive Latino, Estéreo Picnic, Lollapalooza, Primavera Sound, Corona Capital) y ventas de boletas.
 
 ## Secciones (`sec`)
@@ -94,7 +117,7 @@ El cambio queda visible como "Actualización".
 ## Cuánto publicar en cada vuelta
 - Publica de 0 a 4 notas, idealmente 2 o 3, según lo que de verdad sea nuevo y valga la pena. Si no hay nada nuevo, no publiques noticias.
 - **Piezas propias:** si en las últimas 6 horas no se publicó ninguna pieza propia (`"propia": true`), escribe una. Puede ser un consejo para artistas, una lista ("Las 10 canciones latinas de la semana"), una explicación ("Cómo se cuenta una semana en el Hot 100") o el contexto de un tema del momento.
-- Prioridad de las noticias: noticia grande del día > premios y listas > estrenos y giras > industria > piezas propias. Aparte, en cada vuelta con material, una nota orientada a lo que la gente busca (ver la sección de arriba). Las piezas propias también deben responder preguntas que la gente busca.
+- Prioridad de las noticias: noticia grande del día > momentos confirmados de las últimas horas > premios y listas > estrenos y giras > industria > piezas propias. Aparte, en cada vuelta con material, una nota orientada a lo que la gente busca (ver la sección de arriba). Las piezas propias también deben responder preguntas que la gente busca.
 
 ## Formato de una nota (archivo JSON para `nueva_nota.py`)
 ```json

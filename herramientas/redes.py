@@ -5,6 +5,7 @@
   python3 herramientas/redes.py preparar <id>           crea las imágenes en redes/img/ y muestra textos y enlaces (JSON)
   python3 herramientas/redes.py marcar <id> <redes> <fecha_programada> [enlace_metricool]
                                                         anota la publicación en redes/publicadas.json (redes separadas por coma)
+  python3 herramientas/redes.py video <id>              crea el reel (video 9:16) en redes/video/ y muestra el enlace (JSON)
   python3 herramientas/redes.py hoy                     publicaciones programadas hoy (hora de Nueva York)
 """
 import glob, json, os, re, subprocess, sys, unicodedata
@@ -17,6 +18,8 @@ NY = ZoneInfo("America/New_York")
 REG = P("redes", "publicadas.json")
 IMG = P("redes", "img")
 RAW = "https://raw.githubusercontent.com/elcoro-web/elcoro-web/main/redes/img/"
+VID = P("redes", "video")
+RAWV = "https://raw.githubusercontent.com/elcoro-web/elcoro-web/main/redes/video/"
 DOM = "https://elcoromagazine.com"
 HASH_SEC = {"noticias": "#NoticiasMusicales", "premios": "#PremiosMusicales", "listas": "#ListasMusicales",
             "lanzamientos": "#NuevaMúsica", "critica": "#CríticaMusical", "industria": "#IndustriaMusical",
@@ -60,7 +63,7 @@ def pendientes(horas=36):
     hechas = {r["id"] for r in registro()}
     ahora = datetime.now(NY)
     c = [n for n in notas() if n["id"] not in hechas and ahora - cuando(n) <= timedelta(hours=horas)]
-    prio = lambda n: (-(n.get("peso") or 1), -int(bool(n.get("minuto"))), -int(bool(n.get("propia"))), -cuando(n).timestamp())
+    prio = lambda n: (-(n.get("peso") or 1), -int(n.get("tag") == "Momento"), -int(bool(n.get("minuto"))), -int(bool(n.get("propia"))), -cuando(n).timestamp())
     for n in sorted(c, key=prio):
         print(json.dumps({k: n.get(k) for k in ("id", "date", "hora", "sec", "tag", "peso", "propia", "title")}, ensure_ascii=False))
     if not c:
@@ -100,6 +103,22 @@ def preparar(id_):
     }, ensure_ascii=False, indent=1))
 
 
+def video(id_):
+    n = next((x for x in notas() if x["id"] == id_), None)
+    if not n:
+        sys.exit(f"no existe la nota {id_}")
+    os.makedirs(VID, exist_ok=True)
+    tmp = P("redes", "_nota.json")
+    json.dump(n, open(tmp, "w", encoding="utf-8"), ensure_ascii=False)
+    subprocess.run([sys.executable, P("herramientas", "reel.py"), tmp, P("marca", "fuentes"), VID, P("marca.json")], check=True,
+                   stdout=subprocess.DEVNULL)
+    os.remove(tmp)
+    print(json.dumps({"id": id_, "video": RAWV + id_ + "-reel.mp4", "portada_video": RAWV + id_ + "-reel.jpg",
+                      "titulo_90": limpio(n["title"])[:90],
+                      "archivos": [os.path.relpath(os.path.join(VID, id_ + s), R) for s in ("-reel.mp4", "-reel.jpg")]},
+                     ensure_ascii=False, indent=1))
+
+
 def marcar(id_, redes, fecha, enlace=""):
     if not any(x["id"] == id_ for x in notas()):
         sys.exit(f"no existe la nota {id_}")
@@ -129,6 +148,8 @@ if __name__ == "__main__":
         preparar(a[1])
     elif a[0] == "marcar" and len(a) in (4, 5):
         marcar(*a[1:])
+    elif a[0] == "video" and len(a) == 2:
+        video(a[1])
     elif a[0] == "hoy":
         hoy()
     else:
