@@ -88,14 +88,14 @@ const PAGES={
 <h2>Lo que hacemos</h2><p>Noticias, premios, lanzamientos, listas, crítica e industria. Contamos lo que pasa en la música con datos verificados, contexto y fuentes a la vista. Cada nota abre con un resumen de 20 segundos y termina con las fuentes que la respaldan.</p>
 <h2>Por qué existimos</h2><p>Los grandes medios en inglés cubren la música latina como un nicho. Los medios latinos rara vez cubren la conversación global. El Coro ocupa ese espacio: toda la música, para un público que se mueve entre los dos mundos.</p>
 <h2>Cómo trabajamos</h2><p>Publicamos solo lo que podemos confirmar, citamos siempre nuestras fuentes y corregimos a la vista cuando nos equivocamos. Lee nuestra <a href="#politica-editorial">política editorial</a>.</p>
-<h2>Masthead</h2><ul class="list"><li><span>Dirección editorial</span><span>Ricardo López</span></li><li><span>Redacción</span><span>Redacción El Coro · Nueva York</span></li><li><span>Colaboradores</span><span>Convocatoria abierta</span></li></ul>
+<h2>Masthead</h2><ul class="list"><li><span>Dirección editorial</span><span>Ricardo López</span></li><li><span>Edición</span><span>Yeyo Ruiz</span></li><li><span>Redacción</span><span>Redacción El Coro · Nueva York</span></li><li><span>Colaboradores</span><span>Convocatoria abierta</span></li></ul>
 <h2>Escribe para El Coro</h2><p>Buscamos periodistas, críticos y fotógrafos que vivan la música en su ciudad. Envía tu propuesta y dos muestras de tu trabajo a <b>press@elcoromagazine.com</b> con el asunto “Colabora”.</p>
 <h2>Contacto</h2><p>Prensa, publicistas y sellos: <b>press@elcoromagazine.com</b>. Más opciones en <a href="#contacto">Contacto</a>.</p>`,
 en:`<p class="lede">El Coro is a music magazine made in New York, in Spanish and English. We cover the world's music through the eyes of people who live between two languages and two countries.</p>
 <h2>What we do</h2><p>News, awards, releases, lists, criticism and industry, with verified facts, context and sources in plain sight. Every story opens with a 20-second brief and ends with its sources.</p>
 <h2>Why we exist</h2><p>Big English-language outlets cover Latin music as a niche. Latin outlets rarely cover the global conversation. El Coro fills that space.</p>
 <h2>How we work</h2><p>We only publish what we can confirm, always cite our sources and correct in public. Read our <a href="#politica-editorial">editorial policy</a>.</p>
-<h2>Masthead</h2><ul class="list"><li><span>Editorial director</span><span>Ricardo López</span></li><li><span>Newsroom</span><span>El Coro Newsroom · New York</span></li><li><span>Contributors</span><span>Open call</span></li></ul>
+<h2>Masthead</h2><ul class="list"><li><span>Editorial director</span><span>Ricardo López</span></li><li><span>Editor</span><span>Yeyo Ruiz</span></li><li><span>Newsroom</span><span>El Coro Newsroom · New York</span></li><li><span>Contributors</span><span>Open call</span></li></ul>
 <h2>Write for El Coro</h2><p>We're looking for journalists, critics and photographers who live music in their city. Send your pitch and two clips to <b>press@elcoromagazine.com</b>, subject “Contribute”.</p>
 <h2>Contact</h2><p>Press, publicists and labels: <b>press@elcoromagazine.com</b>.</p>`}},
 "contacto":{k:{es:"El Coro",en:"El Coro"},t:{es:"Contacto",en:"Contact"},body:{es:`<p class="lede">Escríbenos. Leemos todo.</p>
