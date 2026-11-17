@@ -1,5 +1,7 @@
 # Redes de El Coro: guía de publicación automática
 
+> **PAUSA POR RESTRICCIÓN DE INSTAGRAM (17 nov 2026, 4:07 p. m.):** Instagram restringió actividad de la cuenta por publicar mucho de golpe. **No se programa nada en redes hasta el jueves 19 de noviembre a las 4:00 p. m. (hora de Nueva York).** Si lees esto antes de esa hora, termina sin publicar y dilo en una línea. Después, vuelve con calma: máximo 1 publicación el 19, 2 el 20 y luego el ritmo normal de 3 al día, separadas al menos 3 horas.
+
 
 Las redes llevan gente a la web. Cada publicación presenta una nota ya publicada en elcoromagazine.com, con la identidad de El Coro, y manda a leerla completa.
 
