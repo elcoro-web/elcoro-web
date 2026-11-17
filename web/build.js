@@ -69,6 +69,7 @@ const ia = app.indexOf("/*@@A*/"), ja = app.indexOf("/*A@@*/");
 if (ia < 0 || ja < 0) throw new Error("faltan los marcadores de notas en la plantilla");
 const appLite = app.slice(0, ia) + jsonSafe(A.map(a => Object.fromEntries(LITE.filter(k => a[k] !== undefined).map(k => [k, a[k]])))) + app.slice(ja + 7);
 fs.writeFileSync(path.join(OUT, "assets/app.js"), appLite);
+const VER = require("crypto").createHash("sha1").update(appLite + style).digest("hex").slice(0, 10);
 const tagCount = {}; for (const a of A) tagCount[a.tag] = (tagCount[a.tag] || 0) + 1;
 const thinTag = key => { const tg = key.startsWith("t-") ? tags.find(x => "t-" + slug(x) === key) : null; return !!tg && tagCount[tg] < 3; };
 
@@ -117,7 +118,7 @@ ${extra}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 ${fontsLink}
-<link rel="stylesheet" href="/assets/estilo.css">`;
+<link rel="stylesheet" href="/assets/estilo.css?v=${VER}">`;
 }
 
 // ---- render every route ----
@@ -128,7 +129,7 @@ function render(key, file) {
   const d = dom.window.document;
   // the app sets <title>; keep our SEO title instead
   d.title = d.head.querySelector("title").textContent;
-  const s = d.getElementById("__app"); const ext = d.createElement("script"); ext.src = "/assets/app.js"; s.replaceWith(ext);
+  const s = d.getElementById("__app"); const ext = d.createElement("script"); ext.src = "/assets/app.js?v=" + VER; s.replaceWith(ext);
   const nota = A.find(x => x.id === key);
   if (nota) { const inl = d.createElement("script"); inl.textContent = "window.__NOTA=" + jsonSafe(nota) + ";"; ext.before(inl); }
   // move JSON-LD into head for crawlers (app updates it by id)
