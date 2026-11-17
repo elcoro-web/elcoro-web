@@ -1,0 +1,11 @@
+{"id": "guia-artistas", "tema": "rojo", "fuente": "",
+ "laminas": [
+  {"tipo": "portada", "tema": "negro", "chip": "Guía", "etiqueta": "PARA ARTISTAS", "grande": "5 GUÍAS", "alto_grande": 400, "titulo": "Lo que todo artista independiente tiene que saber", "bajada": "Lanzar, cobrar y llegar a la prensa, paso a paso."},
+  {"tipo": "lista", "etiqueta": "GUÍAS", "grande": "1-5", "sub": "Para artistas", "filas": [
+    {"pos": 1, "nombre": "Antes de lanzar", "detalle": "Cinco cosas que tienes que hacer antes de tu canción", "chip": "Empieza aquí"},
+    {"pos": 2, "nombre": "ISRC e ISWC", "detalle": "Los dos códigos que necesita tu canción para cobrar"},
+    {"pos": 3, "nombre": "Regalías", "detalle": "Quién te paga cuando suena tu canción"},
+    {"pos": 4, "nombre": "Press kit", "detalle": "Cómo armar uno que un periodista sí use"},
+    {"pos": 5, "nombre": "Pitch a medios", "detalle": "Cómo escribirle a un medio para que te reseñe"}]},
+  {"tipo": "cierre", "lineas": ["TODAS LAS GUÍAS,", "GRATIS EN LA WEB."]}
+ ]}

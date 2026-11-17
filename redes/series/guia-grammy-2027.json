@@ -1,0 +1,11 @@
+{"id": "guia-grammy-2027", "tema": "rojo", "fuente": "Recording Academy",
+ "laminas": [
+  {"tipo": "portada", "tema": "rojo", "chip": "Guía", "etiqueta": "GRAMMY 2027", "grande": "7 FEB", "alto_grande": 400, "titulo": "Todo lo que tienes que saber", "bajada": "Fecha, sede, los más nominados y los latinos que compiten."},
+  {"tipo": "esencial", "sub": "GRAMMY 2027", "puntos": ["La gala es el domingo 7 de febrero de 2027 en el Crypto.com Arena de Los Ángeles.", "RAYE encabeza con 11 nominaciones y Rosalía la sigue con 9.", "Ocho discos compiten por Álbum del Año; Rosalía es la única artista hispana entre los finalistas.", "26 discos pelean en las cinco categorías de álbum latino."]},
+  {"tipo": "barras", "etiqueta": "LOS MÁS", "grande": "11", "sub": "Nominaciones", "filas": [
+    {"nombre": "RAYE", "valor": 11}, {"nombre": "Rosalía", "valor": 9}, {"nombre": "Ella Langley", "valor": 7},
+    {"nombre": "Miranda Lambert", "valor": 7}, {"nombre": "Olivia Rodrigo", "valor": 7}, {"nombre": "Phoebe Bridgers", "valor": 7},
+    {"nombre": "Bruno Mars", "valor": 6}, {"nombre": "Leon Thomas", "valor": 6}, {"nombre": "Olivia Dean", "valor": 6},
+    {"nombre": "Taylor Swift", "valor": 5}]},
+  {"tipo": "cierre", "lineas": ["NOMINADOS, FECHAS", "Y LO QUE PASE,", "EN LA WEB."]}
+ ]}
