@@ -1,0 +1,17 @@
+{
+ "id": "karol-g-cdmx-17nov-foto",
+ "tema": "rojo",
+ "fuente": "Infobae, La Opinión",
+ "laminas": [
+  {
+   "tipo": "foto",
+   "foto": "redes/fotos/karol-g.jpg",
+   "foco_y": 0.15,
+   "chip": "Agenda",
+   "etiqueta": "HOY",
+   "titulo": "Karol G cierra hoy en el Estadio GNP",
+   "bajada": "El concierto que aplazó el domingo es esta noche.",
+   "credito": "Cortesía de prensa"
+  }
+ ]
+}

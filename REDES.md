@@ -39,7 +39,8 @@ Además de la nota suelta, El Coro tiene formatos fijos que se reconocen en el f
 - **NOMINADOS** (`nominados`): en temporada de premios, una lámina por categoría con las casillas tipográficas de cada obra.
 - **LOS MÁS** (`barras`): rankings con barras (más nominados, más semanas, más reproducciones).
 - Identidad de las series: **negro y rojo** (tema `rojo`: banda roja, fondo negro). Es la firma de El Coro en el feed; otros temas solo como excepción.
-- Sin fotos de artistas ni portadas de discos: las casillas son tipográficas.
+- Fotos: solo las que Rilo deje en `redes/fotos/` y confirme como prensa oficial o con licencia. Con foto, la portada usa el tipo `foto` de `series.py` (foto arriba, degradado a negro, etiqueta roja, titular) con `credito`. Nunca se descargan fotos de internet.
+- Sin foto aprobada, las casillas y portadas son tipográficas.
 - Cuentan como una publicación de feed. Úsalas cuando la nota lo permita; al menos una serie por semana.
 
 ## Cómo se arma cada publicación

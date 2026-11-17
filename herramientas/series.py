@@ -459,12 +459,70 @@ def generar(S, out):
     hechos = []
     for i, L in enumerate(S["laminas"], 1):
         T = TEMAS[L.get("tema", S.get("tema", "rojo"))]
-        fn = TIPOS.get(L["tipo"]) or TIPOS_EXTRA[L["tipo"]]
+        fn = TIPOS.get(L["tipo"]) or TIPOS_EXTRA.get(L["tipo"]) or globals()["TIPOS_EXTRA_FOTO"][L["tipo"]]
         im = fn(L, T, i, total, S)
         p = os.path.join(out, f"{S['id']}-s{i}.jpg")
         im.save(p, quality=92, optimize=True)
         hechos.append(p)
     return hechos
+
+
+def l_foto(L, T, n, total, S):
+    """Portada con foto (solo fotos con permiso: prensa oficial o licencia). Foto arriba, degradado a negro, titular abajo."""
+    im = Image.new("RGB", (W, H), INK)
+    foto = Image.open(os.path.join(RAIZ, L["foto"])).convert("RGB")
+    fw, fh = foto.size
+    alto = 900
+    esc = max(W / fw, alto / fh)
+    foto = foto.resize((int(fw * esc), int(fh * esc)), Image.LANCZOS)
+    fx = (foto.width - W) // 2
+    fy = int((foto.height - alto) * L.get("foco_y", 0.2))
+    im.paste(foto.crop((fx, fy, fx + W, fy + alto)), (0, 0))
+    grad = Image.new("L", (1, 360))
+    for y in range(360):
+        grad.putpixel((0, y), int(255 * (y / 359) ** 1.4))
+    grad = grad.resize((W, 360))
+    im.paste(Image.new("RGB", (W, 360), INK), (0, alto - 360), grad)
+    d = ImageDraw.Draw(im)
+    lk = ajustar(lockup(M, FD, 220, WHITE), 240, 62)
+    im.paste(lk, (X0, 56), lk)
+    if L.get("chip"):
+        f = F(MO, 26)
+        w = tl(d, L["chip"].upper(), f, 0.18) + 40
+        d.rectangle([X1 - w, 62, X1, 114], fill=RED)
+        esp(d, (X1 - w + 20, 74), L["chip"].upper(), f, WHITE, 0.18)
+    fe = F(BS, 76, 900)
+    et = L["etiqueta"].upper()
+    eb = d.textbbox((0, 0), et, font=fe)
+    y = 760
+    d.rectangle([X0, y, X0 + eb[2] - eb[0] + 32, y + eb[3] - eb[1] + 28], fill=RED)
+    d.text((X0 + 16 - eb[0], y + 14 - eb[1]), et, font=fe, fill=WHITE)
+    y += eb[3] - eb[1] + 52
+    f, ls, lh = cabe(d, L["titulo"].upper(), BS, 800, X1 - X0, 260, 116, 60, 0.98, 3)
+    for l in ls:
+        d.text((X0, y), l, font=f, fill=WHITE)
+        y += lh
+    if L.get("bajada"):
+        fb = F(IN, 34, 500)
+        y += 10
+        for l in wrap(d, L["bajada"], fb, X1 - X0)[:2]:
+            d.text((X0, y), l, font=fb, fill=(220, 220, 220))
+            y += 44
+    if L.get("credito"):
+        fc = F(MO, 18)
+        t = ("FOTO: " + L["credito"]).upper()
+        capa = Image.new("RGBA", (int(tl(d, t, fc, 0.1)) + 10, 30), (0, 0, 0, 0))
+        esp(ImageDraw.Draw(capa), (0, 4), t, fc, (235, 235, 235), 0.1)
+        capa = capa.rotate(90, expand=True)
+        im.paste(capa, (X1 + 22, 140), capa)
+    yb = H - 110
+    d.rectangle([X0, yb, X1, yb + 3], fill=RED)
+    esp(d, (X0, yb + 28), "DESLIZA →", F(MO, 26), WHITE, 0.3)
+    esp(d, (X1, yb + 28), "ELCOROMAGAZINE.COM", F(MO, 26), WHITE, 0.2, derecha=True)
+    return im
+
+
+TIPOS_EXTRA_FOTO = dict(foto=l_foto)
 
 
 if __name__ == "__main__":
