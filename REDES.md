@@ -19,10 +19,12 @@ Las redes llevan gente a la web. Cada publicación presenta una nota ya publicad
 - Nunca nada sobre la música de Rilo ni sobre bares o coctelería.
 
 ## Carrusel o reel
-- **Reel** (video 9:16 con la portada, lo esencial y el cierre) para: la noticia grande (peso 3), los momentos (`"tag": "Momento"`) y, si en el día todavía no hay ningún reel programado, la nota que elijas. Así sale al menos un reel al día.
-- **Carrusel** para lo demás.
-- El reel se crea con `python3 herramientas/redes.py video <id>`, que deja el video en `redes/video/` y devuelve `video` y `portada_video`. Antes de subirlo, saca 3 cuadros y míralos con Read para comprobar que el texto no se corte: `ffmpeg -v error -ss <segundo> -i redes/video/<id>-reel.mp4 -frames:v 1 /tmp/cuadro-<segundo>.png` en los segundos 3, 8 y el final menos 1.
-- El video no lleva música: se publica sin audio, que Instagram acepta.
+- **Reel resumen** ("3 noticias que tienes que saber"): una vez al día, en la primera publicación del día, junta 3 notas pendientes de temas distintos: `python3 herramientas/redes.py video <id1> <id2> <id3>`. Las 3 se anotan con `instagram-reel`.
+- **Reel de una nota** para la noticia grande (peso 3) y los momentos (`"tag": "Momento"`): `python3 herramientas/redes.py video <id>`.
+- **Carrusel** para lo demás. Carruseles y reels cuentan igual en el tope de 3 publicaciones de feed al día.
+- Diseño de los reels: cifra o palabra grande, titular corto en mayúsculas, bajada, línea en inglés y pie "1 / 3". Si el titular de la nota es largo, crea `redes/reel/<id>.json` con `titular` (máximo unas 7 palabras), `bajada`, y si la nota da fechas o cifras comparables, `datos` (hasta 3 cajas `[grande, chico]`, con `destacar` = la caja más importante) o `barra` `[parte, total]`. Todo tiene que salir de la nota: no se inventan datos.
+- Antes de subirlo, saca un cuadro de cada pantalla y míralos con Read para comprobar que nada se corte ni se monte: `ffmpeg -v error -ss <segundo> -i redes/video/<archivo>.mp4 -frames:v 1 /tmp/cuadro-<segundo>.png`. En un resumen de 3, los segundos 7, 13 y 20; en un reel de una nota, el 5.
+- El video lleva una base rítmica original generada por la herramienta (sin canciones de terceros).
 
 ## Cómo se arma cada publicación
 1. `python3 herramientas/redes.py preparar <id>` crea las imágenes en `redes/img/`:
@@ -35,7 +37,7 @@ Las redes llevan gente a la web. Cada publicación presenta una nota ya publicad
    También devuelve los textos y los enlaces públicos de las imágenes.
 2. **Sube las imágenes a GitHub antes de programar**, porque Metricool las descarga de esos enlaces: `git add redes/ && git commit -m "Redes: <id>" && git push origin main`. Si el push es rechazado, haz `git pull --rebase origin main` y vuelve a empujar.
 3. Programa en Metricool con `createScheduledPost` (blogId de El Coro, zona horaria America/New_York):
-   - **Instagram reel:** `media` con el `video`, `videoThumbnailUrl` con `portada_video`, `texto_ig` e `instagramData` `{"type":"REEL","showReelOnFeed":true,"isAiGenerated":false}`.
+   - **Instagram reel:** en el texto de un resumen, una línea por nota (1️⃣ 2️⃣ 3️⃣) con su titular; `media` con el `video`, `videoThumbnailUrl` con `portada_video`, `texto_ig` e `instagramData` `{"type":"REEL","showReelOnFeed":true,"isAiGenerated":false}`.
    - **Instagram carrusel:** carrusel de feed con `carrusel` (las dos imágenes), `texto_ig`, `mediaAltText` con `alt` e `instagramData` `{"type":"POST"}`.
    - **Historia (solo peso 3):** otra publicación con `historia`, sin texto y `instagramData` `{"type":"STORY"}`.
    - **Facebook:** publicación aparte con `carrusel`, `texto_link` (lleva el enlace a la nota) y `facebookData` `{"type":"POST"}`.
