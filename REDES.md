@@ -31,6 +31,7 @@ Además de la nota suelta, El Coro tiene formatos fijos que se reconocen en el f
 - **TOP 10** (`lista`): cada semana, cuando salga la nota del Billboard 200 o del Hot 100, un carrusel portada + 1-5 + 6-10 + cierre, con chips como "DEBUT" o "5 SEMANAS EN EL NO. 1".
 - **NOMINADOS** (`nominados`): en temporada de premios, una lámina por categoría con las casillas tipográficas de cada obra.
 - **LOS MÁS** (`barras`): rankings con barras (más nominados, más semanas, más reproducciones).
+- Identidad de las series: **negro y rojo** (tema `rojo`: banda roja, fondo negro). Es la firma de El Coro en el feed; otros temas solo como excepción.
 - Sin fotos de artistas ni portadas de discos: las casillas son tipográficas.
 - Cuentan como una publicación de feed. Úsalas cuando la nota lo permita; al menos una serie por semana.
 
