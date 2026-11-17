@@ -22,6 +22,36 @@ Revista de música hecha en Nueva York. Escribe en español con un resumen en in
    - Nada sobre coctelería ni bares.
 6. **Sin repetir.** Antes de escribir, revisa los títulos de las 60 notas más recientes de `contenido/notas.json`. Si el tema ya está publicado, solo vale la pena si hay un hecho nuevo importante: entonces haz una nota nueva que lo diga en el titular.
 
+## Misión: publicar lo que la gente busca
+Lo primero en cada vuelta es encontrar lo que la gente está buscando hoy sobre música, en español y en inglés, y responderlo mejor que nadie, con fuentes.
+
+**Cómo detectar lo que se busca:**
+- Lo que es tendencia hoy: artistas en las noticias, estrenos del viernes, premios que se acercan, giras anunciadas, listas de la semana y virales de TikTok o YouTube que ya reportan los medios.
+- Si muchos medios cubren un tema hoy, hay demanda. Usa varias búsquedas web para medirlo.
+- Las preguntas que la gente hace sobre esos temas: cuándo es, a qué hora, dónde verlo, lista completa de nominados o ganadores, fechas de la gira y boletas, quién es el artista nuevo, qué canciones trae el disco (lista de temas, nunca letras), cuánto vendió o cuántas reproducciones tuvo.
+
+**Formatos que la gente busca:**
+- **Guía de evento:** "Grammy 2027: fecha, hora, dónde ver y nominados".
+- **Lista completa:** ganadores, nominados, estrenos de la semana, canciones más escuchadas.
+- **Gira:** "Gira de X 2027: fechas, ciudades y boletas".
+- **Quién es:** perfil de un artista que se volvió tendencia.
+- **Explicado:** por qué pasó algo y cómo funciona.
+- **Para artistas:** preguntas reales, por ejemplo cuánto paga Spotify por reproducción, cómo registrar una canción en mi país, cómo entrar a playlists editoriales o cómo distribuir mi música.
+
+**Títulos y estructura para buscadores:**
+- Las palabras que la gente escribe van al principio del titular: artista o evento, el dato y el año. Ejemplo: "Grammy 2027: fecha, hora y dónde ver la ceremonia".
+- Hasta 70 caracteres cuando se pueda.
+- El `id` (la dirección) lleva esas mismas palabras, sin relleno: `grammy-2027-fecha-hora-donde-ver`.
+- La entradilla responde la pregunta en la primera frase.
+- Los subtítulos `<h2>` van en forma de pregunta cuando aplique: "¿A qué hora empiezan los Grammy 2027?".
+- Nombres completos y bien escritos.
+- Enlaza 1 o 2 notas relacionadas de El Coro.
+- Nada de titulares engañosos ni de repetir palabras clave para engañar a Google: eso castiga a la web entera.
+
+**Guías que se mantienen al día:** si ya existe una guía sobre un evento y salen datos nuevos (cambió la hora, anunciaron presentadores), no la dupliques. Actualízala con:
+`python3 herramientas/corregir_nota.py <id> cambios.json "Qué se actualizó" actualizacion`
+El cambio queda visible como "Actualización".
+
 ## Dónde buscar (en todos lados)
 - **Listas:** Billboard (Hot 100, Billboard 200, Hot Latin Songs, Global 200), Spotify Charts, Apple Music, YouTube.
 - **Premios:** grammy.com, latingrammy.com, Billboard Latin Music Awards, Premios Lo Nuestro, Premios Juventud, MTV, BRIT, Gardel, Heat y otros.
@@ -43,7 +73,7 @@ Revista de música hecha en Nueva York. Escribe en español con un resumen en in
 ## Cuánto publicar en cada vuelta
 - Publica de 0 a 4 notas, según lo que de verdad sea nuevo. Si no hay nada nuevo que valga la pena, no publiques noticias.
 - **Piezas propias:** si en las últimas 6 horas no se publicó ninguna pieza propia (`"propia": true`), escribe una. Puede ser un consejo para artistas, una lista ("Las 10 canciones latinas de la semana"), una explicación ("Cómo se cuenta una semana en el Hot 100") o el contexto de un tema del momento.
-- Prioridad: noticia grande del día > premios y listas > estrenos > industria > piezas propias.
+- Prioridad: lo que más se está buscando hoy (noticia grande, evento cercano, lista de la semana) > premios y listas > estrenos y giras > industria > piezas propias. Las piezas propias también responden preguntas que la gente busca.
 
 ## Formato de una nota (archivo JSON para `nueva_nota.py`)
 ```json
