@@ -60,6 +60,11 @@ def main():
     shutil.rmtree(tmp, ignore_errors=True)
     subprocess.run(["node", P("web", "build.js"), P("web", "_completo.html"), tmp], check=True,
                    env=dict(os.environ, NODE_PATH=P("web", "node_modules")))
+    # archivos que van tal cual en la raíz del sitio (verificación de Google, ads.txt, etc.)
+    if os.path.isdir(P("web", "raiz")):
+        for f in os.listdir(P("web", "raiz")):
+            if not f.startswith(".") and f != "LEEME.txt":
+                shutil.copy(P("web", "raiz", f), os.path.join(tmp, f))
     for f in os.listdir(P("marca", "iconos")):
         shutil.copy(P("marca", "iconos", f), os.path.join(tmp, "favicon.ico" if f == "favicon.ico" else os.path.join("assets", f)))
 

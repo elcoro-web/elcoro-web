@@ -1,0 +1,2 @@
+Archivos que se copian tal cual a la raíz de elcoromagazine.com en cada construcción
+(verificación de Google Search Console, ads.txt, etc.). No se borran.
