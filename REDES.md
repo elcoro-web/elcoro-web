@@ -1,5 +1,7 @@
 # Redes de El Coro: guía de publicación automática
 
+> **PAUSA (17 nov 2026): no se programa nada en redes hasta que Rilo lo autorice.** El perfil se está relanzando con el concepto negro y rojo. Si lees esto en una ejecución automática, termina sin publicar y dilo en una línea.
+
 Las redes llevan gente a la web. Cada publicación presenta una nota ya publicada en elcoromagazine.com, con la identidad de El Coro, y manda a leerla completa.
 
 ## Regla que no se rompe: solo las cuentas de El Coro
