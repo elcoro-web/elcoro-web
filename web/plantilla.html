@@ -489,6 +489,7 @@ en:`<p class="lede">Conditions for using {{DOMINIO}}.</p><h2>Content</h2><p>{{NO
 const COV=/*@@PORTADAS@@*/{};
 const FOTOS=/*@@FOTOS@@*/{};
 const BANCO=/*@@BANCO@@*/{};
+const AUTORES=/*@@AUTORES@@*/{};
 const SUBS={premios:[["Grammy 2027","#premios"],["Latin Grammy 2026","#latin-grammy-ganadores"]],lanzamientos:[["Estrenos latinos","#estrenos-latinos"],["Estrenos en el mundo","#estrenos-mundo"]],listas:[["Más nominados Grammy 2027","#lista-nominados"],["Más premiados Latin Grammy","#lista-latin-grammy"]]};
 let lang="es";try{lang=localStorage.getItem("{{SLUG}}-lang")||"es"}catch(e){}
 try{const th=localStorage.getItem("{{SLUG}}-theme");if(th)document.documentElement.dataset.theme=th}catch(e){}
@@ -529,7 +530,7 @@ function today(){let s="";try{s=new Intl.DateTimeFormat(lang==="es"?"es-US":"en-
 function cv(a,cls=""){const ph=FOTOS[a.id];if(ph)return `<div class="cv ft ${cls}"><img src="/assets/fotos/${a.id}-s.webp" srcset="/assets/fotos/${a.id}-s.webp 560w, /assets/fotos/${a.id}.webp 1200w" sizes="(max-width:700px) 100vw, 50vw" alt="" width="${ph.w}" height="${ph.h}" ${/wide|cine/.test(cls)?`fetchpriority="high" decoding="async"`:`loading="lazy" decoding="async"`} style="object-position:${ph.pos||"50% 30%"}"></div>`;const c=COV[a.id]||{f:"{{NOMBRE}}",bg:"#0b0b0b",fg:"#fff",c:a.tag,e:""};
  return `<div class="cv ${cls}" style="background:${c.bg};color:${c.fg};${c.bd?"box-shadow:inset 0 0 0 1px var(--rule);":""}${c.fs?`--fs:${c.fs};`:""}${c.al?`--al:${c.al};`:""}" aria-hidden="true"><div class="c"><b>{{LOGO}}</b><span>${a.tag}</span></div><div class="f">${c.f}</div><div class="c"><span>${c.e}</span><span>${c.c}</span></div></div>`}
 const kl=a=>`<div class="kline"><a class="k" href="#${a.sec}">${t().sections[a.sec]}</a>${a.tag!==T.es.sections[a.sec]?`<span class="dot">·</span><a class="kt" href="#t-${slug(a.tag)}">${a.tag}</a>`:""}</div>`;
-const by=a=>`<div class="by">${u().by} <b>${u().newsroom}</b> · ${lang==="es"?"Edición":"Edited by"}: <b>Yeyo Ruiz</b> · <time datetime="${a.date}">${fdate(a.date)}</time> · ${a.min} ${t().read}</div>`;
+const by=a=>`<div class="by">${u().by} <b>${AUTORES[a.id]||u().newsroom}</b>${AUTORES[a.id]?"":` · ${lang==="es"?"Edición":"Edited by"}: <b>Yeyo Ruiz</b>`} · <time datetime="${a.date}">${fdate(a.date)}</time> · ${a.min} ${t().read}</div>`;
 const card=(a,dek)=>`<a class="card" href="#${a.id}">${cv(a)}<div class="card-t"><span class="k">${t().sections[a.sec]}</span><h3 class="h h-m">${title(a)}</h3>${dek?`<p class="dek">${a.dek}</p>`:""}</div></a>`;
 const mini=a=>`<a class="mini-row" href="#${a.id}"><div><span class="k">${a.tag}</span><h3 class="h h-s">${title(a)}</h3></div>${cv(a,"sq")}</a>`;
 const SECKEYS=()=>Object.keys(t().sections).filter(k=>!["inicio","manifiesto"].includes(k));
@@ -616,7 +617,7 @@ function route(){
   openOv("#ov",false);openOv("#sv",false);document.documentElement.lang=lang;scrollTo(0,0);
   document.title=a?`${title(a)} | {{NOMBRE_LARGO}}`:pg?`${pg.t[lang]} | {{NOMBRE_LARGO}}`:"{{NOMBRE_LARGO}}";
   let ld=document.getElementById("ld");if(!ld){ld=document.createElement("script");ld.type="application/ld+json";ld.id="ld";document.body.appendChild(ld)}
-  ld.textContent=JSON.stringify(a?{"@context":"https://schema.org","@type":"NewsArticle",headline:a.title,description:a.dek,datePublished:a.date,inLanguage:"es",articleSection:T.es.sections[a.sec],author:{"@type":"Organization",name:"Redacción {{NOMBRE}}"},editor:{"@type":"Person",name:"Yeyo Ruiz"},publisher:{"@type":"NewsMediaOrganization",name:"{{NOMBRE_LARGO}}"},citation:a.src.map(x=>x[1])}:{"@context":"https://schema.org","@type":"NewsMediaOrganization",name:"{{NOMBRE_LARGO}}",url:"https://{{DOMINIO}}",email:"{{EMAIL}}",slogan:"La música del mundo, en tiempo real.",sameAs:["https://www.instagram.com/{{IG}}"]});
+  ld.textContent=JSON.stringify(a?{"@context":"https://schema.org","@type":"NewsArticle",headline:a.title,description:a.dek,datePublished:a.date,inLanguage:"es",articleSection:T.es.sections[a.sec],author:AUTORES[a.id]?{"@type":"Person",name:AUTORES[a.id]}:{"@type":"Organization",name:"Redacción {{NOMBRE}}"},editor:{"@type":"Person",name:"Yeyo Ruiz"},publisher:{"@type":"NewsMediaOrganization",name:"{{NOMBRE_LARGO}}"},citation:a.src.map(x=>x[1])}:{"@context":"https://schema.org","@type":"NewsMediaOrganization",name:"{{NOMBRE_LARGO}}",url:"https://{{DOMINIO}}",email:"{{EMAIL}}",slogan:"La música del mundo, en tiempo real.",sameAs:["https://www.instagram.com/{{IG}}"]});
 }
 function setLang(){lang=lang==="es"?"en":"es";try{localStorage.setItem("{{SLUG}}-lang",lang)}catch(e){}route()}
 $("#menuBtn").onclick=()=>openOv("#ov",true);$("#closeBtn").onclick=()=>openOv("#ov",false);

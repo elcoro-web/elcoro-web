@@ -79,8 +79,12 @@ def main():
                 FOT[n["id"]] = {"alt": b["n"] + ", foto de prensa", "altEn": b["n"] + ", press photo", "credito": "Foto: cortesía de prensa",
                                 "creditoEn": "Photo: press handout", "pie": b["n"], "pos": b["pos"], "w": b["w"], "h": b["h"]}
         paso(f"banco de fotos: {len(BANCO)} artistas · portadas automáticas: {len(AUTO)}")
+    AUT = {}
+    if os.path.exists(P("web", "autores.json")):
+        AUT = {k: v for k, v in json.load(open(P("web", "autores.json"), encoding="utf-8")).items() if not k.startswith("_")}
     completo = (plantilla.replace("/*@@NOTAS@@*/[]", "/*@@A*/" + js(A) + "/*A@@*/").replace("/*@@PORTADAS@@*/{}", js(COV))
-                .replace("/*@@FOTOS@@*/{}", js(FOT)).replace("/*@@BANCO@@*/{}", js(BANCO)))
+                .replace("/*@@FOTOS@@*/{}", js(FOT)).replace("/*@@BANCO@@*/{}", js(BANCO))
+                .replace("/*@@AUTORES@@*/{}", js(AUT)))
     open(P("web", "_completo.html"), "w", encoding="utf-8").write(completo)
 
     # 2. imágenes para compartir: solo las que faltan
