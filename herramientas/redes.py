@@ -5,7 +5,7 @@
   python3 herramientas/redes.py preparar <id>           crea las imágenes en redes/img/ y muestra textos y enlaces (JSON)
   python3 herramientas/redes.py marcar <id> <redes> <fecha_programada> [enlace_metricool]
                                                         anota la publicación en redes/publicadas.json (redes separadas por coma)
-  python3 herramientas/redes.py video <id>              crea el reel (video 9:16) en redes/video/ y muestra el enlace (JSON)
+  python3 herramientas/redes.py video <id> [id2 id3]    crea el reel (video 9:16, 1 a 3 notas) en redes/video/ y muestra el enlace (JSON)
   python3 herramientas/redes.py hoy                     publicaciones programadas hoy (hora de Nueva York)
 """
 import glob, json, os, re, subprocess, sys, unicodedata
@@ -103,19 +103,32 @@ def preparar(id_):
     }, ensure_ascii=False, indent=1))
 
 
-def video(id_):
-    n = next((x for x in notas() if x["id"] == id_), None)
-    if not n:
-        sys.exit(f"no existe la nota {id_}")
+def video(ids):
+    """Reel con 1 a 3 notas (herramientas/reel.py)."""
+    todas = notas()
+    ns = []
+    for id_ in ids[:3]:
+        n = next((x for x in todas if x["id"] == id_), None)
+        if not n:
+            sys.exit(f"no existe la nota {id_}")
+        ns.append(n)
     os.makedirs(VID, exist_ok=True)
-    tmp = P("redes", "_nota.json")
-    json.dump(n, open(tmp, "w", encoding="utf-8"), ensure_ascii=False)
-    subprocess.run([sys.executable, P("herramientas", "reel.py"), tmp, P("marca", "fuentes"), VID, P("marca.json")], check=True,
-                   stdout=subprocess.DEVNULL)
-    os.remove(tmp)
-    print(json.dumps({"id": id_, "video": RAWV + id_ + "-reel.mp4", "portada_video": RAWV + id_ + "-reel.jpg",
-                      "titulo_90": limpio(n["title"])[:90],
-                      "archivos": [os.path.relpath(os.path.join(VID, id_ + s), R) for s in ("-reel.mp4", "-reel.jpg")]},
+    nombre = ids[0] if len(ids) == 1 else "resumen-" + datetime.now(NY).strftime("%Y%m%d-%H%M")
+    tmps = []
+    for i, n in enumerate(ns):
+        tmp = P("redes", f"_nota{i}.json")
+        json.dump(n, open(tmp, "w", encoding="utf-8"), ensure_ascii=False)
+        tmps.append(tmp)
+    salida = os.path.join(VID, nombre + "-reel.mp4")
+    try:
+        subprocess.run([sys.executable, P("herramientas", "reel.py"), salida, P("marca.json"), P("marca", "fuentes"), *tmps],
+                       check=True, stdout=subprocess.DEVNULL)
+    finally:
+        for t in tmps:
+            os.remove(t)
+    print(json.dumps({"ids": ids[:3], "video": RAWV + nombre + "-reel.mp4", "portada_video": RAWV + nombre + "-reel.jpg",
+                      "titulo_90": (limpio(ns[0]["title"]) if len(ns) == 1 else f"{len(ns)} noticias de música que tienes que saber hoy")[:90],
+                      "archivos": [os.path.relpath(os.path.join(VID, nombre + s), R) for s in ("-reel.mp4", "-reel.jpg")]},
                      ensure_ascii=False, indent=1))
 
 
@@ -148,8 +161,8 @@ if __name__ == "__main__":
         preparar(a[1])
     elif a[0] == "marcar" and len(a) in (4, 5):
         marcar(*a[1:])
-    elif a[0] == "video" and len(a) == 2:
-        video(a[1])
+    elif a[0] == "video" and 2 <= len(a) <= 4:
+        video(a[1:])
     elif a[0] == "hoy":
         hoy()
     else:
