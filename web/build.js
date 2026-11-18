@@ -116,7 +116,7 @@ function metaFor(key) {
   const sec = T.es.sections[key];
   let title = `${M.nombre_largo} — La música del mundo, en tiempo real`, desc = DEF_DESC, type = "website", extra = "", robots = "index,follow,max-image-preview:large";
   if (a) {
-    title = `${a.title} | ${M.nombre_largo}`; desc = a.dek; type = "article";
+    title = strip(a.title).length > 58 ? strip(a.title) : `${strip(a.title)} | ${M.nombre}`; desc = a.dek; type = "article"; // Google corta cerca de 60 caracteres: el titular va primero y la marca solo si cabe
     extra = `<meta property="article:published_time" content="${PUB(a)}">\n<meta property="article:modified_time" content="${MODN(a)}">\n<meta property="article:section" content="${esc(T.es.sections[a.sec])}">\n<meta property="article:tag" content="${esc(a.tag)}">`;
   } else if (pg) { title = `${pg.t.es} | ${M.nombre_largo}`; desc = strip(pg.body.es).slice(0, 155); }
   else if (tg) { title = `Tema: ${tg} | ${M.nombre_largo}`; desc = `Todas las notas de ${M.nombre} sobre ${tg}.`; if (thinTag(key)) robots = "noindex,follow"; }
@@ -134,7 +134,7 @@ function metaFor(key) {
 <meta property="og:site_name" content="${M.nombre_largo}">
 <meta property="og:locale" content="es_US">
 <meta property="og:type" content="${type}">
-<meta property="og:title" content="${esc(title.replace(" | " + M.nombre_largo, ""))}">
+<meta property="og:title" content="${esc(a ? strip(a.title) : title.replace(" | " + M.nombre_largo, ""))}">
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${url}">
 <meta property="og:image" content="${SITE}${(a && OGMAP[a.id]) || "/assets/og-default.jpg"}">
