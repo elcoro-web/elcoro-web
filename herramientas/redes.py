@@ -8,6 +8,9 @@
   python3 herramientas/redes.py video <id> [id2 id3]    crea el reel (video 9:16, 1 a 3 notas) en redes/video/ y muestra el enlace (JSON)
   python3 herramientas/redes.py cancelar <id> [motivo]   la publicación no salió: la nota vuelve a quedar pendiente
   python3 herramientas/redes.py hoy                     publicaciones programadas hoy (hora de Nueva York)
+  python3 herramientas/redes.py puedo [fecha_iso]       ¿se puede programar una publicación de feed a esa hora? (pausa, tope diario, 3 h de separación)
+
+El ritmo está blindado aquí y no en la memoria de nadie: `marcar` se niega a anotar una publicación de feed que rompa las reglas.
 """
 import glob, json, os, re, subprocess, sys, unicodedata
 from datetime import datetime, timedelta
@@ -22,6 +25,13 @@ RAW = "https://raw.githubusercontent.com/elcoro-web/elcoro-web/main/redes/img/"
 VID = P("redes", "video")
 RAWV = "https://raw.githubusercontent.com/elcoro-web/elcoro-web/main/redes/video/"
 DOM = "https://elcoromagazine.com"
+# --- Ritmo seguro para Instagram (cuenta nueva: Instagram castiga las ráfagas) ---
+PAUSA_HASTA = datetime(2026, 11, 19, 16, 0, tzinfo=NY)       # restricción de Instagram del 17 nov 2026
+RAMPA = {"2026-11-19": 1, "2026-11-20": 2}                   # vuelta gradual después de la pausa
+TOPE_FEED_DIA = 3                                             # ritmo normal: máximo 3 publicaciones de feed al día
+SEPARACION = timedelta(hours=3)                               # entre dos publicaciones de feed
+FEED = {"instagram", "instagram-reel", "instagram-carrusel"}  # las historias no cuentan como feed
+
 HASH_SEC = {"noticias": "#NoticiasMusicales", "premios": "#PremiosMusicales", "listas": "#ListasMusicales",
             "lanzamientos": "#NuevaMúsica", "critica": "#CríticaMusical", "industria": "#IndustriaMusical",
             "artistas": "#ArtistasIndependientes"}
@@ -134,9 +144,66 @@ def video(ids):
                      ensure_ascii=False, indent=1))
 
 
+def feed_vigente():
+    """Fechas (NY) de las publicaciones de feed anotadas y no canceladas después."""
+    canc, out = {}, []
+    reg = registro()
+    for x in reg:
+        if x.get("cancelada"):
+            canc.setdefault(x["id"], []).append(x["registrada"])
+    for x in reg:
+        if x.get("cancelada") or not FEED & set(x.get("redes") or []):
+            continue
+        if any(c >= x["registrada"] for c in canc.get(x["id"], [])):
+            continue
+        try:
+            f = datetime.fromisoformat(x["programada"].replace("Z", "+00:00"))
+        except ValueError:
+            continue
+        out.append(f.astimezone(NY) if f.tzinfo else f.replace(tzinfo=NY))
+    return out
+
+
+def motivo_no(fecha):
+    """None si se puede programar una publicación de feed en `fecha`; si no, el motivo."""
+    ahora = datetime.now(NY)
+    if ahora < PAUSA_HASTA or fecha < PAUSA_HASTA:
+        return f"pausa por restricción de Instagram hasta {PAUSA_HASTA:%d/%m %H:%M} (Nueva York)"
+    if fecha < ahora + timedelta(minutes=15):
+        return "la hora tiene que estar al menos 15 minutos en el futuro"
+    if fecha.hour < 7:
+        return "nada de madrugada (00:00 a 07:00)"
+    dia = fecha.strftime("%Y-%m-%d")
+    tope = RAMPA.get(dia, TOPE_FEED_DIA)
+    otras = feed_vigente()
+    del_dia = [f for f in otras if f.strftime("%Y-%m-%d") == dia]
+    if len(del_dia) >= tope:
+        return f"ese día ya tiene {len(del_dia)} publicaciones de feed (tope {tope})"
+    cerca = [f for f in otras if abs(f - fecha) < SEPARACION]
+    if cerca:
+        return f"hay otra publicación de feed a menos de 3 horas ({min(cerca, key=lambda f: abs(f - fecha)):%d/%m %H:%M})"
+    return None
+
+
+def puedo(fecha_txt=None):
+    fecha = datetime.fromisoformat(fecha_txt) if fecha_txt else datetime.now(NY) + timedelta(minutes=30)
+    fecha = fecha.astimezone(NY) if fecha.tzinfo else fecha.replace(tzinfo=NY)
+    m = motivo_no(fecha)
+    if m:
+        print(f"NO: {m}")
+        sys.exit(1)
+    print(f"SÍ: se puede programar una publicación de feed el {fecha:%d/%m %H:%M} (Nueva York)")
+
+
 def marcar(id_, redes, fecha, enlace=""):
     if not any(x["id"] == id_ for x in notas()):
         sys.exit(f"no existe la nota {id_}")
+    if FEED & {x.strip() for x in redes.split(",")}:
+        f = datetime.fromisoformat(fecha.replace("Z", "+00:00"))
+        f = f.astimezone(NY) if f.tzinfo else f.replace(tzinfo=NY)
+        m = motivo_no(f)
+        if m:
+            sys.exit(f"✗ no se anota: {m}. Borra esa publicación de Metricool (o reprográmala) y vuelve a intentarlo")
     r = registro()
     r.append({"id": id_, "redes": [x.strip() for x in redes.split(",") if x.strip()], "programada": fecha,
               "metricool": enlace, "registrada": datetime.now(NY).strftime("%Y-%m-%d %H:%M")})
@@ -189,5 +256,7 @@ if __name__ == "__main__":
         cancelar(*a[1:])
     elif a[0] == "hoy":
         hoy()
+    elif a[0] == "puedo" and len(a) in (1, 2):
+        puedo(*a[1:])
     else:
         sys.exit(__doc__)

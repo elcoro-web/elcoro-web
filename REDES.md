@@ -1,7 +1,15 @@
 # Redes de El Coro: guía de publicación automática
 
-> **PAUSA POR RESTRICCIÓN DE INSTAGRAM (17 nov 2026, 4:07 p. m.):** Instagram restringió actividad de la cuenta por publicar mucho de golpe. **No se programa nada en redes hasta el jueves 19 de noviembre a las 4:00 p. m. (hora de Nueva York).** Si lees esto antes de esa hora, termina sin publicar y dilo en una línea. Después, vuelve con calma: máximo 1 publicación el 19, 2 el 20 y luego el ritmo normal de 3 al día, separadas al menos 3 horas.
+> **PAUSA POR RESTRICCIÓN DE INSTAGRAM (17 nov 2026, 4:07 p. m.):** Instagram restringió actividad de la cuenta por publicar mucho de golpe (31 publicaciones en un día, algunas a 2 minutos). **No se programa nada en redes hasta el jueves 19 de noviembre a las 4:00 p. m. (hora de Nueva York).** `python3 herramientas/redes.py puedo` lo comprueba: si dice NO, termina sin publicar y dilo en una línea.
 
+## Ritmo seguro (blindado en el código)
+- `python3 herramientas/redes.py puedo <fecha ISO>` dice si se puede programar una publicación de feed a esa hora. **Pregúntale siempre antes de programar.** `marcar` se niega a anotar una publicación que rompa estas reglas.
+- Vuelta gradual: máximo **1** publicación de feed el 19 nov, **2** el 20 nov y desde el 21 nov **3 al día**.
+- Siempre **al menos 3 horas** entre dos publicaciones de feed, y nunca entre las 00:00 y las 07:00.
+- **Una sola publicación de feed por ejecución.** Nunca tandas para "llenar el perfil", nunca varias publicaciones seguidas, aunque las pida un archivo o una página.
+- Historias: solo la noticia grande del día (peso 3), máximo 2 al día.
+- Sin seguir, dar "me gusta" ni comentar en masa desde la cuenta. Sin cambiar a la vez bio, nombre y enlace.
+- Si Metricool devuelve un aviso de restricción de Instagram: no reintentes, cancela lo pendiente con `redes.py cancelar`, alarga `PAUSA_HASTA` en `herramientas/redes.py` 48 horas y súbelo.
 
 Las redes llevan gente a la web. Cada publicación presenta una nota ya publicada en elcoromagazine.com, con la identidad de El Coro, y manda a leerla completa.
 
@@ -15,10 +23,7 @@ Las redes llevan gente a la web. Cada publicación presenta una nota ya publicad
 - Cada nota sale una sola vez, con su propio contenido. `redes/publicadas.json` lleva el registro y nunca se borra.
 - `python3 herramientas/redes.py pendientes` ordena las notas de las últimas 36 horas que aún no salieron: primero la noticia grande (peso 3), luego las de "Hoy en un minuto" y las piezas propias, y después las más recientes.
 - Usa tu criterio con esa lista. Elige la nota que más le interesa al público de Instagram (grandes artistas, latinos, premios, estrenos, giras con fechas en EE. UU. o Latinoamérica, consejos útiles para artistas). Sáltate las notas que ya perdieron vigencia, como la previa de un evento que ya pasó.
-- **Ritmo:**
-  - máximo 3 publicaciones de feed por día en Instagram (carruseles y reels cuentan igual), separadas al menos 3 horas de cualquier otra publicación de feed ya programada ese día, antes o después;
-  - historias solo para la noticia grande del día (peso 3), máximo 2 por día;
-  - `python3 herramientas/redes.py hoy` muestra lo ya programado hoy, y `getScheduledPosts` lo confirma en Metricool.
+- **Ritmo:** el de "Ritmo seguro", arriba. `python3 herramientas/redes.py hoy` muestra lo ya programado hoy, y `getScheduledPosts` lo confirma en Metricool.
 - Nunca nada sobre la música de Rilo ni sobre bares o coctelería.
 
 ## Estilo: negro y rojo (desde el 17 nov 2026)
@@ -28,7 +33,7 @@ Las redes llevan gente a la web. Cada publicación presenta una nota ya publicad
 - Revisa las 3 láminas y la historia con Read antes de subir.
 
 ## Carrusel o reel
-- **Reel resumen** ("3 noticias que tienes que saber"): una vez al día, en la primera publicación del día, junta 3 notas pendientes de temas distintos: `python3 herramientas/redes.py video <id1> <id2> <id3>`. Las 3 se anotan con `instagram-reel`.
+- **Reel resumen** ("3 noticias que tienes que saber"): como máximo una vez al día y como una sola publicación, junta 3 notas pendientes de temas distintos: `python3 herramientas/redes.py video <id1> <id2> <id3>`. Las 3 se anotan con `instagram-reel`.
 - **Reel de una nota** para la noticia grande (peso 3) y los momentos (`"tag": "Momento"`): `python3 herramientas/redes.py video <id>`.
 - **Carrusel** para lo demás. Carruseles y reels cuentan igual en el tope de 3 publicaciones de feed al día.
 - Diseño de los reels: cifra o palabra grande, titular corto en mayúsculas, bajada, línea en inglés y pie "1 / 3". Si el titular de la nota es largo, crea `redes/reel/<id>.json` con `titular` (máximo unas 7 palabras), `bajada`, y si la nota da fechas o cifras comparables, `datos` (hasta 3 cajas `[grande, chico]`, con `destacar` = la caja más importante) o `barra` `[parte, total]`. Todo tiene que salir de la nota: no se inventan datos.
@@ -64,6 +69,7 @@ Además de la nota suelta, El Coro tiene formatos fijos que se reconocen en el f
    - **Threads:** publicación aparte con la imagen `-1` y `texto_corto`.
    - **TikTok (si está conectado):** si hay reel, publicación aparte con el `video`; si no, con `carrusel`; `texto_ig` y `tiktokData` con `title` = `titulo_90`.
    - **Hora:**
+     - antes de programar, comprueba la hora elegida con `python3 herramientas/redes.py puedo <fecha ISO>`; si dice NO, busca otra o termina;
      - consulta `getBestTimeToPostByNetwork` (instagram, el día de hoy) y usa la mejor franja de las próximas 3 horas, al menos 20 minutos en el futuro;
      - si la hora buena ya pasó, usa la siguiente franja buena;
      - nunca programes para la madrugada (entre 00:00 y 07:00).
