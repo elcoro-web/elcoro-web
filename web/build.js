@@ -61,7 +61,7 @@ function rep(from, to, all) {
 rep(`const h=(location.hash||"#inicio").slice(1);`, `const h=CUR();`);
 rep(`location.hash==="#"+k`, `CUR()===k`);
 rep(`document.documentElement.lang=lang;scrollTo(0,0);`, `document.documentElement.lang=lang;fixLinks(document);if(window.__booted)scrollTo(0,0);window.__booted=1;`);
-rep(`datePublished:a.date,`, `datePublished:a.date+"T"+(a.hora||"09:00")+":00-05:00",dateModified:a.date+"T"+(a.hora||"09:00")+":00-05:00",url:SITE+ROUTE[a.id],mainEntityOfPage:SITE+ROUTE[a.id],image:[SITE+(FOTOS[a.id]?"/assets/fotos/"+a.id+".jpg":(OG[a.id]||"/assets/og-default.jpg"))],`);
+rep(`datePublished:a.date,`, `datePublished:a.date+"T"+(a.hora||"09:00")+":00-05:00",dateModified:MOD(a),url:SITE+ROUTE[a.id],mainEntityOfPage:SITE+ROUTE[a.id],image:[SITE+(FOTOS[a.id]?"/assets/fotos/"+a.id+".jpg":(OG[a.id]||"/assets/og-default.jpg"))],`);
 rep(`publisher:{"@type":"NewsMediaOrganization",name:"${M.nombre_largo}"}`, `publisher:{"@type":"NewsMediaOrganization",name:"${M.nombre_largo}",url:SITE,logo:{"@type":"ImageObject",url:SITE+"/assets/icon-512.png"}}`);
 rep(`riverShown=n;$("#count")`, `fixLinks($("#feed"));riverShown=n;$("#count")`);
 rep(`addEventListener("hashchange",route);`, ``);
@@ -70,6 +70,7 @@ rep(`function setLang(){lang=`, `function setLang(){window.__nt=1;lang=`);
 
 const shim = `const SITE=${JSON.stringify(SITE)};const OG=${JSON.stringify(OGMAP)};const ROUTE=${JSON.stringify(ROUTE)};
 const CUR=()=>{const p=location.pathname.replace(/index\\.html$/,"");for(const k in ROUTE)if(ROUTE[k]===p)return k;return "inicio"};
+const MOD=a=>{const p=a.date+"T"+(a.hora||"09:00")+":00-05:00";const c=(a.correcciones||[]).map(x=>x.iso||(x.fecha?x.fecha.split(".").reverse().join("-")+"T12:00:00-05:00":"")).filter(Boolean).sort();return c.length&&c[c.length-1]>p?c[c.length-1]:p};
 const fmtD=d=>{const [y,m,dd]=(d||"").split("-");return lang==="es"?dd+"."+m+"."+y:m+"/"+dd+"/"+y};
 function fixLinks(r){r.querySelectorAll('a[href^="#"]').forEach(a=>{const k=a.getAttribute("href").slice(1);if(ROUTE[k])a.setAttribute("href",ROUTE[k])})}
 document.addEventListener("click",e=>{const a=e.target.closest('a[href^="#"]');if(!a)return;const k=a.getAttribute("href").slice(1);if(ROUTE[k]){e.preventDefault();location.href=ROUTE[k]}},true);
@@ -89,6 +90,21 @@ const VER = require("crypto").createHash("sha1").update(appLite + style).digest(
 const tagCount = {}; for (const a of A) tagCount[a.tag] = (tagCount[a.tag] || 0) + 1;
 const thinTag = key => { const tg = key.startsWith("t-") ? tags.find(x => "t-" + slug(x) === key) : null; return !!tg && tagCount[tg] < 3; };
 
+// ---- fechas de publicación y de última actualización ----
+const PUB = a => `${a.date}T${a.hora || "09:00"}:00-05:00`;
+const MODN = a => { const c = (a.correcciones || []).map(x => x.iso || (x.fecha ? x.fecha.split(".").reverse().join("-") + "T12:00:00-05:00" : "")).filter(Boolean).sort(); return c.length && c[c.length - 1] > PUB(a) ? c[c.length - 1] : PUB(a); };
+// descripciones propias de cada sección (Google muestra este texto en los resultados)
+const SEC_DESC = {
+  noticias: "Noticias de música de hoy: anuncios de artistas, giras, conciertos y lo que pasa en la música latina y del mundo, con fuentes verificadas.",
+  premios: "Grammy, Latin Grammy, Billboard, Premios Lo Nuestro y más: nominados, ganadores, fechas y dónde ver las ceremonias, con contexto.",
+  listas: "Billboard Hot 100, Billboard 200, Hot Latin Songs y Spotify: los No. 1, los récords y lo que dicen las cifras de cada semana.",
+  lanzamientos: "Estrenos de la semana: discos y canciones nuevas de la música latina y del mundo, cada viernes, con lo esencial de cada uno.",
+  critica: "Reseñas y lecturas de discos de El Coro: qué funciona, qué no y dónde queda cada álbum en la carrera del artista.",
+  industria: "El negocio de la música: streaming, sellos, derechos, regalías, cifras de la RIAA y la IFPI y las personas detrás de los éxitos.",
+  artistas: "Consejos prácticos para artistas independientes: lanzar música, distribución, regalías, derechos, pitch a playlists y prensa, paso a paso.",
+};
+const crumbs = list => ({ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: list.map(([name, url], i) => ({ "@type": "ListItem", position: i + 1, name, item: SITE + url })) });
+
 // ---- page meta ----
 const esc = s => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
 const strip = s => String(s).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
@@ -101,11 +117,11 @@ function metaFor(key) {
   let title = `${M.nombre_largo} — La música del mundo, en tiempo real`, desc = DEF_DESC, type = "website", extra = "", robots = "index,follow,max-image-preview:large";
   if (a) {
     title = `${a.title} | ${M.nombre_largo}`; desc = a.dek; type = "article";
-    extra = `<meta property="article:published_time" content="${a.date}T${a.hora || "09:00"}:00-05:00">\n<meta property="article:section" content="${esc(T.es.sections[a.sec])}">\n<meta property="article:tag" content="${esc(a.tag)}">`;
+    extra = `<meta property="article:published_time" content="${PUB(a)}">\n<meta property="article:modified_time" content="${MODN(a)}">\n<meta property="article:section" content="${esc(T.es.sections[a.sec])}">\n<meta property="article:tag" content="${esc(a.tag)}">`;
   } else if (pg) { title = `${pg.t.es} | ${M.nombre_largo}`; desc = strip(pg.body.es).slice(0, 155); }
   else if (tg) { title = `Tema: ${tg} | ${M.nombre_largo}`; desc = `Todas las notas de ${M.nombre} sobre ${tg}.`; if (thinTag(key)) robots = "noindex,follow"; }
   else if (sec && key !== "inicio") {
-    title = `${sec} | ${M.nombre_largo}`; desc = `${sec}: lo último en ${M.nombre_largo}, la música del mundo en tiempo real.`;
+    title = `${sec} | ${M.nombre_largo}`; desc = SEC_DESC[key] || `${sec}: lo último en ${M.nombre_largo}, la música del mundo en tiempo real.`;
     if (["envivo", "cultura"].includes(key)) robots = "noindex,follow";
   }
   const url = SITE + ROUTE[key];
@@ -150,6 +166,10 @@ function render(key, file) {
   if (nota) { const inl = d.createElement("script"); inl.textContent = "window.__NOTA=" + jsonSafe(nota) + ";"; ext.before(inl); }
   // move JSON-LD into head for crawlers (app updates it by id)
   const ld = d.getElementById("ld"); if (ld) d.head.appendChild(ld);
+  const addLD = o => { const e = d.createElement("script"); e.setAttribute("type", "application/ld+json"); e.textContent = JSON.stringify(o); d.head.appendChild(e); };
+  if (nota) addLD(crumbs([["Portada", "/"], [T.es.sections[nota.sec], ROUTE[nota.sec]], [nota.title, ROUTE[nota.id]]]));
+  else if (T.es.sections[key] && key !== "inicio" && ROUTE[key]) addLD(crumbs([["Portada", "/"], [T.es.sections[key], ROUTE[key]]]));
+  if (key === "inicio" && !file) addLD({ "@context": "https://schema.org", "@type": "WebSite", name: M.nombre_largo, alternateName: [M.nombre, M.dominio], url: SITE + "/", inLanguage: "es" });
   // la foto principal empieza a bajar junto con el estilo, sin esperar al resto
   const hero = d.querySelector('img[fetchpriority="high"]');
   if (hero) {
@@ -175,8 +195,12 @@ render("inicio", "404.html");
 const lastmod = A.reduce((m, a) => a.date > m ? a.date : m, "");
 const sitemapKeys = Object.keys(ROUTE).filter(k => !["envivo", "cultura"].includes(k) && !thinTag(k));
 fs.writeFileSync(path.join(OUT, "sitemap.xml"),
-  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
-  sitemapKeys.map(k => { const a = A.find(x => x.id === k); return `  <url><loc>${SITE}${ROUTE[k]}</loc><lastmod>${a ? a.date : lastmod}</lastmod></url>`; }).join("\n") + `\n</urlset>\n`);
+  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n` +
+  sitemapKeys.map(k => {
+    const a = A.find(x => x.id === k);
+    const img = a && W.eval("FOTOS")[a.id] ? `<image:image><image:loc>${SITE}/assets/fotos/${a.id}.jpg</image:loc></image:image>` : (a && OGMAP[a.id] ? `<image:image><image:loc>${SITE}${OGMAP[a.id]}</image:loc></image:image>` : "");
+    return `  <url><loc>${SITE}${ROUTE[k]}</loc><lastmod>${a ? MODN(a) : lastmod}</lastmod>${img}</url>`;
+  }).join("\n") + `\n</urlset>\n`);
 const x = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 const byDate = A.slice().sort((a, b) => (b.date + (b.hora || "")).localeCompare(a.date + (a.hora || "")));
 const lim = new Date(new Date(lastmod + "T12:00:00Z").getTime() - 2 * 864e5).toISOString().slice(0, 10);
@@ -184,10 +208,10 @@ const recientes = byDate.filter(a => a.date >= lim); // Google News solo quiere 
 fs.writeFileSync(path.join(OUT, "news-sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\n` +
   recientes.map(a => `  <url><loc>${SITE}${ROUTE[a.id]}</loc><news:news><news:publication><news:name>${M.nombre_largo}</news:name><news:language>es</news:language></news:publication><news:publication_date>${a.date}T${a.hora || "09:00"}:00-05:00</news:publication_date><news:title>${x(a.title)}</news:title></news:news></url>`).join("\n") + `\n</urlset>\n`);
-const rfc = d => new Date(d + "T14:00:00Z").toUTCString();
+const rfc = a => new Date(PUB(a)).toUTCString();
 fs.writeFileSync(path.join(OUT, "feed.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>\n<title>${M.nombre_largo}</title><link>${SITE}/</link><description>La música del mundo, en tiempo real.</description><language>es</language>\n<atom:link href="${SITE}/feed.xml" rel="self" type="application/rss+xml"/>\n` +
-  byDate.map(a => `<item><title>${x(a.title)}</title><link>${SITE}${ROUTE[a.id]}</link><guid>${SITE}${ROUTE[a.id]}</guid><pubDate>${rfc(a.date)}</pubDate><category>${x(T.es.sections[a.sec])}</category><description>${x(a.dek)}</description></item>`).join("\n") + `\n</channel></rss>\n`);
+  byDate.map(a => `<item><title>${x(a.title)}</title><link>${SITE}${ROUTE[a.id]}</link><guid>${SITE}${ROUTE[a.id]}</guid><pubDate>${rfc(a)}</pubDate><category>${x(T.es.sections[a.sec])}</category><description>${x(a.dek)}</description></item>`).join("\n") + `\n</channel></rss>\n`);
 fs.writeFileSync(path.join(OUT, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\nSitemap: ${SITE}/news-sitemap.xml\n`);
 fs.writeFileSync(path.join(OUT, "site.webmanifest"), JSON.stringify({ name: M.nombre_largo, short_name: M.nombre, start_url: "/", display: "browser", background_color: "#ffffff", theme_color: "#e3120b", icons: [{ src: "/assets/icon-192.png", sizes: "192x192", type: "image/png" }, { src: "/assets/icon-512.png", sizes: "512x512", type: "image/png" }] }, null, 1));
 // archivos del hosting (Namecheap / Apache): .htaccess y boletín en PHP

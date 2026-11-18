@@ -5,6 +5,8 @@ Sin el último argumento queda como "Corrección"; con "actualizacion" queda com
 cambios.json: un objeto con los campos que cambian (por ejemplo {"body": "...", "brief": [...]}).
 """
 import json, os, sys, time
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 R = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 NOTAS = os.path.join(R, "contenido", "notas.json")
@@ -20,6 +22,7 @@ if not nota:
 if "id" in cambios:
     sys.exit("el id no se cambia: la dirección de la nota debe seguir funcionando")
 nota.update(cambios)
-nota.setdefault("correcciones", []).append({"fecha": time.strftime("%d.%m.%Y"), "nota": texto, "tipo": tipo})
+ahora = datetime.now(ZoneInfo("America/New_York"))
+nota.setdefault("correcciones", []).append({"fecha": ahora.strftime("%d.%m.%Y"), "iso": ahora.isoformat(timespec="seconds"), "nota": texto, "tipo": tipo})
 json.dump(N, open(NOTAS, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print("actualizada:" if tipo == "actualizacion" else "corregida:", nid)
