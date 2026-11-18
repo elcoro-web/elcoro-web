@@ -70,7 +70,7 @@ rep(`function setLang(){lang=`, `function setLang(){window.__nt=1;lang=`);
 
 const shim = `const SITE=${JSON.stringify(SITE)};const OG=${JSON.stringify(OGMAP)};const ROUTE=${JSON.stringify(ROUTE)};
 const CUR=()=>{const p=location.pathname.replace(/index\\.html$/,"");for(const k in ROUTE)if(ROUTE[k]===p)return k;return "inicio"};
-const MOD=a=>{const p=a.date+"T"+(a.hora||"09:00")+":00-05:00";const c=(a.correcciones||[]).map(x=>x.iso||(x.fecha?x.fecha.split(".").reverse().join("-")+"T12:00:00-05:00":"")).filter(Boolean).sort();return c.length&&c[c.length-1]>p?c[c.length-1]:p};
+const MOD=a=>{const p=a.date+"T"+(a.hora||"09:00")+":00-05:00";const c=(a.correcciones||[]).concat((a.ediciones||[]).filter(x=>x.tipo==="ampliacion")).map(x=>x.iso||(x.fecha?x.fecha.split(".").reverse().join("-")+"T12:00:00-05:00":"")).filter(Boolean).sort();return c.length&&c[c.length-1]>p?c[c.length-1]:p};
 const fmtD=d=>{const [y,m,dd]=(d||"").split("-");return lang==="es"?dd+"."+m+"."+y:m+"/"+dd+"/"+y};
 function fixLinks(r){r.querySelectorAll('a[href^="#"]').forEach(a=>{const k=a.getAttribute("href").slice(1);if(ROUTE[k])a.setAttribute("href",ROUTE[k])})}
 document.addEventListener("click",e=>{const a=e.target.closest('a[href^="#"]');if(!a)return;const k=a.getAttribute("href").slice(1);if(ROUTE[k]){e.preventDefault();location.href=ROUTE[k]}},true);
@@ -92,7 +92,7 @@ const thinTag = key => { const tg = key.startsWith("t-") ? tags.find(x => "t-" +
 
 // ---- fechas de publicación y de última actualización ----
 const PUB = a => `${a.date}T${a.hora || "09:00"}:00-05:00`;
-const MODN = a => { const c = (a.correcciones || []).map(x => x.iso || (x.fecha ? x.fecha.split(".").reverse().join("-") + "T12:00:00-05:00" : "")).filter(Boolean).sort(); return c.length && c[c.length - 1] > PUB(a) ? c[c.length - 1] : PUB(a); };
+const MODN = a => { const c = (a.correcciones || []).concat((a.ediciones || []).filter(x => x.tipo === "ampliacion")).map(x => x.iso || (x.fecha ? x.fecha.split(".").reverse().join("-") + "T12:00:00-05:00" : "")).filter(Boolean).sort(); return c.length && c[c.length - 1] > PUB(a) ? c[c.length - 1] : PUB(a); };
 // descripciones propias de cada sección (Google muestra este texto en los resultados)
 const SEC_DESC = {
   noticias: "Noticias de música de hoy: anuncios de artistas, giras, conciertos y lo que pasa en la música latina y del mundo, con fuentes verificadas.",

@@ -1328,17 +1328,17 @@
   "hora": "08:00",
   "sec": "premios",
   "tag": "Grammy 2027",
-  "min": 3,
-  "title": "Por primera vez, los seis artistas más nominados a los Grammy son mujeres",
+  "min": 1,
+  "title": "Grammy 2027: por primera vez, los seis más nominados son mujeres",
   "titleEn": "For the first time, the six most-nominated Grammy artists are all women",
-  "dek": "RAYE, Rosalía, Phoebe Bridgers, Miranda Lambert, Ella Langley y Olivia Rodrigo encabezan la lista. Y Beyoncé llega a 100 nominaciones.",
+  "dek": "RAYE, Rosalía, Phoebe Bridgers, Miranda Lambert, Ella Langley y Olivia Rodrigo encabezan la lista, y Beyoncé llega a 100 nominaciones en su carrera.",
   "brief": [
    "Los seis con más candidaturas son mujeres, algo que no había pasado nunca.",
    "RAYE, con 11, iguala el récord femenino de Beyoncé en 2025.",
-   "Beyoncé suma 100 nominaciones en su carrera."
+   "Seis de los siete artistas presentes en Álbum, Grabación y Canción del Año son mujeres."
   ],
   "en": "For the first time in Grammy history, the six most-nominated artists are all women: RAYE (11), Rosalía (9), and Phoebe Bridgers, Miranda Lambert, Ella Langley and Olivia Rodrigo (7 each). Beyoncé also reached her 100th career nomination.",
-  "body": "<p>Las nominaciones a los Grammy 2027 dejaron un dato que no había pasado nunca: los seis artistas con más candidaturas son mujeres, según W Magazine. RAYE encabeza con 11, Rosalía suma 9, y Phoebe Bridgers, Miranda Lambert, Ella Langley y Olivia Rodrigo tienen 7 cada una.</p>\n<div class=\"bars\" role=\"img\" aria-label=\"Gráfica\"><div><span>RAYE</span><i style=\"width:100%\"></i><span>11</span></div><div><span>Rosalía</span><i style=\"width:81.81818181818183%\"></i><span>9</span></div><div><span>Phoebe Bridgers</span><i style=\"width:63.63636363636363%\"></i><span>7</span></div><div><span>Miranda Lambert</span><i style=\"width:63.63636363636363%\"></i><span>7</span></div><div><span>Ella Langley</span><i style=\"width:63.63636363636363%\"></i><span>7</span></div><div><span>Olivia Rodrigo</span><i style=\"width:63.63636363636363%\"></i><span>7</span></div></div>\n<h2>RAYE iguala a Beyoncé</h2>\n<p>Las 11 nominaciones de RAYE igualan la marca que Beyoncé fijó en 2025, la mayor cantidad para una artista mujer en una sola edición. Es además la primera vez que la británica entra en las tres categorías generales: Álbum, Grabación y Canción del Año.</p>\n<blockquote>Seis de seis. Nunca había pasado.</blockquote>\n<h2>Y Beyoncé llega a 100</h2>\n<p>El mismo anuncio llevó a Beyoncé a 100 nominaciones en su carrera, la cifra más alta en la historia de los premios.</p>\n<h2>El otro lado</h2>\n<p>En Álbum del Año, siete de los ocho finalistas son mujeres; el único hombre es Bruno Mars. Varios artistas con años fuertes, como Harry Styles y Noah Kahan, quedaron por debajo de lo esperado. Lo contamos en <a href=\"#olvidados-grammy\" style=\"text-decoration:underline\">los olvidados de los Grammy</a>.</p>",
+  "body": "<p>Las nominaciones a los Grammy 2027 dejaron un dato que no había pasado nunca: los seis artistas con más candidaturas son mujeres, según W Magazine. RAYE encabeza con 11, Rosalía suma 9, y Phoebe Bridgers, Miranda Lambert, Ella Langley y Olivia Rodrigo tienen 7 cada una.</p>\n<div class=\"bars\" role=\"img\" aria-label=\"Gráfica de las seis artistas más nominadas a los Grammy 2027\"><div><span>RAYE</span><i style=\"width:100%\"></i><span>11</span></div><div><span>Rosalía</span><i style=\"width:81.8%\"></i><span>9</span></div><div><span>Phoebe Bridgers</span><i style=\"width:63.6%\"></i><span>7</span></div><div><span>Miranda Lambert</span><i style=\"width:63.6%\"></i><span>7</span></div><div><span>Ella Langley</span><i style=\"width:63.6%\"></i><span>7</span></div><div><span>Olivia Rodrigo</span><i style=\"width:63.6%\"></i><span>7</span></div></div>\n<h2>RAYE iguala a Beyoncé</h2>\n<p>Las 11 nominaciones de RAYE igualan la marca que Beyoncé fijó en 2025, la mayor cantidad para una artista mujer en una sola edición. Es además la primera vez que la británica entra en las tres categorías generales: Álbum, Grabación y Canción del Año.</p>\n<blockquote>Seis de seis. Nunca había pasado.</blockquote>\n<h2>Las generales, casi todas mujeres</h2>\n<p>Siete artistas compiten a la vez en Álbum, Grabación y Canción del Año, y seis son mujeres: Olivia Dean, Ella Langley, RAYE, Olivia Rodrigo, Rosalía y Taylor Swift. El único hombre es Bruno Mars. Ella Langley también está en Artista Revelación, así que aparece en las cuatro generales. La lista completa está en <a href=\"#lista-nominados\" style=\"text-decoration:underline\">los 10 más nominados</a>.</p>\n<h2>Y Beyoncé llega a 100</h2>\n<p>El mismo anuncio llevó a Beyoncé a 100 nominaciones en su carrera, la cifra más alta en la historia de los premios.</p>\n<h2>El otro lado</h2>\n<p>En Álbum del Año, siete de los ocho finalistas son mujeres; el único hombre es Bruno Mars. Varios artistas con años fuertes, como Harry Styles y Noah Kahan, quedaron por debajo de lo esperado. Lo contamos en <a href=\"#olvidados-grammy\" style=\"text-decoration:underline\">los olvidados de los Grammy</a>.</p>",
   "src": [
    [
     "W Magazine — The biggest snubs and surprises of the 2027 Grammy nominations",
@@ -1368,6 +1368,18 @@
   "minuto": [
    "Por primera vez, los seis artistas más nominados al Grammy son mujeres.",
    "For the first time, the six most-nominated Grammy artists are all women."
+  ],
+  "ediciones": [
+   {
+    "iso": "2026-11-17T19:21:01-05:00",
+    "tipo": "ampliacion",
+    "campos": [
+     "body",
+     "brief",
+     "dek",
+     "title"
+    ]
+   }
   ]
  },
  {
@@ -1528,18 +1540,42 @@
   "min": 2,
   "title": "Esta semana en la música: CMA Awards, MAMA Awards y Corona Capital",
   "titleEn": "This week in music: CMA Awards, MAMA Awards and Corona Capital",
-  "dek": "De Nashville a Osaka y Ciudad de México: las fechas que mueven la música del 17 al 22 de noviembre.",
+  "dek": "Del 17 al 22 de noviembre: los 60 años de los CMA en Nashville, dos noches de K-pop en Osaka y el Corona Capital con Gorillaz, Twenty One Pilots y The Strokes.",
   "brief": [
-   "18 nov: CMA Awards en Nashville y ARIA Awards en Sídney.",
-   "20 y 21 nov: MAMA Awards en Osaka.",
-   "20 al 22 nov: Corona Capital en Ciudad de México."
+   "18 nov: los CMA Awards cumplen 60 ediciones en Nashville; ese día también son los ARIA en Sídney.",
+   "20 y 21 nov: MAMA Awards en el Kyocera Dome de Osaka.",
+   "20 al 22 nov: Corona Capital, con Gorillaz, Twenty One Pilots y The Strokes."
   ],
   "en": "This week: the CMA Awards in Nashville and ARIA Awards in Sydney (Nov. 18), the MAMA Awards in Osaka (Nov. 20-21) and Corona Capital in Mexico City (Nov. 20-22).",
-  "body": "<ul class=\"list\"><li><span>17 nov</span><span>Tencent Music presenta resultados del tercer trimestre</span></li><li><span>18 nov</span><span>CMA Awards · Nashville</span></li><li><span>18 nov</span><span>ARIA Awards · Sídney</span></li><li><span>19 nov</span><span>Warner Music Group presenta resultados del año fiscal</span></li><li><span>20–21 nov</span><span>MAMA Awards · Osaka</span></li><li><span>20–22 nov</span><span>Corona Capital · Ciudad de México</span></li></ul>\n<p>Después del anuncio de los Grammy, la semana sigue cargada. Los CMA Awards reúnen al country el miércoles en Nashville, la misma noche de los ARIA en Australia. El fin de semana, el K-pop se cita en Osaka con los MAMA Awards y Ciudad de México recibe el Corona Capital. En el negocio, Tencent Music y Warner Music Group presentan resultados.</p>\n<p>{{NOMBRE}} cubre la semana completa.</p>",
+  "body": "<ul class=\"list\"><li><span>17 nov</span><span>Tencent Music presenta resultados del tercer trimestre</span></li><li><span>18 nov</span><span>CMA Awards · Nashville</span></li><li><span>18 nov</span><span>ARIA Awards · Sídney</span></li><li><span>19 nov</span><span>Warner Music Group presenta resultados del año fiscal</span></li><li><span>20–21 nov</span><span>MAMA Awards · Osaka</span></li><li><span>20–22 nov</span><span>Corona Capital · Ciudad de México</span></li></ul>\n<p>Después del anuncio de los Grammy, la semana sigue cargada. El country celebra los 60 años de los CMA Awards en Nashville, el K-pop se cita dos noches en Osaka y Ciudad de México recibe el Corona Capital. En el negocio, Tencent Music y Warner Music Group presentan resultados.</p>\n<h2>CMA Awards: miércoles 18, Nashville</h2>\n<p>La edición 60 de los premios de la Country Music Association se transmite a las 8 p. m., hora de Nueva York, por ABC y Disney+, desde el Bridgestone Arena. Lainey Wilson presenta por tercer año. Ella Langley llega con 9 nominaciones, la cifra más alta, y Taylor Swift vuelve a ese escenario por primera vez desde 2013. Todos los detalles, en <a href=\"#cma-2026-previa\" style=\"text-decoration:underline\">nuestra previa</a>. Esa misma noche se entregan los ARIA Awards en Sídney.</p>\n<h2>MAMA Awards: viernes 20 y sábado 21, Osaka</h2>\n<p>Los premios de K-pop de CJ ENM se hacen en el Kyocera Dome de Osaka, en dos noches con artistas distintos, y se ven en vivo por la plataforma Mnet Plus. La primera incluye a ENHYPEN, BABYMONSTER e ILLIT; la segunda, a BIGBANG, LE SSERAFIM, IVE y NAYEON. Este año la gala usa un escenario de 360 grados en el centro del estadio.</p>\n<h2>Corona Capital: del viernes 20 al domingo 22, Ciudad de México</h2>\n<p>El festival vuelve al Autódromo Hermanos Rodríguez con tres cabezas de cartel: Gorillaz, Twenty One Pilots y The Strokes. El viernes, Gorillaz comparte jornada con Mumford & Sons, James Blake, The Kooks y Daniel Caesar. El domingo cierran The Strokes, en un día que también tiene a The xx.</p>\n<h2>En el negocio</h2>\n<p>Tencent Music, la mayor plataforma de música de China, presenta resultados del tercer trimestre el martes 17. El jueves 19 le toca a Warner Music Group, con las cifras de su año fiscal.</p>\n<p>{{NOMBRE}} cubre la semana completa.</p>",
   "src": [
    [
     "Billboard — Music Industry Events Calendar",
     "https://www.billboard.com/pro/music-industry-events-calendar-festivals-awards-conferences/"
+   ],
+   [
+    "Complex — 2026 MAMA Awards: how to watch and performers",
+    "https://www.complex.com/music/a/treyalston/2026-mama-awards-how-to-watch"
+   ],
+   [
+    "The Korea Herald — 2026 MAMA Awards, Nov. 20-21 at Kyocera Dome Osaka",
+    "https://www.koreaherald.com/article/10910150"
+   ],
+   [
+    "adn40 — Cartel de Corona Capital 2026 por día",
+    "https://www.adn40.mx/es-tendencia/2026-05-20/confirmado-el-cartel-de-corona-capital-2026-fechas-de-preventa-precios-estimados-y-artistas/"
+   ],
+   [
+    "Excélsior — Corona Capital 2026 revela cartel con Gorillaz, Twenty One Pilots y The Strokes",
+    "https://www.excelsior.com.mx/espectaculos/corona-capital-2026-revela-cartel-con-gorillaz-twenty-one-pilots-y-the-strokes"
+   ],
+   [
+    "Chic Magazine — Corona Capital 2026: cartel, fechas y precios",
+    "https://www.chicmagazine.com.mx/personajes/corona-capital-2026-cartel-fechas-y-precios-de-fases"
+   ],
+   [
+    "Holler — CMA Awards 2026: Date, Nominees and Performers",
+    "https://holler.country/news/general/cma-awards-2026-date-nominees-and-performers/"
    ]
   ],
   "cov": {
@@ -1549,7 +1585,18 @@
    "c": "Noviembre",
    "e": "Agenda",
    "fs": "min(30cqw,260px)"
-  }
+  },
+  "ediciones": [
+   {
+    "iso": "2026-11-17T19:21:01-05:00",
+    "tipo": "ampliacion",
+    "campos": [
+     "body",
+     "brief",
+     "dek"
+    ]
+   }
+  ]
  },
  {
   "id": "antes-de-lanzar",
@@ -1872,17 +1919,17 @@
   "hora": "09:00",
   "sec": "noticias",
   "tag": "Estreno",
-  "min": 3,
-  "title": "Feid se une a DJ Premier en “Bello Love”, días después de ganar el Latin Grammy",
-  "titleEn": "Feid teams up with DJ Premier on “Bello Love,” days after his Latin Grammy win",
-  "dek": "El colombiano estrena una canción en español con frases en inglés, con el rapero venezolano Lil Supa.",
+  "min": 1,
+  "title": "Feid y DJ Premier vuelven a juntarse en “Bello Love”, con Lil Supa",
+  "titleEn": "Feid and DJ Premier reunite on “Bello Love,” featuring Lil Supa",
+  "dek": "Es la segunda colaboración del colombiano con el productor neoyorquino, cuatro años después de “Le Pido a Dios”, y llega días después de su Latin Grammy.",
   "brief": [
    "Feid y DJ Premier estrenaron “Bello Love”, con Lil Supa.",
-   "Llega después de que Feid ganara en Las Vegas Mejor Interpretación de Reggaetón con Karol G por “Verano rosa”.",
-   "Feid también compite en los Grammy 2027 en Música Urbana."
+   "Es su segunda canción juntos, después de “Le Pido a Dios” en 2022.",
+   "Feid compite por tercer año seguido en Mejor Álbum de Música Urbana del Grammy."
   ],
   "en": "Feid and DJ Premier released “Bello Love,” featuring Venezuelan rapper Lil Supa, after Feid won Best Reggaeton Performance at the Latin Grammys with Karol G for “Verano rosa.”",
-  "body": "<p>Feid estrenó esta semana “Bello Love”, una colaboración con el legendario productor de hip hop DJ Premier que incluye al rapero venezolano Lil Supa. Es una canción en español con frases en inglés, dedicada a una pareja que inspira al cantante a ser un mejor hombre.</p>\n<h2>Después del gramófono</h2>\n<p>El lanzamiento llega días después de que Feid ganara en los Latin Grammy la categoría de Mejor Interpretación de Reggaetón con “Verano rosa”, junto a Karol G. Además, el artista de Medellín compite en los Grammy 2027 en Mejor Álbum de Música Urbana con <em>El Green Print: La Saga (Disc 1) — Feid vs. Ferxxo</em>.</p>\n<blockquote>Medellín y Nueva York, en una misma canción.</blockquote>\n<h2>El cruce</h2>\n<p>DJ Premier es uno de los productores más influyentes de la historia del hip hop neoyorquino. Su encuentro con Feid es una muestra de cómo el urbano latino dialoga cada vez más con las raíces del rap en inglés.</p>",
+  "body": "<p>Feid estrenó esta semana “Bello Love”, una canción con el legendario productor de hip hop DJ Premier en la que también participa el rapero venezolano Lil Supa. Está cantada en español con frases en inglés y la dedica a una pareja que lo inspira a ser un mejor hombre.</p>\n<h2>No es la primera vez</h2>\n<p>Feid y Premier ya habían trabajado juntos en 2022 con “Le Pido a Dios”, del EP <em>Sixdo</em>. Esa canción fue la primera colaboración de Premier con un artista latino, según Uproxx y uDiscover Music. En 2024, el productor apareció además como invitado sorpresa en el concierto de Feid en el festival Governors Ball de Nueva York.</p>\n<blockquote>Medellín y Nueva York, en una misma canción.</blockquote>\n<h2>Después del gramófono</h2>\n<p>El lanzamiento llega días después de que Feid ganara en los Latin Grammy la categoría de Mejor Interpretación de Reggaetón con “Verano rosa”, junto a Karol G. En los Grammy 2027 compite en Mejor Álbum de Música Urbana con <em>El Green Print: La Saga (Disc 1) — Feid vs. Ferxxo</em>. Es su tercer año seguido en esa categoría, después de <em>FERXXOCALIPSIS</em> en 2025 y <em>FERXXO VOL X: Sagrado</em> en 2026. Sus rivales, entre ellos Ryan Castro dos veces, están en <a href=\"#ryan-castro\" style=\"text-decoration:underline\">esta nota</a>.</p>\n<h2>Quién es DJ Premier</h2>\n<p>Nacido en Texas y radicado en Nueva York, DJ Premier es uno de los productores que definieron el sonido del rap de la Costa Este. Por su estudio pasaron artistas como Jay-Z, Eminem y Christina Aguilera. Que vuelva a elegir a Feid muestra cómo el urbano latino dialoga cada vez más con las raíces del rap en inglés.</p>",
   "src": [
    [
     "Metro Puerto Rico / EFE — Kany García, Rauw Alejandro, Feid, Ivy Queen y Latin Mafia, entre los estrenos latinos",
@@ -1891,6 +1938,30 @@
    [
     "Deseret News — Grammy awards 2027: the full list of nominees",
     "https://www.deseret.com/entertainment/2026/11/16/grammy-award-nominations-2027/"
+   ],
+   [
+    "Uproxx — Feid’s new Sixdo EP includes DJ Premier’s first collaboration with a Latin artist",
+    "https://uproxx.com/pop/feid-sixdo-ep-dj-premiere-first-collaboration-latin-artist"
+   ],
+   [
+    "uDiscover Music — Feid returns with new Sixdo EP",
+    "https://www.udiscovermusic.com/news/feid-sixdo-ep/"
+   ],
+   [
+    "Complex — Feid’s FERXXO VOL X album",
+    "https://content-prod.adc-blue.infra.complex.com/music/a/jadegomez510/feid-ferxxo-vol-x-album-streaming"
+   ],
+   [
+    "GRAMMY.com — Best Música Urbana Album, 2025 nominees",
+    "https://www.grammy.com/awards/categories/best-musica-urbana-album/2025/"
+   ],
+   [
+    "GRAMMY.com — Bad Bunny wins Best Música Urbana Album (2026 nominees)",
+    "https://www.grammy.com/video/bad-bunny-wins-best-musica-urbana-album/"
+   ],
+   [
+    "Las2orillas — Quién es DJ Premier",
+    "https://www.las2orillas.co/?p=876301"
    ]
   ],
   "cov": {
@@ -1900,7 +1971,20 @@
    "c": "Estreno",
    "e": "Feid × DJ Premier",
    "fs": "min(40cqw,340px)"
-  }
+  },
+  "ediciones": [
+   {
+    "iso": "2026-11-17T19:21:01-05:00",
+    "tipo": "ampliacion",
+    "campos": [
+     "body",
+     "brief",
+     "dek",
+     "title",
+     "titleEn"
+    ]
+   }
+  ]
  },
  {
   "id": "ryan-castro",
@@ -1908,21 +1992,29 @@
   "hora": "09:00",
   "sec": "noticias",
   "tag": "Grammy 2027",
-  "min": 3,
-  "title": "Ryan Castro compite dos veces en la misma categoría del Grammy",
+  "min": 1,
+  "title": "Grammy 2027: Ryan Castro compite dos veces en Música Urbana",
   "titleEn": "Ryan Castro is nominated twice in the same Grammy category",
-  "dek": "El artista de Medellín aparece en Mejor Álbum de Música Urbana con “Hopi Sendé” y con “Omerta”, su disco junto a J Balvin.",
+  "dek": "El artista de Medellín aparece con “Hopi Sendé” y con “Omerta”, su disco con J Balvin, en una categoría que Puerto Rico ganó cuatro de cinco veces.",
   "brief": [
    "Ryan Castro tiene dos nominaciones en Mejor Álbum de Música Urbana.",
    "Una por “Hopi Sendé” y otra por “Omerta”, con J Balvin.",
-   "Compite con Rauw Alejandro, Álvaro Díaz, Feid y Young Miko."
+   "Puerto Rico ganó la categoría cuatro de las cinco veces; Colombia, una, con Karol G."
   ],
   "en": "Ryan Castro has two nominations in Best Música Urbana Album: his own “Hopi Sendé” and “Omerta” with J Balvin. He faces Rauw Alejandro, Álvaro Díaz, Feid and Young Miko.",
-  "body": "<p>Ryan Castro tendrá una noche particular el 7 de febrero: competirá contra sí mismo. El artista de Medellín aparece dos veces en Mejor Álbum de Música Urbana, una con su disco “Hopi Sendé” y otra con “Omerta”, el proyecto que firmó junto a J Balvin.</p>\n<h2>La categoría completa</h2>\n<ul class=\"list\"><li><span>“Cosa Nuestra: Capítulo 0”</span><span>Rauw Alejandro</span></li><li><span>“Omerta”</span><span>J Balvin, Ryan Castro</span></li><li><span>“Hopi Sendé”</span><span>Ryan Castro</span></li><li><span>“Omakase”</span><span>Álvaro Díaz</span></li><li><span>“El Green Print: La Saga (Disc 1) — Feid vs. Ferxxo”</span><span>Feid</span></li><li><span>“Do Not Disturb: Late Checkout”</span><span>Young Miko</span></li></ul>\n<h2>Medellín contra Puerto Rico</h2>\n<p>La categoría enfrenta a las dos grandes capitales del género. Por Medellín, tres discos: los dos de Ryan Castro y el de Feid. Por Puerto Rico, tres: Rauw Alejandro, Álvaro Díaz y Young Miko.</p>\n<blockquote>Dos discos en la misma categoría: la mitad de las probabilidades de perder.</blockquote>\n<h2>Qué significa una doble nominación</h2>\n<p>Que un artista aparezca dos veces en la misma categoría es poco frecuente y habla del peso que tuvo su año. Para Ryan Castro, que alterna su trabajo en solitario con colaboraciones de alto perfil, es la confirmación de que se convirtió en una de las voces centrales del urbano colombiano.</p>",
+  "body": "<p>Ryan Castro tendrá una noche particular el 7 de febrero: competirá contra sí mismo. El artista de Medellín aparece dos veces en Mejor Álbum de Música Urbana de los Grammy 2027, una con su disco “Hopi Sendé” y otra con “Omerta”, el proyecto que firmó junto a J Balvin.</p>\n<h2>La categoría completa</h2>\n<ul class=\"list\"><li><span>“Cosa Nuestra: Capítulo 0”</span><span>Rauw Alejandro</span></li><li><span>“Omerta”</span><span>J Balvin, Ryan Castro</span></li><li><span>“Hopi Sendé”</span><span>Ryan Castro</span></li><li><span>“Omakase”</span><span>Álvaro Díaz</span></li><li><span>“El Green Print: La Saga (Disc 1) — Feid vs. Ferxxo”</span><span>Feid</span></li><li><span>“Do Not Disturb: Late Checkout”</span><span>Young Miko</span></li></ul>\n<h2>Medellín contra Puerto Rico</h2>\n<p>La categoría enfrenta a las dos grandes capitales del género. Por Medellín, tres discos: los dos de Ryan Castro y el de Feid. Por Puerto Rico, tres: Rauw Alejandro, Álvaro Díaz y Young Miko.</p>\n<blockquote>Dos de los seis discos llevan su nombre.</blockquote>\n<h2>¿Quién ha ganado Mejor Álbum de Música Urbana?</h2>\n<p>El premio existe desde la edición de 2022 y Puerto Rico se lo llevó cuatro de las cinco veces:</p>\n<ul class=\"list\"><li><span>2022</span><span>Bad Bunny, <em>El Último Tour Del Mundo</em></span></li><li><span>2023</span><span>Bad Bunny, <em>Un Verano Sin Ti</em></span></li><li><span>2024</span><span>Karol G, <em>Mañana Será Bonito</em></span></li><li><span>2025</span><span>Residente, <em>Las Letras Ya No Importan</em></span></li><li><span>2026</span><span>Bad Bunny, <em>DeBÍ TiRAR MáS FOToS</em></span></li></ul>\n<p>El único triunfo colombiano es el de Karol G. Feid compite por tercer año seguido (lo contamos en <a href=\"#feid-premier\" style=\"text-decoration:underline\">esta nota</a>) y J Balvin ya había sido finalista en 2026 con <em>Mixteip</em>.</p>\n<h2>Qué significa una doble nominación</h2>\n<p>Aparecer dos veces en la misma categoría habla del peso que tuvo su año. Para Ryan Castro, que alterna su trabajo en solitario con colaboraciones de alto perfil, es la confirmación de que se convirtió en una de las voces centrales del urbano colombiano. El resto de las candidaturas colombianas está en <a href=\"#colombia-grammy\" style=\"text-decoration:underline\">este conteo</a>.</p>",
   "src": [
    [
     "Deseret News — Grammy awards 2027: the full list of nominees",
     "https://www.deseret.com/entertainment/2026/11/16/grammy-award-nominations-2027/"
+   ],
+   [
+    "GRAMMY.com — Best Música Urbana Album: previous winners",
+    "https://origin-production.grammy.com/awards/categories/best-musica-urbana-album/"
+   ],
+   [
+    "GRAMMY.com — Bad Bunny wins Best Música Urbana Album (2026 nominees)",
+    "https://www.grammy.com/video/bad-bunny-wins-best-musica-urbana-album/"
    ]
   ],
   "cov": {
@@ -1931,7 +2023,19 @@
    "fg": "#0a0a0a",
    "c": "Música urbana",
    "e": "Ryan Castro"
-  }
+  },
+  "ediciones": [
+   {
+    "iso": "2026-11-17T19:21:01-05:00",
+    "tipo": "ampliacion",
+    "campos": [
+     "body",
+     "brief",
+     "dek",
+     "title"
+    ]
+   }
+  ]
  },
  {
   "id": "agenda-grammy",
@@ -1940,16 +2044,16 @@
   "sec": "noticias",
   "tag": "Agenda",
   "min": 2,
-  "title": "Grammy 2027: fecha, sede y dónde verlos",
+  "title": "Grammy 2027: fecha, sede y dónde ver la ceremonia",
   "titleEn": "Grammys 2027: date, venue and where to watch",
-  "dek": "Domingo 7 de febrero de 2027, Crypto.com Arena de Los Ángeles, por ABC, Disney+ y Hulu.",
+  "dek": "La 69.ª entrega es el domingo 7 de febrero de 2027 en el Crypto.com Arena de Los Ángeles y, tras 54 años en CBS, se ve por ABC, Disney+ y Hulu.",
   "brief": [
    "Fecha: domingo 7 de febrero de 2027.",
    "Lugar: Crypto.com Arena, Los Ángeles.",
-   "Transmisión: ABC, con streaming en Disney+ y Hulu."
+   "Transmisión: ABC, con streaming en Disney+ y Hulu, tras 54 años en CBS."
   ],
   "en": "The 69th Grammy Awards take place Sunday, Feb. 7, 2027, at Crypto.com Arena in Los Angeles, airing on ABC and streaming on Disney+ and Hulu.",
-  "body": "<ul class=\"list\"><li><span>Edición</span><span>69.ª</span></li><li><span>Fecha</span><span>Domingo 7 de febrero de 2027</span></li><li><span>Lugar</span><span>Crypto.com Arena, Los Ángeles</span></li><li><span>Televisión</span><span>ABC</span></li><li><span>Streaming</span><span>Disney+ y Hulu</span></li><li><span>Periodo de elegibilidad</span><span>31 ago 2025 – 28 ago 2026</span></li><li><span>Más nominada</span><span>RAYE, 11</span></li></ul>\n<p>La gala de los Grammy cambia de casa televisiva: esta edición se emitirá por ABC, con streaming en Disney+ y Hulu. {{NOMBRE}} cubrirá la temporada completa: nominados, la semana Grammy en Los Ángeles y la noche de la gala.</p>",
+  "body": "<ul class=\"list\"><li><span>Edición</span><span>69.ª</span></li><li><span>Fecha</span><span>Domingo 7 de febrero de 2027</span></li><li><span>Lugar</span><span>Crypto.com Arena, Los Ángeles</span></li><li><span>Televisión</span><span>ABC</span></li><li><span>Streaming</span><span>Disney+ y Hulu</span></li><li><span>Periodo de elegibilidad</span><span>31 ago 2025 – 28 ago 2026</span></li><li><span>Más nominada</span><span>RAYE, 11</span></li></ul>\n<p>La 69.ª entrega de los Grammy será el domingo 7 de febrero de 2027 en el Crypto.com Arena de Los Ángeles. Es la primera gala del acuerdo de la Recording Academy con Disney: se transmite por ABC y en streaming por Disney+ y Hulu.</p>\n<h2>¿Por qué los Grammy ya no salen por CBS?</h2>\n<p>CBS emitió la ceremonia sin interrupción desde 1973. En octubre de 2024, Disney y la Recording Academy firmaron un acuerdo de diez años que lleva los Grammy a ABC, Disney+ y Hulu hasta 2036. Para ABC es una vuelta: la cadena ya había transmitido la gala durante dos años antes de que pasara a CBS.</p>\n<p>El acuerdo incluye además especiales de música con la marca Grammy en las plataformas de Disney. Con este cambio, ABC tendrá en 2027 tres de los grandes eventos de la televisión estadounidense: el Super Bowl, los Grammy y los Óscar.</p>\n<h2>¿Quién llega como favorita?</h2>\n<p>RAYE encabeza las nominaciones con 11, la cifra más alta del año, y Rosalía la sigue con 9. Ella Langley, Miranda Lambert, Olivia Rodrigo y Phoebe Bridgers suman 7 cada una. La tabla completa está en <a href=\"#lista-nominados\" style=\"text-decoration:underline\">los 10 más nominados</a> y el análisis, en <a href=\"#raye-11\" style=\"text-decoration:underline\">RAYE encabeza los Grammy 2027</a>.</p>\n<h2>¿Qué obras pueden competir?</h2>\n<p>Solo cuentan las grabaciones publicadas entre el 31 de agosto de 2025 y el 28 de agosto de 2026. Los ganadores los eligen por voto los miembros de la Recording Academy: artistas, productores, compositores e ingenieros.</p>\n<h2>Qué sigue</h2>\n<p>{{NOMBRE}} actualizará esta guía con la hora de inicio, el presentador y los artistas que actúen a medida que la Recording Academy los anuncie, y cubrirá la semana Grammy en Los Ángeles y la noche de la gala.</p>",
   "src": [
    [
     "Stereogum — Album of the Year nominees 2027",
@@ -1958,6 +2062,14 @@
    [
     "GRAMMY.com — 2027 GRAMMYs show date and nominations announcement",
     "https://www.grammy.com/news/2027-grammys-show-air-date-nominations-announced/"
+   ],
+   [
+    "AP / ABC11 — The Grammy Awards are headed to ABC starting in 2027 under a new 10-year deal",
+    "https://abc11.com/15489280"
+   ],
+   [
+    "TV Insider — Grammys to leave CBS after 54 years",
+    "https://tvinsider.com/1159752/grammy-awards-cbs-abc-disney-moving"
    ]
   ],
   "cov": {
@@ -1967,7 +2079,19 @@
    "c": "Los Ángeles",
    "e": "Grammy 2027",
    "fs": "min(44cqw,360px)"
-  }
+  },
+  "ediciones": [
+   {
+    "iso": "2026-11-17T19:21:01-05:00",
+    "tipo": "ampliacion",
+    "campos": [
+     "body",
+     "brief",
+     "dek",
+     "title"
+    ]
+   }
+  ]
  },
  {
   "id": "estrenos-latinos",
@@ -2011,17 +2135,17 @@
   "hora": "09:00",
   "sec": "lanzamientos",
   "tag": "Viernes de estrenos",
-  "min": 3,
-  "title": "En el mundo: U2, Miranda Lambert en vivo y las grabaciones inéditas de Randy Travis",
+  "min": 1,
+  "title": "Estrenos del 13 de noviembre: U2, Miranda Lambert y Randy Travis",
   "titleEn": "Around the world: U2, Miranda Lambert live and Randy Travis's unheard recordings",
-  "dek": "Tres discos que marcan la semana fuera del circuito latino.",
+  "dek": "U2 vuelve con su primer disco de canciones nuevas en nueve años, Miranda Lambert graba en vivo con orquesta y salen grabaciones inéditas de Randy Travis.",
   "brief": [
-   "U2 publica Carnaval De Luz, con Dolly Parton.",
+   "U2 publica Carnaval De Luz, con Dolly Parton, y la crítica lo recibe bien.",
    "Miranda Lambert lanza Songline, un disco en vivo con orquesta de 12 músicos.",
    "Randy Travis edita Same Old Way, con grabaciones nunca antes escuchadas."
   ],
   "en": "Outside the Latin circuit: U2's Carnaval De Luz with Dolly Parton, Miranda Lambert's live album Songline with a 12-piece orchestra, and Randy Travis's previously unheard recordings on Same Old Way.",
-  "body": "<h2>U2 — <em>Carnaval De Luz</em></h2>\n<p>Doce canciones, producción de Jacknife Lee y un cierre histórico con Dolly Parton en “Torn”. Lo contamos a fondo en <a href=\"#u2-dolly\" style=\"text-decoration:underline\">Noticias</a>.</p>\n<h2>Miranda Lambert — <em>Songline</em></h2>\n<p>Un disco en vivo de nueve canciones grabado en The Truth, en Nashville, con su banda de gira y una orquesta de doce músicos. Lambert llega a febrero con 7 nominaciones al Grammy.</p>\n<h2>Randy Travis — <em>Same Old Way</em></h2>\n<p>Una colección de grabaciones nunca antes escuchadas del miembro del Salón de la Fama del Country.</p>\n<h2>También salió</h2>\n<ul class=\"list\"><li><span>Jaren Johnston</span><span>The Guest Room, primer disco solista del líder de The Cadillac Three</span></li><li><span>Greylan James</span><span>Su álbum homónimo</span></li><li><span>Blake Whiten</span><span>Something To Say, edición de lujo</span></li></ul>",
+  "body": "<p>El viernes 13 de noviembre dejó tres discos que marcan la semana fuera del circuito latino: el regreso de U2, un álbum en vivo de Miranda Lambert y una colección de grabaciones inéditas de Randy Travis.</p>\n<h2>U2 — <em>Carnaval De Luz</em></h2>\n<p>Doce canciones, producción de Jacknife Lee y Brian Eno en los teclados de tres temas. Es el primer disco de material nuevo de la banda en unos nueve años y cierra con “Torn”, un dueto de Bono con Dolly Parton que es la última interpretación vocal que grabó la cantante. Lo contamos a fondo en <a href=\"#u2-dolly\" style=\"text-decoration:underline\">esta nota</a>.</p>\n<p>La primera ola de reseñas es favorable: The Guardian le dio 4 de 5 y Clash, 7 de 10. El debate gira en torno a las letras de Bono. Lo resumimos en <a href=\"#u2-critica\" style=\"text-decoration:underline\">qué dice la crítica</a>.</p>\n<h2>Miranda Lambert — <em>Songline</em></h2>\n<p>Un disco en vivo de nueve canciones grabado en The Truth, en Nashville, con su banda de gira y una orquesta de doce músicos. Llega en una semana importante para ella: compite con 7 nominaciones en los <a href=\"#cma-2026-previa\" style=\"text-decoration:underline\">CMA Awards</a> del 18 de noviembre y suma otras 7 para los Grammy de febrero.</p>\n<h2>Randy Travis — <em>Same Old Way</em></h2>\n<p>Una colección de grabaciones nunca antes escuchadas del miembro del Salón de la Fama del Country.</p>\n<h2>También salió</h2>\n<ul class=\"list\"><li><span>Jaren Johnston</span><span>The Guest Room, primer disco solista del líder de The Cadillac Three</span></li><li><span>Greylan James</span><span>Su álbum homónimo</span></li><li><span>Blake Whiten</span><span>Something To Say, edición de lujo</span></li></ul>\n<h2>Qué sigue</h2>\n<p>Los estrenos latinos de esa misma semana están en <a href=\"#estrenos-latinos\" style=\"text-decoration:underline\">esta lista</a>. El próximo viernes, 20 de noviembre, llegan Estopa, El Último de la Fila, Sfera Ebbasta y NAYEON: lo adelantamos <a href=\"#estrenos-20nov\" style=\"text-decoration:underline\">aquí</a>.</p>",
   "src": [
    [
     "JamBase — U2's new album includes Dolly Parton's last recorded vocal performance",
@@ -2030,6 +2154,18 @@
    [
     "Williamson Source — New Music this Week, November 16, 2026",
     "https://williamsonsource.com/new-music-this-week-november-16-2026"
+   ],
+   [
+    "The Guardian (vía Irish Examiner) — Carnaval de Luz review",
+    "https://www.irishexaminer.com/lifestyle/artsandculture/arid-41935233.html"
+   ],
+   [
+    "Clash — U2 – Carnaval De Luz",
+    "https://www.clashmusic.com/?p=465690"
+   ],
+   [
+    "Holler — CMA Awards 2026: Date, Nominees and Performers",
+    "https://holler.country/news/general/cma-awards-2026-date-nominees-and-performers/"
    ]
   ],
   "cov": {
@@ -2038,7 +2174,19 @@
    "fg": "#ffd400",
    "c": "Discos de la semana",
    "e": "Mundo"
-  }
+  },
+  "ediciones": [
+   {
+    "iso": "2026-11-17T19:21:01-05:00",
+    "tipo": "ampliacion",
+    "campos": [
+     "body",
+     "brief",
+     "dek",
+     "title"
+    ]
+   }
+  ]
  },
  {
   "id": "lux-critica",
@@ -2134,21 +2282,33 @@
   "hora": "09:00",
   "sec": "listas",
   "tag": "Lista",
-  "min": 2,
-  "title": "Los 10 más nominados a los Grammy 2027",
+  "min": 1,
+  "title": "Grammy 2027: los 10 artistas con más nominaciones",
   "titleEn": "The 10 most-nominated artists at the 2027 Grammys",
-  "dek": "La tabla completa, de RAYE a Taylor Swift.",
+  "dek": "RAYE lidera con 11 y Rosalía la sigue con 9. Por primera vez, los seis primeros de la lista son mujeres, y siete artistas compiten en las tres generales.",
   "brief": [
    "RAYE lidera con 11.",
    "Rosalía es segunda con 9.",
    "Cuatro artistas empatan con 7."
   ],
   "en": "The full table of the most-nominated artists at the 2027 Grammys, led by RAYE with 11 and Rosalía with 9.",
-  "body": "<div class=\"bars\" role=\"img\" aria-label=\"Gráfica\"><div><span>RAYE</span><i style=\"width:100%\"></i><span>11</span></div><div><span>Rosalía</span><i style=\"width:81.81818181818183%\"></i><span>9</span></div><div><span>Ella Langley</span><i style=\"width:63.63636363636363%\"></i><span>7</span></div><div><span>Miranda Lambert</span><i style=\"width:63.63636363636363%\"></i><span>7</span></div><div><span>Olivia Rodrigo</span><i style=\"width:63.63636363636363%\"></i><span>7</span></div><div><span>Phoebe Bridgers</span><i style=\"width:63.63636363636363%\"></i><span>7</span></div><div><span>Bruno Mars</span><i style=\"width:54.54545454545454%\"></i><span>6</span></div><div><span>Leon Thomas</span><i style=\"width:54.54545454545454%\"></i><span>6</span></div><div><span>Olivia Dean</span><i style=\"width:54.54545454545454%\"></i><span>6</span></div><div><span>Taylor Swift</span><i style=\"width:45.45454545454545%\"></i><span>5</span></div></div>\n<p>Fuente: lista oficial de nominados de la Recording Academy. Las posiciones empatadas aparecen en el orden publicado.</p>\n<p>Lee el análisis completo en <a href=\"#raye-11\" style=\"text-decoration:underline\">RAYE encabeza los Grammy 2027</a>.</p>",
+  "body": "<div class=\"bars\" role=\"img\" aria-label=\"Gráfica de los 10 artistas con más nominaciones a los Grammy 2027\"><div><span>RAYE</span><i style=\"width:100%\"></i><span>11</span></div><div><span>Rosalía</span><i style=\"width:81.8%\"></i><span>9</span></div><div><span>Ella Langley</span><i style=\"width:63.6%\"></i><span>7</span></div><div><span>Miranda Lambert</span><i style=\"width:63.6%\"></i><span>7</span></div><div><span>Olivia Rodrigo</span><i style=\"width:63.6%\"></i><span>7</span></div><div><span>Phoebe Bridgers</span><i style=\"width:63.6%\"></i><span>7</span></div><div><span>Bruno Mars</span><i style=\"width:54.5%\"></i><span>6</span></div><div><span>Leon Thomas</span><i style=\"width:54.5%\"></i><span>6</span></div><div><span>Olivia Dean</span><i style=\"width:54.5%\"></i><span>6</span></div><div><span>Taylor Swift</span><i style=\"width:45.5%\"></i><span>5</span></div></div>\n<p>RAYE es la artista con más nominaciones a los Grammy 2027: 11, la cifra más alta del año. Rosalía la sigue con 9, cuatro días después de ganar Álbum del Año en los Latin Grammy. Detrás hay un grupo apretado: Ella Langley, Miranda Lambert, Olivia Rodrigo y Phoebe Bridgers tienen 7; Bruno Mars, Leon Thomas y Olivia Dean, 6; y Taylor Swift, 5.</p>\n<h2>Lo que dice la tabla</h2>\n<p>Por primera vez en la historia de los premios, los seis artistas con más candidaturas son mujeres, según W Magazine. Lo contamos en <a href=\"#seis-mujeres\" style=\"text-decoration:underline\">esta nota</a>.</p>\n<p>Siete artistas compiten a la vez en Álbum, Grabación y Canción del Año: Olivia Dean, Ella Langley, Bruno Mars, RAYE, Olivia Rodrigo, Rosalía y Taylor Swift. Phoebe Bridgers es la única finalista a Álbum que no repite en las otras dos. Ella Langley va un paso más allá: también compite en Artista Revelación, así que está en las cuatro categorías generales.</p>\n<p>Rosalía es la única artista hispana entre los ocho finalistas a Álbum del Año, con <em>LUX (Complete Works)</em>.</p>\n<h2>¿Cuándo se entregan?</h2>\n<p>La ceremonia es el domingo 7 de febrero de 2027 en el Crypto.com Arena de Los Ángeles, por ABC, Disney+ y Hulu. Todos los detalles, en <a href=\"#agenda-grammy\" style=\"text-decoration:underline\">la guía de la gala</a>.</p>\n<p class=\"mono g\">Fuente: lista oficial de nominados de la Recording Academy. Las posiciones empatadas aparecen en el orden publicado.</p>\n<p>Lee el análisis completo en <a href=\"#raye-11\" style=\"text-decoration:underline\">RAYE encabeza los Grammy 2027</a>.</p>",
   "src": [
    [
     "Deseret News — Grammy awards 2027: the full list of nominees",
     "https://www.deseret.com/entertainment/2026/11/16/grammy-award-nominations-2027/"
+   ],
+   [
+    "Rolling Stone — Raye, Rosalía and Ella Langley lead 2027 Grammy nominees",
+    "https://www.rollingstone.com/music/music-news/grammy-nominations-2027-full-list-1235658661/"
+   ],
+   [
+    "W Magazine — The biggest snubs and surprises of the 2027 Grammy nominations",
+    "https://www.wmagazine.com/culture/grammy-nominations-2027-snubs-surprises"
+   ],
+   [
+    "NPR / CPR — RAYE and Rosalía lead the 2027 Grammy nominations",
+    "https://www.cpr.org/2026/11/16/raye-and-rosalia-lead-the-2027-grammy-nominations/"
    ]
   ],
   "cov": {
@@ -2158,7 +2318,18 @@
    "c": "Grammy 2027",
    "e": "Lista",
    "fs": "min(34cqw,280px)"
-  }
+  },
+  "ediciones": [
+   {
+    "iso": "2026-11-17T19:21:01-05:00",
+    "tipo": "ampliacion",
+    "campos": [
+     "body",
+     "dek",
+     "title"
+    ]
+   }
+  ]
  },
  {
   "id": "lista-latin-grammy",
@@ -2166,17 +2337,17 @@
   "hora": "09:00",
   "sec": "listas",
   "tag": "Lista",
-  "min": 2,
-  "title": "Los más premiados de los Latin Grammy 2026",
+  "min": 1,
+  "title": "Latin Grammy 2026: los artistas que más premios ganaron",
   "titleEn": "The biggest winners of the 2026 Latin Grammys",
-  "dek": "Rosalía, con cinco, encabeza una noche repartida.",
+  "dek": "Rosalía se llevó cinco gramófonos, incluido Álbum del Año con LUX. Detrás quedaron Milo J, Jorge Drexler y CA7RIEL & Paco Amoroso, con tres cada uno.",
   "brief": [
    "Rosalía ganó 5.",
    "Milo J, Jorge Drexler y CA7RIEL & Paco Amoroso, 3 cada uno.",
    "Karol G, Grupo Frontera, Edgar Barrera y Gonzalo Rubalcaba, 2 cada uno."
   ],
   "en": "Rosalía led the 2026 Latin Grammys with five wins, followed by Milo J, Jorge Drexler and CA7RIEL & Paco Amoroso with three each.",
-  "body": "<div class=\"bars\" role=\"img\" aria-label=\"Gráfica\"><div><span>Rosalía</span><i style=\"width:100%\"></i><span>5</span></div><div><span>Milo J</span><i style=\"width:60%\"></i><span>3</span></div><div><span>Jorge Drexler</span><i style=\"width:60%\"></i><span>3</span></div><div><span>CA7RIEL & Paco Amoroso</span><i style=\"width:60%\"></i><span>3</span></div><div><span>Karol G</span><i style=\"width:40%\"></i><span>2</span></div><div><span>Grupo Frontera</span><i style=\"width:40%\"></i><span>2</span></div><div><span>Edgar Barrera</span><i style=\"width:40%\"></i><span>2</span></div><div><span>Gonzalo Rubalcaba</span><i style=\"width:40%\"></i><span>2</span></div></div>\n<p class=\"mono g\">Conteo de {{NOMBRE}} con la lista oficial de ganadores, por premios recibidos a nombre propio.</p>\n<p>Lee quiénes ganaron cada categoría en <a href=\"#latin-grammy-ganadores\" style=\"text-decoration:underline\">los ganadores de la noche</a>.</p>",
+  "body": "<div class=\"bars\" role=\"img\" aria-label=\"Gráfica de los artistas con más premios en los Latin Grammy 2026\"><div><span>Rosalía</span><i style=\"width:100%\"></i><span>5</span></div><div><span>Milo J</span><i style=\"width:60%\"></i><span>3</span></div><div><span>Jorge Drexler</span><i style=\"width:60%\"></i><span>3</span></div><div><span>CA7RIEL & Paco Amoroso</span><i style=\"width:60%\"></i><span>3</span></div><div><span>Karol G</span><i style=\"width:40%\"></i><span>2</span></div><div><span>Grupo Frontera</span><i style=\"width:40%\"></i><span>2</span></div><div><span>Edgar Barrera</span><i style=\"width:40%\"></i><span>2</span></div><div><span>Gonzalo Rubalcaba</span><i style=\"width:40%\"></i><span>2</span></div></div>\n<p>Rosalía fue la artista con más premios en la 27.ª entrega de los Latin Grammy, celebrada el 12 de noviembre en el MGM Grand Garden Arena de Las Vegas: ganó cinco. Tres artistas se fueron con tres y cuatro más con dos.</p>\n<h2>¿Qué ganó Rosalía?</h2>\n<p>Álbum del Año con <em>LUX</em>, Canción del Año con “La Perla”, Mejor Canción Pop, Mejor Álbum de Música Alternativa y Mejor Video Musical Versión Corta. Es su tercer Álbum del Año, después de <em>El Mal Querer</em> y <em>Motomami</em>. Lo contamos en <a href=\"#rosalia-lux\" style=\"text-decoration:underline\">esta nota</a>.</p>\n<h2>Los que ganaron tres</h2>\n<ul class=\"list\"><li><span>Milo J</span><span>Grabación del Año (“Niño”), Interpretación Urbana (“Gil”, con Trueno) y Álbum Folclórico</span></li><li><span>Jorge Drexler</span><span>Canción Alternativa, Álbum de Cantautor y Canción de Raíces</span></li><li><span>CA7RIEL & Paco Amoroso</span><span>Música Electrónica Latina, Canción Pop/Rock y Video Musical Versión Larga</span></li></ul>\n<h2>Una noche repartida</h2>\n<p>Karol G, Grupo Frontera, Edgar Barrera y Gonzalo Rubalcaba ganaron dos premios cada uno. Barrera, que llegaba como el más nominado con diez candidaturas, se llevó Productor del Año: contamos su historia en <a href=\"#edgar-barrera\" style=\"text-decoration:underline\">Industria</a>. Aria Vega fue elegida Mejor Nuevo Artista; aquí explicamos <a href=\"#quien-es-aria-vega\" style=\"text-decoration:underline\">quién es</a>.</p>\n<p class=\"mono g\">Conteo de {{NOMBRE}} con la lista oficial de ganadores, por premios recibidos a nombre propio.</p>\n<p>Lee quiénes ganaron cada categoría en <a href=\"#latin-grammy-ganadores\" style=\"text-decoration:underline\">los ganadores de la noche</a>.</p>",
   "src": [
    [
     "ABC7 / AP — Lista completa de ganadores del Latin Grammy 2026",
@@ -2185,6 +2356,10 @@
    [
     "Yahoo Entertainment — Latin Grammy Awards 2026 winners",
     "https://www.yahoo.com/entertainment/music/articles/latin-grammy-awards-2026-winners-050832928.html"
+   ],
+   [
+    "Rolling Stone — Latin Grammys 2026 winners: the complete list",
+    "https://www.rollingstone.com/music/music-latin/latin-grammys-2026-winners-complete-list-1235655791/"
    ]
   ],
   "cov": {
@@ -2194,6 +2369,17 @@
    "c": "Latin Grammy 2026",
    "e": "Lista",
    "fs": "min(34cqw,280px)"
-  }
+  },
+  "ediciones": [
+   {
+    "iso": "2026-11-17T19:21:01-05:00",
+    "tipo": "ampliacion",
+    "campos": [
+     "body",
+     "dek",
+     "title"
+    ]
+   }
+  ]
  }
 ]
