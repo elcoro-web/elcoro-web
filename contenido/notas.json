@@ -1,5 +1,41 @@
 [
  {
+  "id": "pitch-spotify-playlists-editoriales",
+  "date": "2026-11-18",
+  "hora": "00:50",
+  "sec": "artistas",
+  "tag": "Para artistas",
+  "min": 4,
+  "propia": true,
+  "title": "Cómo mandar tu canción a las playlists editoriales de Spotify",
+  "titleEn": "How to pitch your song to Spotify's editorial playlists",
+  "dek": "El pitch se hace en Spotify for Artists, con la canción sin publicar y al menos 7 días antes del estreno. Así aseguras también Release Radar.",
+  "brief": [
+   "El pitch a los editores de Spotify se hace gratis desde Spotify for Artists, solo con canciones que todavía no salieron.",
+   "Si lo mandas al menos 7 días antes del estreno, la canción entra en el Release Radar de tus seguidores.",
+   "Pitchear no garantiza entrar a una playlist: lo que más pesa es la información que das en el formulario."
+  ],
+  "en": "Independent artists can pitch one unreleased song per release to Spotify's editors through Spotify for Artists. Pitching at least seven days before release guarantees the track lands on followers' Release Radar, though Spotify says a pitch never guarantees an editorial placement.",
+  "body": "<p>Spotify deja que cualquier artista, con o sin sello, le proponga una canción nueva a su equipo editorial, el que arma playlists como las de cada género y país. El trámite es gratis, se hace desde Spotify for Artists y tiene una condición que muchos descubren tarde: la canción tiene que estar entregada y sin publicar.</p><p>Bien hecho, el pitch te da dos cosas. La posibilidad de que un editor la escuche y la elija, y un lugar asegurado en el Release Radar de tus seguidores, la playlist semanal que Spotify arma con los estrenos de los artistas que cada persona sigue. Estos son los pasos.</p><h2>1. Entrega la canción con tiempo</h2><p>Sube la canción a tu distribuidora con varias semanas de margen. Solo aparece para pitchear cuando la distribuidora ya la entregó a Spotify, y deja de estar disponible el día que sale. Spotify pide que llegue al menos 7 días antes del estreno para que los editores alcancen a escucharla. Si todavía no tienes listos los metadatos y los códigos, revisa antes <a href=\"#antes-de-lanzar\" style=\"text-decoration:underline\">las cinco cosas que hay que hacer antes de lanzar</a>.</p><h2>2. Revisa que tengas el acceso correcto</h2><p>Solo pueden pitchear las cuentas con rol de Admin o Editor en tu perfil de Spotify for Artists. Si tu manager o tu sello manejan el perfil, pídeles ese acceso o coordinen quién lo envía. Un sello puede marcar el pitch como suyo; en ese caso tú ves la canción y quién la propuso, pero no puedes cambiar algunos datos.</p><h2>3. Elige una sola canción</h2><p>Se pitchea una canción a la vez. Si sacas un EP o un disco, escoge la que mejor te presenta, no necesariamente la más larga ni tu favorita. Cuando esa salga, podrás proponer otra. No se pueden pitchear canciones ya publicadas, compilados ni temas donde solo eres artista invitado.</p><h2>4. Llena el formulario con detalle</h2><p>Entra a artists.spotify.com, ve a Música, luego a Próximos, elige la canción y completa el formulario. Te pide etiquetas de género, estado de ánimo y cultura, y una descripción libre. Spotify insiste en que más detalle le da a la canción más oportunidades. Sé preciso: un subgénero real ayuda más que poner “pop” y “urbano” a la vez.</p><h2>5. Escribe una descripción que un editor pueda usar</h2><p>Piensa en alguien que escucha cientos de canciones por semana. Cuéntale en pocas frases cómo suena, de dónde eres, qué hay detrás de la canción y qué estás haciendo para promoverla: video, fechas en vivo, prensa. Nada de “el próximo gran éxito”. El mismo principio sirve para <a href=\"#pitch-a-medios\" style=\"text-decoration:underline\">escribirle a un periodista</a>.</p><h2>6. Aprovecha el Release Radar</h2><p>Si mandaste el pitch con 7 días o más de anticipación, la canción entra al Release Radar de tus seguidores. Si lo mandas con menos tiempo, Spotify decide qué tema tuyo va ahí. Por eso conviene que cada seguidor cuente: invita a tu público a seguirte en Spotify antes del estreno, no solo a guardar la canción.</p><h2>7. Pide el pin en tu playlist This Is</h2><p>Si tu perfil ya tiene una playlist This Is, puedes pedir que la canción quede fijada arriba. El pin tarda unos 3 días en aparecer después del estreno y dura hasta 28 días. Solo se puede pedir uno a la vez.</p><h2>8. Corrige antes del estreno y mide después</h2><p>Puedes editar el pitch hasta el día del estreno, aunque Spotify avisa que los editores quizá no vean los cambios tardíos. Después del lanzamiento, revisa en Música y luego en Playlists si alguna lista editorial la tomó. A veces las inclusiones llegan días después.</p><h2>Qué no hace el pitch</h2><p>Spotify lo dice claro: proponer una canción no garantiza que entre a una playlist, y los editores pueden elegir otro tema tuyo. Tampoco hay respuesta individual si no la escogen. El pitch es un paso de cada lanzamiento, no la estrategia completa: lo que hace que una canción crezca sigue siendo el público que ya tienes.</p><p>Spotify también está habilitando, poco a poco, el pitch de videos musicales oficiales, por separado del de canciones. Si tu cuenta ya lo tiene, aparece en Video y visuales cuando hay un video elegible.</p><p class=\"mono g\">Guía de El Coro basada en la documentación oficial de Spotify for Artists.</p>",
+  "src": [
+   [
+    "Spotify for Artists — Pitching music and videos to Spotify playlist editors",
+    "https://support.spotify.com/artists/article/pitching-music-to-playlist-editors/"
+   ],
+   [
+    "Orphiq — Spotify Pitch Examples, Template, and Timing",
+    "https://orphiq.com/resources/spotify-for-artists-playlist-pitching"
+   ]
+  ],
+  "cov": {
+   "f": "7<br><i>días</i>",
+   "bg": "#0a0a0a",
+   "fg": "#ffd400",
+   "c": "Para artistas",
+   "e": "Pitch en Spotify"
+  }
+ },
+ {
   "id": "quien-es-aria-vega",
   "date": "2026-11-17",
   "hora": "15:22",
