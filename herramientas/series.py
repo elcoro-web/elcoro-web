@@ -393,22 +393,117 @@ def l_esencial(L, T, n, total, S):
     return im
 
 
-TIPOS_EXTRA = dict(esencial=l_esencial)
+def l_paso(L, T, n, total, S):
+    """Un paso de una guía para artistas: número gigante, título y explicación corta. Una lámina por paso (se guarda y se comparte)."""
+    T = TEMAS["negro"]
+    im = Image.new("RGB", (W, H), INK)
+    d = ImageDraw.Draw(im)
+    lk = ajustar(lockup(M, FD, 220, WHITE), 200, 52)
+    im.paste(lk, (X0, 56), lk)
+    f = F(MO, 24)
+    t = "PARA ARTISTAS"
+    w = tl(d, t, f, 0.18) + 40
+    d.rectangle([X1 - w, 60, X1, 108], fill=RED)
+    esp(d, (X1 - w + 20, 71), t, f, WHITE, 0.18)
+    fn = F(BS, 330, 900)
+    num = f"{L['num']:02d}"
+    nb = d.textbbox((0, 0), num, font=fn)
+    d.text((X0 - nb[0], 170 - nb[1]), num, font=fn, fill=RED)
+    y = 170 + (nb[3] - nb[1]) + 60
+    ft, ls, lh = cabe(d, L["titulo"].upper(), BS, 800, X1 - X0, 300, 96, 50, 1.0, 3)
+    for l in ls:
+        d.text((X0, y), l, font=ft, fill=WHITE)
+        y += lh
+    y += 30
+    d.rectangle([X0, y, X0 + 90, y + 6], fill=RED)
+    y += 40
+    disponible = H - 170 - y
+    for size in range(48, 28, -2):
+        fb = F(IN, size, 500)
+        lb = wrap(d, L["texto"], fb, X1 - X0)
+        if len(lb) * int(size * 1.36) <= disponible:
+            break
+    for l in lb:
+        if y + int(size * 1.36) > H - 170:
+            break
+        d.text((X0, y), l, font=fb, fill=(225, 225, 225))
+        y += int(size * 1.36)
+    pie(im, d, T, n, total, S.get("fuente"))
+    return im
+
+
+TIPOS_EXTRA = dict(esencial=l_esencial, paso=l_paso)
 
 ETIQUETAS = {"noticias": "NOTICIA", "premios": "PREMIOS", "listas": "LISTAS", "lanzamientos": "ESTRENOS",
              "critica": "CRÍTICA", "industria": "INDUSTRIA", "artistas": "PARA ARTISTAS"}
 
 
 def limpio(t):
-    t = re.sub(r"<br\s*/?>", " ", t or "")
+    t = (t or "").replace("{{NOMBRE_LARGO}}", M["nombre_largo"]).replace("{{NOMBRE}}", M["nombre"])
+    t = re.sub(r"<br\s*/?>", " ", t)
     t = re.sub(r"<[^>]+>", "", t)
     for k, v in (("&amp;", "&"), ("&nbsp;", " "), ("&quot;", '"'), ("&#39;", "'")):
         t = t.replace(k, v)
     return re.sub(r"\s+", " ", t).strip()
 
 
+def foto_de_banco(n):
+    """Slug del banco de fotos de prensa (redes/fotos/banco.json) si la nota es sobre un artista que tiene foto."""
+    bj = os.path.join(RAIZ, "redes", "fotos", "banco.json")
+    if not os.path.exists(bj):
+        return None
+    banco = {k: v for k, v in json.load(open(bj, encoding="utf-8")).items()
+             if not k.startswith("_") and os.path.exists(os.path.join(RAIZ, "redes", "fotos", k + ".jpg"))}
+    nombres = sorted(((x.lower(), k) for k, v in banco.items() for x in [v["n"]] + v.get("a", [])), key=lambda t: -len(t[0]))
+    for texto in ((n.get("cov") or {}).get("e", ""), limpio(n.get("title", ""))):
+        t = texto.lower().strip()
+        for nm, k in nombres:
+            if t == nm or t.startswith(nm + " ") or t.startswith(nm + ",") or t.startswith(nm + " ·"):
+                return k
+    return None
+
+
+def pasos_de(n, maximo=6):
+    """Pasos de una guía: cada <h2> con la primera idea del párrafo que lo sigue."""
+    b = n.get("body", "")
+    out = []
+    for m in re.finditer(r"<h2[^>]*>(.*?)</h2>\s*(?:<p[^>]*>(.*?)</p>)?", b, re.S):
+        tit = re.sub(r"^\s*\d+[.)]\s*", "", limpio(m.group(1)))
+        if not m.group(2) or re.search(r"para seguir|relacionad|sigue leyendo", tit, re.I):
+            continue
+        txt = limpio(m.group(2))
+        frases = re.split(r"(?<=[.!?])\s+", txt)
+        corto = frases[0]
+        if len(corto) < 110 and len(frases) > 1:
+            corto += " " + frases[1]
+        if len(corto) > 260:
+            corto = corto[:257].rsplit(" ", 1)[0] + "…"
+        out.append({"titulo": tit, "texto": corto})
+        if len(out) >= maximo:
+            break
+    return out
+
+
+def desde_nota_artistas(n):
+    """Guía para artistas en carrusel: portada + un paso por lámina + cierre para guardar."""
+    aj = {}
+    pa = os.path.join(RAIZ, "redes", "reel", n["id"] + ".json")
+    if os.path.exists(pa):
+        aj = json.load(open(pa, encoding="utf-8"))
+    cov = n.get("cov") or {}
+    pasos = pasos_de(n)
+    lam = [{"tipo": "portada", "tema": "negro", "chip": "Guía", "etiqueta": "PARA ARTISTAS",
+            "grande": aj.get("hero", limpio(cov.get("f", "")) or "GUÍA"), "alto_grande": 400,
+            "titulo": aj.get("titular", limpio(n["title"])), "bajada": aj.get("bajada", f"{len(pasos)} pasos. Guárdalo." if pasos else "")}]
+    lam += [{"tipo": "paso", "num": i, "titulo": p["titulo"], "texto": p["texto"]} for i, p in enumerate(pasos, 1)]
+    lam.append({"tipo": "cierre", "tema": "rojo", "lineas": ["GUÁRDALO PARA TU", "PRÓXIMO LANZAMIENTO."]})
+    return {"id": n["id"], "tema": "negro", "fuente": "", "laminas": lam}
+
+
 def desde_nota(n, portada="rojo"):
-    """Serie estándar de una nota: portada + lo esencial + cierre (negro y rojo)."""
+    """Serie estándar de una nota: portada (con foto de prensa si el artista está en el banco) + lo esencial + cierre."""
+    if n.get("sec") == "artistas":
+        return desde_nota_artistas(n)
     aj = {}
     pa = os.path.join(RAIZ, "redes", "reel", n["id"] + ".json")
     if os.path.exists(pa):
@@ -428,10 +523,16 @@ def desde_nota(n, portada="rojo"):
     if len(primeras) > 2 or (primeras and corto == primeras[0][:22] and len(primeras) > 1):
         corto += " y otros"
     puntos = [limpio(b) for b in (n.get("brief") or [])][:4] or [limpio(n.get("dek", ""))]
+    slug = foto_de_banco(n) if os.environ.get("SIN_FOTO") != "1" else None
+    if slug:  # las noticias con foto del artista se ven y se comparten más: la foto va primero
+        tapa = {"tipo": "foto", "foto": f"redes/fotos/{slug}.jpg", "foco_y": 0.15, "chip": n.get("tag", ""),
+                "etiqueta": ETIQUETAS.get(n["sec"], "NOTICIA"), "titulo": aj.get("titular", tit), "bajada": aj.get("bajada", baj)}
+    else:
+        tapa = {"tipo": "portada", "tema": portada, "chip": n.get("tag", ""), "etiqueta": ETIQUETAS.get(n["sec"], "NOTICIA"),
+                "grande": aj.get("hero", limpio(cov.get("f", "")) or n.get("tag", "")), "alto_grande": 430,
+                "titulo": aj.get("titular", tit), "bajada": aj.get("bajada", baj)}
     return {"id": n["id"], "tema": "rojo", "fuente": "" if n.get("propia") else corto, "laminas": [
-        {"tipo": "portada", "tema": portada, "chip": n.get("tag", ""), "etiqueta": ETIQUETAS.get(n["sec"], "NOTICIA"),
-         "grande": aj.get("hero", limpio(cov.get("f", "")) or n.get("tag", "")), "alto_grande": 430,
-         "titulo": aj.get("titular", tit), "bajada": aj.get("bajada", baj)},
+        tapa,
         {"tipo": "esencial", "sub": (n.get("tag") or "").upper(), "puntos": puntos},
         {"tipo": "cierre", "lineas": ["LA NOTA COMPLETA,", "EN LA WEB."]},
     ]}

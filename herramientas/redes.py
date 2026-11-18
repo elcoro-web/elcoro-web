@@ -46,13 +46,19 @@ def registro():
 
 
 def limpio(t):
-    t = re.sub(r"<[^>]+>", "", t or "")
+    t = (t or "").replace("{{NOMBRE_LARGO}}", "El Coro Magazine").replace("{{NOMBRE}}", "El Coro")
+    t = re.sub(r"<[^>]+>", "", t)
     for k, v in (("&amp;", "&"), ("&nbsp;", " "), ("&quot;", '"'), ("&#39;", "'")):
         t = t.replace(k, v)
     return re.sub(r"\s+", " ", t).strip()
 
 
+TAG_HASH = {"Agenda": "#Conciertos", "Momento": "#ÚltimaHora", "Lista": "#Listas", "Análisis": "#MúsicaLatina"}
+
+
 def etiqueta(t):
+    if t in TAG_HASH:
+        return TAG_HASH[t]
     t = "".join(c for c in unicodedata.normalize("NFD", t) if unicodedata.category(c) != "Mn")
     t = re.sub(r"[^A-Za-z0-9 ]", " ", t)
     return "#" + "".join(w[:1].upper() + w[1:] for w in t.split())
@@ -71,12 +77,28 @@ def url_nota(id_):
 
 
 def pendientes(horas=36):
+    """Notas que aún no salieron en redes, de más a menos interesantes para Instagram.
+    Noticias: las de las últimas `horas`. Guías para artistas: cualquiera (no caducan)."""
     ya = hechas()
     ahora = datetime.now(NY)
-    c = [n for n in notas() if n["id"] not in ya and ahora - cuando(n) <= timedelta(hours=horas)]
-    prio = lambda n: (-(n.get("peso") or 1), -int(n.get("tag") == "Momento"), -int(bool(n.get("minuto"))), -int(bool(n.get("propia"))), -cuando(n).timestamp())
-    for n in sorted(c, key=prio):
-        print(json.dumps({k: n.get(k) for k in ("id", "date", "hora", "sec", "tag", "peso", "propia", "title")}, ensure_ascii=False))
+    sys.path.insert(0, P("herramientas"))
+    import series
+    c = [n for n in notas() if n["id"] not in ya and (n["sec"] == "artistas" or ahora - cuando(n) <= timedelta(hours=horas))]
+
+    def puntos(n):
+        p = {3: 6, 2: 3}.get(n.get("peso"), 0)
+        p += 5 if n.get("tag") == "Momento" else 0          # lo que se comenta hoy
+        p += 3 if series.foto_de_banco(n) else 0             # con foto del artista se ve y se comparte más
+        p += 2 if n.get("minuto") else 0
+        p += 2 if n["sec"] in ("premios", "listas") else 0
+        p -= 3 if n["sec"] == "industria" else 0             # interesa menos en Instagram que en la web
+        horas_ = (ahora - cuando(n)).total_seconds() / 3600
+        p -= horas_ / 8 if n["sec"] != "artistas" else 0     # las noticias pierden interés con las horas
+        return p
+    for n in sorted(c, key=puntos, reverse=True):
+        d = {k: n.get(k) for k in ("id", "date", "hora", "sec", "tag", "peso", "title")}
+        d.update(pilar="artistas" if n["sec"] == "artistas" else "noticia", con_foto=bool(series.foto_de_banco(n)), puntos=round(puntos(n), 1))
+        print(json.dumps(d, ensure_ascii=False))
     if not c:
         print("(no hay notas pendientes para redes)")
 
@@ -90,29 +112,64 @@ def preparar(id_):
     import series
     from PIL import Image
     portada = os.environ.get("PORTADA") or ("negro" if len(hechas()) % 2 else "rojo")
-    hechos = series.generar(series.desde_nota(n, portada), IMG)
+    serie = series.desde_nota(n, portada)
+    for viejo in glob.glob(os.path.join(IMG, id_ + "-s*.jpg")):
+        os.remove(viejo)  # imágenes de un intento anterior de esta misma nota (no son registro: se regeneran)
+    hechos = series.generar(serie, IMG)
     series.historia(Image.open(hechos[0]), os.path.join(IMG, id_ + "-story.jpg"))
     titulo, dek = limpio(n["title"]), limpio(n.get("dek"))
+    aj = {}
+    pa = P("redes", "reel", id_ + ".json")
+    if os.path.exists(pa):
+        aj = json.load(open(pa, encoding="utf-8"))
     puntos = [limpio(b) for b in (n.get("brief") or [])][:4]
     fuentes = ", ".join(dict.fromkeys(re.split(r"\s+[—–-]\s+|:\s", s[0])[0].strip() for s in (n.get("src") or [])))
     tags = [t for t in dict.fromkeys(["#ElCoroMagazine", HASH_SEC.get(n["sec"], ""), etiqueta(n.get("tag", "")), "#Música"]) if len(t) > 2]
+    if n["sec"] == "artistas":
+        tags = ["#ElCoroMagazine", "#ArtistasIndependientes", "#MúsicaIndependiente", "#ConsejosParaArtistas"]
     url = url_nota(id_)
-    cuerpo = f"{titulo}\n\n{dek}\n\n📌 Lo esencial\n" + "\n".join("→ " + p for p in puntos)
-    pie_fuentes = f"\n\nFuentes: {fuentes}." if fuentes and not n.get("propia") else ""
-    texto_ig = cuerpo + pie_fuentes + "\n\n📰 Nota completa: link en la bio · elcoromagazine.com\n\n" + " ".join(tags)
+    gancho = aj.get("gancho") or titulo
+    pregunta = aj.get("pregunta") or pregunta_de(n)
+    if n["sec"] == "artistas":
+        pasos = [p["titulo"] for p in series.pasos_de(n)]
+        lista = "\n".join(f"{i}. {p}" for i, p in enumerate(pasos, 1))
+        cuerpo = f"{EMOJI['artistas']} {gancho}\n\n{dek}" + (f"\n\nEn el carrusel:\n{lista}" if pasos else "") + f"\n\n{pregunta}"
+        cierre_ig, pie_fuentes = "\n\n📰 La guía completa: link en la bio · elcoromagazine.com", ""
+    else:
+        cuerpo = f"{EMOJI.get(n['sec'], '🎵')} {gancho}\n\n{dek}\n\n" + "\n".join("→ " + p for p in puntos) + f"\n\n{pregunta}"
+        cierre_ig = "\n\n📰 Nota completa: link en la bio · elcoromagazine.com"
+        pie_fuentes = f"\nFuentes: {fuentes}." if fuentes and not n.get("propia") else ""
+    texto_ig = cuerpo + cierre_ig + pie_fuentes + "\n\n" + " ".join(tags)
     texto_link = cuerpo + pie_fuentes + f"\n\n📰 Nota completa: {url}"
-    corto = f"{titulo}\n\n{url}"
+    corto = f"{gancho}\n\n{url}"
     if len(corto) > 280:
-        corto = titulo[: 280 - len(url) - 4].rstrip() + "…\n\n" + url
+        corto = gancho[: 280 - len(url) - 4].rstrip() + "…\n\n" + url
+    lam = [os.path.basename(h) for h in hechos]
     print(json.dumps({
-        "id": id_, "url": url,
-        "carrusel": [RAW + id_ + f"-s{i}.jpg" for i in (1, 2, 3)],
+        "id": id_, "url": url, "pilar": "artistas" if n["sec"] == "artistas" else "noticia",
+        "con_foto": any(L.get("tipo") == "foto" for L in serie["laminas"]),
+        "carrusel": [RAW + x for x in lam],
         "historia": RAW + id_ + "-story.jpg",
-        "alt": [f"Portada de El Coro: {titulo}", "Lo esencial: " + " ".join(puntos), "La nota completa en elcoromagazine.com."],
+        "alt": [f"El Coro: {titulo}"] + [f"Lámina {i} de {len(lam)}: {titulo}" for i in range(2, len(lam))] + ["La nota completa en elcoromagazine.com."],
         "texto_ig": texto_ig, "texto_link": texto_link, "texto_corto": corto,
-        "titulo_90": titulo[:90],
-        "archivos": [os.path.relpath(os.path.join(IMG, id_ + s), R) for s in ("-s1.jpg", "-s2.jpg", "-s3.jpg", "-story.jpg")],
+        "titulo_90": gancho[:90],
+        "archivos": [os.path.relpath(h, R) for h in hechos] + [os.path.relpath(os.path.join(IMG, id_ + "-story.jpg"), R)],
     }, ensure_ascii=False, indent=1))
+
+
+EMOJI = {"noticias": "🎤", "premios": "🏆", "listas": "📈", "lanzamientos": "💿", "critica": "🎧", "industria": "💼", "artistas": "🎯"}
+
+
+def pregunta_de(n):
+    """Cierre del texto que invita a comentar, guardar o compartir (sin pedir 'me gusta')."""
+    sec, tag = n["sec"], n.get("tag", "")
+    if sec == "artistas":
+        return "📌 Guárdalo para tu próximo lanzamiento y compártelo con tu productor o tu manager."
+    if tag == "Agenda" or "gira" in limpio(n.get("title", "")).lower():
+        return "¿Vas? Etiqueta a la persona con la que irías 👇"
+    return {"premios": "¿Quién crees que se lo lleva? 👇", "listas": "¿Ya la tienes en tu playlist? 👇",
+            "lanzamientos": "¿Cuál escuchas primero? 👇", "industria": "¿Cómo crees que esto cambia la música? 👇",
+            "critica": "¿Estás de acuerdo con la crítica? 👇"}.get(sec, "¿Qué opinas? Te leemos 👇")
 
 
 def video(ids):

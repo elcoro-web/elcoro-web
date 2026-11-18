@@ -120,6 +120,9 @@ El público también quiere enterarse al instante de lo que pasa con los artista
 ## Cuánto publicar en cada vuelta
 - Publica de 0 a 2 notas, idealmente 1, según lo que de verdad sea nuevo y valga la pena. Si no hay nada nuevo, no publiques: una vuelta sin notas es normal.
 - Máximo 10 notas por día. Cuando el día ya tiene 10, usa la vuelta para **mejorar notas existentes** (ver "Vueltas de mejora").
+- **Lo que alimenta Instagram:** las redes solo publican notas de la web, así que la redacción les da material.
+  - Entre dos noticias confirmadas de igual peso, elige la que un fan compartiría (anuncio del artista, momento viral confirmado, récord, gira con fechas, estreno esperado) antes que la que solo interesa a la industria.
+  - Escribe **al menos una guía para artistas al día** (sección `artistas`). Cada paso va en un `<h2>` numerado ("1. Elige a la persona, no al medio") seguido de un párrafo corto: así sale sola en carrusel, una lámina por paso.
 - **Secciones parejas:** `nueva_nota.py` imprime cuántas notas tiene cada sección. Cuando dudes entre dos temas, elige el de la sección más floja (hoy Crítica, Lanzamientos y Para artistas).
 - **Piezas propias:** si en las últimas 8 horas no se publicó ninguna pieza propia (`"propia": true`), escribe una. Puede ser un consejo para artistas, una lista ("Las 10 canciones latinas de la semana"), una explicación ("Cómo se cuenta una semana en el Hot 100") o el contexto de un tema del momento.
 - Prioridad de las noticias: noticia grande del día > momentos confirmados de las últimas horas > premios y listas > estrenos y giras > industria > piezas propias. Aparte, en cada vuelta con material, una nota orientada a lo que la gente busca (ver la sección de arriba). Las piezas propias también deben responder preguntas que la gente busca.

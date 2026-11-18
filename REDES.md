@@ -19,18 +19,40 @@ Las redes llevan gente a la web. Cada publicación presenta una nota ya publicad
 - Si no existe la marca de El Coro, no se publica nada. Termina y dilo en el resumen.
 - Se publica solo en las redes conectadas a esa marca, entre instagram, facebook, threads y tiktok. Si una red no está conectada, se omite.
 
-## Qué sale
-- Cada nota sale una sola vez, con su propio contenido. `redes/publicadas.json` lleva el registro y nunca se borra.
-- `python3 herramientas/redes.py pendientes` ordena las notas de las últimas 36 horas que aún no salieron: primero la noticia grande (peso 3), luego las de "Hoy en un minuto" y las piezas propias, y después las más recientes.
-- Usa tu criterio con esa lista. Elige la nota que más le interesa al público de Instagram (grandes artistas, latinos, premios, estrenos, giras con fechas en EE. UU. o Latinoamérica, consejos útiles para artistas). Sáltate las notas que ya perdieron vigencia, como la previa de un evento que ya pasó.
-- **Ritmo:** el de "Ritmo seguro", arriba. `python3 herramientas/redes.py hoy` muestra lo ya programado hoy, y `getScheduledPosts` lo confirma en Metricool.
+## Qué publicamos: dos pilares (desde el 17 nov 2026)
+El Instagram de El Coro tiene que dar ganas de compartir y de guardar. Son dos tipos de publicación:
+
+**1. Noticias que se comparten (2 de cada 3 publicaciones).** Lo que un fan le mandaría a un amigo:
+- anuncios de los propios artistas: disco, gira, colaboración, pausa o regreso;
+- momentos de conciertos y premios que ya están dando la vuelta: invitados sorpresa, discursos, récords en vivo;
+- récords y cifras que sorprenden: No. 1, semanas en la cima, "por primera vez", nominaciones;
+- giras con fechas en EE. UU. o Latinoamérica y estrenos esperados del viernes;
+- cruces entre artistas, contados con lo que cada uno dijo en público.
+- **Prueba antes de elegir:** ¿alguien la compartiría o la comentaría? Si la respuesta es "solo a la industria" (fusiones, resultados financieros), va en la web, no en Instagram.
+
+**2. Para artistas (1 de cada 3).** Guías prácticas de la sección `artistas`: cómo lanzar, cobrar, registrar, hacer pitch o conseguir prensa. Salen como carrusel de pasos (una lámina por paso) para que la gente los guarde y los mande a su productor o manager. No caducan: `pendientes` las muestra aunque sean viejas.
+
+**Mezcla diaria:** con 3 publicaciones, 2 noticias y 1 guía para artistas. Con 1 o 2 (rampa después de la pausa), primero la noticia más fuerte. Si en el día no hay una noticia que pase la prueba, sale una guía.
+
+**Lo que tomamos de Dímelo King** (referencia de Rilo): la rapidez, la cercanía con los artistas, la cultura urbana latina y el ojo para lo que se está moviendo.
+**Lo que no:** el chisme y la polémica por la polémica. El Coro es un medio con fuentes que busca acreditaciones: nada de rumores, "fuentes cercanas", vida privada, salud, ni nada que humille a alguien. Lo viral, sí; lo inventado, nunca.
+
+## Cómo se elige y se escribe
+- `python3 herramientas/redes.py pendientes` ordena por interés para Instagram (noticia grande, momentos, foto del artista, premios y listas, frescura) y dice el `pilar` y si hay foto (`con_foto`). Usa tu criterio con esa lista y la mezcla diaria.
+- **Con foto, mejor:** si el artista está en el banco de fotos de prensa (`redes/fotos/banco.json`), `preparar` pone la foto en la portada sola.
+- **Gancho:** la primera línea del texto es lo que se ve sin abrir. `preparar` usa el titular. Si es largo o frío, crea `redes/reel/<id>.json` con `"gancho"` (hasta unas 10 palabras, con el dato más fuerte), `"titular"` (portada, unas 7 palabras) y, si quieres, `"pregunta"`. Todo sale de la nota: sin exagerar ni inventar.
+- **Cierre:** `preparar` termina con una pregunta que invita a comentar (o a guardar, en las guías). Nunca se piden "me gusta", nunca "comenta SÍ si…", nunca sorteos falsos.
+- Cada nota sale una sola vez. `redes/publicadas.json` lleva el registro y nunca se borra.
 - Nunca nada sobre la música de Rilo ni sobre bares o coctelería.
 
 ## Estilo: negro y rojo (desde el 17 nov 2026)
 - Todo sale con la identidad negro y rojo: portada con la etiqueta en caja (NOTICIA, PREMIOS, LISTAS, ESTRENOS, CRÍTICA, INDUSTRIA, PARA ARTISTAS), la cifra o palabra gigante y el titular en mayúsculas condensadas; "Lo esencial" en negro con números rojos; cierre rojo con "link en la bio".
-- `preparar` ya genera ese carrusel de 3 láminas (`-s1`, `-s2`, `-s3`) y la historia, y alterna sola la portada roja y la negra para que el perfil se vea como tablero. No cambies ese orden.
+- `preparar` genera el carrusel y la historia:
+  - noticias: portada (con foto si hay), "Lo esencial" y cierre, 3 láminas;
+  - guías para artistas: portada, un paso por lámina y cierre "Guárdalo para tu próximo lanzamiento".
+  - Sin foto, alterna sola la portada roja y la negra para que el perfil se vea como tablero.
 - Si el titular de la nota es largo, antes de `preparar` crea `redes/reel/<id>.json` con `titular` (unas 7 palabras como máximo) y `bajada`, sacados de la nota. El mismo archivo sirve para el reel.
-- Revisa las 3 láminas y la historia con Read antes de subir.
+- Revisa todas las láminas y la historia con Read antes de subir.
 
 ## Carrusel o reel
 - **Reel resumen** ("3 noticias que tienes que saber"): como máximo una vez al día y como una sola publicación, junta 3 notas pendientes de temas distintos: `python3 herramientas/redes.py video <id1> <id2> <id3>`. Las 3 se anotan con `instagram-reel`.
@@ -63,7 +85,7 @@ Además de la nota suelta, El Coro tiene formatos fijos que se reconocen en el f
 2. **Sube las imágenes a GitHub antes de programar**, porque Metricool las descarga de esos enlaces: `git add redes/ && git commit -m "Redes: <id>" && git push origin main`. Si el push es rechazado, haz `git pull --rebase origin main` y vuelve a empujar.
 3. Programa en Metricool con `createScheduledPost` (blogId de El Coro, zona horaria America/New_York):
    - **Instagram reel:** en el texto de un resumen, una línea por nota (1️⃣ 2️⃣ 3️⃣) con su titular; `media` con el `video`, `videoThumbnailUrl` con `portada_video`, `texto_ig` e `instagramData` `{"type":"REEL","showReelOnFeed":true,"isAiGenerated":false}`.
-   - **Instagram carrusel:** carrusel de feed con `carrusel` (las tres láminas), `texto_ig`, `mediaAltText` con `alt` e `instagramData` `{"type":"POST"}`.
+   - **Instagram carrusel:** carrusel de feed con `carrusel` (todas las láminas, en orden), `texto_ig`, `mediaAltText` con `alt` e `instagramData` `{"type":"POST"}`.
    - **Historia (solo peso 3):** otra publicación con `historia`, sin texto y `instagramData` `{"type":"STORY"}`.
    - **Facebook:** publicación aparte con `carrusel`, `texto_link` (lleva el enlace a la nota) y `facebookData` `{"type":"POST"}`.
    - **Threads:** publicación aparte con la imagen `-1` y `texto_corto`.
