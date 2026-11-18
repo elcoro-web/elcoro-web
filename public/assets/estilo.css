@@ -239,7 +239,8 @@ figcaption{font:500 12.5px/1.5 var(--f-ui);color:var(--mute);padding-top:10px}
 .pnav a[aria-current="page"]{color:var(--red);font-weight:700}
 @media (max-width:1000px){.body{grid-template-columns:minmax(0,1fr);gap:28px;padding-top:28px}.body aside{order:-1}.brief{position:static}}
 .prose{min-width:0;font:400 20px/1.7 var(--f-head)}
-.prose p{margin:0 0 1.15em}
+.prose p{margin:0 0 1.15em;text-align:justify;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto;hyphenate-limit-chars:7 3 3}
+.prose p.mono,.prose .list,.prose .bars{text-align:left;hyphens:manual;-webkit-hyphens:manual}
 .prose>p:first-child:not(.lede)::first-letter{float:left;font:600 4.3em/.8 var(--f-head);margin:.07em .1em 0 0;color:var(--red)}
 .prose .lede{font:500 clamp(21px,1.9vw,24px)/1.45 var(--f-head);letter-spacing:-.01em}
 .prose .inph{margin:2em 0;display:block}.prose .inph img{display:block;width:100%;height:auto;aspect-ratio:4/5;max-height:620px;object-fit:cover;background:#0a0a0a}

@@ -124,6 +124,27 @@ El público también quiere enterarse al instante de lo que pasa con los artista
 - **Piezas propias:** si en las últimas 8 horas no se publicó ninguna pieza propia (`"propia": true`), escribe una. Puede ser un consejo para artistas, una lista ("Las 10 canciones latinas de la semana"), una explicación ("Cómo se cuenta una semana en el Hot 100") o el contexto de un tema del momento.
 - Prioridad de las noticias: noticia grande del día > momentos confirmados de las últimas horas > premios y listas > estrenos y giras > industria > piezas propias. Aparte, en cada vuelta con material, una nota orientada a lo que la gente busca (ver la sección de arriba). Las piezas propias también deben responder preguntas que la gente busca.
 
+## Crítica: toda opinión lleva sus razones
+Una reseña sin razones es solo un gusto. En El Coro cada juicio dice **qué canción**, **qué elemento** (producción, voz, letra sin citarla, arreglo, mezcla, duración, orden del disco) y **por qué**. Y hay una regla de honestidad: **la redacción automática no escucha discos**, así que nunca escribe como si los hubiera escuchado.
+
+Hay dos tipos (campo `"critica"` en la nota). El validador revisa los dos.
+
+**1. `"critica": "consenso"`: qué dice la crítica.** Lo publica la redacción automática.
+- Mínimo **3 reseñas publicadas**, leídas en la vuelta y enlazadas en Fuentes.
+- Por cada reseña: medio, crítico, nota (si la hay) y **el argumento con que la justifica**, con la canción o el elemento concreto. Nada de "le gustó" sin decir por qué.
+- Subtítulo **"En qué coinciden"** y otro con lo que divide a los críticos ("En qué no", "El reparo"), con cada afirmación atribuida a su medio.
+- **"La lectura de El Coro"** sale de comparar esos argumentos y de datos que se pueden comprobar (créditos, duración, invitados, listas, premios, trayectoria). Nunca de una escucha propia: prohibido "suena", "nos encantó", "se siente" como opinión de El Coro.
+- Al menos **3 canciones** nombradas entre comillas “ ” con lo que se dice de cada una. Mínimo 450 palabras.
+- Aviso final: `<p class="mono g">Resumen de reseñas publicadas por otros medios, enlazadas en Fuentes.</p>`
+
+**2. `"critica": "propia"`: reseña de El Coro.** Solo la publica una persona que escuchó el disco (Yeyo Ruiz o Rilo) y la firma en `web/autores.json`. La redacción automática puede preparar un borrador con créditos y datos, pero no la publica.
+- Subtítulos obligatorios: **"Lo que funciona"**, **"Lo que no funciona"** y **"Veredicto"**.
+- Cada juicio va atado a una canción y a un elemento. Ejemplo: no "la producción es buena", sino "en “X”, la batería seca deja la voz al frente y el coro entra sin efectos".
+- El veredicto lleva una nota sobre 10 y una frase que la explica.
+- Al menos 3 canciones nombradas y 450 palabras.
+
+**Siempre:** nunca se citan letras; como mucho una cita de menos de 15 palabras por fuente; no se califica un disco que no salió.
+
 ## Direcciones fijas
 La dirección (URL) de cada nota queda guardada en `web/rutas.json` la primera vez que se construye y **nunca cambia**, aunque se pula el titular. No edites ni borres entradas de ese archivo: cambiar una URL ya indexada le hace perder a Google lo ganado.
 
@@ -200,6 +221,7 @@ El Coro suena como un editor que sabe de música y respeta el tiempo del lector:
 - Cierre con "Qué sigue": la próxima fecha, el próximo paso o lo que falta por saber. Nunca una moraleja.
 
 **Formatos y ortografía**
+- El texto de las notas se ve **justificado** (alineado a los dos márgenes, con guiones automáticos). Lo pone el diseño: no hace falta nada en el HTML.
 - Canciones entre comillas: “Bello Love”. Discos y películas en cursiva: `<em>Lux</em>`. Premios con mayúscula (Latin Grammy, Mejor Nuevo Artista); géneros en minúscula (reguetón, pop, regional mexicano).
 - Miles con punto y decimales con coma: 1.000 millones, 8,6 %. Fechas: 20 de noviembre de 2026; en listas, 20 nov.
 - Nombres con su ortografía oficial: RAYE, Rosalía, Bad Bunny, Karol G, BTS, NAYEON.
@@ -208,8 +230,7 @@ El Coro suena como un editor que sabe de música y respeta el tiempo del lector:
 **Resumen en inglés (`en`, `titleEn`)**
 - Inglés natural de medio estadounidense, no traducción literal. 2 o 3 frases con el dato principal.
 
-**Crítica**
-- Se dice desde el primer párrafo que es la lectura de El Coro. Se argumenta con canciones concretas, producción, letras (sin citarlas) y contexto de la carrera. Una calificación clara al final, sin "para todos los gustos".
+**Crítica**: ver la sección "Crítica: toda opinión lleva sus razones".
 
 **Revisión final de estilo (antes de `nueva_nota.py`)**
 1. ¿El titular tiene sujeto, verbo y dato, en 70 caracteres o menos?

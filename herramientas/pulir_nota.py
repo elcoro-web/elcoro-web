@@ -16,7 +16,7 @@ from zoneinfo import ZoneInfo
 
 R = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 NOTAS = os.path.join(R, "contenido", "notas.json")
-PERMITIDOS = {"title", "titleEn", "dek", "brief", "en", "body", "minuto", "tag", "cov", "min", "src_mas"}
+PERMITIDOS = {"title", "titleEn", "dek", "brief", "en", "body", "minuto", "tag", "cov", "min", "src_mas", "critica"}
 
 
 def palabras(h):

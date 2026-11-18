@@ -32,6 +32,39 @@ def error(n, msg):
     sys.exit(f"✗ {n.get('id', '?')}: {msg}")
 
 
+def validar_critica(n):
+    """Toda reseña se justifica (REDACCION.md, "Crítica: toda opinión lleva sus razones")."""
+    b = n["body"]
+    tipo = n.get("critica")
+    canciones = len(re.findall(r"“[^”]{2,80}”", b))
+    h2 = [re.sub(r"<[^>]+>", "", x).lower() for x in re.findall(r"<h2[^>]*>(.*?)</h2>", b, re.S)]
+    if tipo not in ("consenso", "propia"):
+        error(n, 'crítica: falta "critica": "consenso" (resumen justificado de reseñas publicadas) o "propia" (escrita y firmada por alguien que escuchó el disco)')
+    if canciones < 3:
+        error(n, f"crítica: nombra al menos 3 canciones entre comillas “ ” con lo que se dice de cada una (hay {canciones})")
+    if palabras_de(b) < 450:
+        error(n, f"crítica: mínimo 450 palabras para justificar la opinión (hay {palabras_de(b)})")
+    if tipo == "consenso":
+        if len(n["src"]) < 3:
+            error(n, "crítica de consenso: necesita al menos 3 reseñas publicadas en Fuentes")
+        if not any("coinciden" in x for x in h2):
+            error(n, 'crítica de consenso: falta el subtítulo "En qué coinciden" (y lo que divide a los críticos)')
+        if 'class="mono g"' not in b:
+            error(n, 'crítica de consenso: falta el aviso final <p class="mono g"> que dice que resume reseñas de otros medios')
+    else:
+        aut = os.path.join(R, "web", "autores.json")
+        firmas = json.load(open(aut, encoding="utf-8")) if os.path.exists(aut) else {}
+        if n["id"] not in firmas:
+            error(n, "crítica propia: solo se publica firmada por una persona que escuchó el disco (web/autores.json). La redacción automática no escucha discos: haz una crítica de consenso")
+        for k in ("lo que funciona", "lo que no", "veredicto"):
+            if not any(k in x for x in h2):
+                error(n, f'crítica propia: falta el subtítulo "{k.capitalize()}"')
+
+
+def palabras_de(h):
+    return len(re.sub(r"<[^>]+>", " ", h).split())
+
+
 def validar(n, existentes, recientes):
     for k in ("id", "date", "hora", "sec", "tag", "min", "title", "titleEn", "dek", "brief", "en", "body", "src", "cov"):
         if k not in n or n[k] in ("", None):
@@ -68,6 +101,8 @@ def validar(n, existentes, recientes):
         error(n, f"body muy corto ({palabras} palabras; mínimo {minimo}). Agrega contexto propio, no relleno")
     if "<h2" not in n["body"]:
         error(n, "falta al menos un subtítulo <h2> de contexto (por ejemplo: Por qué importa, Contexto, Qué sigue)")
+    if n["sec"] == "critica":
+        validar_critica(n)
     for rid, rt in recientes:
         r = difflib.SequenceMatcher(None, normal(n["title"]), normal(rt)).ratio()
         if r >= PARECIDO_MAX:
