@@ -1,5 +1,49 @@
 [
  {
+  "id": "alejandro-sanz-gira-2027-estados-unidos-fechas-boletas",
+  "date": "2026-11-18",
+  "hora": "03:40",
+  "sec": "noticias",
+  "tag": "Gira",
+  "min": 2,
+  "title": "Gira de Alejandro Sanz 2027 en EE. UU.: Brooklyn, Miami y boletas",
+  "titleEn": "Alejandro Sanz sets 2027 U.S. dates in Brooklyn and Miami",
+  "dek": "El español tocará el 13 de mayo en el Barclays Center y el 15 en el Kaseya Center. La venta general abre el viernes 20 de noviembre a las 10 a. m.",
+  "brief": [
+   "Alejandro Sanz anunció dos conciertos en Estados Unidos para mayo de 2027.",
+   "Toca el 13 de mayo en Brooklyn y el 15 de mayo en Miami.",
+   "La venta general abre el viernes 20 de noviembre en Ticketmaster."
+  ],
+  "en": "Alejandro Sanz will bring his ¿Y Ahora Qué +? tour back to the U.S. with two 2027 arena shows: Brooklyn's Barclays Center on May 13 and Miami's Kaseya Center on May 15. A Citi presale runs through Nov. 19, and general tickets go on sale Friday, Nov. 20, at 10 a.m. local time.",
+  "body": "<p>Alejandro Sanz anunció el 16 de noviembre dos conciertos en Estados Unidos para 2027, con su gira <em>¿Y Ahora Qué +?</em>: el jueves 13 de mayo en el Barclays Center de Brooklyn y el sábado 15 de mayo en el Kaseya Center de Miami. Los produce Live Nation.</p><p>El anuncio llegó cuatro días después de que el madrileño ganara el Latin Grammy a Mejor Álbum Vocal Pop Contemporáneo con <em>¿Y Ahora Qué +?</em>, el mismo premio que se había llevado en 2025 con <em>¿Y Ahora Qué?</em> (<a href=\"#latin-grammy-ganadores\" style=\"text-decoration:underline\">aquí la lista completa de ganadores</a>).</p><h2>¿Cuándo salen las boletas?</h2><ul class=\"list\"><li><span>Preventa Citi</span><span>Del martes 17 nov, 10 a. m. (hora del Este), al jueves 19 nov, 11 p. m. (hora local)</span></li><li><span>Venta general</span><span>Viernes 20 nov, 10 a. m. (hora local), en Ticketmaster</span></li></ul><p>Citi es la tarjeta oficial de la gira, así que la preventa es solo para sus clientes. Los precios no se habían publicado al cierre de esta nota.</p><h2>Fechas de la gira 2027 en Estados Unidos</h2><ul class=\"list\"><li><span>13 may · Brooklyn, NY</span><span>Barclays Center</span></li><li><span>15 may · Miami, FL</span><span>Kaseya Center</span></li></ul><p>Por ahora son las únicas dos fechas confirmadas en el país. El repertorio mezcla las canciones del disco nuevo con sus clásicos.</p><h2>Contexto: una gira que no ha parado desde 2025</h2><p>La gira arrancó en México en septiembre de 2025 y, según su equipo, suma 76 conciertos con 69 llenos. Solo en el Auditorio Nacional de Ciudad de México hizo siete funciones.</p><p>Estados Unidos ya la vio en abril y mayo de 2026, con paradas en Chicago, Washington, Nueva Jersey, Orlando, Dallas, San José, Los Ángeles y Las Vegas. Brooklyn y Miami repiten: Sanz tocó en el Barclays Center el 18 de abril y en el Kaseya Center el 2 de mayo de este año.</p><p>Vuelve así a las mismas dos arenas en poco más de un año, mientras el resto del país queda, por ahora, fuera del calendario. Para Nueva York es la única cita confirmada de 2027.</p><p>La gira ha pasado por estadios en España, como La Cartuja de Sevilla y el Metropolitano de Madrid, y en noviembre recorre Centroamérica y el Caribe. El Salvador y Guatemala son las próximas paradas.</p><h2>Qué sigue</h2><p>La preventa cierra el jueves 19 por la noche y la venta general abre el viernes 20. Si la demanda repite lo de 2026, no sería raro que se agreguen fechas; hasta ahora, ni Live Nation ni el artista lo han anunciado.</p>",
+  "src": [
+   [
+    "21Noticias — Alejandro Sanz anuncia ¿Y ahora qué +? US Tour 2027",
+    "https://21noticias.com/2026/11/16/alejandro-sanz-anuncia-y-ahora-que-us-tour-2027-tras-una-extraordinaria-gira-internacional-de-76-conciertos-y-69-sold-out/"
+   ],
+   [
+    "TicketNews — Alejandro Sanz Announces 2027 U.S. Concerts Following Latin Grammy Win",
+    "https://www.ticketnews.com/2026/11/alejandro-sanz-2027-us-concerts-tickets/"
+   ],
+   [
+    "Remezcla — Alejandro Sanz Announces '¿Y AHORA QUÉ? U.S. Tour' (2025)",
+    "https://remezcla.com/music/alejandro-sanz-announces-y-ahora-que-u-s-tour/"
+   ]
+  ],
+  "cov": {
+   "f": "13<br>may",
+   "bg": "#1d3ea0",
+   "fg": "#ffd400",
+   "c": "Barclays Center, Brooklyn",
+   "e": "Alejandro Sanz"
+  },
+  "minuto": [
+   "Alejandro Sanz vuelve a Brooklyn y Miami en mayo de 2027; venta general el 20 de noviembre.",
+   "Alejandro Sanz returns to Brooklyn and Miami in May 2027."
+  ],
+  "propia": false
+ },
+ {
   "id": "don-omar-gira-2027-mexico-colombia-fechas-precios",
   "date": "2026-11-18",
   "hora": "01:50",
