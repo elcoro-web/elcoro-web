@@ -3,7 +3,11 @@
 Uso: python3 herramientas/nueva_nota.py nota1.json [nota2.json ...]
 Cada archivo trae una nota (objeto) o una lista de notas. El formato está en REDACCION.md.
 """
-import difflib, json, os, re, sys, unicodedata
+import collections, difflib, json, os, re, sys, unicodedata
+from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
+
+NY = ZoneInfo("America/New_York")
 
 R = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 NOTAS = os.path.join(R, "contenido", "notas.json")
@@ -12,7 +16,9 @@ COLORES = {"#0a0a0a", "#0b0b0b", "#ffffff", "#fff", "#e3120b", "#ffd400", "#1d3e
            "#f3f3f3", "#2b2b2b", "#f2f2f2"}
 
 
-TOPE_DIARIO = 20          # máximo de notas por día (hora de Nueva York): calidad antes que volumen. Una nota con peso 3 (la noticia grande) puede pasarlo
+TOPE_DIARIO = 10          # máximo de notas por día (hora de Nueva York): calidad antes que volumen. Una nota con peso 3 (la noticia grande) puede pasarlo
+TOPE_TANDA = 2            # máximo de notas por ejecución (la redacción corre cada hora): ritmo parejo, sin ráfagas
+TOPE_HORA = 2             # máximo de notas en las últimas 2 horas
 PARECIDO_MAX = 0.80       # títulos más parecidos que esto a una nota reciente se bloquean por repetidos
 
 
@@ -83,11 +89,19 @@ def main():
             del_dia = sum(1 for x in N + nuevas if x["date"] == n["date"])
             if del_dia >= TOPE_DIARIO and n.get("peso") != 3 and not os.environ.get("ENCARGO_DIRECTOR"):  # encargo directo de Rilo
                 error(n, f"tope diario alcanzado ({TOPE_DIARIO} notas el {n['date']}). Mejor pocas notas muy buenas: publica esta mañana o actualiza una existente")
+            if len(nuevas) >= TOPE_TANDA and n.get("peso") != 3 and not os.environ.get("ENCARGO_DIRECTOR"):
+                error(n, f"máximo {TOPE_TANDA} notas por tanda. Guarda esta para la próxima vuelta")
+            hace2h = (datetime.now(NY) - timedelta(hours=2)).strftime("%Y-%m-%d %H:%M")
+            ultimas = sum(1 for x in N if f"{x['date']} {x['hora']}" >= hace2h)
+            if ultimas + len(nuevas) >= TOPE_HORA and n.get("peso") != 3 and not os.environ.get("ENCARGO_DIRECTOR"):
+                error(n, f"ya salieron {ultimas + len(nuevas)} notas en las últimas 2 horas (máximo {TOPE_HORA}). Publica en la próxima vuelta")
             nuevas.append(n)
             print(f"✓ {n['id']} · {n['sec']} · {p} palabras · {len(n['src'])} fuentes")
     nuevas.sort(key=lambda n: n["date"] + n["hora"], reverse=True)
     json.dump(nuevas + N, open(NOTAS, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"notas en total: {len(nuevas) + len(N)} (+{len(nuevas)})")
+    c = collections.Counter(x["sec"] for x in nuevas + N)
+    print("por sección (prioriza las más flojas):", ", ".join(f"{k} {c.get(k, 0)}" for k in sorted(SECCIONES, key=lambda k: c.get(k, 0))))
 
 
 if __name__ == "__main__":

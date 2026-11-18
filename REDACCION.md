@@ -39,7 +39,8 @@ Google castiga a toda la web, no solo a una nota, cuando publica mucho contenido
 4. **Calidad antes que volumen.** Mejor 2 notas muy buenas que 4 flojas. El validador:
    - bloquea notas de menos de 200 palabras (350 las propias);
    - bloquea notas casi iguales a una ya publicada;
-   - pone un tope de 20 notas por día (se puede subir cuando el medio gane confianza en Google); solo la noticia grande (`"peso": 3`) puede pasarlo. Las notas que Rilo pide directamente se agregan con `ENCARGO_DIRECTOR=1`; la redacción automática nunca usa esa variable.
+   - pone un tope de **10 notas por día**, **2 por vuelta** y **2 en cualquier ventana de 2 horas**; solo la noticia grande (`"peso": 3`) puede pasarlo. El tope se sube solo cuando Search Console muestre que Google indexa casi todo lo publicado. Las notas que Rilo pide directamente se agregan con `ENCARGO_DIRECTOR=1`; la redacción automática nunca usa esa variable.
+   - Un ritmo parejo (una o dos notas cada pocas horas, todos los días) le dice a Google que hay una redacción de verdad. Las ráfagas de 20 o 30 notas en un día parecen contenido automático masivo.
 5. **Sin relleno para Google.** Nada de repetir palabras clave, ni párrafos vacíos, ni titulares que prometen lo que la nota no da. Se escribe para lectores.
 6. **Enlaces internos.** Cada nota enlaza 1 o 2 notas relacionadas de El Coro con `<a href="#id">`, cuando existan y vengan al caso.
 7. **Actualizar en vez de repetir.** Si el tema ya tiene una nota y hay un dato nuevo, se actualiza esa nota con `corregir_nota.py ... actualizacion`. Solo se escribe una nota nueva si el hecho nuevo es en sí una noticia, y el titular lo dice.
@@ -117,9 +118,19 @@ El público también quiere enterarse al instante de lo que pasa con los artista
 - `artistas`: **consejos prácticos para artistas independientes** (lanzar, pitch, derechos, regalías, distribución, prensa, redes, conciertos, sync, presupuestos, contratos). Son piezas propias (`"propia": true`) con pasos claros. Cuando hay datos oficiales, se citan (Spotify for Artists, YouTube, ASCAP, BMI, SAYCO, SACM, SGAE, Copyright Office).
 
 ## Cuánto publicar en cada vuelta
-- Publica de 0 a 4 notas, idealmente 2 o 3, según lo que de verdad sea nuevo y valga la pena. Si no hay nada nuevo, no publiques noticias.
-- **Piezas propias:** si en las últimas 6 horas no se publicó ninguna pieza propia (`"propia": true`), escribe una. Puede ser un consejo para artistas, una lista ("Las 10 canciones latinas de la semana"), una explicación ("Cómo se cuenta una semana en el Hot 100") o el contexto de un tema del momento.
+- Publica de 0 a 2 notas, idealmente 1, según lo que de verdad sea nuevo y valga la pena. Si no hay nada nuevo, no publiques: una vuelta sin notas es normal.
+- Máximo 10 notas por día. Cuando el día ya tiene 10, usa la vuelta para **mejorar notas existentes** (ver "Vueltas de mejora").
+- **Secciones parejas:** `nueva_nota.py` imprime cuántas notas tiene cada sección. Cuando dudes entre dos temas, elige el de la sección más floja (hoy Crítica, Lanzamientos y Para artistas).
+- **Piezas propias:** si en las últimas 8 horas no se publicó ninguna pieza propia (`"propia": true`), escribe una. Puede ser un consejo para artistas, una lista ("Las 10 canciones latinas de la semana"), una explicación ("Cómo se cuenta una semana en el Hot 100") o el contexto de un tema del momento.
 - Prioridad de las noticias: noticia grande del día > momentos confirmados de las últimas horas > premios y listas > estrenos y giras > industria > piezas propias. Aparte, en cada vuelta con material, una nota orientada a lo que la gente busca (ver la sección de arriba). Las piezas propias también deben responder preguntas que la gente busca.
+
+## Vueltas de mejora (cuando no hay noticias o el día ya llegó al tope)
+Mejorar lo publicado posiciona tanto como publicar. En esas vueltas, elige 1 o 2 notas y súbelas de nivel con `corregir_nota.py ... actualizacion`:
+- alarga las notas de menos de 250 palabras con contexto verificado (nunca relleno);
+- agrega o mejora el `<h2>` de contexto y los enlaces a 1 o 2 notas relacionadas;
+- actualiza guías con datos nuevos (fechas, horas, ganadores);
+- mejora titulares y entradillas que no digan el dato principal.
+`python3 herramientas/revisar.py` lista las notas que más necesitan trabajo.
 
 ## Formato de una nota (archivo JSON para `nueva_nota.py`)
 ```json
