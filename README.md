@@ -9,6 +9,14 @@ Revista de música hecha en Nueva York, en español y con resumen en inglés.
 - `public/`: el sitio listo. El hosting (Namecheap) revisa `public/version.txt` cada 15 minutos y copia lo nuevo con `servidor/actualizar_web.sh`.
 - `REDACCION.md`: guía editorial que sigue la redacción automática.
 - `marca.json`: nombre, dominio, Instagram y correo.
+- `web/rutas.json`: la dirección fija de cada nota. Nunca cambia, aunque se pule el titular.
+- `herramientas/revisar.py`: lista las notas que más necesitan trabajo (largo, enlaces, titulares, entradillas).
+- `herramientas/pulir_nota.py`: pule titular, entradilla, cuerpo o fuentes de una nota sin borrarla.
+- `herramientas/redes.py puedo`: dice si se puede programar en redes sin romper el ritmo seguro.
+
+## Ritmo
+- Web: máximo 10 notas por día, 2 por vuelta y 2 cada 2 horas (`nueva_nota.py` lo bloquea).
+- Redes: 1 publicación de feed por ejecución, 3 al día como máximo y 3 horas entre una y otra (`redes.py` lo bloquea).
 
 ## Publicar a mano
 ```bash
