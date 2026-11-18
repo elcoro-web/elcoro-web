@@ -169,11 +169,54 @@ Mejorar lo publicado posiciona tanto como publicar. En esas vueltas, elige 1 o 2
 - `peso`: 3 = la noticia más grande del día (va de principal); 2 = importante; si no aplica, no lo pongas.
 - `tag`: usa temas que ya existen cuando apliquen (Grammy 2027, Latin Grammy, Hot 100, Récord, Estreno, Lanzamiento, Viernes de estrenos, Agenda, Análisis, Crítica, Industria, Lista). Crea uno nuevo solo si hace falta.
 
-## Voz
-- Español neutro latinoamericano, claro y directo, con frases cortas.
-- Sin jerga de agencia ni adjetivos de relleno ("increíble", "épico").
-- Contexto antes que opinión. Cuando hay opinión (crítica), se dice que lo es.
-- Nombres con su ortografía oficial (RAYE, Rosalía, Bad Bunny, Karol G).
+## Estilo de El Coro
+El Coro suena como un editor que sabe de música y respeta el tiempo del lector: dice el dato, explica por qué importa y se va. Ni comunicado de prensa ni fan. Español neutro latinoamericano, claro y directo.
+
+**Titular**
+- Sujeto + verbo + dato: "Karol G llena tres Estadios GNP en Ciudad de México". Verbo en presente o pasado, nunca en gerundio.
+- Hasta 70 caracteres. Si no cabe, se corta lo accesorio, no el dato.
+- Mayúscula solo al inicio y en nombres propios. Cifras en número (3, 11, 2027).
+- Prohibido: signos de exclamación, preguntas retóricas, "polémica", "explota", "rompe el silencio", "no vas a creer", "todo lo que debes saber".
+
+**Entradilla (`dek`)**
+- Entre 110 y 160 caracteres. Es también la descripción que muestra Google.
+- Responde la pregunta del titular con un dato que el titular no dijo (fecha, cifra, lugar o por qué importa).
+
+**Primer párrafo**
+- Qué pasó, quién, cuándo y dónde, en dos frases como máximo. El lector que solo lee eso ya sabe la noticia.
+- El segundo párrafo da la cifra o el contexto que la hace importante.
+
+**Cuerpo**
+- Párrafos de 2 a 4 frases, una idea por párrafo. Frases de menos de 30 palabras.
+- Concreto antes que genérico: "1,2 millones de unidades" en vez de "cifras históricas"; "su tercer No. 1" en vez de "otro éxito".
+- Verbos activos: "Universal anunció", no "fue anunciado por Universal". Nada de gerundios de posterioridad ("lanzó el disco, siendo el más escuchado").
+- Atribuciones variadas y precisas: afirmó, explicó, contó, escribió en Instagram, confirmó su equipo. No "dijo que" tres veces.
+- Sin muletillas: "a nivel de", "de cara a", "cabe destacar", "sin duda", "en este sentido", "es importante mencionar", "en base a", "realizar" (se dice "hacer", "dar", "presentar").
+- Sin adjetivos de relleno ("increíble", "épico", "impresionante"). Si algo es grande, lo dice el dato.
+- Sin anglicismos innecesarios: "estreno" (no "release"), "gira" (no "tour" salvo en nombres propios), "lista" (no "chart" salvo "Billboard Hot 100").
+- Cierre con "Qué sigue": la próxima fecha, el próximo paso o lo que falta por saber. Nunca una moraleja.
+
+**Formatos y ortografía**
+- Canciones entre comillas: “Bello Love”. Discos y películas en cursiva: `<em>Lux</em>`. Premios con mayúscula (Latin Grammy, Mejor Nuevo Artista); géneros en minúscula (reguetón, pop, regional mexicano).
+- Miles con punto y decimales con coma: 1.000 millones, 8,6 %. Fechas: 20 de noviembre de 2026; en listas, 20 nov.
+- Nombres con su ortografía oficial: RAYE, Rosalía, Bad Bunny, Karol G, BTS, NAYEON.
+- Siglas explicadas la primera vez: "la Recording Industry Association of America (RIAA)".
+
+**Resumen en inglés (`en`, `titleEn`)**
+- Inglés natural de medio estadounidense, no traducción literal. 2 o 3 frases con el dato principal.
+
+**Crítica**
+- Se dice desde el primer párrafo que es la lectura de El Coro. Se argumenta con canciones concretas, producción, letras (sin citarlas) y contexto de la carrera. Una calificación clara al final, sin "para todos los gustos".
+
+**Revisión final de estilo (antes de `nueva_nota.py`)**
+1. ¿El titular tiene sujeto, verbo y dato, en 70 caracteres o menos?
+2. ¿La entradilla agrega algo y mide 110 a 160 caracteres?
+3. ¿El primer párrafo cuenta la noticia completa?
+4. ¿Hay un `<h2>` que explique por qué importa o qué sigue?
+5. ¿Cada cifra, nombre y fecha está en una fuente abierta?
+6. ¿Enlaza 1 o 2 notas relacionadas?
+7. ¿Se puede quitar alguna frase sin perder nada? Si sí, quítala.
+`python3 herramientas/revisar.py` marca titulares largos, entradillas fuera de medida, muletillas y notas sin enlaces.
 
 ## Cómo se publica
 1. Escribe cada nota en un archivo `/tmp/nota-*.json`.
