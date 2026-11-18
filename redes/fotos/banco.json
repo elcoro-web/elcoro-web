@@ -89,5 +89,12 @@
  "spotify": {
   "n": "Spotify",
   "pos": "80% 55%"
+ },
+ "tame-impala": {
+  "n": "Tame Impala",
+  "a": [
+   "Kevin Parker"
+  ],
+  "pos": "45% 30%"
  }
 }
