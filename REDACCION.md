@@ -124,6 +124,9 @@ El público también quiere enterarse al instante de lo que pasa con los artista
 - **Piezas propias:** si en las últimas 8 horas no se publicó ninguna pieza propia (`"propia": true`), escribe una. Puede ser un consejo para artistas, una lista ("Las 10 canciones latinas de la semana"), una explicación ("Cómo se cuenta una semana en el Hot 100") o el contexto de un tema del momento.
 - Prioridad de las noticias: noticia grande del día > momentos confirmados de las últimas horas > premios y listas > estrenos y giras > industria > piezas propias. Aparte, en cada vuelta con material, una nota orientada a lo que la gente busca (ver la sección de arriba). Las piezas propias también deben responder preguntas que la gente busca.
 
+## Direcciones fijas
+La dirección (URL) de cada nota queda guardada en `web/rutas.json` la primera vez que se construye y **nunca cambia**, aunque se pula el titular. No edites ni borres entradas de ese archivo: cambiar una URL ya indexada le hace perder a Google lo ganado.
+
 ## Vueltas de mejora (cuando no hay noticias o el día ya llegó al tope)
 Mejorar lo publicado posiciona tanto como publicar. En esas vueltas, elige 1 o 2 notas y súbelas de nivel con `corregir_nota.py ... actualizacion`:
 - alarga las notas de menos de 250 palabras con contexto verificado (nunca relleno);

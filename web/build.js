@@ -36,7 +36,20 @@ for (const a of A) if (fs.existsSync(path.join(OGDIR, a.id + ".jpg"))) OGMAP[a.i
 const ROUTE = { inicio: "/" };
 for (const k of Object.keys(T.es.sections)) if (k !== "inicio" && k !== "manifiesto") ROUTE[k] = `/${k}/`;
 const short = t => { let s = slug(t), o = ""; for (const w of s.split("-")) { if ((o + "-" + w).length > 72) break; o = o ? o + "-" + w : w; } return o.replace(/(-(de|del|la|las|los|el|y|en|a|con|al))+$/, ""); };
-for (const a of A) ROUTE[a.id] = `/${a.sec}/${short(a.title)}/`;
+// Direcciones fijas: la primera dirección de cada nota queda guardada en web/rutas.json y no cambia aunque se pula el titular
+// (cambiar una URL ya indexada le hace perder a Google lo ganado). Nunca se borra una entrada de ese archivo.
+const RUTAS_F = path.join(__dirname, "rutas.json");
+const RUTAS = fs.existsSync(RUTAS_F) ? JSON.parse(fs.readFileSync(RUTAS_F, "utf8")) : {};
+const usadas = new Set(Object.values(RUTAS));
+for (const a of A) {
+  if (!RUTAS[a.id]) {
+    let r = `/${a.sec}/${short(a.title)}/`, i = 2;
+    while (usadas.has(r)) r = `/${a.sec}/${short(a.title)}-${i++}/`;
+    RUTAS[a.id] = r; usadas.add(r);
+  }
+  ROUTE[a.id] = RUTAS[a.id];
+}
+fs.writeFileSync(RUTAS_F, JSON.stringify(Object.fromEntries(Object.entries(RUTAS).sort()), null, 1) + "\n");
 for (const k of Object.keys(PAGES)) ROUTE[k] = `/${k}/`;
 for (const tg of tags) ROUTE["t-" + slug(tg)] = `/tema/${slug(tg)}/`;
 
