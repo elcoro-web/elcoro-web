@@ -8,7 +8,9 @@
   python3 herramientas/redes.py video <id> [id2 id3]    crea el reel (video 9:16, 1 a 3 notas) en redes/video/ y muestra el enlace (JSON)
   python3 herramientas/redes.py cancelar <id> [motivo]   la publicación no salió: la nota vuelve a quedar pendiente
   python3 herramientas/redes.py hoy                     publicaciones programadas hoy (hora de Nueva York)
-  python3 herramientas/redes.py puedo [fecha_iso]       ¿se puede programar una publicación de feed a esa hora? (pausa, tope diario, 3 h de separación)
+  python3 herramientas/redes.py puedo [fecha_iso] [historia]   ¿se puede programar a esa hora? (pausa, tope del día y separación del nivel vigente)
+  python3 herramientas/redes.py ritmo                   cuántas van hoy y cuál es el tope del día
+  python3 herramientas/redes.py aviso "<texto>"          Instagram restringió la cuenta: pausa 48 h y un nivel menos 14 días
 
 El ritmo está blindado aquí y no en la memoria de nadie: `marcar` se niega a anotar una publicación de feed que rompa las reglas.
 """
@@ -27,10 +29,19 @@ RAWV = "https://raw.githubusercontent.com/elcoro-web/elcoro-web/main/redes/video
 DOM = "https://elcoromagazine.com"
 # --- Ritmo seguro para Instagram (cuenta nueva: Instagram castiga las ráfagas) ---
 PAUSA_HASTA = datetime(2026, 11, 19, 16, 0, tzinfo=NY)       # restricción de Instagram del 17 nov 2026
-RAMPA = {"2026-11-19": 1, "2026-11-20": 2}                   # vuelta gradual después de la pausa
-TOPE_FEED_DIA = 3                                             # ritmo normal: máximo 3 publicaciones de feed al día
-SEPARACION = timedelta(hours=3)                               # entre dos publicaciones de feed
+# Subida gradual (Rilo, 17 nov): (desde el día, publicaciones de feed por día, horas entre una y otra)
+NIVELES = [
+    ("2026-11-19", 1, 3.0),
+    ("2026-11-20", 2, 3.0),
+    ("2026-11-21", 3, 3.0),
+    ("2026-11-23", 5, 3.0),
+    ("2026-11-30", 6, 2.5),
+    ("2026-12-07", 8, 2.0),
+]
+HISTORIAS = [("2026-11-19", 2, 2.0), ("2026-11-23", 4, 1.5), ("2026-12-07", 6, 1.0)]  # historias: aparte del feed
+AVISOS = P("redes", "avisos.json")   # restricciones de Instagram: cada una pausa 48 h y baja un nivel durante 14 días
 FEED = {"instagram", "instagram-reel", "instagram-carrusel"}  # las historias no cuentan como feed
+HISTORIA = {"instagram-story", "instagram-historia"}
 
 HASH_SEC = {"noticias": "#NoticiasMusicales", "premios": "#PremiosMusicales", "listas": "#ListasMusicales",
             "lanzamientos": "#NuevaMúsica", "critica": "#CríticaMusical", "industria": "#IndustriaMusical",
@@ -201,15 +212,39 @@ def video(ids):
                      ensure_ascii=False, indent=1))
 
 
-def feed_vigente():
-    """Fechas (NY) de las publicaciones de feed anotadas y no canceladas después."""
+def avisos():
+    return json.load(open(AVISOS, encoding="utf-8")) if os.path.exists(AVISOS) else []
+
+
+def pausa_hasta():
+    """Fin de la pausa vigente: la del 17 nov o 48 horas después del último aviso de restricción."""
+    fin = PAUSA_HASTA
+    for a in avisos():
+        f = datetime.fromisoformat(a["fecha"]) + timedelta(hours=48)
+        fin = max(fin, f)
+    return fin
+
+
+def nivel(fecha, tabla=None):
+    """(tope por día, separación) para esa fecha, con un nivel menos por cada aviso de los últimos 14 días."""
+    tabla = tabla or NIVELES
+    dia = fecha.strftime("%Y-%m-%d")
+    idx = max((i for i, (desde, _, _) in enumerate(tabla) if dia >= desde), default=0)
+    recientes = [a for a in avisos() if fecha - datetime.fromisoformat(a["fecha"]) <= timedelta(days=14)]
+    idx = max(0, idx - len(recientes))
+    _, tope, horas = tabla[idx]
+    return tope, timedelta(hours=horas)
+
+
+def vigentes(redes_tipo):
+    """Fechas (NY) de las publicaciones anotadas de ese tipo (feed o historia) y no canceladas después."""
     canc, out = {}, []
     reg = registro()
     for x in reg:
         if x.get("cancelada"):
             canc.setdefault(x["id"], []).append(x["registrada"])
     for x in reg:
-        if x.get("cancelada") or not FEED & set(x.get("redes") or []):
+        if x.get("cancelada") or not redes_tipo & set(x.get("redes") or []):
             continue
         if any(c >= x["registrada"] for c in canc.get(x["id"], [])):
             continue
@@ -221,44 +256,74 @@ def feed_vigente():
     return out
 
 
-def motivo_no(fecha):
-    """None si se puede programar una publicación de feed en `fecha`; si no, el motivo."""
+def feed_vigente():
+    return vigentes(FEED)
+
+
+def motivo_no(fecha, tipo="feed"):
+    """None si se puede programar una publicación (feed o historia) en `fecha`; si no, el motivo."""
     ahora = datetime.now(NY)
-    if ahora < PAUSA_HASTA or fecha < PAUSA_HASTA:
-        return f"pausa por restricción de Instagram hasta {PAUSA_HASTA:%d/%m %H:%M} (Nueva York)"
-    if fecha < ahora + timedelta(minutes=15):
-        return "la hora tiene que estar al menos 15 minutos en el futuro"
+    fin = pausa_hasta()
+    if ahora < fin or fecha < fin:
+        return f"pausa por restricción de Instagram hasta {fin:%d/%m %H:%M} (Nueva York)"
+    if fecha < ahora + timedelta(minutes=10):
+        return "la hora tiene que estar al menos 10 minutos en el futuro"
     if fecha.hour < 7:
         return "nada de madrugada (00:00 a 07:00)"
     dia = fecha.strftime("%Y-%m-%d")
-    tope = RAMPA.get(dia, TOPE_FEED_DIA)
-    otras = feed_vigente()
+    tope, sep = nivel(fecha, HISTORIAS if tipo == "historia" else NIVELES)
+    otras = vigentes(HISTORIA if tipo == "historia" else FEED)
     del_dia = [f for f in otras if f.strftime("%Y-%m-%d") == dia]
+    nombre = "historias" if tipo == "historia" else "publicaciones de feed"
     if len(del_dia) >= tope:
-        return f"ese día ya tiene {len(del_dia)} publicaciones de feed (tope {tope})"
-    cerca = [f for f in otras if abs(f - fecha) < SEPARACION]
+        return f"ese día ya tiene {len(del_dia)} {nombre} (tope {tope})"
+    cerca = [f for f in otras if abs(f - fecha) < sep]
     if cerca:
-        return f"hay otra publicación de feed a menos de 3 horas ({min(cerca, key=lambda f: abs(f - fecha)):%d/%m %H:%M})"
+        h = sep.total_seconds() / 3600
+        return f"hay otra de {nombre} a menos de {h:g} horas ({min(cerca, key=lambda f: abs(f - fecha)):%d/%m %H:%M})"
     return None
 
 
-def puedo(fecha_txt=None):
+def aviso(texto=""):
+    """Instagram restringió la cuenta: pausa 48 h y un nivel menos durante 14 días."""
+    a = avisos()
+    a.append({"fecha": datetime.now(NY).isoformat(timespec="seconds"), "texto": texto})
+    json.dump(a, open(AVISOS, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print(f"aviso anotado. Pausa hasta {pausa_hasta():%d/%m %H:%M}; después, un nivel menos durante 14 días.")
+
+
+def ritmo():
+    """Cómo va el ritmo hoy."""
+    ahora = datetime.now(NY)
+    tope, sep = nivel(ahora)
+    th, sh = nivel(ahora, HISTORIAS)
+    hoy_f = [f for f in feed_vigente() if f.date() == ahora.date()]
+    hoy_h = [f for f in vigentes(HISTORIA) if f.date() == ahora.date()]
+    print(f"Hoy {ahora:%d/%m}: feed {len(hoy_f)}/{tope} (cada {sep.total_seconds()/3600:g} h) · historias {len(hoy_h)}/{th} (cada {sh.total_seconds()/3600:g} h)")
+    if ahora < pausa_hasta():
+        print(f"En pausa hasta {pausa_hasta():%d/%m %H:%M}")
+
+
+def puedo(fecha_txt=None, tipo="feed"):
     fecha = datetime.fromisoformat(fecha_txt) if fecha_txt else datetime.now(NY) + timedelta(minutes=30)
     fecha = fecha.astimezone(NY) if fecha.tzinfo else fecha.replace(tzinfo=NY)
-    m = motivo_no(fecha)
+    m = motivo_no(fecha, tipo)
     if m:
         print(f"NO: {m}")
         sys.exit(1)
-    print(f"SÍ: se puede programar una publicación de feed el {fecha:%d/%m %H:%M} (Nueva York)")
+    print(f"SÍ: se puede programar una {'historia' if tipo == 'historia' else 'publicación de feed'} el {fecha:%d/%m %H:%M} (Nueva York)")
 
 
 def marcar(id_, redes, fecha, enlace=""):
     if not any(x["id"] == id_ for x in notas()):
         sys.exit(f"no existe la nota {id_}")
-    if FEED & {x.strip() for x in redes.split(",")}:
+    tipos = {x.strip() for x in redes.split(",")}
+    for tipo, grupo in (("feed", FEED), ("historia", HISTORIA)):
+        if not grupo & tipos:
+            continue
         f = datetime.fromisoformat(fecha.replace("Z", "+00:00"))
         f = f.astimezone(NY) if f.tzinfo else f.replace(tzinfo=NY)
-        m = motivo_no(f)
+        m = motivo_no(f, tipo)
         if m:
             sys.exit(f"✗ no se anota: {m}. Borra esa publicación de Metricool (o reprográmala) y vuelve a intentarlo")
     r = registro()
@@ -313,7 +378,12 @@ if __name__ == "__main__":
         cancelar(*a[1:])
     elif a[0] == "hoy":
         hoy()
-    elif a[0] == "puedo" and len(a) in (1, 2):
-        puedo(*a[1:])
+    elif a[0] == "puedo" and len(a) in (1, 2, 3):
+        fecha = a[1] if len(a) > 1 and a[1] != "historia" else None
+        puedo(fecha, "historia" if "historia" in a[1:] else "feed")
+    elif a[0] == "aviso":
+        aviso(" ".join(a[1:]))
+    elif a[0] == "ritmo":
+        ritmo()
     else:
         sys.exit(__doc__)

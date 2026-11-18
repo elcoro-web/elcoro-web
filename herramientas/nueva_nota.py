@@ -18,7 +18,8 @@ COLORES = {"#0a0a0a", "#0b0b0b", "#ffffff", "#fff", "#e3120b", "#ffd400", "#1d3e
 
 TOPE_DIARIO = 10          # máximo de notas por día (hora de Nueva York): calidad antes que volumen. Una nota con peso 3 (la noticia grande) puede pasarlo
 TOPE_TANDA = 2            # máximo de notas por ejecución (la redacción corre cada hora): ritmo parejo, sin ráfagas
-TOPE_HORA = 2             # máximo de notas en las últimas 2 horas
+TOPE_HORA = 2             # máximo de notas en las últimas 2 horas (las del momento no cuentan para este tope)
+RESERVA_MOMENTO = 2       # de las 10 diarias, 2 quedan para noticias del momento ("tag": "Momento"): lo demás llega hasta 8
 PARECIDO_MAX = 0.80       # títulos más parecidos que esto a una nota reciente se bloquean por repetidos
 
 
@@ -122,13 +123,19 @@ def main():
         for n in (d if isinstance(d, list) else [d]):
             p = validar(n, existentes | {x["id"] for x in nuevas}, recientes + [(x["id"], x["title"]) for x in nuevas])
             del_dia = sum(1 for x in N + nuevas if x["date"] == n["date"])
+            momento = n.get("tag") == "Momento"
+            tope = TOPE_DIARIO if momento else TOPE_DIARIO - RESERVA_MOMENTO
+            if del_dia >= tope and n.get("peso") != 3 and not os.environ.get("ENCARGO_DIRECTOR") and momento:
+                error(n, f"tope diario alcanzado ({TOPE_DIARIO} notas el {n['date']}), incluidos los cupos de noticias del momento")
+            if del_dia >= tope and n.get("peso") != 3 and not os.environ.get("ENCARGO_DIRECTOR") and not momento:
+                error(n, f"el día ya tiene {del_dia} notas: los 2 cupos que quedan son para noticias del momento (\"tag\": \"Momento\") o la noticia grande (peso 3). Déjala para mañana o mejora una existente")
             if del_dia >= TOPE_DIARIO and n.get("peso") != 3 and not os.environ.get("ENCARGO_DIRECTOR"):  # encargo directo de Rilo
-                error(n, f"tope diario alcanzado ({TOPE_DIARIO} notas el {n['date']}). Mejor pocas notas muy buenas: publica esta mañana o actualiza una existente")
+                error(n, f"tope diario alcanzado ({TOPE_DIARIO} notas el {n['date']}). Mejor pocas notas muy buenas: déjala para mañana o actualiza una existente")
             if len(nuevas) >= TOPE_TANDA and n.get("peso") != 3 and not os.environ.get("ENCARGO_DIRECTOR"):
                 error(n, f"máximo {TOPE_TANDA} notas por tanda. Guarda esta para la próxima vuelta")
             hace2h = (datetime.now(NY) - timedelta(hours=2)).strftime("%Y-%m-%d %H:%M")
             ultimas = sum(1 for x in N if f"{x['date']} {x['hora']}" >= hace2h)
-            if ultimas + len(nuevas) >= TOPE_HORA and n.get("peso") != 3 and not os.environ.get("ENCARGO_DIRECTOR"):
+            if ultimas + len(nuevas) >= TOPE_HORA and n.get("peso") != 3 and not momento and not os.environ.get("ENCARGO_DIRECTOR"):
                 error(n, f"ya salieron {ultimas + len(nuevas)} notas en las últimas 2 horas (máximo {TOPE_HORA}). Publica en la próxima vuelta")
             nuevas.append(n)
             print(f"✓ {n['id']} · {n['sec']} · {p} palabras · {len(n['src'])} fuentes")

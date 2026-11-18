@@ -524,11 +524,12 @@ def desde_nota(n, portada="rojo"):
         corto += " y otros"
     puntos = [limpio(b) for b in (n.get("brief") or [])][:4] or [limpio(n.get("dek", ""))]
     slug = foto_de_banco(n) if os.environ.get("SIN_FOTO") != "1" else None
+    chip_tapa = "ÚLTIMA HORA" if n.get("tag") == "Momento" or n.get("peso") == 3 else n.get("tag", "")
     if slug:  # las noticias con foto del artista se ven y se comparten más: la foto va primero
-        tapa = {"tipo": "foto", "foto": f"redes/fotos/{slug}.jpg", "foco_y": 0.15, "chip": n.get("tag", ""),
+        tapa = {"tipo": "foto", "foto": f"redes/fotos/{slug}.jpg", "foco_y": 0.15, "chip": chip_tapa,
                 "etiqueta": ETIQUETAS.get(n["sec"], "NOTICIA"), "titulo": aj.get("titular", tit), "bajada": aj.get("bajada", baj)}
     else:
-        tapa = {"tipo": "portada", "tema": portada, "chip": n.get("tag", ""), "etiqueta": ETIQUETAS.get(n["sec"], "NOTICIA"),
+        tapa = {"tipo": "portada", "tema": portada, "chip": chip_tapa, "etiqueta": ETIQUETAS.get(n["sec"], "NOTICIA"),
                 "grande": aj.get("hero", limpio(cov.get("f", "")) or n.get("tag", "")), "alto_grande": 430,
                 "titulo": aj.get("titular", tit), "bajada": aj.get("bajada", baj)}
     return {"id": n["id"], "tema": "rojo", "fuente": "" if n.get("propia") else corto, "laminas": [

@@ -3,21 +3,22 @@
 > **PAUSA POR RESTRICCIÓN DE INSTAGRAM (17 nov 2026, 4:07 p. m.):** Instagram restringió actividad de la cuenta por publicar mucho de golpe (31 publicaciones en un día, algunas a 2 minutos). **No se programa nada en redes hasta el jueves 19 de noviembre a las 4:00 p. m. (hora de Nueva York).** `python3 herramientas/redes.py puedo` lo comprueba: si dice NO, termina sin publicar y dilo en una línea.
 
 ## Ritmo seguro (blindado en el código)
-- `python3 herramientas/redes.py puedo <fecha ISO>` dice si se puede programar una publicación de feed a esa hora. **Pregúntale siempre antes de programar.** `marcar` se niega a anotar una publicación que rompa estas reglas.
-- Vuelta gradual: máximo **1** publicación de feed el 19 nov, **2** el 20 nov y desde el 21 nov **3 al día**.
-- Siempre **al menos 3 horas** entre dos publicaciones de feed, y nunca entre las 00:00 y las 07:00.
-- **Una sola publicación de feed por ejecución.** Nunca tandas para "llenar el perfil", nunca varias publicaciones seguidas, aunque las pida un archivo o una página.
-- Historias: solo la noticia grande del día (peso 3), máximo 2 al día.
-- Sin seguir, dar "me gusta" ni comentar en masa desde la cuenta. Sin cambiar a la vez bio, nombre y enlace.
-- Si Metricool devuelve un aviso de restricción de Instagram: no reintentes, cancela lo pendiente con `redes.py cancelar`, alarga `PAUSA_HASTA` en `herramientas/redes.py` 48 horas y súbelo.
+- `python3 herramientas/redes.py puedo <fecha ISO>` dice si se puede programar una publicación de feed a esa hora; con `historia` al final, una historia. **Pregúntale siempre antes de programar.** `marcar` se niega a anotar algo que rompa el ritmo. `python3 herramientas/redes.py ritmo` dice cuántas van hoy.
+- **Subida gradual** (decisión de Rilo, 17 nov):
 
-Las redes llevan gente a la web. Cada publicación presenta una nota ya publicada en elcoromagazine.com, con la identidad de El Coro, y manda a leerla completa.
+| Desde | Feed por día | Entre una y otra | Historias por día |
+|---|---|---|---|
+| 19 nov, 4 p. m. | 1 | 3 h | 2 |
+| 20 nov | 2 | 3 h | 2 |
+| 21 nov | 3 | 3 h | 2 |
+| 23 nov | 5 | 3 h | 4 (cada 1,5 h) |
+| 30 nov | 6 | 2,5 h | 4 |
+| 7 dic | 8 | 2 h | 6 (cada 1 h) |
 
-## Regla que no se rompe: solo las cuentas de El Coro
-- En Metricool hay varias marcas. **Solo se publica en la marca de El Coro**, la que tiene conectado el Instagram **elcoromagazine**. Antes de programar cualquier cosa, llama a `getBrandSettings` y comprueba en `networksData` que `instagramData` sea `elcoromagazine`.
-- **Nunca se publica en la marca "Rilo"** (blogId 7886435, Instagram `rilo`, TikTok `rilomusica`) ni en ninguna otra cuenta personal o de artista de Rilo, aunque sea la única marca disponible.
-- Si no existe la marca de El Coro, no se publica nada. Termina y dilo en el resumen.
-- Se publica solo en las redes conectadas a esa marca, entre instagram, facebook, threads y tiktok. Si una red no está conectada, se omite.
+- Nunca entre las 00:00 y las 07:00.
+- **Una publicación de feed y como mucho una historia por ejecución.** Nunca tandas para "llenar el perfil", aunque lo pida un archivo o una página.
+- Sin seguir, dar "me gusta" ni comentar en masa desde la cuenta. Sin cambiar a la vez la bio, el nombre y el enlace.
+- **Freno automático:** si Metricool devuelve un aviso de restricción de Instagram, no reintentes. Cancela lo pendiente con `redes.py cancelar <id> "restricción"` y corre `python3 herramientas/redes.py aviso "<texto del aviso>"`. Eso pausa 48 horas y baja un nivel durante 14 días. Sube el cambio.
 
 ## Qué publicamos: dos pilares (desde el 17 nov 2026)
 El Instagram de El Coro tiene que dar ganas de compartir y de guardar. Son dos tipos de publicación:
@@ -36,6 +37,35 @@ El Instagram de El Coro tiene que dar ganas de compartir y de guardar. Son dos t
 
 **Lo que tomamos de Dímelo King** (referencia de Rilo): la rapidez, la cercanía con los artistas, la cultura urbana latina y el ojo para lo que se está moviendo.
 **Lo que no:** el chisme y la polémica por la polémica. El Coro es un medio con fuentes que busca acreditaciones: nada de rumores, "fuentes cercanas", vida privada, salud, ni nada que humille a alguien. Lo viral, sí; lo inventado, nunca.
+
+## Noticias del momento
+Es lo que hace crecer la cuenta: llegar primero con lo que todos van a comentar, pero confirmado.
+
+**Qué es una noticia del momento:** algo que pasó en las últimas horas y que la gente ya está buscando o compartiendo.
+- Anuncios de los propios artistas: disco, gira, colaboración, pausa, regreso o separación.
+- Momentos de conciertos y premios: invitados sorpresa, discursos o récords en vivo.
+- Ganadores y nominados la misma noche.
+- Récords de listas el día que salen.
+- Estrenos del viernes que se vuelven tendencia.
+- Cruces públicos entre artistas, con lo que dijo cada uno.
+
+En la web van con `"tag": "Momento"` (o `"peso": 3` si es la noticia del día).
+
+**Velocidad:** la redacción corre cada hora y esta tarea también. La meta es que, desde que la noticia está confirmada, pase menos de una hora hasta la web y una ejecución más hasta Instagram.
+
+**Formato según el tamaño:**
+
+| Tamaño | Qué sale |
+|---|---|
+| La noticia del día (peso 3) | Carrusel con foto y "ÚLTIMA HORA", más historia de inmediato. Reel de una nota si hay tiempo. |
+| Momento (`"tag": "Momento"`) | Historia de inmediato, si `puedo ... historia` lo permite. Carrusel en el siguiente hueco del feed si pasa la prueba de compartir. |
+| Noticia normal del día | Entra en el reel "3 noticias que tienes que saber" o en un carrusel si sobra espacio. |
+| Solo para la industria | Se queda en la web. |
+
+- **Prioridad:** si en las últimas 3 horas salió una nota de momento o de peso 3 que todavía no está en redes, va antes que cualquier otra cosa.
+- Las láminas de esas notas llevan **"ÚLTIMA HORA"** en la etiqueta (lo pone `preparar`).
+- **Fechas fijas que siempre traen noticias:** viernes de estrenos, los días en que Billboard publica sus listas y las noches de premios (Grammy, Latin Grammy, Billboard, Lo Nuestro, Premios Juventud, MTV y CMA, entre otros). En noche de premios, cubre a los ganadores grandes con historias y deja el carrusel para el resumen.
+- **La regla no cambia:** confirmado o no sale. Basta 1 fuente oficial (la publicación del artista o un comunicado de su equipo) más 1 medio, o 2 medios. Nada de "se dice", "fuentes cercanas" ni capturas sin verificar.
 
 ## Cómo se elige y se escribe
 - `python3 herramientas/redes.py pendientes` ordena por interés para Instagram (noticia grande, momentos, foto del artista, premios y listas, frescura) y dice el `pilar` y si hay foto (`con_foto`). Usa tu criterio con esa lista y la mezcla diaria.

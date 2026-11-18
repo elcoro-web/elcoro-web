@@ -39,7 +39,7 @@ Google castiga a toda la web, no solo a una nota, cuando publica mucho contenido
 4. **Calidad antes que volumen.** Mejor 2 notas muy buenas que 4 flojas. El validador:
    - bloquea notas de menos de 200 palabras (350 las propias);
    - bloquea notas casi iguales a una ya publicada;
-   - pone un tope de **10 notas por día**, **2 por vuelta** y **2 en cualquier ventana de 2 horas**; solo la noticia grande (`"peso": 3`) puede pasarlo. El tope se sube solo cuando Search Console muestre que Google indexa casi todo lo publicado. Las notas que Rilo pide directamente se agregan con `ENCARGO_DIRECTOR=1`; la redacción automática nunca usa esa variable.
+   - pone un tope de **10 notas por día** (2 de ellas reservadas para noticias del momento), **2 por vuelta** y **2 en cualquier ventana de 2 horas**; solo la noticia grande (`"peso": 3`) puede pasarlo, y las del momento no cuentan para la ventana de 2 horas. El tope se sube solo cuando Search Console muestre que Google indexa casi todo lo publicado. Las notas que Rilo pide directamente se agregan con `ENCARGO_DIRECTOR=1`; la redacción automática nunca usa esa variable.
    - Un ritmo parejo (una o dos notas cada pocas horas, todos los días) le dice a Google que hay una redacción de verdad. Las ráfagas de 20 o 30 notas en un día parecen contenido automático masivo.
 5. **Sin relleno para Google.** Nada de repetir palabras clave, ni párrafos vacíos, ni titulares que prometen lo que la nota no da. Se escribe para lectores.
 6. **Enlaces internos.** Cada nota enlaza 1 o 2 notas relacionadas de El Coro con `<a href="#id">`, cuando existan y vengan al caso.
@@ -78,6 +78,18 @@ El cambio queda visible como "Actualización".
 
 ## Lo que está pasando ahora: momentos y farándula confirmada
 El público también quiere enterarse al instante de lo que pasa con los artistas. En cada vuelta, además de las noticias, revisa qué momentos se están moviendo en las últimas horas y publica los que estén confirmados.
+
+**Velocidad y cupo:** las noticias del momento son las que más crecen en Google y en Instagram, así que tienen trato especial.
+- Meta: publicarlas en menos de una hora desde que están confirmadas.
+- De las 10 notas del día, **2 quedan reservadas** para ellas: el resto llega hasta 8. Tampoco cuentan para el tope de 2 notas cada 2 horas.
+- Si la noticia crece (más datos, respuesta del otro artista), se actualiza la misma nota con `corregir_nota.py ... actualizacion`, que deja la actualización visible. No se escribe una nota nueva por cada dato.
+
+**Dónde detectar lo que se mueve:**
+- portadas de Billboard y Billboard Español;
+- Rolling Stone en Español, Remezcla, People en Español, Infobae y El Tiempo;
+- Google Trends (EE. UU., México y Colombia), la lista Viral 50 de Spotify y Tendencias de YouTube;
+- lo que los medios reportan de TikTok;
+- las cuentas verificadas de los artistas, solo para confirmar lo que ellos mismos dijeron.
 
 **Qué entra** (sección `noticias`, `"tag": "Momento"`):
 - momentos virales de conciertos y premios: invitados sorpresa, caídas o fallas en escena que el artista comentó, discursos, récords en vivo;
