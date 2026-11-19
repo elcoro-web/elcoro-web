@@ -647,5 +647,23 @@
   "cancelada": true,
   "motivo": "restricción de Instagram 17 nov",
   "registrada": "2026-11-17 16:08"
+ },
+ {
+  "id": "the-warning-concierto-sorpresa-taqueria-cdmx",
+  "redes": [
+   "instagram-story"
+  ],
+  "programada": "2026-11-19T17:05:00",
+  "metricool": "https://app.metricool.com/planner/calendar?blogId=8183189&openWithPostUuid=-2263222181079922068",
+  "registrada": "2026-11-19 16:52"
+ },
+ {
+  "id": "the-warning-concierto-sorpresa-taqueria-cdmx",
+  "redes": [
+   "instagram"
+  ],
+  "programada": "2026-11-19T17:10:00",
+  "metricool": "https://app.metricool.com/planner/calendar?blogId=8183189&openWithPostUuid=8801462415973304943",
+  "registrada": "2026-11-19 16:52"
  }
 ]
