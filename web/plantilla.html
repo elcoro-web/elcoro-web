@@ -575,7 +575,7 @@ function listPage(kick,name,desc,l){const f=l[0];const rest=l.slice(1);const oth
   ${rest.length?`<section class="blk" style="padding-top:0">${river(rest)}</section>`:""}
   ${l.length<4?`<section class="blk"><div class="blkh"><h2 class="lbl">${u().moreIn}</h2></div><div class="row4" style="border-top:0;margin-top:0">${others.map(x=>card(x,false)).join("")}</div></section>`:""}</div>`}
 function section(k){return listPage(u().section,t().sections[k],(SECD[lang]||{})[k],sorted(A.filter(a=>a.sec===k)))}
-function enNota(a){const txt=(a.title+" "+a.body.replace(/<[^>]+>/g," ")),out=[];const prop=(COV[a.id]||{}).e||"";
+function enNota(a){const txt=(a.title+" "+a.body.replace(/<a [^>]*>[\s\S]*?<\/a>/g," ").replace(/<[^>]+>/g," ")),out=[];const prop=(COV[a.id]||{}).e||"";
  for(const k in BANCO){const b=BANCO[k];if([b.n].concat(b.a||[]).some(n=>txt.includes(n))&&b.n!==prop&&!(FOTOS[a.id]&&FOTOS[a.id].pie===b.n))out.push(k)}
  return out.sort((x,y)=>txt.indexOf(BANCO[x].n)-txt.indexOf(BANCO[y].n))}
 function cuerpo(a){const ms=enNota(a),cr=lang==="es"?"Foto: cortesía de prensa":"Photo: press handout";
