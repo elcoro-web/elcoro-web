@@ -1,5 +1,58 @@
 [
  {
+  "id": "gta-6-album-canciones-latinas-rauw-alejandro-fuerza-regida",
+  "date": "2026-11-19",
+  "hora": "01:55",
+  "sec": "lanzamientos",
+  "tag": "Lanzamiento",
+  "min": 3,
+  "title": "Disco de GTA 6: Rauw Alejandro y Fuerza Regida, entre sus 34 temas",
+  "titleEn": "GTA 6 arrives with a 34-track album featuring Rauw Alejandro and Fuerza Regida",
+  "dek": "Grand Theft Auto VI y su disco oficial llegan el 19 de noviembre. Rockstar ya confirmó tres actos latinos, entre ellos el dúo CA7RIEL & Paco Amoroso.",
+  "brief": [
+   "Grand Theft Auto VI sale el 19 de noviembre en PlayStation 5 y Xbox Series X|S.",
+   "Con el juego llega Grand Theft Auto VI: The Album, un disco de 34 canciones originales.",
+   "Rauw Alejandro, Fuerza Regida y CA7RIEL & Paco Amoroso están entre los temas que Rockstar ya confirmó."
+  ],
+  "en": "Grand Theft Auto VI launches November 19 on PS5 and Xbox Series X|S alongside a 34-track companion album. Rockstar has officially confirmed three Latin acts so far: Rauw Alejandro, Fuerza Regida and Argentine duo CA7RIEL & Paco Amoroso. A full tracklist circulating from vinyl photos has not been posted by Rockstar.",
+  "body": "<p><em>Grand Theft Auto VI</em> sale este 19 de noviembre en PlayStation 5 y Xbox Series X|S, y con él llega <em>Grand Theft Auto VI: The Album</em>, un disco de 34 canciones originales. Entre los nombres que Rockstar Games ya confirmó hay tres de la música latina: Rauw Alejandro, Fuerza Regida y el dúo argentino CA7RIEL & Paco Amoroso.</p>\n<p>Rockstar anunció el disco el 17 de septiembre y ese día subió seis adelantos a las plataformas. Hoy su página de música muestra 10 canciones ya publicadas o adelantadas. El resto se conocerá con el estreno completo.</p>\n<h2>¿Qué canciones latinas tiene el disco de GTA 6?</h2>\n<ul class=\"list\"><li><span>Rauw Alejandro — “Macacoa 2000”</span><span>Adelanto del 17 sep</span></li><li><span>CA7RIEL & Paco Amoroso — “Sexy Magic”</span><span>Con PinkPantheress, Fred again.. y Étienne de Crécy</span></li><li><span>Fuerza Regida — “Suzuki”</span><span>En la página oficial del disco</span></li></ul>\n<p>“Macacoa 2000” y “Sexy Magic” estuvieron entre los seis primeros temas que Rockstar estrenó. La de CA7RIEL & Paco Amoroso es una de las colaboraciones más cruzadas del disco: junta al dúo con la británica PinkPantheress, el productor Fred again.. y el francés Étienne de Crécy. Fuerza Regida, el grupo de corridos tumbados formado en San Bernardino, California, aparece con “Suzuki”.</p>\n<h2>¿Quién más está en el disco?</h2>\n<p>Los otros adelantos oficiales son de Yung Lean con Future y Metro Boomin (“That's It”), Travis Scott (“RHYNO”), Morgan Wallen (“Last Thing You Need”) y Keith Richards (“Bright Lights, Big City”). En la página de Rockstar figuran también Justice con Tame Impala, SZA y King Gizzard & the Lizard Wizard (“Flower in a Hurricane”), Cardi B (“Don't Chart”) y Tove Lo (“Blood in Your Eyes”).</p>\n<h2>Por qué importa</h2>\n<p>Reguetón, corridos tumbados y el pop experimental argentino comparten disco con Travis Scott, Morgan Wallen y un Rolling Stone. Para los tres actos latinos es una vitrina ante millones de jugadores que no necesariamente siguen la música en español.</p>\n<p>La demanda ya se notó en septiembre: la edición limitada en vinilo se agotó el mismo día del anuncio, según GAMINGbible. El disco sale también en CD y en vinilo estándar.</p>\n<h2>Qué sigue</h2>\n<p>Desde hace días circula una lista completa de 34 temas, sacada de fotos del vinilo, pero Rockstar no la ha publicado. El Coro no la reproduce hasta que sea oficial. Justice publicará aparte la banda sonora original del juego el 11 de diciembre. Rauw Alejandro también aparece en <a href=\"#estrenos-latinos\" style=\"text-decoration:underline\">los estrenos latinos del 13 de noviembre</a>, y lo que sale este viernes está en <a href=\"#estrenos-20nov\" style=\"text-decoration:underline\">la guía de estrenos del 20 de noviembre</a>.</p>",
+  "src": [
+   [
+    "Revolt — Rockstar Games announces Grand Theft Auto VI: The Album",
+    "https://www.revolt.tv/article/rockstar-games-announces-gta-vi-the-album-travis-scott-future"
+   ],
+   [
+    "RouteNote — GTA VI: The Album tracklist, every confirmed song and artist",
+    "https://routenote.com/radar/gta-vi-the-album-tracklist-every-confirmed-song-and-artist/"
+   ],
+   [
+    "GAMINGbible — GTA 6: The Album revealed by Rockstar Games",
+    "https://www.gamingbible.com/news/gta-6-the-album-revealed-rockstar-games-listen-814367-20260917"
+   ],
+   [
+    "DJ Mag — GTA VI album tracklist",
+    "https://djmag.com/news/full-gta-vi-album-tracklist-revealed-featuring-justice-arca-fcukers-more"
+   ],
+   [
+    "Infobae — Las canciones mexicanas que sonarán en GTA 6",
+    "https://www.infobae.com/mexico/2026/11/18/para-robar-autos-a-todo-volumen-las-canciones-mexicanas-que-sonaran-en-gta-6/"
+   ]
+  ],
+  "cov": {
+   "f": "34",
+   "bg": "#0a0a0a",
+   "fg": "#ffd400",
+   "c": "Canciones en el disco de GTA 6",
+   "e": "Rauw Alejandro"
+  },
+  "minuto": [
+   "GTA 6 sale hoy con un disco de 34 temas; Rauw Alejandro y Fuerza Regida están dentro.",
+   "GTA 6 launches with a 34-track album featuring Rauw Alejandro and Fuerza Regida."
+  ],
+  "peso": 2,
+  "propia": false
+ },
+ {
   "id": "registrar-cancion-copyright-office-estados-unidos",
   "date": "2026-11-19",
   "hora": "00:55",
