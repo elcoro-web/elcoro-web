@@ -1,5 +1,53 @@
 [
  {
+  "id": "registrar-cancion-copyright-office-estados-unidos",
+  "date": "2026-11-19",
+  "hora": "00:55",
+  "sec": "artistas",
+  "tag": "Para artistas",
+  "min": 4,
+  "title": "Cómo registrar tu canción en la Copyright Office de EE. UU.",
+  "titleEn": "How to register your song with the U.S. Copyright Office",
+  "dek": "El trámite es en línea y hoy cuesta desde 45 dólares. Las tarifas cambian el 5 de enero de 2027: esto es lo que hay que decidir antes de pagar.",
+  "brief": [
+   "Una canción tiene dos registros posibles: la obra musical (melodía y letra) y la grabación.",
+   "Si eres autor y dueño de ambas, la Copyright Office permite registrarlas juntas eligiendo la opción de grabación de sonido.",
+   "La oficina anuncia que sus tarifas cambian el 5 de enero de 2027."
+  ],
+  "en": "Independent artists can register songs online with the U.S. Copyright Office, with fees currently starting at $45 for a Single Application and $65 for a Standard Application. Registering within three months of first release preserves access to statutory damages and attorney's fees. The Office says its fees change on January 5, 2027.",
+  "body": "<p class=\"lede\">Registrar una canción en la Oficina de Derechos de Autor de Estados Unidos (Copyright Office) se hace en línea, en el sistema eCO, y hoy cuesta entre 45 y 85 dólares según el formulario. La propia oficina avisa que sus tarifas cambian el 5 de enero de 2027, así que conviene entender el trámite ahora.</p><p>Esta guía sirve sobre todo a quien publica o vive en Estados Unidos. Si eres de otro país, el registro en tu sociedad de autores sigue siendo la base para cobrar: lo explicamos en <a href=\"#regalias-explicadas\" style=\"text-decoration:underline\">quién te paga cuando suena tu canción</a>.</p><h2>1. Separa la obra de la grabación</h2><p>La Copyright Office trata como categorías distintas la obra musical (música, o música y letra) y la grabación de sonido. Son los mismos dos derechos que identifican los códigos <a href=\"#isrc-iswc\" style=\"text-decoration:underline\">ISWC e ISRC</a>. Antes de llenar nada, anota quién escribió la canción y quién es dueño del audio.</p><h2>2. Elige el formulario que te corresponde</h2><p>El precio depende del tipo de solicitud. Estas son las tarifas en línea que publica hoy la oficina:</p><ul class=\"list\"><li><span>Single Application</span><span>45 dólares: un autor, un dueño, una obra, sin encargo</span></li><li><span>Standard Application</span><span>65 dólares: coautores o varios dueños</span></li><li><span>Grupo de obras inéditas</span><span>85 dólares</span></li><li><span>Grupo de obras de un álbum</span><span>65 dólares</span></li><li><span>Formulario en papel</span><span>125 dólares</span></li></ul><p>Si escribiste la canción con alguien más, ya no calificas para la Single Application: usa la Standard.</p><h2>3. Registra canción y grabación juntas si ambas son tuyas</h2><p>Cuando la misma persona escribió la canción y es dueña del audio, la oficina permite cubrir los dos derechos en una solicitud. Se elige la opción de grabación de sonido, y el autor y el titular tienen que ser los mismos en ambos casos. Si un productor es copropietario del audio, esa condición ya no se cumple.</p><h2>4. Agrupa tus canciones inéditas</h2><p>El grupo de obras inéditas cuesta 85 dólares por solicitud. Tiene reglas estrictas: todas las obras deben ser de la misma categoría, haberlas creado los mismos autores, y esos autores deben figurar como titulares en todas. Cada obra va en un archivo electrónico aparte, de hasta 500 MB.</p><h2>5. Registra a tiempo: la regla de los tres meses</h2><p>La ley federal (17 U.S.C. § 412) limita lo que puedes reclamar si te copian antes de registrar. Para una obra publicada, no hay daños legales ni pago de abogados por una infracción que empezó antes del registro, salvo que registres dentro de los tres meses siguientes a la primera publicación. Por eso conviene registrar antes del estreno o en las semanas siguientes.</p><h2>6. Revisa la tabla de tarifas antes de pagar</h2><p>En marzo de 2026, la oficina propuso subir la Standard Application de 65 a 85 dólares, el papel de 125 a 185 y eliminar la Single Application. Ahora anuncia que las tarifas cambian el 5 de enero de 2027. Antes de pagar, confirma el monto vigente en su página oficial.</p><blockquote>Registrar no es un trámite de famosos: es lo que te deja reclamar cuando alguien usa tu canción sin permiso.</blockquote><h2>Qué sigue</h2><p>Si lanzas antes de enero, deja listo el registro junto con tus códigos y tu distribución. Para el resto del calendario de estreno, repasa <a href=\"#antes-de-lanzar\" style=\"text-decoration:underline\">las cinco cosas que tienes que hacer antes de lanzar tu canción</a>.</p><p class=\"mono g\">Guía informativa, no asesoría legal. Tarifas según la página oficial de la Copyright Office, consultada el 19 de noviembre de 2026.</p>",
+  "src": [
+   [
+    "U.S. Copyright Office — Fees",
+    "https://www.copyright.gov/about/fees.html"
+   ],
+   [
+    "U.S. Copyright Office — Performing Arts",
+    "https://copyright.gov/registration/performing-arts/"
+   ],
+   [
+    "U.S. Copyright Office — Help: Group Registration of Unpublished Works",
+    "https://copyright.gov/eco/help/group-unpublished/"
+   ],
+   [
+    "U.S. Code — 17 U.S.C. § 412",
+    "https://www.govinfo.gov/content/pkg/USCODE-2024-title17/html/USCODE-2024-title17-chap4-sec412.htm"
+   ],
+   [
+    "Federal Register — Copyright Office Fees (propuesta, 20 de marzo de 2026)",
+    "https://www.govinfo.gov/content/pkg/FR-2026-03-20/html/2026-05529.htm"
+   ]
+  ],
+  "cov": {
+   "f": "©",
+   "bg": "#1d3ea0",
+   "fg": "#ffd400",
+   "c": "Para artistas",
+   "e": "Guía"
+  },
+  "propia": true
+ },
+ {
   "id": "taylor-swift-cma-2026-i-knew-it-i-knew-you",
   "date": "2026-11-18",
   "hora": "21:50",
