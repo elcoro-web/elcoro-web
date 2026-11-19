@@ -1,5 +1,57 @@
 [
  {
+  "id": "gabito-ballesteros-multa-queretaro-promotor-corridos",
+  "date": "2026-11-19",
+  "hora": "03:30",
+  "sec": "industria",
+  "tag": "Industria",
+  "min": 3,
+  "title": "Querétaro multa con 117.310 pesos al promotor de Gabito Ballesteros",
+  "titleEn": "Querétaro town fines Gabito Ballesteros' promoter over banned corridos",
+  "dek": "El Marqués sancionó con 1.000 UMA al empresario del show en la Feria Ganadera por dos corridos fuera del repertorio aprobado. El cantante no paga.",
+  "brief": [
+   "El municipio de El Marqués, en Querétaro, multó con 1.000 UMA, unos 117.310 pesos, al empresario que contrató a Gabito Ballesteros.",
+   "La sanción se debe a que el cantante interpretó corridos fuera del repertorio autorizado en la Feria Internacional Ganadera de Querétaro 2026.",
+   "El gobierno estatal descartó vetar al artista: la multa recae en quien organiza el espectáculo."
+  ],
+  "en": "The municipality of El Marqués, in the Mexican state of Querétaro, fined the promoter behind Gabito Ballesteros' Nov. 13–14 show at the state livestock fair 1,000 UMA (about 117,310 pesos) after the singer performed corridos outside the approved setlist. Under local rules the organizer, not the artist, pays, and state officials ruled out banning Ballesteros.",
+  "body": "<p>El municipio de El Marqués, en Querétaro, multó con 1.000 Unidades de Medida y Actualización (UMA), unos 117.310 pesos, al empresario que contrató a Gabito Ballesteros para la Feria Internacional Ganadera de Querétaro 2026. La Secretaría de Gobierno municipal anunció la sanción el 18 de noviembre.</p><p>El motivo fue el concierto de la noche del 13 al 14 de noviembre en el Teatro del Pueblo de la feria. Según Infobae, Ballesteros cantó “AMG” y “Cuerno Azulado”, que no estaban en la lista de canciones aprobada, y lo hizo después de una primera advertencia. Los inspectores ordenaron cortar el sonido y parte del público se fue.</p><h2>Por qué paga el promotor y no el cantante</h2><p>El reglamento de espectáculos de El Marqués, reformado en octubre de 2025, prohíbe dar permisos a conciertos con canciones que hagan apología del delito o exalten al crimen organizado. La responsabilidad legal es de quien pide el permiso: el empresario que organiza el evento. Por eso Ballesteros no recibió una sanción directa.</p><p>La multa sale del artículo 51 del reglamento, que fija entre 500 y 1.000 UMA, además de la posible suspensión o clausura del evento. El municipio aplicó el máximo. La norma se apoya en un acuerdo que firmaron los municipios de la zona metropolitana de Querétaro el 20 de agosto de 2025.</p><p>Eric Gudiño Torres, secretario de Gobierno del estado, descartó vetar al cantante. Explicó a Cadena Política que la regla busca que se respete el repertorio pactado, no frenar el regional mexicano.</p><h2>Contexto: no es el primer caso en Querétaro</h2><p>En octubre de 2025, la empresa que llevó a Edén Muñoz al Auditorio Josefa Ortiz de Domínguez pagó una multa de 600.000 pesos al municipio de Querétaro por una canción considerada apología del delito, según N+. Con Ballesteros, la regla ya alcanza también a las ferias, uno de los circuitos de conciertos más importantes del regional mexicano.</p><p>Para los artistas del género, que hoy compiten en las categorías de <a href=\"#musica-mexicana\" style=\"text-decoration:underline\">Música Mexicana de los Grammy 2027</a> y llegan a proyectos globales como el <a href=\"#gta-6-album-canciones-latinas-rauw-alejandro-fuerza-regida\" style=\"text-decoration:underline\">disco de GTA 6</a>, el mensaje práctico es claro: en Querétaro, el repertorio que se firma con el promotor es el que se puede cantar.</p><h2>Qué sigue</h2><p>El municipio advirtió que seguirá sancionando cuando compruebe violaciones al reglamento. Hasta ahora no se conocen declaraciones del empresario ni del equipo de Ballesteros sobre la multa.</p>",
+  "src": [
+   [
+    "Infobae — Canciones de Gabito Ballesteros pasan factura al promotor",
+    "https://www.infobae.com/mexico/2026/11/19/canciones-de-gabito-ballesteros-pasan-factura-al-promotor-debera-pagar-multa-de-117-mil-pesos-en-queretaro/"
+   ],
+   [
+    "Quadratín Querétaro — Multan con más de 100 mil pesos a empresario por Gabito Ballesteros",
+    "https://queretaro.quadratin.com.mx/multan-con-mas-de-100-mil-pesos-a-empresario-por-gabito-ballesteros/"
+   ],
+   [
+    "Tribuna de la Bahía — Multan al organizador del concierto de Gabito Ballesteros",
+    "https://tribunadelabahia.com.mx/multan-organizador-concierto-gabito-ballesteros-queretaro/"
+   ],
+   [
+    "Cadena Política — Gabito Ballesteros no será vetado de Querétaro",
+    "https://cadenapolitica.com/2026/11/16/gabito-ballesteros-no-sera-vetado-de-queretaro-multa-por-concierto-podria-superar-el-millon-de-pesos/"
+   ],
+   [
+    "N+ — Pagan multa de 600 mil pesos tras concierto de Edén Muñoz en Querétaro",
+    "https://www.nmas.com.mx/queretaro/entretenimiento/espectaculos/pagan-multa-de-600-mil-pesos-tras-concierto-de-eden-munoz-en-queretaro/"
+   ]
+  ],
+  "cov": {
+   "f": "1.000",
+   "bg": "#0a0a0a",
+   "fg": "#ffd400",
+   "c": "UMA de multa al promotor",
+   "e": "Gabito Ballesteros"
+  },
+  "minuto": [
+   "Querétaro multa con 117.310 pesos al promotor de Gabito Ballesteros por corridos no aprobados.",
+   "Querétaro fines Gabito Ballesteros' promoter over unapproved corridos."
+  ],
+  "propia": false
+ },
+ {
   "id": "gta-6-album-canciones-latinas-rauw-alejandro-fuerza-regida",
   "date": "2026-11-19",
   "hora": "01:55",
