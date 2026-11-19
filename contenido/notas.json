@@ -1,5 +1,53 @@
 [
  {
+  "id": "the-warning-concierto-sorpresa-taqueria-cdmx",
+  "date": "2026-11-19",
+  "hora": "14:40",
+  "sec": "noticias",
+  "tag": "Momento",
+  "min": 2,
+  "title": "The Warning da un concierto sorpresa en una taquería de la Zona Rosa",
+  "titleEn": "The Warning plays a surprise show at a Mexico City taco shop",
+  "dek": "Las hermanas Villarreal celebraron su primer Latin Grammy tocando en Tacos Los Atarantados, a días de su show de medio tiempo en la NFL.",
+  "brief": [
+   "The Warning tocó por sorpresa en una taquería de la Zona Rosa, en Ciudad de México.",
+   "El grupo convocó a sus fans por redes sociales y WhatsApp horas antes.",
+   "El domingo 22 de noviembre tocan en el medio tiempo del partido de la NFL en el Estadio Banorte."
+  ],
+  "en": "Monterrey rock trio The Warning played a surprise set at a Tacos Los Atarantados location in Mexico City's Zona Rosa on Wednesday night, a week after winning their first Latin Grammy for “Ego”. The band summoned fans through social media and plays the NFL halftime show at Estadio Banorte on November 22.",
+  "body": "<p>The Warning, el trío de rock de las hermanas Daniela, Paulina y Alejandra Villarreal, dio un concierto sorpresa la noche del miércoles 18 de noviembre en una sucursal de Tacos Los Atarantados, en la Zona Rosa de Ciudad de México. Fue su manera de celebrar el primer Latin Grammy de su carrera.</p><p>Horas antes, el grupo publicó en sus cuentas oficiales una invitación para sus fans de la capital: les pedía escribir por WhatsApp para recibir la sorpresa. Las fotos de las tres comiendo tacos en el local sirvieron de pista, y decenas de personas hicieron fila afuera antes de que empezara el show, según Excélsior e Infobae.</p><h2>Qué tocaron y qué dijeron</h2><p>Entre las canciones del set sonaron “Qué Más Quieres” y “Martirio”, dos temas que el público mexicano corea desde hace años. Después, la banda escribió en Instagram que no esperaba tanta gente y que la respuesta la tomó por sorpresa: “no esperábamos todo este amor”, publicó.</p><p>En el mismo mensaje adelantaron que preparan otra sorpresa para su próximo concierto en la ciudad, sin dar detalles.</p><h2>Contexto: la semana más grande de The Warning</h2><p>El 12 de noviembre, en la MGM Grand Garden Arena de Las Vegas, The Warning ganó Mejor Canción de Rock en los <a href=\"#latin-grammy-ganadores\" style=\"text-decoration:underline\">Latin Grammy 2026</a> con “Ego”, del disco <em>Everything's Falling</em>. Era su segunda candidatura en esa categoría: en 2024 compitieron con “Qué Más Quieres”. Esa misma noche participaron en el homenaje a José Alfredo Jiménez dirigido por <a href=\"#edgar-barrera\" style=\"text-decoration:underline\">Edgar Barrera</a>.</p><p>El sábado 14, Paulina Villarreal subió al escenario con Garbage en el concierto gratuito del Zócalo para tocar “I Think I'm Paranoid”. Y en las listas de Estados Unidos, “Kerosene” llegó al No. 1 de Mainstream Rock Airplay de Billboard: Blabbermouth lo registra como el primero de un grupo mexicano y de una banda formada solo por mujeres.</p><blockquote>Un trío de Monterrey que pasa de Las Vegas a una taquería en seis días dice mucho de cómo cuida a su público.</blockquote><h2>Qué sigue</h2><ul class=\"list\"><li><span>22 nov 2026</span><span>Show de medio tiempo de la NFL: 49ers contra Vikings, Estadio Banorte</span></li><li><span>5 feb 2027</span><span>Primer concierto en el Estadio GNP Seguros, Ciudad de México</span></li><li><span>2027</span><span><em>Everything's Falling World Tour</em> por México, Europa y Norteamérica</span></li></ul><p>El medio tiempo del domingo se transmitirá en vivo por el Canal 5 de TelevisaUnivision y por ESPN, según Remezcla.</p>",
+  "src": [
+   [
+    "Excélsior — The Warning ofrece concierto sorpresa en una taquería de CDMX tras ganar primer Latin Grammy",
+    "https://www.excelsior.com.mx/espectaculos/the-warning-ofrece-concierto-sorpresa-taqueria-cdmx-tras-ganar-primer-latin-grammy"
+   ],
+   [
+    "Infobae — The Warning celebra su Grammy con concierto sorpresa en una taquería de CDMX",
+    "https://www.infobae.com/mexico/2026/11/19/the-warning-celebra-su-grammy-con-concierto-sorpresa-en-una-taqueria-de-cdmx/"
+   ],
+   [
+    "Blabbermouth — The Warning takes home first Latin Grammy award as 'Ego' wins Best Rock Song",
+    "https://blabbermouth.net/news/the-warning-takes-home-first-latin-grammy-award-as-ego-wins-best-rock-song"
+   ],
+   [
+    "Remezcla — From Latin Grammy glory to the NFL: The Warning is conquering every stage",
+    "https://remezcla.com/music/from-latin-grammy-glory-to-the-nfl-the-warning-is-conquering-every-stage/"
+   ]
+  ],
+  "cov": {
+   "f": "<i>Tacos</i>",
+   "bg": "#e3120b",
+   "fg": "#ffffff",
+   "c": "Concierto sorpresa",
+   "e": "The Warning"
+  },
+  "minuto": [
+   "The Warning celebró su Latin Grammy con un concierto sorpresa en una taquería de la Zona Rosa.",
+   "The Warning celebrated its Latin Grammy with a surprise taco-shop show in Mexico City."
+  ],
+  "propia": false
+ },
+ {
   "id": "shakira-venezuela-2027-caracas-fechas-precios-boletas",
   "date": "2026-11-19",
   "hora": "10:45",
