@@ -1,5 +1,50 @@
 [
  {
+  "id": "taylor-swift-cma-2026-i-knew-it-i-knew-you",
+  "date": "2026-11-18",
+  "hora": "21:50",
+  "sec": "noticias",
+  "tag": "Momento",
+  "min": 2,
+  "title": "Taylor Swift vuelve a cantar en los CMA Awards tras 13 años",
+  "titleEn": "Taylor Swift returns to the CMA Awards stage after 13 years",
+  "dek": "Cantó “I Knew It, I Knew You”, de Toy Story 5, mezclada con “Our Song”, con Keith Urban en la guitarra. Su última actuación en los CMA fue en 2013.",
+  "brief": [
+   "Taylor Swift actuó en la edición 60 de los CMA Awards, en Nashville.",
+   "Cantó “I Knew It, I Knew You”, su canción para Toy Story 5, mezclada con “Our Song”.",
+   "Keith Urban la acompañó en la guitarra; su última actuación en los CMA había sido en 2013."
+  ],
+  "en": "Taylor Swift performed at the CMA Awards for the first time since 2013, singing her Toy Story 5 song “I Knew It, I Knew You” in a medley with her 2007 hit “Our Song.” Keith Urban joined her on guitar at Nashville's Bridgestone Arena.",
+  "body": "<p>Taylor Swift volvió a cantar en los premios de la Country Music Association (CMA) este miércoles 18 de noviembre, en el Bridgestone Arena de Nashville. Presentó “I Knew It, I Knew You”, su canción para la película <em>Toy Story 5</em>, en un popurrí con “Our Song”, y Keith Urban la acompañó en la guitarra.</p><p>Era su primera actuación en la gala desde 2013, cuando cantó una versión acústica de “Red” con Alison Krauss y Vince Gill, según la CMA. La transmisión fue en vivo por ABC y Disney+.</p><h2>Cómo fue la actuación</h2><p>Swift empezó la canción de <em>Toy Story 5</em> detrás del escenario y luego salió a escena, según American Songwriter. Cerró sonriendo, sentada en un columpio hecho con una llanta. Good Morning America contó que Brad Paisley, Jennifer Nettles, Kristian Bush y Little Big Town también aparecieron durante el número.</p><p>La elección de “Our Song” no fue casual: Swift la escribió en la secundaria y la cantó en los CMA en 2007, según GMA.</p><h2>Contexto: su historia con los CMA</h2><p>Swift fue por primera vez a la gala en 2006. Al año siguiente ganó el Horizon Award y en 2009 se volvió la persona más joven en ganar Artista del Año, récord que todavía tiene. Ganó esa categoría 2 veces. En 2013 recibió el Pinnacle Award.</p><ul class=\"list\"><li><span>2007</span><span>Horizon Award</span></li><li><span>2009</span><span>Artista del Año</span></li><li><span>2013</span><span>Pinnacle Award y “Red” en vivo</span></li><li><span>2026</span><span>Vuelve con “I Knew It, I Knew You”</span></li></ul><p>“I Knew It, I Knew You” le dio este año su nominación número 26 a los CMA, en Sencillo del Año. Ese premio se lo llevó Ella Langley con “Choosin’ Texas”, la canción que suma <a href=\"#choosin-texas-28\" style=\"text-decoration:underline\">28 semanas en el No. 1</a>.</p><h2>Qué sigue</h2><p>La gala sigue esta noche con el resto de los ganadores. En la <a href=\"#cma-2026-previa\" style=\"text-decoration:underline\">previa de los CMA Awards 2026</a> están los nominados y quién más actúa. Al día siguiente, la ceremonia queda disponible en Hulu.</p>",
+  "src": [
+   [
+    "CMA — Taylor Swift To Perform At “The 60th Annual CMA Awards”",
+    "https://cmaawards.com/news/taylor-swift-to-perform-at-the-60th-annual-cma-awards/"
+   ],
+   [
+    "American Songwriter — Taylor Swift back on the CMA Awards stage",
+    "https://americansongwriter.com/i-waited-13-years-to-see-taylor-swift-back-on-the-cma-awards-stage-and-her-performance-was-worth-every-second"
+   ],
+   [
+    "Good Morning America — Taylor Swift steps out at 2026 CMA Awards",
+    "https://www.goodmorningamerica.com/culture/story/cma-awards-2026-taylor-swift-attends-performs-138221036"
+   ]
+  ],
+  "cov": {
+   "f": "13",
+   "bg": "#0a0a0a",
+   "fg": "#ffd400",
+   "c": "Años sin cantar en los CMA",
+   "e": "Taylor Swift"
+  },
+  "minuto": [
+   "Taylor Swift volvió a cantar en los CMA Awards tras 13 años, con Keith Urban.",
+   "Taylor Swift returned to the CMA Awards stage after 13 years."
+  ],
+  "peso": 2,
+  "propia": false
+ },
+ {
   "id": "nicky-jam-fenix-music-group-sello-don-luciano",
   "date": "2026-11-18",
   "hora": "14:45",
