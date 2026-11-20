@@ -1,5 +1,58 @@
 [
  {
+  "id": "cocoteo-fm-gta-6-bad-bunny-el-martillo-canciones",
+  "date": "2026-11-20",
+  "hora": "09:55",
+  "sec": "lanzamientos",
+  "tag": "GTA 6",
+  "min": 2,
+  "title": "Cocoteo FM en GTA 6: Bad Bunny es El Martillo, locutor de la emisora",
+  "titleEn": "GTA 6's Cocoteo FM: Bad Bunny plays El Martillo, host of the Latin station",
+  "dek": "Bad Bunny y RaiNao conducen Cocoteo FM, la emisora de reguetón, dembow y bachata de GTA 6, que salió el jueves. Estas son sus canciones confirmadas.",
+  "brief": [
+   "En Grand Theft Auto VI, Bad Bunny pone la voz de El Martillo, locutor de Cocoteo FM.",
+   "La puertorriqueña RaiNao lo acompaña como La Gata.",
+   "La emisora pasa música latina actual: bachata, merengue, dembow y reguetón."
+  ],
+  "en": "Bad Bunny voices El Martillo, a host on Cocoteo FM, the Latin radio station in Grand Theft Auto VI, which launched Nov. 19 on PS5 and Xbox Series X|S. RaiNao co-hosts as La Gata. Rockstar's preview of the station includes Bad Bunny's \"EoO\" and Romeo Santos' \"Canalla.\"",
+  "body": "<p>Bad Bunny no solo suena en <em>Grand Theft Auto VI</em>: también habla. El puertorriqueño es El Martillo, uno de los dos locutores de Cocoteo FM, la emisora de música latina del juego que Rockstar Games lanzó el jueves 19 de noviembre en PlayStation 5 y Xbox Series X|S. Lo acompaña su compatriota RaiNao, que hace de La Gata.</p><p>Rockstar presentó la emisora el 8 de octubre, junto con otras cinco, en su página oficial de música, según KeenGamer. La describe como la casa de la música latina actual en Leonida, el estado ficticio inspirado en Florida donde pasa el juego, con bachata, merengue, dembow y reguetón.</p><h2>¿Qué canciones suenan en Cocoteo FM?</h2><p>El adelanto oficial de la emisora, recogido por KeenGamer y por la guía de Dexerto, trae tres temas:</p><ul class=\"list\"><li><span>“EoO”</span><span>Bad Bunny</span></li><li><span>“Si Es Trucho Es Trucho (Remix)”</span><span>Axel Rulay con Farruko y El Alfa</span></li><li><span>“Canalla”</span><span>Romeo Santos y El Chaval de la Bachata</span></li></ul><p>Es una lista parcial. Con el juego ya en manos de los jugadores circulan listas más largas, con nombres como Karol G y Anuel AA, pero Rockstar no ha publicado el repertorio completo de la emisora. El Coro la ampliará cuando haya una lista oficial o confirmada por varios medios.</p><h2>¿Qué otras emisoras tiene GTA 6?</h2><p>Cocoteo FM fue una de las seis emisoras que Rockstar mostró en octubre. Cada una tiene locutores famosos con nombre de personaje:</p><ul class=\"list\"><li><span>Flash FM (pop y dance)</span><span>Robyn y Alex Consani</span></li><li><span>Cocoteo FM (latina)</span><span>Bad Bunny y RaiNao</span></li><li><span>Back Country Radio (country)</span><span>Morgan Wallen y Lana Del Rey</span></li><li><span>AfroBank FM (amapiano y clásicos africanos)</span><span>Burna Boy y Palms Trax</span></li><li><span>The Chamber 106.6 (metal)</span><span>Kerry King y Tom Araya</span></li><li><span>Dirty South Classics (rap del sur)</span><span>Trick Daddy y Trina</span></li></ul><h2>Por qué importa</h2><p>En la saga, la radio es parte del mundo del juego, no un fondo. Que la emisora latina tenga como cara a Bad Bunny, y no a un locutor genérico, dice cuánto pesa hoy el reguetón en el negocio de los videojuegos. Para el público hispano de Miami y de todo EE. UU., Leonida suena por fin como suena su ciudad.</p><p>La radio va aparte del disco que acompaña al juego, <em>Grand Theft Auto VI: The Album</em>, donde la cuota latina la ponen Rauw Alejandro, Fuerza Regida y CA7RIEL & Paco Amoroso, como El Coro contó en <a href=\"#gta-6-album-canciones-latinas-rauw-alejandro-fuerza-regida\" style=\"text-decoration:underline\">la nota sobre el disco de GTA 6</a>. No todos entraron: <a href=\"#doja-cat-gta-6-rockstar-disco\" style=\"text-decoration:underline\">Doja Cat le reclamó a Rockstar</a> por quedar fuera.</p><h2>Qué sigue</h2><p>Rockstar adelantó en octubre que habría más emisoras de rock clásico, hip-hop actual, electrónica, baladas y radio hablada. Justice publicará la banda sonora original del juego el 11 de diciembre.</p>",
+  "src": [
+   [
+    "KeenGamer — GTA 6 reveals its first six radio stations, hosted by Bad Bunny, Slayer and more",
+    "https://www.keengamer.com/articles/news/gta-6-reveals-its-first-six-radio-stations-hosted-by-bad-bunny-slayer-and-more/"
+   ],
+   [
+    "Dexerto — Cocoteo FM, GTA 6 radio station",
+    "https://www.dexerto.com/wikis/gta-6/radio-stations/cocoteo-fm/"
+   ],
+   [
+    "Las Top News — Bad Bunny, Karol G y más latinos en el GTA VI",
+    "https://lastopnews.com/2026/11/19/bad-bunny-karol-g-ca7riel-paco-amoroso-fuerza-regida-joe-arroyo-y-mas-latinos-en-el-gta-vi/"
+   ]
+  ],
+  "cov": {
+   "f": "FM",
+   "bg": "#0a0a0a",
+   "fg": "#ffd400",
+   "c": "Cocoteo FM · GTA 6",
+   "e": "Bad Bunny"
+  },
+  "minuto": [
+   "Bad Bunny es El Martillo, locutor de Cocoteo FM, la radio latina de GTA 6.",
+   "Bad Bunny voices El Martillo on GTA 6's Latin station."
+  ],
+  "ediciones": [
+   {
+    "iso": "2026-11-20T09:33:25-05:00",
+    "tipo": "estilo",
+    "campos": [
+     "body",
+     "title"
+    ]
+   }
+  ]
+ },
+ {
   "id": "alejandro-sanz-gira-espana-2027-fechas-entradas",
   "date": "2026-11-20",
   "hora": "07:50",
