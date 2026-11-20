@@ -1,5 +1,54 @@
 [
  {
+  "id": "chocquibtown-regreso-trinidad-i-canciones",
+  "date": "2026-11-20",
+  "hora": "17:40",
+  "sec": "noticias",
+  "tag": "Momento",
+  "min": 3,
+  "title": "ChocQuibTown vuelve tras casi 4 años con Trinidad I, de 3 canciones",
+  "titleEn": "ChocQuibTown reunites after nearly four years with three-song Trinidad I",
+  "dek": "Goyo, Tostao y Slow Mike presentan “Se Puede”, “Todo Contigo” y “En La Sopa”, la primera de tres entregas, y preparan un espectáculo y una gira.",
+  "brief": [
+   "ChocQuibTown volvió a trabajar como grupo con Trinidad I, un lanzamiento de tres canciones.",
+   "El sencillo principal es “Se Puede”, un merengue con video grabado en Medellín.",
+   "Es la primera de tres entregas, y el grupo prepara una gira sin fechas todavía."
+  ],
+  "en": "Colombian group ChocQuibTown — Goyo, Tostao and Slow Mike — is back together after a pause of nearly four years. Trinidad I, a three-song release led by the merengue single “Se Puede,” is the first of three planned installments, and the trio says a show and tour are in the works.",
+  "body": "<p>ChocQuibTown volvió a sonar como grupo. Gloria “Goyo” Martínez, Carlos “Tostao” Valencia y Miguel “Slow Mike” Martínez presentaron <em>Trinidad I</em>, un lanzamiento de tres canciones que llega después de casi cuatro años sin trabajar juntos, según contaron El Tiempo, Infobae y Semana entre el 19 y el 20 de noviembre de 2026.</p><p>Las canciones son “Se Puede”, “Todo Contigo” y “En La Sopa”, reunidas bajo un concepto que el grupo llama Romantic Style. “Se Puede”, el sencillo principal, es un merengue y viene con un video grabado en Medellín y dirigido por Édgar Esteves. La producción es del propio grupo junto a Andrés Castro y Shafik Palis Jr.</p><h2>Qué dijeron</h2><p>Goyo lo describió en Semana como “un gran paso, superimportante”, y contó que para ella “Se Puede” es una canción muy linda. Tostao habló de compartir “esto que se viene tan maravilloso llamado Trinidad I”. Slow Mike, el productor del trío, explicó que la idea es “hacer canciones que lleguen al corazón desde diferentes puntos”.</p><h2>Contexto: por qué se separaron y cómo volvieron</h2><p>Goyo y Tostao terminaron su relación en 2021, tras más de una década juntos, según Infobae y Semana. El grupo siguió dando conciertos cerca de un año y medio más; el último fue el 2 de enero de 2023, en Manizales. En mayo de 2026, en el pódcast <em>Vos podés</em>, Goyo explicó que tomar distancia le pareció sano y que la pausa fue una decisión hablada entre los tres.</p><p>En ese tiempo, Goyo sacó su disco solista <em>Pantera</em>, Tostao trabajó en proyectos propios y Slow Mike siguió como productor. Los tres volvieron a compartir escenario en agosto de 2026, en el concierto benéfico Colombia: Voces por la Vida, en Bogotá.</p><h2>Por qué importa</h2><p>ChocQuibTown, activo desde 2000, llevó los sonidos del Pacífico colombiano a escenarios de todo el continente. Ganó un Latin Grammy con “De donde vengo yo” y tuvo dos nominaciones a los Grammy. Su regreso devuelve a la conversación uno de los nombres más reconocidos de la música afrolatina, en una semana cargada de estrenos latinos como el de <a href=\"#myke-towers-rauw-alejandro-tremendo-desastre\" style=\"text-decoration:underline\">Myke Towers y Rauw Alejandro</a>.</p><h2>Qué sigue</h2><p><em>Trinidad II</em> y <em>Trinidad III</em> completarán la serie, con sonidos de dancehall latino y de raíz afro cercanos a “De donde vengo yo” y “Morena”, según Infobae y Semana. El trío también prepara un espectáculo y una gira, pero todavía no anunció fechas ni ciudades. Más estrenos de la semana, en <a href=\"#estrenos-20nov\" style=\"text-decoration:underline\">los estrenos del viernes 20 de noviembre</a>.</p>",
+  "src": [
+   [
+    "El Tiempo — ChocQuibTown vuelve a reunirse: Goyo, Tostao y Slow Mike presentan nueva música",
+    "https://www.eltiempo.com/cultura/musica-y-libros/chocquibtown-vuelve-a-reunirse-goyo-tostao-y-slow-mike-presentan-nueva-musica-3602557"
+   ],
+   [
+    "Infobae — ChocQuibTown volvió con Goyo, Tostao y Slow Mike",
+    "https://www.infobae.com/colombia/2026/11/20/chocquibtown-volvio-con-goyo-tostao-y-slow-mike-la-agrupacion-presento-su-nuevo-album-trinidad-i/"
+   ],
+   [
+    "Semana — ChocQuibTown anuncia su regreso musical con Trinidad I",
+    "https://www.semana.com/gente/articulo/chocquibtown-anuncia-su-regreso-musical-con-trinidad-i-un-reencuentro-marcado-por-el-amor-y-las-segundas-oportunidades/202632/"
+   ],
+   [
+    "Wikipedia — ChocQuibTown",
+    "https://en.wikipedia.org/wiki/ChocQuibTown"
+   ]
+  ],
+  "cov": {
+   "f": "3",
+   "bg": "#1d3ea0",
+   "fg": "#ffffff",
+   "c": "Canciones en Trinidad I",
+   "e": "ChocQuibTown"
+  },
+  "minuto": [
+   "ChocQuibTown vuelve tras casi 4 años con Trinidad I, de 3 canciones.",
+   "ChocQuibTown reunites with the three-song Trinidad I."
+  ],
+  "peso": 2,
+  "propia": false
+ },
+ {
   "id": "aria-vega-costenita-core-album-debut-fecha",
   "date": "2026-11-20",
   "hora": "13:30",
