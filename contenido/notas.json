@@ -1,5 +1,45 @@
 [
  {
+  "id": "doja-cat-gta-6-rockstar-disco",
+  "date": "2026-11-20",
+  "hora": "04:55",
+  "sec": "noticias",
+  "tag": "Momento",
+  "min": 2,
+  "title": "Doja Cat le reclama a Rockstar por dejarla fuera de la música de GTA 6",
+  "titleEn": "Doja Cat calls out Rockstar for leaving her music out of GTA 6",
+  "dek": "La rapera escribió en X que le habría encantado sonar en GTA 6, el juego que salió el 19 de noviembre con un disco de 34 temas. Rockstar no ha respondido.",
+  "brief": [
+   "Doja Cat publicó tres mensajes en X el 19 de noviembre, todos dirigidos a Rockstar Games.",
+   "Dijo que le habría encantado tener su música en GTA 6 y que el estudio le rompió el corazón.",
+   "Rockstar no había respondido hasta la publicación de esta nota."
+  ],
+  "en": "Doja Cat posted three messages on X on November 19 tagging Rockstar Games, saying she would have loved to have her music in Grand Theft Auto VI and that the studio broke her heart. She is not on the game's 34-track companion album or its radio stations. Rockstar has not responded.",
+  "body": "<p>Doja Cat le reclamó en público a Rockstar Games por no incluir su música en <em>Grand Theft Auto VI</em>. Lo hizo el jueves 19 de noviembre, el mismo día en que salió el juego, con tres mensajes en X en los que etiquetó al estudio.</p>\n<p>En el primero escribió que le habría encantado tener su música en GTA 6. En el último le dijo a Rockstar “you broke my heart” (“me rompiste el corazón”). Entre uno y otro le dedicó un insulto al estudio, según Revolt, que contó que la cantante se describió como “amargada” por quedar fuera.</p>\n<h2>Qué quedó fuera</h2>\n<p>Doja Cat no aparece en <em>Grand Theft Auto VI: The Album</em>, el disco de 34 canciones que acompaña al juego, ni en las seis emisoras de radio del juego, señaló Paste. El disco reúne a Travis Scott, Future, Metro Boomin, Cardi B y SZA, y en lo latino a Rauw Alejandro y Fuerza Regida, como El Coro detalló en <a href=\"#gta-6-album-canciones-latinas-rauw-alejandro-fuerza-regida\" style=\"text-decoration:underline\">la nota sobre el disco de GTA 6</a>.</p>\n<p>Rockstar no había respondido a los mensajes cuando Paste y Revolt publicaron sus notas, y tampoco al cierre de esta.</p>\n<h2>Por qué le dolió</h2>\n<p>El reclamo no sale de la nada. Doja Cat se presenta como jugadora: transmite en Twitch como “Dojacattington” y tiene un personaje propio en Fortnite, según recordó Revolt. En 2022 trabajó con Eek! Games para crear una versión digital suya en el juego <em>House Party</em>, a la que prestó la voz.</p>\n<p>Además, ya había nombrado a GTA 6 en una canción: “All Mine”, de su disco <em>Vie</em> (2025), menciona el juego, como señalaron Paste y Revolt.</p>\n<h2>Qué sigue</h2>\n<p>La cantante está en la parte norteamericana de su gira Tour Ma Vie, que termina el 1 de diciembre en Nueva York. Falta saber si Rockstar contesta o si su música llega al juego por otra vía, como una actualización de las emisoras: hasta ahora el estudio no ha dicho nada de eso. Lo que salió este viernes está en <a href=\"#estrenos-20nov\" style=\"text-decoration:underline\">la guía de estrenos del 20 de noviembre</a>.</p>",
+  "src": [
+   [
+    "Revolt — Doja Cat tells Rockstar Games they broke her heart leaving her off GTA VI soundtrack",
+    "https://www.revolt.tv/article/doja-cat-rockstar-games-gta-vi-music"
+   ],
+   [
+    "Paste — Doja Cat is not feeling \"Okayyy\" about being left off the GTA VI tracklist",
+    "https://www.pastemagazine.com/music/doja-cat/doja-cat-gta-vi-snub"
+   ]
+  ],
+  "cov": {
+   "f": "GTA<br>6",
+   "bg": "#e3120b",
+   "fg": "#ffffff",
+   "c": "Fuera del disco",
+   "e": "Doja Cat"
+  },
+  "minuto": [
+   "Doja Cat reclamó en X a Rockstar por dejarla fuera de la música de GTA 6.",
+   "Doja Cat called out Rockstar on X for leaving her off GTA 6."
+  ],
+  "propia": false
+ },
+ {
   "id": "don-omar-segunda-fecha-medellin-2027",
   "date": "2026-11-20",
   "hora": "03:30",
