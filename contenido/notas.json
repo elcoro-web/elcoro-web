@@ -1,5 +1,55 @@
 [
  {
+  "id": "aria-vega-costenita-core-album-debut-fecha",
+  "date": "2026-11-20",
+  "hora": "13:30",
+  "sec": "noticias",
+  "tag": "Momento",
+  "min": 2,
+  "title": "Aria Vega anuncia su disco debut, Costeñita (core), para enero de 2027",
+  "titleEn": "Aria Vega announces her debut album, ‘Costeñita (core),’ due January 21",
+  "dek": "La ganadora del Latin Grammy a Mejor Nuevo Artista lo anunció en Megaland, en Bogotá, una semana después de su premio en Las Vegas.",
+  "brief": [
+   "Aria Vega anunció su primer disco, Costeñita (core), en el escenario de Megaland, en Bogotá.",
+   "Sale el 21 de enero de 2027, justo en la temporada de precarnaval de la Costa Caribe.",
+   "La lista de canciones todavía no se conoce; incluirá «CHÉVERE (premium_remix)» con Ryan Castro."
+  ],
+  "en": "Colombian singer Aria Vega, this year's Latin Grammy winner for Best New Artist, announced her debut album ‘Costeñita (core)’ on stage at Megaland in Bogotá. It arrives January 21, 2027, and will include her Ryan Castro remix of “CHÉVERE,” a 14-week No. 1 in Colombia; the full tracklist has not been released.",
+  "body": "<p>Aria Vega anunció su primer disco, <em>Costeñita (core)</em>, en el escenario del festival Megaland, en Bogotá, la noche del jueves 19 de noviembre. Sale el 21 de enero de 2027, según contó El Heraldo, que reporta que la cantante repitió el anuncio en una transmisión en vivo en sus redes oficiales.</p><p>Llega una semana después de su mayor premio: el Latin Grammy a Mejor Nuevo Artista, que ganó el 12 de noviembre en Las Vegas en su primera nominación. Si no la conoces, aquí está <a href=\"#quien-es-aria-vega\" style=\"text-decoration:underline\">quién es Aria Vega</a>.</p><h2>Qué se sabe del disco</h2><p>La lista completa de canciones se revelará más adelante, según El Heraldo. Sobre el número de temas, los medios no coinciden: El Heraldo habla de 16 y Chica Noticias, de Montería, de 15. Lo que sí está confirmado son los dos éxitos que lo anteceden.</p><ul class=\"list\"><li><span>«CHÉVERE (premium_remix)», con Ryan Castro</span><span>14 semanas No. 1 en Colombia</span></li><li><span>«COMPA COLETO (uy_como)»</span><span>Debut en el No. 2 en Colombia</span></li><li><span>Fecha de salida</span><span>21 ene. 2027</span></li></ul><p>El remix de «CHÉVERE» también llegó al No. 1 de Latin Airplay y Latin Rhythm Airplay de Billboard. El Heraldo menciona además «CULE POCO» y «TOTOTO» como canciones que su público ya pide en los conciertos.</p><h2>Por qué importa</h2><p>El título no es casual. «Costeñita Core» es el nombre que Aria Vega le da a su propuesta: ritmos afrocaribeños con melodías pop y la forma de hablar de la costa colombiana. Que el debut lleve ese nombre convierte una etiqueta de redes en una carta de presentación.</p><p>La fecha también dice algo. Enero es temporada de precarnaval en Barranquilla, su ciudad, y Chica Noticias señala que el disco apunta a esa época. Es el momento del año en que la música costeña más suena en Colombia.</p><p>El premio también la puso en el mapa fuera de su país: fue uno de los nombres de la noche que repasamos en <a href=\"#latin-grammy-ganadores\" style=\"text-decoration:underline\">los ganadores de los Latin Grammy 2026</a>.</p><h2>Qué sigue</h2><p>Falta conocer la lista de canciones, los invitados y el próximo sencillo. El disco sale el jueves 21 de enero de 2027.</p><p class=\"mono g\">Con información de El Heraldo y Chica Noticias.</p>",
+  "src": [
+   [
+    "El Heraldo — Aria Vega anuncia su álbum debut ‘Costeñita (core)’, que lanzará el 21 de enero de 2027",
+    "https://www.elheraldo.co/entretenimiento/famosos/2026/11/20/aria-vega-anuncia-su-album-debut-costenita-core-que-lanzara-el-21-de-enero-de-2027/"
+   ],
+   [
+    "Chica Noticias — Aria Vega estrenará su nuevo álbum en pleno precarnaval",
+    "https://www.chicanoticias.com/2026/11/18/aria-vega-4/"
+   ]
+  ],
+  "cov": {
+   "f": "21<br>ene",
+   "bg": "#ffd400",
+   "fg": "#0a0a0a",
+   "c": "Sale su disco debut",
+   "e": "Aria Vega"
+  },
+  "minuto": [
+   "Aria Vega anuncia su disco debut, Costeñita (core), para el 21 de enero.",
+   "Aria Vega sets debut album for Jan. 21."
+  ],
+  "peso": 2,
+  "propia": false,
+  "ediciones": [
+   {
+    "iso": "2026-11-20T13:27:13-05:00",
+    "tipo": "estilo",
+    "campos": [
+     "title"
+    ]
+   }
+  ]
+ },
+ {
   "id": "myke-towers-rauw-alejandro-tremendo-desastre",
   "date": "2026-11-20",
   "hora": "10:40",
