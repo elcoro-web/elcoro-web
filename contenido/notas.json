@@ -8,7 +8,7 @@
   "min": 3,
   "title": "Bruno Mars anuncia la muerte de su padre, Peter Hernandez, a los 74",
   "titleEn": "Bruno Mars announces the death of his father, Peter Hernandez, at 74",
-  "dek": "El cantante lo despidió en Instagram con una foto de su último abrazo. Hernandez, percusionista de Brooklyn con raíces puertorriqueñas, lo subió al escenario a los 4 años.",
+  "dek": "El cantante lo despidió en Instagram con una foto de su último abrazo. Hernandez, percusionista boricua de Brooklyn, lo subió al escenario a los 4 años.",
   "brief": [
    "Bruno Mars anunció el jueves en Instagram la muerte de su padre, Peter Hernandez, a los 74 años.",
    "Hernandez, percusionista nacido en Brooklyn y de raíces puertorriqueñas, dirigía la banda familiar en la que Bruno debutó de niño.",
@@ -50,7 +50,16 @@
    "Bruno Mars says his father, percussionist Peter Hernandez, has died at 74."
   ],
   "peso": 2,
-  "propia": false
+  "propia": false,
+  "ediciones": [
+   {
+    "iso": "2026-11-19T22:27:11-05:00",
+    "tipo": "estilo",
+    "campos": [
+     "dek"
+    ]
+   }
+  ]
  },
  {
   "id": "the-warning-concierto-sorpresa-taqueria-cdmx",
