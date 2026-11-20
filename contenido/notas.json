@@ -1,5 +1,57 @@
 [
  {
+  "id": "afiliarse-ascap-bmi-regalias-compositor",
+  "date": "2026-11-20",
+  "hora": "00:40",
+  "sec": "artistas",
+  "tag": "Para artistas",
+  "min": 4,
+  "title": "Cómo afiliarte a ASCAP o BMI para cobrar tus regalías",
+  "titleEn": "How to join ASCAP or BMI and collect your performance royalties",
+  "dek": "BMI no cobra a los compositores desde marzo de 2025 y ASCAP pide 50 dólares una sola vez. Solo puedes estar en una: así se elige y se hace el trámite.",
+  "brief": [
+   "ASCAP y BMI cobran las regalías por ejecución pública de tus canciones en Estados Unidos.",
+   "Como compositor solo puedes pertenecer a una sociedad a la vez.",
+   "BMI dejó de cobrar la solicitud a compositores en 2025; ASCAP pide un pago único de 50 dólares."
+  ],
+  "en": "Songwriters in the U.S. collect performance royalties through a PRO such as ASCAP or BMI, and can belong to only one as a writer. BMI stopped charging new writers an application fee on March 1, 2025, while ASCAP lists a one-time $50 fee; neither charges annual dues. ASCAP says writer royalties arrive roughly seven to eight months after a performance.",
+  "body": "<p class=\"lede\">Para cobrar cuando tu canción suena en la radio, en un concierto o en una plataforma en Estados Unidos, necesitas una sociedad de ejecución pública (PRO, por sus siglas en inglés). Las dos más grandes son ASCAP y BMI, y como compositor solo puedes estar en una a la vez.</p><p>Esta guía sirve a quien escribe canciones y vive o publica en Estados Unidos. Si todavía no tienes claro quién paga qué, empieza por <a href=\"#regalias-explicadas\" style=\"text-decoration:underline\">las regalías explicadas</a>.</p><h2>1. Entiende qué cobra una PRO</h2><p>Una PRO licencia la ejecución pública de tus obras: radio, televisión, streaming, conciertos y locales que ponen música. Recauda ese dinero y lo reparte entre autores y editoriales. No cobra las regalías de la grabación ni las mecánicas: esas van por otros caminos.</p><h2>2. Elige una sola sociedad</h2><p>ASCAP lo dice sin rodeos: como compositor solo puedes pertenecer a una sociedad a la vez para las licencias en Estados Unidos. BMI pone la misma condición y va más lejos: no puedes ser miembro de ninguna otra PRO en el mundo. Si ya estás en SAYCO, la SACM o la SGAE, revisa tu contrato antes de mudarte.</p><h2>3. Compara el costo de entrada</h2><p>BMI dejó de cobrar la solicitud a compositores nuevos desde el 1 de marzo de 2025, según su propio comunicado. ASCAP cobra un pago único de 50 dólares por solicitud, que no se devuelve. Ninguna de las dos cobra cuotas anuales.</p><ul class=\"list\"><li><span>BMI, compositor</span><span>Gratis</span></li><li><span>ASCAP, compositor</span><span>50 dólares, una vez</span></li><li><span>ASCAP, editorial</span><span>50 dólares, una vez</span></li><li><span>BMI, editorial individual</span><span>175 dólares</span></li><li><span>BMI, editorial como empresa o LLC</span><span>250 dólares</span></li></ul><h2>4. Ten al menos una canción lista</h2><p>ASCAP pide haber escrito o coescrito al menos una obra que esté disponible al público. BMI pide una composición que se esté interpretando o que probablemente se interprete pronto. En un grupo, cada integrante que compone hace su propia solicitud.</p><h2>5. Si no tienes número de Seguro Social</h2><p>ASCAP acepta compositores sin ciudadanía estadounidense ni número de Seguro Social: deben enviar el formulario fiscal W-8BEN junto con su número de solicitud. BMI ofrece pagos por Payoneer a quien no tiene cuenta bancaria en Estados Unidos.</p><h2>6. Decide si abres tu editorial</h2><p>La parte de la editorial es una solicitud aparte. Si no tienes editorial, esa porción del dinero puede quedarse sin cobrar. ASCAP permite ser editorial en varias sociedades, aunque como autor solo estés en una.</p><h2>7. Registra cada canción</h2><p>Afiliarte no basta: cada obra se registra. En ASCAP hay que esperar cinco días hábiles tras la aprobación y luego usar «Register a Work» en Member Access. En BMI llega un correo de bienvenida con los pasos para abrir tu cuenta en BMI Online Services. Ten a mano coautores, porcentajes y <a href=\"#isrc-iswc\" style=\"text-decoration:underline\">tus códigos ISRC e ISWC</a>.</p><h2>8. Cuenta con meses de espera</h2><p>El dinero no llega de inmediato. ASCAP calcula unos siete u ocho meses entre la ejecución de una canción y el pago al compositor, y unos seis meses para las editoriales.</p><blockquote>Una canción sin registrar en una PRO puede sonar mucho y no pagarte nada.</blockquote><h2>Qué sigue</h2><p>Con la afiliación lista, protege también la obra en la Copyright Office: lo explicamos en <a href=\"#registrar-cancion-copyright-office-estados-unidos\" style=\"text-decoration:underline\">cómo registrar tu canción en EE. UU.</a>. Antes de pagar, confirma las tarifas vigentes en la web de cada sociedad.</p><p class=\"mono g\">Guía informativa, no asesoría legal. Datos de las páginas oficiales de ASCAP y BMI consultadas el 20 de noviembre de 2026.</p>",
+  "src": [
+   [
+    "ASCAP — My ASCAP Membership (preguntas frecuentes)",
+    "https://www.ascap.com/help/my-ascap-membership"
+   ],
+   [
+    "ASCAP — Registering Your Music",
+    "https://www.ascap.com/help/registering-your-music"
+   ],
+   [
+    "BMI — Joining (preguntas frecuentes)",
+    "https://www.bmi.com/faq/category/joining"
+   ],
+   [
+    "BMI — Join BMI as a Music Creator",
+    "https://www.bmi.com/join"
+   ],
+   [
+    "BMI — Comunicado del 11 de marzo de 2025 sobre Spark y la solicitud gratuita",
+    "https://www.bmi.com/press/entry/591947"
+   ],
+   [
+    "Artistrack — ASCAP vs. BMI: Which PRO Should Independent Songwriters Join?",
+    "https://artistrack.com/ascap-vs-bmi-independent-songwriters/"
+   ]
+  ],
+  "cov": {
+   "f": "1",
+   "bg": "#1d3ea0",
+   "fg": "#ffd400",
+   "c": "Sociedad por compositor",
+   "e": "ASCAP o BMI"
+  },
+  "propia": true
+ },
+ {
   "id": "bruno-mars-padre-peter-hernandez-muere",
   "date": "2026-11-19",
   "hora": "21:30",
