@@ -1,5 +1,57 @@
 [
  {
+  "id": "medina-azahara-ultimo-concierto-vistalegre-madrid",
+  "date": "2026-11-21",
+  "hora": "07:45",
+  "sec": "noticias",
+  "tag": "Agenda",
+  "min": 3,
+  "title": "Medina Azahara da hoy su último concierto, en Vistalegre de Madrid",
+  "titleEn": "Medina Azahara plays its final concert tonight in Madrid",
+  "dek": "La banda de rock andaluz fundada en Córdoba en 1979 se separa tras el show de las 21:00 en el Palacio Vistalegre, con amigos invitados y un documental en camino.",
+  "brief": [
+   "Medina Azahara da este sábado 21 de noviembre su último concierto, en el Palacio Vistalegre de Madrid.",
+   "Su vocalista y fundador, Manuel Martínez, confirmó a EFE que la separación es definitiva.",
+   "La despedida tendrá invitados y quedará en el documental Todo tiene su fin, de Manuel Guerrero."
+  ],
+  "en": "Spanish rock band Medina Azahara, formed in Córdoba in 1979, plays its last show tonight at Madrid's Palacio Vistalegre, closing the farewell tour Todo tiene su fin. Founding singer Manuel Martínez told EFE the split is final, and a documentary by Manuel Guerrero will follow the band through this last concert.",
+  "body": "<p>Medina Azahara, la banda que llevó el rock andaluz de Córdoba a toda España y a América, da este sábado 21 de noviembre de 2026 su último concierto. El show empieza a las 21:00 en el Palacio Vistalegre de Madrid y cierra la gira de despedida <em>Todo tiene su fin</em>.</p><p>No es una pausa. Manuel Martínez, vocalista desde la fundación del grupo en 1979, lo dejó claro en una entrevista con EFE: “Somos gente de palabra, es el final”. Según la agencia, los integrantes seguirán con proyectos en solitario, pero la banda no volverá.</p><h2>Cómo será la despedida</h2><p>La organización presentó la noche como un concierto con amigos y compañeros invitados, cuyos nombres no se han anunciado. Entre las canciones que se compartirán con ellos están “Necesito respirar”, “Todo tiene su fin” y “Palabras de libertad”, según la agenda oficial de Madrid. Las entradas se venden en Ticketmaster desde 61,10 euros.</p><p>El adiós en su ciudad ya ocurrió. En octubre, el Teatro de la Axerquía de Córdoba reunió a más de 7.000 personas en dos noches que abrieron con “Paseando por la Mezquita”, contó Córdoba Buenas Noticias. Después vinieron el Sant Jordi Club de Barcelona, el 4 de noviembre, y Bilbao, el 6.</p><h2>Contexto: 47 años de rock andaluz</h2><p>El grupo nació en Córdoba en 1979 y supera los 20 discos publicados. Empezó con trabajos como <em>Medina Azahara</em>, <em>La esquina del viento</em> y <em>Andalucía</em>, y su séptimo disco, <em>Sin tiempo</em> (1992), le dio sencillos de oro y platino. Su último estudio fue el doble <em>El sueño eterno</em> (2023), con 24 canciones inéditas.</p><ul class=\"list\"><li><span>1979</span><span>Fundación en Córdoba</span></li><li><span>1992</span><span><em>Sin tiempo</em>, su disco de mayor éxito</span></li><li><span>2023</span><span><em>El sueño eterno</em>, doble disco de despedida en estudio</span></li><li><span>21 nov 2026</span><span>Último concierto, Palacio Vistalegre</span></li></ul><p>Medina Azahara también salió de España: hizo giras por Ecuador, México y Estados Unidos, y grabó con Antonio Orozco, El Barrio y Josemi Carmona. Para el público latino es una de las puertas de entrada al rock en español hecho en Andalucía, con guitarras eléctricas y raíz flamenca.</p><p>La despedida coincide con la de otra voz veterana del rock español: El Drogas, exvocalista de Barricada, cierra este mismo fin de semana su gira en Bilbao antes de un <a href=\"#el-drogas-paron-indefinido-bilbao-discos-directo\" style=\"text-decoration:underline\">parón indefinido</a>.</p><h2>Qué sigue</h2><p>El cierre quedará en <em>Todo tiene su fin</em>, el documental que dirige Manuel Guerrero y produce Happy Contents, de Womack Studios. Sigue la última gira hasta el concierto de Vistalegre; un avance se mostró el 4 de noviembre en el festival South International Series de Cádiz, informó EFE. Aún no tiene fecha de estreno.</p>",
+  "src": [
+   [
+    "EFE en Infobae — Hoy será noticia. Sábado, 21 de noviembre",
+    "https://www.infobae.com/espana/agencias/2026/11/20/hoy-sera-noticia-sabado-21-de-noviembre/"
+   ],
+   [
+    "EFE en Infobae — Todo tiene su fin, el documental que recogerá la historia de Medina Azahara",
+    "https://www.infobae.com/espana/agencias/2026/11/04/todo-tiene-su-fin-el-documental-que-recogera-la-historia-de-medina-azahara/"
+   ],
+   [
+    "esMADRID — Medina Azahara en el Palacio Vistalegre Arena",
+    "https://www.esmadrid.com/agenda/medina-azahara-palacio-vistalegre-arena"
+   ],
+   [
+    "Córdoba Buenas Noticias — Medina Azahara se despidió de su ciudad con dos conciertos históricos",
+    "https://www.cordobabn.com/cultura/medina-azahara-despidio-ciudad-dos-conciertos-historicos/20261018100648271679.html"
+   ],
+   [
+    "Rock and Blog — Medina Azahara cierra su historia con un último concierto",
+    "https://rockandblog.net/medina-azahara-se-despide-ultimo-concierto-en-madrid/"
+   ]
+  ],
+  "cov": {
+   "f": "1979",
+   "bg": "#0a0a0a",
+   "fg": "#ffd400",
+   "c": "Último concierto",
+   "e": "Medina Azahara"
+  },
+  "minuto": [
+   "Medina Azahara se despide hoy en Vistalegre de Madrid tras 47 años de rock andaluz.",
+   "Medina Azahara plays its farewell show in Madrid tonight."
+  ],
+  "propia": false
+ },
+ {
   "id": "gorillaz-corona-capital-2026-debut-albarn-sheinbaum",
   "date": "2026-11-21",
   "hora": "06:50",
