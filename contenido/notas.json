@@ -4880,7 +4880,7 @@
   "hora": "09:00",
   "sec": "noticias",
   "tag": "Estreno",
-  "min": 1,
+  "min": 2,
   "title": "Feid y DJ Premier vuelven a juntarse en “Bello Love”, con Lil Supa",
   "titleEn": "Feid and DJ Premier reunite on “Bello Love,” featuring Lil Supa",
   "dek": "Es la segunda colaboración del colombiano con el productor neoyorquino, cuatro años después de “Le Pido a Dios”, y llega días después de su Latin Grammy.",
@@ -4890,7 +4890,7 @@
    "Feid compite por tercer año seguido en Mejor Álbum de Música Urbana del Grammy."
   ],
   "en": "Feid and DJ Premier released “Bello Love,” featuring Venezuelan rapper Lil Supa, after Feid won Best Reggaeton Performance at the Latin Grammys with Karol G for “Verano rosa.”",
-  "body": "<p>Feid estrenó esta semana “Bello Love”, una canción con el legendario productor de hip hop DJ Premier en la que también participa el rapero venezolano Lil Supa. Está cantada en español con frases en inglés y la dedica a una pareja que lo inspira a ser un mejor hombre.</p>\n<h2>No es la primera vez</h2>\n<p>Feid y Premier ya habían trabajado juntos en 2022 con “Le Pido a Dios”, del EP <em>Sixdo</em>. Esa canción fue la primera colaboración de Premier con un artista latino, según Uproxx y uDiscover Music. En 2024, el productor apareció además como invitado sorpresa en el concierto de Feid en el festival Governors Ball de Nueva York.</p>\n<blockquote>Medellín y Nueva York, en una misma canción.</blockquote>\n<h2>Después del gramófono</h2>\n<p>El lanzamiento llega días después de que Feid ganara en los Latin Grammy la categoría de Mejor Interpretación de Reggaetón con “Verano rosa”, junto a Karol G. En los Grammy 2027 compite en Mejor Álbum de Música Urbana con <em>El Green Print: La Saga (Disc 1) — Feid vs. Ferxxo</em>. Es su tercer año seguido en esa categoría, después de <em>FERXXOCALIPSIS</em> en 2025 y <em>FERXXO VOL X: Sagrado</em> en 2026. Sus rivales, entre ellos Ryan Castro dos veces, están en <a href=\"#ryan-castro\" style=\"text-decoration:underline\">esta nota</a>.</p>\n<h2>Quién es DJ Premier</h2>\n<p>Nacido en Texas y radicado en Nueva York, DJ Premier es uno de los productores que definieron el sonido del rap de la Costa Este. Por su estudio pasaron artistas como Jay-Z, Eminem y Christina Aguilera. Que vuelva a elegir a Feid muestra cómo el urbano latino dialoga cada vez más con las raíces del rap en inglés.</p>",
+  "body": "<p>Feid estrenó esta semana “Bello Love”, una canción con el legendario productor de hip hop DJ Premier en la que también participa el rapero venezolano Lil Supa. Está cantada en español con frases en inglés y la dedica a una pareja que lo inspira a ser un mejor hombre.</p>\n<h2>No es la primera vez</h2>\n<p>Feid y Premier ya habían trabajado juntos en 2022 con “Le Pido a Dios”, del EP <em>Sixdo</em>. Esa canción fue la primera colaboración de Premier con un artista latino, según Uproxx y uDiscover Music. En 2024, el productor apareció además como invitado sorpresa en el concierto de Feid en el festival Governors Ball de Nueva York.</p>\n<blockquote>Medellín y Nueva York, en una misma canción.</blockquote>\n<h2>Después del gramófono</h2>\n<p>El lanzamiento llega días después de que Feid ganara en los Latin Grammy la categoría de Mejor Interpretación de Reggaetón con “Verano rosa”, junto a Karol G (aquí, <a href=\"#latin-grammy-ganadores\" style=\"text-decoration:underline\">la lista completa de ganadores</a>). En los Grammy 2027 compite en Mejor Álbum de Música Urbana con <em>El Green Print: La Saga (Disc 1) — Feid vs. Ferxxo</em>. Es su tercer año seguido en esa categoría, después de <em>FERXXOCALIPSIS</em> en 2025 y <em>FERXXO VOL X: Sagrado</em> en 2026. Sus rivales, entre ellos Ryan Castro dos veces, están en <a href=\"#ryan-castro\" style=\"text-decoration:underline\">esta nota</a>.</p>\n<h2>Quién es DJ Premier</h2>\n<p>Nacido en Texas y radicado en Nueva York, DJ Premier es uno de los productores que definieron el sonido del rap de la Costa Este. Por su estudio pasaron artistas como Jay-Z, Eminem y Christina Aguilera. Que vuelva a elegir a Feid muestra cómo el urbano latino dialoga cada vez más con las raíces del rap en inglés.</p>\n<h2>Qué sigue</h2>\n<p>La votación final de los Grammy corre del 10 de diciembre de 2026 al 7 de enero de 2027, y la ceremonia será el domingo 7 de febrero en el Crypto.com Arena de Los Ángeles, por ABC, Disney+ y Hulu. Ahí se sabrá si Feid gana por fin Mejor Álbum de Música Urbana en su tercer intento. Fecha, sede y cómo verla, en <a href=\"#agenda-grammy\" style=\"text-decoration:underline\">nuestra guía de la gala</a>.</p>",
   "src": [
    [
     "Metro Puerto Rico / EFE — Kany García, Rauw Alejandro, Feid, Ivy Queen y Latin Mafia, entre los estrenos latinos",
@@ -4923,6 +4923,10 @@
    [
     "Las2orillas — Quién es DJ Premier",
     "https://www.las2orillas.co/?p=876301"
+   ],
+   [
+    "GRAMMY.com — 2027 GRAMMYs show date and nominations announcement",
+    "https://www.grammy.com/news/2027-grammys-show-air-date-nominations-announced/"
    ]
   ],
   "cov": {
@@ -4943,6 +4947,13 @@
      "dek",
      "title",
      "titleEn"
+    ]
+   },
+   {
+    "iso": "2026-11-21T11:26:51-05:00",
+    "tipo": "ampliacion",
+    "campos": [
+     "body"
     ]
    }
   ]
