@@ -1,5 +1,58 @@
 [
  {
+  "id": "pity-alvarez-condena-12-anos-cristian-diaz",
+  "date": "2026-11-21",
+  "hora": "01:40",
+  "sec": "noticias",
+  "tag": "Justicia",
+  "min": 2,
+  "title": "Pity Álvarez es condenado a 12 años de prisión por el crimen de 2018",
+  "titleEn": "Argentine rocker Pity Álvarez sentenced to 12 years for 2018 killing",
+  "dek": "Un tribunal de Buenos Aires lo halló culpable de matar a Cristian Díaz en Villa Lugano. Cumplirá la pena en arresto domiciliario.",
+  "brief": [
+   "Un tribunal oral de Buenos Aires condenó el viernes a Cristian “Pity” Álvarez a 12 años de prisión por el homicidio de Cristian Díaz.",
+   "El exlíder de Viejas Locas e Intoxicados cumplirá la pena en arresto domiciliario.",
+   "La fiscalía había pedido 18 años y medio; la defensa, la absolución por legítima defensa."
+  ],
+  "en": "A Buenos Aires court on Friday sentenced Argentine rock singer Cristian “Pity” Álvarez, former frontman of Viejas Locas and Intoxicados, to 12 years in prison for the 2018 shooting death of Cristian Díaz. He will serve the sentence under house arrest. Prosecutors had sought 18 and a half years; the defense argued self-defense.",
+  "body": "<p>El Tribunal Oral en lo Criminal y Correccional N° 29 de Buenos Aires condenó este viernes 20 de noviembre a Cristian “Pity” Álvarez a 12 años de prisión por el homicidio de Cristian Díaz, ocurrido en julio de 2018 en Villa Lugano. El exlíder de Viejas Locas e Intoxicados cumplirá la pena en arresto domiciliario.</p><p>Según la agencia AFP, la condena es por homicidio agravado por el uso de un arma de fuego, un delito con una escala de 8 a 25 años, de acuerdo con Crónica. Los jueces Gustavo Goerner, Juan María Ramos Padilla y Hugo Navarro darán a conocer los fundamentos en los próximos días.</p><h2>Qué pidió cada parte</h2><p>La pena quedó entre los pedidos de la acusación. Así llegaron las partes al veredicto:</p><ul class=\"list\"><li><span>Fiscalía (Sandro Abraldes)</span><span>18 años y 6 meses</span></li><li><span>Querella (familia de Díaz)</span><span>11 años y 2 meses</span></li><li><span>Defensa</span><span>Absolución o exceso en la legítima defensa</span></li><li><span>Tribunal</span><span>12 años, domiciliaria</span></li></ul><p>Álvarez no estuvo en la sala. Está internado en una clínica y el tribunal no autorizó su traslado, informó Crónica. Antes de la deliberación habló unos minutos por videollamada, según Infobae y el diario Río Negro. AFP precisó que, cuando le den el alta, deberá fijar un domicilio con control electrónico.</p><h2>El caso</h2><p>Díaz, vecino del músico, murió de cuatro disparos en la madrugada del 12 de julio de 2018 en el complejo habitacional Cardenal Samoré, en Villa Lugano. Álvarez se entregó en una comisaría unas 20 horas después, como reconstruyó Rolling Stone en Español.</p><p>El juicio duró cerca de tres meses, con unas 20 audiencias y alrededor de 40 testigos. El 2 de noviembre declaró por primera vez ante los jueces: admitió que disparó, pero sostuvo que actuó en defensa propia.</p><h2>Por qué importa</h2><p>Álvarez fue una de las voces más populares del rock argentino de fines de los 90 y los 2000, primero con Viejas Locas y después con Intoxicados. El caso siguió en los tribunales durante más de ocho años y fue uno de los procesos judiciales más seguidos de la música argentina reciente.</p><h2>Qué sigue</h2><p>Falta conocer los fundamentos escritos del fallo. La defensa no ha anunciado públicamente si apelará la sentencia.</p>",
+  "src": [
+   [
+    "NTN24 / AFP — El músico argentino \"Pity\" Álvarez es condenado a 12 años de prisión por homicidio",
+    "https://www.ntn24.com/noticias-judicial/el-musico-argentino-pity-alvarez-es-condenado-a-doce-anos-de-prision-por-homicidio-667585"
+   ],
+   [
+    "Diario Río Negro — Pity Álvarez fue condenado a 12 años de prisión por el crimen de Cristian Díaz",
+    "https://www.rionegro.com.ar/justicia/condenaron-a-pity-alvarez-a-12-anos-de-prision-por-el-crimen-de-cristian-diaz-4806856/"
+   ],
+   [
+    "Crónica — Condenaron a Pity Álvarez a 12 años de prisión por el crimen de su vecino en Villa Lugano",
+    "https://www.cronica.com.ar/policiales/pity-alvarez-fue-condenado-a-12-anos-de-prision/"
+   ],
+   [
+    "Infobae — Juicio a “Pity” Álvarez: la jornada del veredicto",
+    "https://www.infobae.com/sociedad/policiales/2026/11/20/juicio-a-pity-alvarez-en-vivo-sin-el-musico-en-la-sala-el-tribunal-dara-a-conocer-el-veredicto/"
+   ],
+   [
+    "Rolling Stone en Español — Pity Álvarez y el día que comenzó su conflicto con Cristian Díaz",
+    "https://es.rollingstone.com/pity-alvarez-cristian-diaz-reconstruccion-de-un-crimen-arg/"
+   ]
+  ],
+  "cov": {
+   "f": "12",
+   "bg": "#f0ece4",
+   "fg": "#0a0a0a",
+   "c": "Años de prisión",
+   "e": "Pity Álvarez"
+  },
+  "minuto": [
+   "Pity Álvarez fue condenado a 12 años por el crimen de Cristian Díaz; cumplirá domiciliaria.",
+   "Pity Álvarez gets 12 years, under house arrest, for the 2018 killing of Cristian Díaz."
+  ],
+  "peso": 2,
+  "propia": false
+ },
+ {
   "id": "registrarse-soundexchange-regalias-radio-digital",
   "date": "2026-11-21",
   "hora": "00:50",
