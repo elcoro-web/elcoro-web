@@ -1,5 +1,54 @@
 [
  {
+  "id": "raphael-suspende-concierto-a-coruna-hospital",
+  "date": "2026-11-21",
+  "hora": "23:35",
+  "sec": "noticias",
+  "tag": "Momento",
+  "min": 2,
+  "title": "Raphael suspende su concierto en A Coruña por una indisposición",
+  "titleEn": "Raphael calls off A Coruña concert after falling ill before the show",
+  "dek": "El cantante, de 83 años, sufrió una subida de tensión y taquicardia media hora antes de salir al Coliseum y pasó la noche en el hospital Quirón.",
+  "brief": [
+   "Raphael canceló su concierto del 21 de noviembre en el Coliseum de A Coruña poco antes de empezar.",
+   "Según fuentes municipales citadas por EFE, tuvo una subida de tensión y taquicardia.",
+   "Fue trasladado al hospital Quirón, donde se esperaba que pasara la noche; su equipo aún no da un parte médico."
+  ],
+  "en": "Spanish singer Raphael, 83, called off his Saturday concert at the Coliseum in A Coruña, Spain, about half an hour before showtime. Municipal sources cited by EFE said he had a spike in blood pressure and tachycardia; he was taken to the Quirón hospital to be kept overnight. No medical statement from his team had been released.",
+  "body": "<p>Raphael suspendió a última hora su concierto del sábado 21 de noviembre en el Coliseum de A Coruña, en Galicia. Hacia las 20:00, unos 30 minutos antes de la función, el cantante de 83 años se sintió mal y fue atendido por personal sanitario en el recinto, según fuentes municipales citadas por la agencia EFE.</p><p>Esas mismas fuentes explicaron que tuvo una subida de tensión y taquicardia. Después fue trasladado al hospital Quirón de la ciudad, donde se esperaba que pasara la noche en observación. El público, que ya estaba en sus asientos, se enteró de la suspensión por la megafonía del recinto.</p><h2>Lo que se sabe y lo que no</h2><p>Protección Civil de A Coruña confirmó en redes la suspensión del concierto por la indisposición del cantante y le deseó una pronta recuperación. Al cierre de esta nota no se había difundido un parte médico ni un comunicado de su equipo, y tampoco había una nueva fecha para el concierto de A Coruña.</p><h2>Contexto</h2><p>La función era parte de <em>Raphaelísimo</em>, la gira que arrancó en 2025 en Mérida y que ha pasado por Madrid, Sevilla, Zaragoza, Valencia, Barcelona y varios países de Latinoamérica. El repertorio combina clásicos como “Escándalo” y “Mi gran noche” con temas de <em>Ayer... aún</em>, su disco de 2024.</p><p>Raphael volvió a los escenarios en junio de 2025, seis meses después del episodio cerebrovascular que sufrió en diciembre de 2024 durante la grabación de un programa de televisión en Madrid. Ese mismo año, la Academia Latina de la Grabación lo nombró Persona del Año, el homenaje que precede a los <a href=\"#latin-grammy-ganadores\" style=\"text-decoration:underline\">Latin Grammy</a>.</p><h2>Qué sigue</h2><p>Lo próximo es el parte médico, que se espera en las próximas horas, y la decisión sobre la devolución de entradas o una nueva fecha en A Coruña. El Coro actualizará esta nota cuando haya información oficial.</p>",
+  "src": [
+   [
+    "EFE vía Infobae — Raphael suspende su concierto en A Coruña a última hora por una indisposición",
+    "https://www.infobae.com/espana/agencias/2026/11/21/raphael-suspende-su-concierto-en-a-coruna-a-ultima-hora-por-una-indisposicion/"
+   ],
+   [
+    "El País (Cali) — Raphael tuvo que cancelar su concierto en España tras sufrir problemas de salud",
+    "https://www.elpais.com.co/entretenimiento/raphael-fue-hospitalizado-de-urgencia-tras-presentar-taquicardias-antes-de-un-concierto-en-espana-2149.html"
+   ],
+   [
+    "El Progreso (EFE) — Raphael suspende a última hora su concierto en A Coruña",
+    "https://www.elprogreso.es/sociedad/gente/raphael-suspende-ultima-hora-concierto-coruna-sufrir-indisposicion/202611212247452015743.html"
+   ],
+   [
+    "Minuto30 — Raphael canceló su concierto en A Coruña y fue hospitalizado",
+    "https://www.minuto30.com/preocupacion-por-la-salud-de-raphael-el-cantante-cancelo-su-concierto-en-a-coruna-y-fue-hospitalizado/1733048/"
+   ]
+  ],
+  "cov": {
+   "f": "83",
+   "bg": "#0a0a0a",
+   "fg": "#ffd400",
+   "c": "Años, y una gira en curso",
+   "e": "Raphael"
+  },
+  "minuto": [
+   "Raphael suspende su concierto en A Coruña por una subida de tensión y pasa la noche en el hospital.",
+   "Raphael, 83, cancels A Coruña show and is kept overnight in hospital."
+  ],
+  "peso": 2,
+  "propia": false
+ },
+ {
   "id": "rosalia-los40-music-awards-2026-ganadores",
   "date": "2026-11-21",
   "hora": "13:40",
