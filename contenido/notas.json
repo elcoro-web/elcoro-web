@@ -177,8 +177,8 @@
   "sec": "noticias",
   "tag": "Agenda",
   "min": 3,
-  "title": "Medina Azahara da hoy su último concierto, en Vistalegre de Madrid",
-  "titleEn": "Medina Azahara plays its final concert tonight in Madrid",
+  "title": "Medina Azahara se despide el 21 de noviembre en Vistalegre de Madrid",
+  "titleEn": "Medina Azahara plays its final concert on Nov. 21 in Madrid",
   "dek": "La banda de rock andaluz fundada en Córdoba en 1979 se separa tras el show de las 21:00 en el Palacio Vistalegre, con amigos invitados y un documental en camino.",
   "brief": [
    "Medina Azahara da este sábado 21 de noviembre su último concierto, en el Palacio Vistalegre de Madrid.",
@@ -217,10 +217,27 @@
    "e": "Medina Azahara"
   },
   "minuto": [
-   "Medina Azahara se despide hoy en Vistalegre de Madrid tras 47 años de rock andaluz.",
-   "Medina Azahara plays its farewell show in Madrid tonight."
+   "Medina Azahara se despide el 21 de noviembre en Vistalegre tras 47 años de rock andaluz.",
+   "Medina Azahara plays its farewell show in Madrid on Nov. 21."
   ],
-  "propia": false
+  "propia": false,
+  "ediciones": [
+   {
+    "iso": "2026-11-21T22:28:21-05:00",
+    "tipo": "estilo",
+    "campos": [
+     "title"
+    ]
+   },
+   {
+    "iso": "2026-11-21T22:28:25-05:00",
+    "tipo": "estilo",
+    "campos": [
+     "minuto",
+     "titleEn"
+    ]
+   }
+  ]
  },
  {
   "id": "gorillaz-corona-capital-2026-debut-albarn-sheinbaum",
@@ -312,7 +329,7 @@
    "Antes de parar publicó dos discos en directo: Rhythm & Blues Band y Akustik Fraktion."
   ],
   "en": "Spanish rock singer El Drogas, the longtime voice and bassist of Barricada, says he is shutting down 'until further notice' after a two-year, 100-show tour that wraps with two nights at Bilbao's Santana 27. He also released two live albums, recorded in Pamplona in 2018 and Azpeitia in 2022.",
-  "body": "<p>Enrique Villarreal, El Drogas, anunció un parón indefinido cuando termine su gira actual. La despedida son dos conciertos en la sala Santana 27 de Bilbao, el viernes 20 y el sábado 21 de noviembre de 2026, según publicaron Mariskal Rock y Naiz el 19 de noviembre.</p><p>La gira suma dos años y 100 conciertos. El mensaje en sus redes fue corto: “Apagamos la maquinaria hasta nuevo aviso (pero antes la liamos)”. No dio una fecha de regreso ni explicó el motivo de la pausa. Para la primera noche de Bilbao quedaban pocas entradas.</p><h2>Los dos discos en directo</h2><p>Antes de parar, El Drogas puso a la venta dos grabaciones en vivo con formatos muy distintos. Las dos las grabó Iñaki Ábrego, las mezcló Haritz Harreguy y las masterizó Víctor García.</p><ul class=\"list\"><li><span><em>El Drogas Rhythm & Blues Band</em></span><span>Teatro Gayarre, Pamplona · gira de 2018 · 9 músicos · 14 temas</span></li><li><span><em>El Drogas Akustik Fraktion</em></span><span>Soreasu Antzokia, Azpeitia · 2022 · 7 músicos · 10 temas</span></li></ul><p>El primero recoge la banda ampliada de 2018, con saxofón y flauta de Koki Gómez, trompeta de Javi Blázquez y teclados y acordeón de Germán San Martín. Abre con “Empujo pa'ki” y cierra con “Otros tragos”. El segundo es acústico, con percusiones y coros de Nahia Ojeta, Selva Barón y Naiara Ruz, e incluye “Sólo es febrero” y “Dos sillas”. En los dos están Txus Maraví en las guitarras y Eugenio Aristu “Flako” en el bajo.</p><p>Metal Bizarre informó en octubre que ambos salían en CD, con packs para comprarlos juntos, y que las ediciones en vinilo estaban previstas para alrededor del 20 de noviembre, la misma semana del cierre.</p><p>No fue el único directo del rock español esa semana: el viernes 20 también salieron <em>Directo 2026</em>, de El Último de la Fila, y el disco doble <em>La Maketa</em>, de Estopa, como contamos en <a href=\"#estrenos-20nov\" style=\"text-decoration:underline\">los estrenos del viernes</a>.</p><h2>Por qué importa</h2><p>Villarreal es el histórico cantante y bajista de Barricada, la banda de Pamplona con la que hizo carrera antes de seguir en solitario. Que cierre una gira de 100 fechas sin anunciar la siguiente es lo que hace noticia: el propio mensaje habla de apagar la maquinaria, no de un descanso entre discos.</p><h2>Qué sigue</h2><p>El concierto de esta noche en Bilbao es, por ahora, el último. Las entradas se venden en la web oficial del artista y los discos, en su tienda en línea. Cualquier fecha de regreso dependerá de lo que él mismo anuncie.</p>",
+  "body": "<p>Enrique Villarreal, El Drogas, anunció un parón indefinido cuando termine su gira actual. La despedida son dos conciertos en la sala Santana 27 de Bilbao, el viernes 20 y el sábado 21 de noviembre de 2026, según publicaron Mariskal Rock y Naiz el 19 de noviembre.</p><p>La gira suma dos años y 100 conciertos. El mensaje en sus redes fue corto: “Apagamos la maquinaria hasta nuevo aviso (pero antes la liamos)”. No dio una fecha de regreso ni explicó el motivo de la pausa. Para la primera noche de Bilbao quedaban pocas entradas.</p><h2>Los dos discos en directo</h2><p>Antes de parar, El Drogas puso a la venta dos grabaciones en vivo con formatos muy distintos. Las dos las grabó Iñaki Ábrego, las mezcló Haritz Harreguy y las masterizó Víctor García.</p><ul class=\"list\"><li><span><em>El Drogas Rhythm & Blues Band</em></span><span>Teatro Gayarre, Pamplona · gira de 2018 · 9 músicos · 14 temas</span></li><li><span><em>El Drogas Akustik Fraktion</em></span><span>Soreasu Antzokia, Azpeitia · 2022 · 7 músicos · 10 temas</span></li></ul><p>El primero recoge la banda ampliada de 2018, con saxofón y flauta de Koki Gómez, trompeta de Javi Blázquez y teclados y acordeón de Germán San Martín. Abre con “Empujo pa'ki” y cierra con “Otros tragos”. El segundo es acústico, con percusiones y coros de Nahia Ojeta, Selva Barón y Naiara Ruz, e incluye “Sólo es febrero” y “Dos sillas”. En los dos están Txus Maraví en las guitarras y Eugenio Aristu “Flako” en el bajo.</p><p>Metal Bizarre informó en octubre que ambos salían en CD, con packs para comprarlos juntos, y que las ediciones en vinilo estaban previstas para alrededor del 20 de noviembre, la misma semana del cierre.</p><p>No fue el único directo del rock español esa semana: el viernes 20 también salieron <em>Directo 2026</em>, de El Último de la Fila, y el disco doble <em>La Maketa</em>, de Estopa, como contamos en <a href=\"#estrenos-20nov\" style=\"text-decoration:underline\">los estrenos del viernes</a>.</p><h2>Por qué importa</h2><p>Villarreal es el histórico cantante y bajista de Barricada, la banda de Pamplona con la que hizo carrera antes de seguir en solitario. Que cierre una gira de 100 fechas sin anunciar la siguiente es lo que hace noticia: el propio mensaje habla de apagar la maquinaria, no de un descanso entre discos.</p><h2>Qué sigue</h2><p>El concierto del sábado 21 de noviembre en Bilbao es, por ahora, el último. Las entradas se venden en la web oficial del artista y los discos, en su tienda en línea. Cualquier fecha de regreso dependerá de lo que él mismo anuncie.</p>",
   "src": [
    [
     "Mariskal Rock — El Drogas anuncia parón indefinido tras dos años de gira y cien conciertos",
@@ -349,6 +366,13 @@
    },
    {
     "iso": "2026-11-21T05:27:10-05:00",
+    "tipo": "estilo",
+    "campos": [
+     "body"
+    ]
+   },
+   {
+    "iso": "2026-11-21T22:28:21-05:00",
     "tipo": "estilo",
     "campos": [
      "body"
