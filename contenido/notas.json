@@ -1,5 +1,54 @@
 [
  {
+  "id": "mama-awards-2026-ganadores-bts-cortis",
+  "date": "2026-11-22",
+  "hora": "02:50",
+  "sec": "premios",
+  "tag": "MAMA 2026",
+  "min": 3,
+  "title": "MAMA Awards 2026: BTS gana Artista y Álbum del Año en Osaka",
+  "titleEn": "MAMA Awards 2026: BTS wins Artist and Album of the Year in Osaka",
+  "dek": "La gala de Mnet se hizo el 20 y 21 de noviembre en el Kyocera Dome de Osaka. CORTIS ganó Canción del Año con “REDRED” y ENHYPEN, el premio del público.",
+  "brief": [
+   "BTS ganó Artista del Año y Álbum del Año por ARIRANG en los MAMA Awards 2026, celebrados en Osaka.",
+   "CORTIS se llevó Canción del Año con “REDRED” y ENHYPEN, Elección de los Fans del Año.",
+   "BIGBANG recibió el premio Music Visionary y ZEROBASEONE anunció disco nuevo para el 18 de enero de 2027."
+  ],
+  "en": "BTS won Artist of the Year and Album of the Year for ARIRANG at the 2026 MAMA Awards, held Nov. 20-21 at Kyocera Dome Osaka, accepting by video from their world tour. CORTIS took Song of the Year for “REDRED,” ENHYPEN won Fans' Choice of the Year and BIGBANG received Music Visionary of the Year.",
+  "body": "<p class=\"lede\">BTS ganó Artista del Año y Álbum del Año por <em>ARIRANG</em> en los MAMA Awards 2026, la gala anual de la cadena surcoreana Mnet. La ceremonia se hizo en dos noches, el viernes 20 y el sábado 21 de noviembre, en el Kyocera Dome de Osaka, Japón.</p><p>El grupo no estuvo en el escenario: aceptó en video desde Kaohsiung, Taiwán, donde sigue su gira mundial. Es la segunda gran gala del K-pop en una semana que BTS gana sin asistir, después de los <a href=\"#mma-2026-bts\" style=\"text-decoration:underline\">Melon Music Awards de Seúl</a>.</p><h2>Los grandes premios</h2><p>Los MAMA reparten varios <em>daesang</em>, los premios mayores. Estos son los ganadores, según las listas de Forbes y K-Pop Newswire:</p><ul class=\"list\"><li><span>Artista del Año</span><span>BTS</span></li><li><span>Álbum del Año</span><span>BTS · ARIRANG</span></li><li><span>Canción del Año</span><span>CORTIS · “REDRED”</span></li><li><span>Elección de los Fans del Año</span><span>ENHYPEN</span></li><li><span>Music Visionary del Año</span><span>BIGBANG</span></li><li><span>Mejor Artista Nuevo</span><span>ALPHA DRIVE ONE y TUIDE</span></li></ul><p>En su mensaje, V recordó que habían pasado 10 años desde el primer gran premio del grupo en los MAMA. K-Pop Newswire contó que este es el octavo Artista del Año de BTS en la gala.</p><h2>Otros ganadores</h2><ul class=\"list\"><li><span>Mejor Grupo Masculino</span><span>BTS</span></li><li><span>Mejor Grupo Femenino</span><span>IVE</span></li><li><span>Mejor Artista Masculino</span><span>Yeonjun (TXT)</span></li><li><span>Mejor Artista Femenina</span><span>Soyeon (i-dle)</span></li><li><span>Mejor Colaboración</span><span>LE SSERAFIM y j-hope · “SPAGHETTI”</span></li><li><span>Mejor Coreografía</span><span>ATEEZ · “BAD”</span></li><li><span>Mejor Video</span><span>BIGBANG</span></li><li><span>Artista Revelación</span><span>NCT WISH</span></li></ul><p>CORTIS repitió con Mejor Interpretación de Baile de Grupo Masculino, también por “REDRED”, e ILLIT ganó la categoría femenina con “It's Me”.</p><h2>Por qué importa</h2><p>Las dos galas más grandes del K-pop coincidieron casi por completo en su lectura del año. En los MMA, BTS también ganó Artista y Álbum del Año, y “REDRED” de CORTIS se llevó Grabación del Año. La diferencia está en la canción: Melon premió “BANG BANG” de IVE y Mnet eligió a CORTIS, que se llevó en Osaka dos premios por la misma canción.</p><p>Para quien sigue el K-pop desde América Latina o EE. UU., la lectura es clara: <em>ARIRANG</em> y su gira mundial cierran el año como el proyecto más premiado del género, con los dos premios mayores en ambas galas.</p><h2>Qué sigue</h2><p>ZEROBASEONE aprovechó su presentación de la segunda noche para anunciar un disco nuevo, que sale el 18 de enero de 2027, según Soompi.</p>",
+  "src": [
+   [
+    "Forbes — MAMA Awards 2026: Full List Of Winners",
+    "https://www.forbes.com/sites/hannahabraham/2026/11/20/mama-awards-2026-a-full-list-winners/"
+   ],
+   [
+    "K-Pop Newswire — MAMA Awards 2026 Winners (Day 1 & 2)",
+    "https://kpopnewswire.com/mama-awards-2026-winners-day-1-2-bts-cortis-enhypen-ive-illit-and-more/"
+   ],
+   [
+    "PhilSTAR L!fe — List: Here are the winners of the 2026 MAMA Awards",
+    "https://philstarlife.com/celebrity/539828-list-winners-2026-mama-awards"
+   ],
+   [
+    "Soompi — ZEROBASEONE announces new album release date at 2026 MAMA Awards",
+    "https://www.soompi.com/article/1889344wpp/zerobaseone-announces-new-album-release-date-at-2026-mama-awards"
+   ]
+  ],
+  "cov": {
+   "f": "8",
+   "bg": "#1d3ea0",
+   "fg": "#ffd400",
+   "c": "Artista del Año en los MAMA",
+   "e": "BTS"
+  },
+  "minuto": [
+   "BTS gana Artista y Álbum del Año en los MAMA Awards 2026 de Osaka.",
+   "BTS wins Artist and Album of the Year at the 2026 MAMA Awards."
+  ],
+  "peso": 2,
+  "propia": false
+ },
+ {
   "id": "registrarse-the-mlc-regalias-mecanicas-streaming",
   "date": "2026-11-22",
   "hora": "00:55",
