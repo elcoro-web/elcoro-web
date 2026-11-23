@@ -1,5 +1,54 @@
 [
  {
+  "id": "christian-nodal-deja-escenarios-mexico-hasta-nuevo-aviso",
+  "date": "2026-11-23",
+  "hora": "16:40",
+  "sec": "noticias",
+  "tag": "Momento",
+  "min": 2,
+  "title": "Christian Nodal deja los escenarios de México “hasta nuevo aviso”",
+  "titleEn": "Christian Nodal steps away from Mexican stages 'until further notice'",
+  "dek": "El cantante lo anunció en Instagram un día después de su concierto en la Feria Yucatán Xmatkuil de Mérida. No dio motivos ni fecha de regreso.",
+  "brief": [
+   "Christian Nodal anunció en Instagram que se despide de los escenarios de México hasta nuevo aviso.",
+   "Su último show fue el sábado 21 de noviembre en la Feria Yucatán Xmatkuil, en Mérida.",
+   "No explicó el motivo ni dijo si cancela conciertos fuera de México."
+  ],
+  "en": "Mexican star Christian Nodal said on Instagram that he is stepping away from stages in Mexico 'until further notice,' a day after playing the Feria Yucatán Xmatkuil in Mérida on Nov. 21. He gave no reason, no return date and said nothing about shows outside Mexico.",
+  "body": "<p>Christian Nodal anunció el domingo 22 de noviembre de 2026 que se aleja de los escenarios de México “hasta nuevo aviso”. Lo escribió en sus historias de Instagram, un día después de cantar en el Centro de Espectáculos Montejo de la Feria Yucatán Xmatkuil, en Mérida.</p><p>El mensaje acompañaba una foto en blanco y negro del cantante con los brazos abiertos. En él contó que el público de Mérida le dio, sin saberlo, “la mejor despedida de los escenarios de México”, y cerró con un agradecimiento a sus fans. El concierto era parte del Pa'l Cora Tour.</p><h2>Lo que no dijo</h2><p>Nodal no explicó el motivo de la pausa ni dio una fecha de regreso. Tampoco aclaró si la decisión afecta a sus conciertos fuera del país: Caras subrayó que no hay información oficial sobre una suspensión de shows internacionales, y Excelsior apuntó que no habló de un retiro de la música. Hasta la publicación de esta nota, su equipo no había emitido un comunicado.</p><p>Hola e Infobae recordaron que el cantante, de 27 años, mantiene una disputa pública con su padre, Jaime González, por el registro de su nombre como marca ante el Instituto Mexicano de la Propiedad Industrial (IMPI). Nodal no relacionó ese conflicto con su anuncio.</p><h2>Por qué importa</h2><p>Nodal es una de las voces más conocidas del regional mexicano, y las ferias y palenques de México son parte central de su agenda. Bajarse de esos escenarios sin explicación deja en el aire cualquier plan de conciertos en el país para 2027.</p><p>No es el único artista que pone una pausa esta semana: Twenty One Pilots dio en el Corona Capital <a href=\"#twenty-one-pilots-corona-capital-2026-ultimo-show-pausa\" style=\"text-decoration:underline\">su último show por un tiempo</a>, y El Drogas <a href=\"#el-drogas-paron-indefinido-bilbao-discos-directo\" style=\"text-decoration:underline\">anunció un parón indefinido</a> en Bilbao.</p><h2>Qué sigue</h2><p>Falta saber si Nodal mantendrá fechas en Estados Unidos o Latinoamérica y si su equipo dará detalles sobre la duración de la pausa. El Coro actualizará esta nota si hay un comunicado.</p>",
+  "src": [
+   [
+    "Excelsior — Christian Nodal anuncia su retiro temporal de los escenarios en México",
+    "https://www.excelsior.com.mx/espectaculos/christian-nodal-anuncia-retiro-temporal-escenarios-mexico"
+   ],
+   [
+    "Infobae — Christian Nodal anuncia pausa en su carrera y se despide de los escenarios mexicanos",
+    "https://www.infobae.com/mexico/2026/11/23/christian-nodal-anuncia-pausa-en-su-carrera-y-se-despide-de-los-escenarios-mexicanos/"
+   ],
+   [
+    "Hola USA — Christian Nodal se despide de los escenarios en México ‘hasta nuevo aviso’",
+    "https://www.hola.com/us-es/celebrities/20261123936652/christian-nodal-anuncio-despedida-escenarios-mexico/"
+   ],
+   [
+    "Caras México — Christian Nodal anuncia su despedida de los escenarios en México",
+    "https://caras.com.mx/entretenimiento/christian-nodal-despedida-escenarios-mexico-hasta-nuevo-aviso"
+   ]
+  ],
+  "cov": {
+   "f": "<i>Pausa</i>",
+   "bg": "#0a0a0a",
+   "fg": "#e3120b",
+   "c": "Hasta nuevo aviso",
+   "e": "Christian Nodal"
+  },
+  "minuto": [
+   "Christian Nodal se despide de los escenarios de México hasta nuevo aviso, sin dar motivos.",
+   "Christian Nodal steps away from Mexican stages until further notice."
+  ],
+  "peso": 2,
+  "propia": false
+ },
+ {
   "id": "miley-cyrus-maxx-morando-boda-palm-springs",
   "date": "2026-11-23",
   "hora": "14:30",
