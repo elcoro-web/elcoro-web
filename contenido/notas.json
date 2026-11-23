@@ -1,5 +1,94 @@
 [
  {
+  "id": "canal-oficial-artista-youtube-como-conseguirlo",
+  "date": "2026-11-23",
+  "hora": "10:50",
+  "sec": "artistas",
+  "tag": "Para artistas",
+  "min": 4,
+  "title": "Cómo conseguir el Canal Oficial de Artista en YouTube",
+  "titleEn": "How to get a YouTube Official Artist Channel",
+  "dek": "El Canal Oficial de Artista junta en un solo lugar tus suscriptores, tus videos y tu discografía. Se pide con un solo lanzamiento oficial y vía tu distribuidora.",
+  "brief": [
+   "El Canal Oficial de Artista de YouTube une tu canal, el canal Topic y el de Vevo en uno solo.",
+   "Según YouTube, basta un lanzamiento oficial distribuido por un sello o distribuidora, más un canal sin faltas a las políticas.",
+   "No lo pides tú directamente: lo solicita tu sello, tu distribuidora o un socio de servicios musicales de YouTube."
+  ],
+  "en": "YouTube's Official Artist Channel (OAC) merges an artist's own channel with their auto-generated Topic channel and Vevo channel, pooling subscribers in one place. YouTube requires a single-artist channel, at least one official release delivered by a label or distributor and a clean policy record, and the request must come through a label, distributor or listed music service partner.",
+  "body": "<p class=\"lede\">Si tienes música en plataformas, YouTube ya creó por su cuenta un canal “Topic” con tus canciones, separado del canal donde subes tus videos. El Canal Oficial de Artista (OAC, por sus siglas en inglés) junta los dos, y el de Vevo si existe, en uno solo con todos tus suscriptores.</p><p>Según la página de ayuda de YouTube, el requisito de catálogo es bajo: un solo lanzamiento oficial. La parte que confunde es quién hace la solicitud. Estos son los pasos.</p><h2>1. Ten un canal dedicado solo a tu proyecto</h2><p>YouTube pide que seas dueño de un canal de un solo artista o banda, enfocado en tu música. Un canal de sello con varios artistas no califica; TuneCore lo aclara en mayúsculas en su guía. Si compartes canal con otro proyecto, abre uno propio antes de pedir el OAC.</p><h2>2. Publica al menos un lanzamiento oficial</h2><p>Necesitas como mínimo un lanzamiento oficial en YouTube entregado por una distribuidora o un sello. Si ya subiste un sencillo con tu distribuidora, en YouTube aparece como “Art Track” en tu canal Topic, y eso cuenta. Algunas distribuidoras piden más: Ditto, por ejemplo, habla de 3 lanzamientos en su blog. Revisa la regla de la tuya. Antes de lanzar, repasa <a href=\"#antes-de-lanzar\" style=\"text-decoration:underline\">qué tener listo</a>, incluidos tus <a href=\"#isrc-iswc\" style=\"text-decoration:underline\">códigos ISRC</a>.</p><h2>3. Mantén el canal limpio</h2><p>El canal tiene que cumplir las Normas de la Comunidad, los Términos de Servicio y las reglas de copyright. Si recibes una falta (strike) después de la aprobación, YouTube convierte el OAC en un canal normal. Se restaura solo cuando la falta vence y vuelves a cumplir todo.</p><h2>4. Confirma que tienes un socio que te respalde</h2><p>Además de lo anterior, YouTube exige al menos una de estas cuatro condiciones: trabajar con un Partner Manager de YouTube, estar en el Programa de Socios de YouTube, pertenecer a la red de un sello que trabaje con un Partner Manager, o distribuir tu música con una empresa del directorio de socios de servicios musicales de YouTube. La mayoría de los independientes califica por la última.</p><h2>5. Sube videos públicos</h2><p>No es obligatorio, pero YouTube avisa que las solicitudes de canales sin videos públicos pueden ser rechazadas o pedir verificación extra. TuneCore dice que prefiere al menos un video musical. Un video oficial, un visualizer o un video en vivo sirven para que el canal no se vea vacío.</p><h2>6. Pídelo a tu distribuidora o sello</h2><p>El artista no llena el formulario directamente. YouTube indica que lo solicite tu sello o tu distribuidora; si no tienes ninguno, un socio de servicios musicales del directorio puede hacerlo por ti. En TuneCore, por ejemplo, se hace desde “Your Artist Accounts”: eliges al artista, conectas la cuenta de Google dueña del canal y confirmas. TuneCore pide además un plan Unlimited y 15 suscriptores, y calcula hasta 6 semanas de trámite. En Ditto se pide desde el panel del artista.</p><h2>7. Revisa qué cambia cuando te aprueban</h2><p>Los suscriptores de tu canal, del canal Topic y del de Vevo pasan al canal oficial, y en los canales viejos desaparece el botón de suscribirse. Tus videos nuevos llegan a toda esa audiencia junta. YouTube menciona funciones de venta de entradas, de mercancía e Insights for Artists, y advierte que puedes perder algunas herramientas de canales comunes.</p><h2>Qué sigue</h2><p>Con el canal unificado, cada estreno suma en un solo lugar. El siguiente paso es cobrar lo que generan esas escuchas: repasa <a href=\"#regalias-explicadas\" style=\"text-decoration:underline\">cómo funcionan las regalías</a> y quién las recoge.</p><p class=\"mono g\">Requisitos según la ayuda oficial de YouTube; los pasos de solicitud varían por distribuidora.</p>",
+  "src": [
+   [
+    "YouTube Help — Introduction to Official Artist Channels",
+    "https://support.google.com/youtube/answer/7336634?hl=en"
+   ],
+   [
+    "TuneCore — YouTube Official Artist Channel",
+    "https://support.tunecore.com/hc/en-us/articles/360052873931-YouTube-Official-Artist-Channel"
+   ],
+   [
+    "Ditto Music — How to get an Official Artist Channel on YouTube",
+    "https://dittomusic.com/en/blog/how-to-get-an-official-artist-channel-on-youtube"
+   ]
+  ],
+  "cov": {
+   "f": "1",
+   "bg": "#e3120b",
+   "fg": "#ffffff",
+   "c": "Lanzamiento oficial basta",
+   "e": "YouTube"
+  },
+  "propia": true
+ },
+ {
+  "id": "the-strokes-corona-capital-2026-cierre-71-mil-setlist",
+  "date": "2026-11-23",
+  "hora": "10:45",
+  "sec": "noticias",
+  "tag": "Momento",
+  "min": 3,
+  "title": "The Strokes cierra el Corona Capital 2026 ante 71.000 personas",
+  "titleEn": "The Strokes close Corona Capital 2026 in front of 71,000 fans",
+  "dek": "La banda de Nueva York abrió con “Last Nite”, tocó 20 canciones y terminó con “Ode to the Mets” pasada la medianoche del domingo en Ciudad de México.",
+  "brief": [
+   "The Strokes cerró el domingo 22 de noviembre la última noche del Corona Capital 2026 en Ciudad de México.",
+   "Las crónicas calculan unas 71.000 personas frente al escenario; el show abrió con “Last Nite” y cerró con “Ode to the Mets”.",
+   "Julian Casablancas bromeó con el público y le pidió al bajista Nikolai Fraiture que hablara en español por él."
+  ],
+  "en": "The Strokes closed the final night of Corona Capital 2026 in Mexico City on Sunday, playing to roughly 71,000 people according to local reports. The New York band opened with “Last Nite” and wrapped a 20-song set with “Ode to the Mets” after midnight, with a loose, joking Julian Casablancas at the mic.",
+  "body": "<p class=\"lede\">The Strokes cerró el domingo 22 de noviembre el Corona Capital 2026, en el Autódromo Hermanos Rodríguez de Ciudad de México. Excélsior y Sol de Quintana Roo calcularon 71.000 personas frente al escenario; Pólvora habló de más de 70.000.</p><p>El show empezó unos 10 minutos tarde, después de que el público coreara que ya eran las once. Abrió con “Last Nite”, siguió con “The Adults Are Talking” y “Soma”, y terminó pasada la medianoche con “Ode to the Mets”.</p><h2>Cómo fue el concierto</h2><p>Según el repertorio que publicó Pólvora, la banda tocó 20 canciones. Hubo clásicos de sus primeros discos, como “Hard to Explain”, “Someday”, “Reptilia” y “New York City Cops”, y temas de <em>The New Abnormal</em>, como “Selfless” y “Call It Fate, Call It Karma”.</p><p>“Take It or Leave It” sonó como si fuera la última. La banda volvió al escenario con “You Only Live Once”, “Meet Me in the Bathroom” y “Ode to the Mets”, coinciden Excélsior y Sol de Quintana Roo.</p><ul class=\"list\"><li><span>Abrió</span><span>“Last Nite”</span></li><li><span>Cerró la primera parte</span><span>“Take It or Leave It”</span></li><li><span>Regreso</span><span>“You Only Live Once”</span></li><li><span>Cerró</span><span>“Ode to the Mets”</span></li><li><span>Canciones</span><span>20</span></li></ul><h2>Lo que dijo Casablancas</h2><p>Julian Casablancas salió con lentes oscuros y un abrigo negro largo. Después de la primera canción soltó “Maldición, esto es muy loco”, según la traducción de Excélsior, y siguió bromeando entre canciones. Admitió que su español era malo y le pidió al bajista Nikolai Fraiture que le hablara al público por él.</p><p>Pólvora contó que Casablancas cambió tiempos y melodías y usó autotune en varias canciones. Para esa crónica, eso es parte del estilo de la banda en vivo, aunque algunos fans esperaban versiones fieles al disco.</p><h2>Por qué importa</h2><p>El ánimo pesó tanto como el repertorio. Excélsior y Sol de Quintana Roo recordaron que la banda llegaba a México después de críticas por su show reciente en Perú, y que aquí encontró a un Casablancas suelto y conversador.</p><p>Fue el cierre de un fin de semana de despedidas y debuts. El viernes <a href=\"#gorillaz-corona-capital-2026-debut-albarn-sheinbaum\" style=\"text-decoration:underline\">Gorillaz debutó en el festival</a> y el sábado <a href=\"#twenty-one-pilots-corona-capital-2026-ultimo-show-pausa\" style=\"text-decoration:underline\">Twenty One Pilots dio su último show por un tiempo</a>. El domingo, antes de The Strokes, tocaron The xx, Johnny Marr y Manic Street Preachers.</p><h2>Qué sigue</h2><p>Con este concierto terminó la edición 2026 del Corona Capital. Ninguna de las crónicas menciona fechas nuevas de The Strokes en México.</p>",
+  "src": [
+   [
+    "Excélsior — The Strokes y el buen humor de Julian Casablancas para cerrar el Corona Capital",
+    "https://www.excelsior.com.mx/espectaculos/the-strokes-y-good-vibe-julian-casablancas-para-cerrar-corona-capital"
+   ],
+   [
+    "Pólvora — The Strokes en el Corona Capital: sentimientos y experiencias inolvidables",
+    "https://polvora.com.mx/2026/11/23/the-strokes-corona-capital-setlist-video/"
+   ],
+   [
+    "Sol de Quintana Roo — The Strokes conquista el Corona Capital con un cierre electrizante",
+    "https://solquintanaroo.mx/the-strokes-conquista-el-corona-capital-con-un-cierre-electrizante/"
+   ],
+   [
+    "MNI Noticias — The Strokes cierran el Corona Capital 2026 (horarios del domingo)",
+    "https://mninoticias.com/the-strokes-cierre-corona-capital-2026-dia-3/"
+   ]
+  ],
+  "cov": {
+   "f": "71<br>mil",
+   "bg": "#0a0a0a",
+   "fg": "#ffd400",
+   "c": "Personas en el cierre",
+   "e": "The Strokes"
+  },
+  "minuto": [
+   "The Strokes cerró el Corona Capital 2026 ante unas 71.000 personas en Ciudad de México.",
+   "The Strokes closed Corona Capital 2026 before about 71,000 fans."
+  ],
+  "peso": 2,
+  "propia": false
+ },
+ {
   "id": "carolina-durante-tres-canciones-cuarto-disco",
   "date": "2026-11-22",
   "hora": "13:35",
