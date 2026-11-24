@@ -1,5 +1,52 @@
 [
  {
+  "id": "pal-norte-2027-cartel-24-noviembre-fechas-boletos",
+  "date": "2026-11-24",
+  "hora": "03:40",
+  "sec": "noticias",
+  "tag": "Agenda",
+  "min": 3,
+  "title": "Pa'l Norte 2027 revela su cartel este 24 de noviembre: fechas y boletos",
+  "titleEn": "Pa'l Norte 2027 unveils its lineup on Nov. 24: dates and tickets",
+  "dek": "El festival de Monterrey celebra 15 años del 26 al 28 de marzo de 2027 en el Parque Fundidora. La hora del anuncio aún no está confirmada.",
+  "brief": [
+   "Tecate Pa'l Norte dará a conocer su cartel 2027 el martes 24 de noviembre por sus redes sociales.",
+   "El festival será el 26, 27 y 28 de marzo de 2027 en el Parque Fundidora de Monterrey, en su edición número 15.",
+   "La organización no ha dicho a qué hora sale el cartel; el abono tempranero se vendió antes del anuncio."
+  ],
+  "en": "Monterrey's Tecate Pa'l Norte festival is set to reveal its 2027 lineup on Tuesday, Nov. 24, through its social channels, though organizers have not given a time. The 15th edition runs March 26-28, 2027, at Parque Fundidora, and early three-day passes went on sale before any artist was announced.",
+  "body": "<p>Tecate Pa'l Norte, el festival más grande de Monterrey, revela este martes 24 de noviembre de 2026 el cartel de su edición 2027. Será la número 15 y se hará el 26, 27 y 28 de marzo en el Parque Fundidora, la misma sede de siempre.</p><p>La organización no ha confirmado la hora del anuncio. Infobae y SDP Noticias reportan que la fecha está fijada, pero que nadie del festival ha dicho a qué hora saldrá el cartel; algunas versiones del sector hablan del mediodía, sin confirmación oficial.</p><h2>¿Dónde se va a ver el cartel?</h2><p>El anuncio llegará por los canales digitales del festival, según La Lista e Infobae. El festival compartió la fecha con un arte oficial, de acuerdo con Monterrey Rock, pero no adelantó ningún nombre. Hasta que salga el cartel, las listas de artistas que circulan en redes son solo especulación.</p><h2>¿Cuánto cuestan los boletos?</h2><p>El Abono Tempranero, válido para los tres días, salió a la venta antes de conocerse el cartel. Monterrey Rock reporta que en Ticketmaster arrancaba en 4.820 pesos más cargos en zona General. La Lista detalla el resto de las zonas de esa primera fase:</p><ul class=\"list\"><li><span>General</span><span>$4.820 MXN</span></li><li><span>General Plus</span><span>$5.975 MXN</span></li><li><span>Ascendente</span><span>$7.480 MXN</span></li><li><span>VIP GNP</span><span>$10.105 MXN</span></li></ul><p>Según La Lista, la preventa exclusiva fue para clientes de Hey Banco y esa primera fase ya terminó. Las nuevas fechas de venta general y de boletos por día se esperan después del anuncio del cartel.</p><h2>Contexto: 15 años en el Parque Fundidora</h2><p>Pa'l Norte lo organiza OCESA con Live Nation, la misma empresa detrás del <a href=\"#corona-capital-2026-horarios-por-dia\" style=\"text-decoration:underline\">Corona Capital</a>, que cerró la semana pasada con <a href=\"#the-strokes-corona-capital-2026-cierre-71-mil-setlist\" style=\"text-decoration:underline\">The Strokes ante 71.000 personas</a>. El festival regio mezcla rock, pop, reguetón, electrónica, hip hop y regional mexicano en varios escenarios a la vez.</p><p>Sus carteles recientes muestran el tamaño de los nombres que suele traer. En 2025 encabezaron Olivia Rodrigo y Justin Timberlake, y en 2026 Guns N' Roses estuvo entre los principales, según Infobae y La Lista. Para el aniversario, La Lista anticipa más de 150 artistas.</p><blockquote>Comprar el abono antes del cartel es una apuesta por la marca del festival, no por un artista.</blockquote><h2>Qué sigue</h2><p>El cartel sale hoy. Después del anuncio se esperan las fechas de la venta general y de los boletos por día. El Coro actualizará esta nota con la lista de artistas cuando el festival la publique.</p>",
+  "src": [
+   [
+    "Infobae — Tecate Pal Norte 2027: cuándo se revelará el esperado cartel del festival",
+    "https://www.infobae.com/mexico/2026/11/18/tecate-pal-norte-2027-cuando-se-revelara-el-esperado-cartel-del-festival/"
+   ],
+   [
+    "SDP Noticias — Tecate Pa’l Norte 2027 anuncia fecha para revelar su cartel",
+    "https://www.sdpnoticias.com/espectaculos/musica/tecate-pal-norte-2027-anuncia-fecha-para-revelar-su-cartel/"
+   ],
+   [
+    "Monterrey Rock — Tecate Pal Norte 2027: esta es la fecha en que se revela el lineup",
+    "https://monterreyrock.com/2026/11/tecate-pal-norte-2027-anuncio-lineup/"
+   ],
+   [
+    "La Lista — Tecate Pa'l Norte 2027 celebra 15 años: cuándo se anunciará el lineup oficial",
+    "https://la-lista.com/entretenimiento/tecate-pal-norte-2027-celebra-15-anos-cuando-se-anunciara-el-lineup-oficial-y-que-sorpresas-prepara-el-festival-de-monterrey"
+   ]
+  ],
+  "cov": {
+   "f": "XV",
+   "bg": "#ffd400",
+   "fg": "#0a0a0a",
+   "c": "Cartel 2027 · 24 nov",
+   "e": "Tecate Pa'l Norte"
+  },
+  "minuto": [
+   "Pa'l Norte revela hoy su cartel 2027; el festival será del 26 al 28 de marzo.",
+   "Pa'l Norte reveals its 2027 lineup today; the festival runs March 26-28."
+  ]
+ },
+ {
   "id": "shakira-guatemala-2027-estadio-cementos-progreso",
   "date": "2026-11-24",
   "hora": "01:40",
