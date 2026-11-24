@@ -1,5 +1,56 @@
 [
  {
+  "id": "don-toliver-manchester-co-op-live-evacuacion-sustancia",
+  "date": "2026-11-24",
+  "hora": "09:45",
+  "sec": "noticias",
+  "tag": "Momento",
+  "min": 3,
+  "title": "Evacúan a 12.000 personas de un concierto de Don Toliver en Manchester",
+  "titleEn": "12,000 evacuated from Don Toliver concert in Manchester after substance release",
+  "dek": "Una sustancia que la policía creyó gas lacrimógeno dejó 89 personas con síntomas en el Co-op Live; el rapero pasó su show de Londres al 15 de diciembre.",
+  "brief": [
+   "Más de 12.000 personas fueron evacuadas del Co-op Live de Manchester durante el concierto de Don Toliver del domingo 22 de noviembre.",
+   "La policía declaró un incidente mayor tras reportes de una sustancia que al principio creyó gas lacrimógeno; 89 personas tuvieron síntomas y una mujer fue al hospital.",
+   "La sustancia no se ha identificado y no se han reportado arrestos.",
+   "Don Toliver aplazó su concierto del O2 de Londres al 15 de diciembre."
+  ],
+  "en": "More than 12,000 fans were evacuated from Don Toliver's show at Manchester's Co-op Live arena on Sunday night after an unknown substance, first thought to be tear gas, was released in the crowd. Police declared a major incident; 89 people showed eye and respiratory symptoms and one woman was taken to hospital. Toliver moved Monday's London O2 show to Dec. 15.",
+  "body": "<p>Más de 12.000 personas fueron evacuadas del Co-op Live de Manchester, en Inglaterra, la noche del domingo 22 de noviembre, durante el concierto de Don Toliver. La policía de Greater Manchester recibió hacia las 22:00 reportes de gente afectada por una sustancia que al principio creyó gas lacrimógeno, y declaró un incidente mayor para coordinar a los servicios de emergencia, informó The Associated Press (AP).</p><p>Según la actualización de AP, 89 personas presentaron síntomas en los ojos y las vías respiratorias. Una mujer fue llevada al hospital y el resto recibió descontaminación en seco en el lugar. Asistentes describieron tos, ardor en los ojos y un olor fuerte.</p><h2>Qué pasó dentro del recinto</h2><p>Un asistente le contó al <em>Manchester Evening News</em>, citado por AP, que Toliver dejó el escenario y se encendieron las luces. Casi una hora después, un aviso por megafonía dio la función por suspendida por un problema imprevisto. Rolling Stone, citando a la BBC, situó la salida del rapero entre 30 y 40 minutos después de empezar el show.</p><p>La subjefa de policía Steph Parker explicó que la sustancia aún no estaba identificada y pidió a quien se sintiera mal después ir al hospital. Su colega Tom Harding añadió que la policía busca saber qué era, de dónde salió y si hubo un delito. Ninguna de las fuentes reporta arrestos. El Co-op Live dijo que trabaja con la policía para aclarar la causa.</p><h2>Qué dijo Don Toliver y qué pasa con las entradas</h2><p>En sus historias de Instagram, el rapero de Houston anunció que movía su concierto del lunes 23 en el O2 Arena de Londres al 15 de diciembre por lo ocurrido en Manchester. “I just want to make sure everyone is safe”, escribió, y envió sus oraciones a los heridos. Live Nation atribuyó el cambio a retrasos de producción.</p><ul class=\"list\"><li><span>Manchester (22 nov)</span><span>Reembolso automático</span></li><li><span>Londres, O2 (23 nov)</span><span>Pasa al 15 dic; vale la misma entrada</span></li><li><span>Londres, Wembley (24 nov)</span><span>Sin aviso de cambios al cierre de las fuentes</span></li></ul><h2>Contexto</h2><p>El show era parte de la etapa Nitrous de su Octane World Tour. Toliver llega a fin de año con 5 nominaciones a los Grammy 2027, entre ellas <a href=\"#revelacion-2027\" style=\"text-decoration:underline\">Artista Revelación</a>, y con un tema en la banda sonora de <a href=\"#gta-6-album-canciones-latinas-rauw-alejandro-fuerza-regida\" style=\"text-decoration:underline\">GTA 6</a>, según AP.</p><p>El Co-op Live abrió en 2024 y está a unos 3 kilómetros del Manchester Arena, escenario del atentado de 2017 en un concierto de Ariana Grande, recordó AP. Por eso cualquier alerta en un recinto de la ciudad pesa más.</p><h2>Qué sigue</h2><p>La policía todavía debe identificar la sustancia y decir si abre una investigación penal. Queda por confirmar si el show del martes 24 en Wembley sigue en pie.</p>",
+  "src": [
+   [
+    "AP (vía ABC News) — Police evacuate 12,000 from rapper Don Toliver concert after substance release",
+    "https://abcnews.com/International/wireStory/audience-evacuated-don-toliver-concert-after-unknown-substance-138369818"
+   ],
+   [
+    "AP (vía News10) — US rapper Don Toliver postpones London show after Manchester gig evacuation",
+    "https://www.news10.com/news/entertainment/ap-audience-evacuated-from-don-toliver-concert-after-unknown-substance-released-in-the-crowd/"
+   ],
+   [
+    "Rolling Stone — Don Toliver's Manchester Show Evacuated After 'Unknown Substance' Released in Crowd, Postpones London Show",
+    "https://ca.rollingstone.com/music/don-toliver-manchester-show-evacuation-unknown-substance/"
+   ],
+   [
+    "The National News Desk — Thousands evacuated from Don Toliver's UK concert after 'unknown substance' released",
+    "https://komonews.com/news/nation-world/thousands-evacuated-from-don-toliver-uk-concert-after-unknown-substance-released-manchester-major-incident-police-tear-gas-medics-hospital-12000-fans-coop-live"
+   ]
+  ],
+  "cov": {
+   "f": "12.000",
+   "fs": "min(40cqw,360px)",
+   "bg": "#0a0a0a",
+   "fg": "#ffd400",
+   "c": "Evacuados en Manchester",
+   "e": "Don Toliver"
+  },
+  "minuto": [
+   "Evacúan a 12.000 personas de un show de Don Toliver en Manchester por una sustancia.",
+   "12,000 evacuated from Don Toliver's Manchester show after a substance release."
+  ],
+  "peso": 2,
+  "propia": false
+ },
+ {
   "id": "vetusta-morla-2027-conciertos-festivales-fechas",
   "date": "2026-11-24",
   "hora": "08:50",
