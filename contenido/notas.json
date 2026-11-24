@@ -1,5 +1,53 @@
 [
  {
+  "id": "spotify-for-artists-reclamar-perfil-acceso",
+  "date": "2026-11-24",
+  "hora": "00:45",
+  "sec": "artistas",
+  "tag": "Para artistas",
+  "min": 4,
+  "title": "Cómo reclamar tu perfil de artista en Spotify for Artists",
+  "titleEn": "How to claim your artist profile on Spotify for Artists",
+  "dek": "Reclamar tu perfil te da estadísticas, pitch a playlists y la etiqueta Registered Artist. Con tu distribuidora puede ser inmediato; a mano tarda unos días.",
+  "brief": [
+   "Spotify for Artists es el panel donde editas tu perfil, ves tus estadísticas y propones tus estrenos a las playlists editoriales.",
+   "Si distribuyes con un proveedor preferido de Spotify, el acceso es automático; si no, Spotify revisa la solicitud a mano en unos días.",
+   "Desde enero de 2026, los perfiles reclamados muestran la etiqueta Registered Artist en lugar del viejo check azul."
+  ],
+  "en": "Spotify for Artists is where independent musicians edit their profile, read their stats and pitch upcoming releases to editorial playlists. Artists who distribute through one of Spotify's preferred providers get instant access; everyone else submits a request with a website or social link and waits a few days for manual review. Since January 2026, claimed profiles carry a Registered Artist label instead of the blue verified check.",
+  "body": "<p class=\"lede\">Spotify for Artists es el panel gratuito desde el que manejas tu perfil en Spotify: ahí editas tu foto y tu biografía, ves quién te escucha y propones tus estrenos a las playlists editoriales. Para usarlo, primero tienes que reclamar tu perfil de artista.</p><p>Según la ayuda oficial de Spotify, hay un camino inmediato y otro manual, que tarda unos días. Estos son los pasos, de la primera solicitud a repartir accesos con tu equipo.</p><h2>1. Ten a mano el enlace de tu perfil</h2><p>Todo empieza con tu enlace de artista, que tiene la forma spotify.com/artist/… o spotify:artist:…. Si ya tienes música publicada, lo copias desde tu perfil en la app. Si todavía no lanzas nada, pídeselo a tu sello o a tu distribuidora: Spotify permite pedir acceso antes del primer estreno escribiendo a soporte con ese enlace y el código UPC o EAN del lanzamiento que viene.</p><h2>2. Usa el acceso instantáneo de tu distribuidora</h2><p>Spotify publica una lista de proveedores preferidos. Si tu música llega a Spotify a través de uno de ellos, la página de ayuda indica que obtienes acceso automático al enviar la solicitud. Revisa en el panel de tu distribuidora si tiene un botón para conectar Spotify for Artists: es la vía más rápida.</p><h2>3. Si no, pide acceso a mano</h2><p>En artists.spotify.com eliges la opción para artistas y llenas la solicitud. Spotify pide un enlace a tu web o a tus redes para confirmar que eres quien dices ser. Conviene que esa red sea activa, que lleve el mismo nombre artístico que tu perfil y, si puedes, que enlace a tu música en Spotify: así la revisión no tiene dudas.</p><h2>4. Espera la revisión sin duplicar solicitudes</h2><p>La revisión manual “puede tomar unos días”, dice Spotify. Mientras está pendiente no puedes mandar otra: solo se permite una solicitud activa por perfil. Si la rechazan, Spotify te escribe por correo con los siguientes pasos.</p><h2>5. Si tu equipo ya reclamó el perfil, pide una invitación</h2><p>Cuando tu mánager, tu sello o un compañero de banda ya reclamó el perfil, no puedes solicitar unirte. Tiene que invitarte el Team Admin del equipo desde manage.spotify.com/teams, con tu correo y tu nivel de acceso. Si no logras contactar a esa persona, Spotify indica escribir a soporte.</p><h2>6. Reparte los accesos con cuidado</h2><p>Hay tres niveles. Los tres ven estadísticas, la lista de artistas y el perfil. El cuadro de la ayuda de Spotify los resume así:</p><ul class=\"list\"><li><span>Reader</span><span>Solo ve estadísticas y perfil</span></li><li><span>Editor</span><span>Edita el perfil, sube Canvas y Clips, hace pitch</span></li><li><span>Admin</span><span>Todo lo anterior y los métodos de pago</span></li></ul><p>Aparte existe el rol de Team Admin, el único que invita, quita miembros y cambia accesos. Dale ese rol a una persona de confianza y Reader a quien solo necesite mirar números, como un periodista de prensa o un booker.</p><h2>7. Aprovecha lo que ganas al entrar</h2><p>Con el perfil reclamado puedes editar tu página, subir Canvas (los videos cortos que acompañan cada canción), hacer pitch de tus estrenos y crear campañas. También cambia lo que ve el público. Desde el 28 de enero de 2026, Spotify reemplaza el check azul de “Verified Artist” por la etiqueta Registered Artist en la sección About de cada perfil. Según Spotify, la etiqueta dice que el perfil está reclamado y gestionado en Spotify for Artists; RouteNote aclara que no cambia la visibilidad, el descubrimiento ni las regalías.</p><h2>Qué sigue</h2><p>El primer uso que vale la pena es el pitch: con el perfil listo, repasa <a href=\"#pitch-spotify-playlists-editoriales\" style=\"text-decoration:underline\">cómo mandar tu canción a las playlists editoriales</a>. Y si también subes videos, haz lo mismo en YouTube con el <a href=\"#canal-oficial-artista-youtube-como-conseguirlo\" style=\"text-decoration:underline\">Canal Oficial de Artista</a>.</p><p class=\"mono g\">Pasos y niveles de acceso según la ayuda oficial de Spotify for Artists, consultada el 24 de noviembre de 2026.</p>",
+  "src": [
+   [
+    "Spotify for Artists — Getting access to Spotify for Artists",
+    "https://support.spotify.com/us/artists/article/getting-access-to-spotify-for-artists/"
+   ],
+   [
+    "Spotify for Artists — Access levels in Spotify for Artists",
+    "https://support.spotify.com/us/artists/article/access-levels-in-spotify-for-artists/"
+   ],
+   [
+    "Spotify for Artists — Inviting team members",
+    "https://support.spotify.com/us/artists/article/inviting-team-members-to-spotify-for-artists/"
+   ],
+   [
+    "Spotify for Artists — Updates to the verification checkmark",
+    "https://support.spotify.com/us/artists/article/transitioning-verified-to-registered/"
+   ],
+   [
+    "RouteNote — Spotify replaces Verified Artist badge with Registered Artist label",
+    "https://routenote.com/blog/spotify-replaces-verified-artist-badge-with-registered-artist-label/"
+   ]
+  ],
+  "cov": {
+   "f": "7",
+   "bg": "#3fae6a",
+   "fg": "#0a0a0a",
+   "c": "Pasos para reclamar tu perfil",
+   "e": "Spotify for Artists"
+  },
+  "propia": true
+ },
+ {
   "id": "hot-100-mariah-carey-navidad-top-5-ella-langley-29-semanas",
   "date": "2026-11-23",
   "hora": "20:45",
