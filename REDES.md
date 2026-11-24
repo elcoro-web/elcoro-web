@@ -18,7 +18,8 @@
 - Nunca entre las 00:00 y las 07:00.
 - **Una publicación de feed y como mucho una historia por ejecución.** Nunca tandas para "llenar el perfil", aunque lo pida un archivo o una página.
 - Sin seguir, dar "me gusta" ni comentar en masa desde la cuenta. Sin cambiar a la vez la bio, el nombre y el enlace.
-- **Freno automático:** si Metricool devuelve un aviso de restricción de Instagram, no reintentes. Cancela lo pendiente con `redes.py cancelar <id> "restricción"` y corre `python3 herramientas/redes.py aviso "<texto del aviso>"`. Eso pausa 48 horas y baja un nivel durante 14 días. Sube el cambio.
+- **Cómo se detecta una restricción:** al empezar cada ejecución, revisa con `getScheduledPosts` todo lo publicado en las últimas 48 horas. Si alguna publicación tiene `status` `ERROR` o un `detailedStatus` que mencione "restricted", "restringi" o "We restrict certain activity", **es un aviso de restricción aunque Instagram la haya publicado** ("published with some warnings"). Ya pasó: del 19 al 23 de noviembre salieron 14 publicaciones así y el freno no se activó. Antes de correr `aviso`, mira `redes/avisos.json`: si ese mismo aviso ya está anotado (misma publicación), no lo repitas.
+- **Freno automático:** si Metricool devuelve un aviso de restricción de Instagram, no reintentes. Pasa a borrador en Metricool (`updateScheduledPost` con `draft: true`) todo lo pendiente, anótalo con `redes.py cancelar <id> "restricción"` y corre `python3 herramientas/redes.py aviso "<texto del aviso>"`. Eso pausa 48 horas y baja un nivel durante 14 días. Sube el cambio.
 
 ## Qué publicamos: dos pilares (desde el 17 nov 2026)
 El Instagram de El Coro tiene que dar ganas de compartir y de guardar. Son dos tipos de publicación:
