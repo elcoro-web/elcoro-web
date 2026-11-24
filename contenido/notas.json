@@ -1,5 +1,53 @@
 [
  {
+  "id": "shakira-guatemala-2027-estadio-cementos-progreso",
+  "date": "2026-11-24",
+  "hora": "01:40",
+  "sec": "noticias",
+  "tag": "Agenda",
+  "min": 3,
+  "title": "Shakira en Guatemala 2027: será en el Estadio Cementos Progreso",
+  "titleEn": "Shakira's 2027 Guatemala show set for Estadio Cementos Progreso",
+  "dek": "La productora CHP Guatemala confirmó la sede del regreso de Shakira tras casi 16 años y dará la fecha y la venta de boletos el miércoles 25 a las 10:00.",
+  "brief": [
+   "Shakira cantará en 2027 en el Estadio Cementos Progreso, en Ciudad de Guatemala.",
+   "La productora CHP Guatemala anunció la sede en un video y dará más detalles el miércoles 25 de noviembre a las 10:00.",
+   "Será su quinto concierto en el país y el primero desde abril de 2011, en el mismo estadio."
+  ],
+  "en": "Shakira's 2027 concert in Guatemala will take place at Estadio Cementos Progreso in Guatemala City, local promoter CHP Guatemala confirmed in a video. The date, ticket prices and on-sale details will be announced Wednesday, Nov. 25, at 10 a.m. It will be her fifth show in the country and her first since April 2011, at the same stadium.",
+  "body": "<p>Shakira cantará en 2027 en el Estadio Cementos Progreso, en Ciudad de Guatemala. La productora CHP Guatemala confirmó la sede el lunes 23 de noviembre con un video en sus redes, y anunció que el miércoles 25 a las 10:00 dará a conocer más detalles del concierto.</p>\n<p>La fecha es parte de la etapa latinoamericana de su <em>Las Mujeres Ya No Lloran World Tour</em>. La cantante ya había incluido a Guatemala en esa nueva ronda en sus historias de Instagram, pero hasta ahora no se sabía dónde sería el show.</p>\n<h2>¿Cuándo es y cuánto cuestan los boletos?</h2>\n<p>Todavía no se sabe. Ni la productora ni los medios guatemaltecos han publicado la fecha, los precios, la boletera ni el calendario de preventa. Todo eso debería llegar con el anuncio del miércoles 25.</p>\n<p>Como referencia, en Costa Rica la gira llega el domingo 31 de enero al Estadio Nacional, con entradas de ₡34.500 a ₡124.500: aquí están <a href=\"#shakira-costa-rica-2027-fecha-precios-preventa\" style=\"text-decoration:underline\">los precios y la preventa de Costa Rica</a>. En Caracas, las fechas son el 16 y 17 de enero, con una preventa que dejó <a href=\"#shakira-venezuela-2027-caracas-fechas-precios-boletas\" style=\"text-decoration:underline\">quejas de los fans</a>.</p>\n<h2>Contexto: su quinta visita a Guatemala</h2>\n<p>El Estadio Cementos Progreso es el mismo donde cantó la última vez, el 9 de abril de 2011, con la gira <em>Sale el Sol</em>. Son casi 16 años sin venir al país. Estas son sus visitas anteriores, según Infobae y Soy502:</p>\n<ul class=\"list\"><li><span>29 nov. 1996</span><span>Pies Descalzos Tour</span></li><li><span>17 abr. 2000</span><span>Tour Anfibio, Estadio del Ejército</span></li><li><span>4 nov. 2006</span><span>Tour Fijación Oral, Estadio Mateo Flores</span></li><li><span>9 abr. 2011</span><span>Sale el Sol, Estadio Cementos Progreso</span></li><li><span>2027</span><span>Las Mujeres Ya No Lloran, Estadio Cementos Progreso</span></li></ul>\n<p>Para el público centroamericano, la noticia cierra un vacío largo: Guatemala, Costa Rica y Panamá estaban fuera de sus giras desde hace más de una década. La nueva etapa también pasa por Brasil, Venezuela y Puerto Rico.</p>\n<h2>Qué sigue</h2>\n<p>El miércoles 25 de noviembre a las 10:00, CHP Guatemala publicará la información pendiente. El Coro actualizará esta nota con la fecha, los precios y la preventa en cuanto se anuncien.</p>",
+  "src": [
+   [
+    "Infobae — Shakira regresa a Guatemala tras casi 16 años de ausencia y la sede de su concierto ya fue confirmada",
+    "https://www.infobae.com/guatemala/2026/11/23/shakira-regresa-a-guatemala-tras-casi-16-anos-de-ausencia-y-la-sede-de-su-concierto-ya-fue-confirmada-oficialmente/"
+   ],
+   [
+    "Emisoras Unidas — Shakira en Guatemala: lugar de su próximo concierto",
+    "https://emisorasunidas.com/farandula/2026/11/23/shakira-en-guatemala-lugar-de-su-proximo-concierto/"
+   ],
+   [
+    "Soy502 — Así fue el último concierto de Shakira en Guatemala",
+    "https://www.soy502.com/articulo/asi-fue-ultimo-concierto-shakira-guatemala-hace-15-anos-153"
+   ],
+   [
+    "Soy502 — Shakira confirma concierto en Guatemala en redes sociales",
+    "https://www.soy502.com/articulo/shakira-confirma-concierto-guatemala-redes-sociales-24039"
+   ]
+  ],
+  "cov": {
+   "f": "2027",
+   "bg": "#1d3ea0",
+   "fg": "#ffd400",
+   "c": "Regresa a Guatemala",
+   "e": "Shakira"
+  },
+  "minuto": [
+   "Shakira cantará en 2027 en el Estadio Cementos Progreso; la fecha se anuncia el miércoles.",
+   "Shakira's 2027 Guatemala show is set for Estadio Cementos Progreso; date coming Wednesday."
+  ],
+  "propia": false
+ },
+ {
   "id": "spotify-for-artists-reclamar-perfil-acceso",
   "date": "2026-11-24",
   "hora": "00:45",
