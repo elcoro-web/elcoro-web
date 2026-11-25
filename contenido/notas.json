@@ -1,5 +1,49 @@
 [
  {
+  "id": "maluma-loco-x-volver-acoustic-sessions-canciones",
+  "date": "2026-11-25",
+  "hora": "01:55",
+  "sec": "lanzamientos",
+  "tag": "Lanzamiento",
+  "min": 3,
+  "title": "Maluma presenta Loco X Volver Acoustic Sessions, grabado en Guarne",
+  "titleEn": "Maluma releases Loco X Volver Acoustic Sessions, recorded at his home in Guarne",
+  "dek": "Son 7 canciones de su séptimo disco en guitarra y voz, grabadas en su casa de Antioquia mientras su gira de 2027 suma fechas en Bogotá, Madrid y Santiago.",
+  "brief": [
+   "Maluma presentó Loco X Volver Acoustic Sessions, con 7 canciones de su disco más reciente en versión acústica.",
+   "Lo grabó en su casa de Guarne, Antioquia, acompañado solo por el guitarrista Santi Torres.",
+   "Llega mientras su gira mundial de 2027 agota fechas y abre funciones extra en Bogotá, Madrid y Santiago."
+  ],
+  "en": "Maluma has released Loco X Volver Acoustic Sessions, seven stripped-down versions of songs from his latest album, recorded at his home in Guarne, Colombia, with guitarist Santi Torres. The set includes \"Pa' la Seca\" and \"Loco X Volver\" and arrives as his 2027 world tour adds extra dates in Bogotá, Madrid and Santiago.",
+  "body": "<p>Maluma presentó <em>Loco X Volver Acoustic Sessions</em>, siete versiones acústicas de canciones de su disco <em>Loco X Volver</em>. Las grabó en su casa de Guarne, en Antioquia, con un solo acompañante: el guitarrista Santi Torres.</p>\n<p>No son canciones nuevas. Son los mismos temas sin la producción original, con la guitarra al frente, según Minuto30. El Heraldo e Infobae coinciden en la lista de canciones y en el lugar de grabación.</p>\n<h2>¿Qué canciones trae?</h2>\n<ul class=\"list\"><li><span>1</span><span>“Loco X Volver”</span></li><li><span>2</span><span>“De Bar en Bar”</span></li><li><span>3</span><span>“Tu Recuerdo”</span></li><li><span>4</span><span>“Con el Corazón”</span></li><li><span>5</span><span>“Pa' la Seca”</span></li><li><span>6</span><span>“El Vallenato”</span></li><li><span>7</span><span>“Ganosa”</span></li></ul>\n<p>“Pa' la Seca”, su canción con Ryan Castro, ganó Mejor Colaboración Urbana en los LOS40 Music Awards 2026 de Barcelona, la misma noche que <a href=\"#rosalia-los40-music-awards-2026-ganadores\" style=\"text-decoration:underline\">Rosalía se llevó cuatro premios</a>. Allí Maluma también ganó Mejor Colaboración Latina por “Apambichao”, con Manuel Turizo.</p>\n<h2>Contexto: un disco que ahora sale de gira</h2>\n<p><em>Loco X Volver</em> es el séptimo álbum de estudio de Maluma. Salió el 14 de mayo con 14 canciones y lo presentó con un concierto gratis en la Plaza Botero de Medellín ante más de 8.000 personas, según Infobae.</p>\n<p>Las sesiones acústicas llegan en plena venta de su <em>Loco X Volver World Tour 2027</em>, que anunció el 6 de noviembre con una sorpresa en el Aeropuerto Internacional de Miami. La gira suma más de 60 ciudades entre 2027 y 2028. Ya contamos <a href=\"#maluma-gira-2027-fechas-ciudades-boletas\" style=\"text-decoration:underline\">las fechas y ciudades confirmadas</a>; desde entonces se agregaron funciones:</p>\n<ul class=\"list\"><li><span>Bogotá — El Corazón de Bogotá Arena</span><span>5, 6 y 7 feb (agotado) y 9 feb</span></li><li><span>Buenos Aires — Movistar Arena</span><span>19 y 20 feb</span></li><li><span>Córdoba — Estadio Instituto</span><span>5 mar</span></li><li><span>Santiago — Santander Arena</span><span>22 abr (agotado) y 23 abr</span></li><li><span>Madrid — Movistar Arena</span><span>2 funciones agotadas y 14 jul</span></li></ul>\n<p>En Madrid, las dos primeras funciones se vendieron en unos 90 minutos, de acuerdo con El Heraldo e Infobae. En Bogotá, Minuto30 reporta además un segundo escenario en la zona de platea, sin más detalles por ahora.</p>\n<h2>Qué sigue</h2>\n<p>La gira arranca el 5 de febrero de 2027 en Bogotá. Las fechas en México, Estados Unidos y el resto de Europa siguen sin días ni recintos anunciados.</p>",
+  "src": [
+   [
+    "Infobae — Maluma dejó el reguetón a un lado para presentar temas de Loco X Volver en formato acústico",
+    "https://www.infobae.com/colombia/2026/11/24/maluma-dejo-el-regueton-a-un-lado-para-presentar-algunos-de-los-temas-de-loco-x-volver-en-formato-acustico-asi-grabo-en-su-casa-en-guarne/"
+   ],
+   [
+    "El Heraldo — Maluma presenta Loco X Volver Acoustic Sessions en medio del anuncio de su gira mundial",
+    "https://www.elheraldo.co/sociedad/2026/11/23/maluma-presenta-loco-x-volver-acoustic-sessions-en-medio-del-anuncio-de-su-gira-mundial/"
+   ],
+   [
+    "Minuto30 — Maluma lanza versión acústica de Loco X Volver y prepara un segundo escenario para Bogotá",
+    "https://www.minuto30.com/maluma-lanza-version-acustica-de-loco-x-volver-y-prepara-un-segundo-escenario-para-bogota/1734223/"
+   ]
+  ],
+  "cov": {
+   "f": "7",
+   "bg": "#0f6b3f",
+   "fg": "#ffffff",
+   "c": "Canciones acústicas",
+   "e": "Maluma"
+  },
+  "minuto": [
+   "Maluma presenta 7 versiones acústicas de Loco X Volver, grabadas en su casa de Guarne.",
+   "Maluma drops seven acoustic takes from Loco X Volver, recorded at home."
+  ],
+  "propia": false
+ },
+ {
   "id": "apple-music-for-artists-reclamar-perfil",
   "date": "2026-11-25",
   "hora": "00:50",
