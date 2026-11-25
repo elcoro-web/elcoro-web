@@ -1,5 +1,45 @@
 [
  {
+  "id": "tidal-prohibe-musica-ia-9-diciembre",
+  "date": "2026-11-25",
+  "hora": "07:55",
+  "sec": "industria",
+  "tag": "Industria",
+  "min": 3,
+  "title": "Tidal prohíbe la música hecha solo con IA desde el 9 de diciembre",
+  "titleEn": "Tidal bans fully AI-generated music starting Dec. 9",
+  "dek": "La plataforma borrará las canciones generadas por completo con IA: el 43 % de lo que le llegó en 90 días era de ese tipo. Lo hecho con ayuda de IA sigue.",
+  "brief": [
+   "Tidal anunció el 24 de noviembre que rechazará y quitará toda canción generada por completo con inteligencia artificial.",
+   "La medida empieza el 9 de diciembre; las canciones hechas con ayuda de herramientas de IA siguen permitidas.",
+   "Según Tidal, el 43 % de las canciones que recibió en los últimos 90 días eran 100 % IA."
+  ],
+  "en": "Tidal will reject and remove any wholly AI-generated track starting Dec. 9, the streaming service announced Nov. 24. AI-assisted music is still allowed. Tidal says 43% of tracks delivered in the last 90 days were fully AI, and its 27 million AI-tagged tracks, 6.3% of the catalog, mostly have zero streams.",
+  "body": "<p>Tidal dejará de aceptar canciones generadas por completo con inteligencia artificial (IA) y quitará las que ya tiene a partir del 9 de diciembre. La plataforma lo anunció el martes 24 de noviembre en X, en una publicación que Music Business Worldwide y TechCrunch recogieron el mismo día.</p><p>La razón es el volumen. Según Tidal, el 43 % de las canciones que le enviaron las distribuidoras en los últimos 90 días eran 100 % IA, y el 6 de noviembre esa proporción pasó del 60 % en un solo día. La empresa también contó que el 94 % de las canciones con su etiqueta de IA se atribuyen a Suno.</p><h2>Qué se prohíbe y qué no</h2><p>La regla apunta a lo hecho solo con IA. Las canciones en las que un artista usó herramientas de IA, sin que la máquina sea la única autora, siguen permitidas. Las distribuidoras ya no podrán entregar música totalmente generada, y Tidal rechazará cualquier envío cuyos metadatos digan que se hizo solo con IA.</p><p>Para detectarla, Music Business Worldwide informó que Tidal trabaja con Ircam Amplify, la filial comercial del instituto francés IRCAM. Tidal escribió en X que siempre peleará para que los artistas “cobren más”.</p><h2>Contexto: de la etiqueta a la prohibición</h2><p>En junio de 2026, Tidal empezó a marcar la música 100 % IA y le quitó la posibilidad de generar regalías. Hoy tiene unos 27 millones de canciones con esa marca, el 6,3 % de su catálogo, y el 96 % no tuvo ni una reproducción en los últimos tres meses. También lleva más de 65.000 canciones bajadas de forma automática por posible suplantación del nombre de un artista.</p><ul class=\"list\"><li><span>Tidal</span><span>Prohíbe y borra desde el 9 dic.</span></li><li><span>Bandcamp</span><span>Prohibió la música hecha total o en gran parte con IA en enero de 2026</span></li><li><span>Deezer</span><span>La saca de recomendaciones y playlists editoriales; no la prohíbe</span></li><li><span>Spotify y YouTube Music</span><span>La etiquetan, sin filtrarla ni prohibirla</span></li></ul><p>Deezer ha publicado las cifras más detalladas del fenómeno. En junio recibía casi 90.000 canciones 100 % IA al día, más de la mitad de lo nuevo en los días pico. Esa música representa entre el 1 % y el 3 % de sus reproducciones, pero hasta el 85 % de esas escuchas fueron fraudulentas en 2025.</p><h2>Qué significa para artistas independientes</h2><p>Si usas IA para una parte del proceso, como una base, una voz guía o la mezcla, tu música puede seguir en Tidal. Lo clave es llenar bien los datos de IA al subirla con tu distribuidora, porque Tidal leerá esos metadatos para decidir. Herramientas como <a href=\"#suno-bridge\" style=\"text-decoration:underline\">Suno Bridge</a>, que generan partes dentro de una sesión, entran en esa zona de uso asistido.</p><p>La medida también protege tu nombre: las suplantaciones son parte de lo que Tidal está limpiando. Tener tu perfil verificado en cada plataforma, como explicamos en la guía para <a href=\"#spotify-for-artists-reclamar-perfil-acceso\" style=\"text-decoration:underline\">reclamar tu perfil en Spotify for Artists</a>, ayuda a detectar canciones falsas a tu nombre.</p><h2>Qué sigue</h2><p>La limpieza empieza el 9 de diciembre. TechCrunch calcula que Tidal habrá quitado más de 29 millones de canciones antes de fin de año. Falta saber si Spotify, Apple Music o YouTube Music pasan de la etiqueta a la prohibición.</p>",
+  "src": [
+   [
+    "Music Business Worldwide — Tidal bans fully AI-generated music from its platform",
+    "https://www.musicbusinessworldwide.com/tidal-bans-fully-ai-generated-music-from-its-platform/"
+   ],
+   [
+    "TechCrunch — Tidal to ban and remove millions of AI-generated tracks as AI slop inundates music streaming",
+    "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/"
+   ]
+  ],
+  "cov": {
+   "f": "43 %",
+   "bg": "#0a0a0a",
+   "fg": "#ffd400",
+   "c": "De lo recibido era 100 % IA",
+   "e": "Tidal"
+  },
+  "minuto": [
+   "Tidal prohíbe y borra la música hecha solo con IA desde el 9 de diciembre.",
+   "Tidal bans fully AI-generated music from Dec. 9."
+  ],
+  "propia": false
+ },
+ {
   "id": "mad-cool-zurich-2027-grada-aforo-fechas-cartel",
   "date": "2026-11-25",
   "hora": "06:50",
