@@ -1,5 +1,53 @@
 [
  {
+  "id": "mad-cool-zurich-2027-grada-aforo-fechas-cartel",
+  "date": "2026-11-25",
+  "hora": "06:50",
+  "sec": "noticias",
+  "tag": "Agenda",
+  "min": 3,
+  "title": "Mad Cool 2027 se llamará Mad Cool Zurich y suma una grada gratis",
+  "titleEn": "Mad Cool 2027 becomes Mad Cool Zurich and adds a free grandstand",
+  "dek": "El festival de Madrid se llamará Mad Cool Zurich, será del 7 al 10 de julio de 2027 con 57.000 personas por día y revela su cartel antes del fin de semana.",
+  "brief": [
+   "Mad Cool pasa a llamarse Mad Cool Zurich, con su primer patrocinador de nombre.",
+   "Tendrá una grada gratuita frente al escenario principal, inspirada en la residencia de Shakira en el mismo recinto.",
+   "La edición de 2027 será del 7 al 10 de julio en Villaverde y el cartel se conocerá esta semana."
+  ],
+  "en": "Madrid's Mad Cool festival will be called Mad Cool Zurich in 2027, its first title sponsor. The July 7-10 edition adds a free grandstand at the main stage, modeled on Shakira's residency at the same site, with daily capacity of 57,000. The lineup is due before the weekend.",
+  "body": "<p>El festival Mad Cool de Madrid se llamará Mad Cool Zurich desde su edición de 2027, que será del 7 al 10 de julio en el recinto Iberdrola Music de Villaverde. Su director, Javier Arnáiz, lo anunció el 24 de noviembre en una rueda de prensa en Madrid, junto con una grada gratuita frente al escenario principal.</p><p>Es la primera vez en la historia del festival que una marca pone su nombre al evento. Según Jenesaispop, el acuerdo con la aseguradora Zurich es por cinco años. El aforo máximo será de 57.000 personas por día: unas 34.000 en la pista y el resto en la grada, de acuerdo con MariskalRock.</p><h2>Qué cambia en el recinto</h2><ul class=\"list\"><li><span>Nombre</span><span>Mad Cool Zurich</span></li><li><span>Fechas</span><span>7 al 10 jul. 2027</span></li><li><span>Aforo diario</span><span>57.000 personas</span></li><li><span>Escenarios</span><span>6 (2 principales en paralelo)</span></li><li><span>Pantallas</span><span>80 metros de largo</span></li><li><span>Zona VIP nueva</span><span>The Garden</span></li></ul><p>La grada se levanta en el mismo lugar donde estuvo la de los conciertos de Shakira en ese recinto. No tiene costo extra, se llena hasta completar el aforo y tendrá zonas propias de comida y descanso. Arnáiz contó a Jenesaispop que “Shakira nos dio una visión de lo que se puede llegar a hacer”.</p><p>El festival quita la carpa de música electrónica: ese espacio pasa a ser un escenario de bandas, y suma dos escenarios para talento emergente. También promete más sombra, zonas de descanso y medidas contra el calor de julio. “No hay nada ni similar a lo que queremos plantear”, afirmó el director, según MariskalRock.</p><h2>Por qué importa</h2><p>La residencia de Shakira en Madrid demostró que un recinto de festival puede funcionar como un estadio, con público sentado y de pie. Mad Cool copia ese formato para competir por un público que, según su director, cada vez tiene menos giras para elegir.</p><p>Arnáiz describió 2026 como “un año complicado” para contratar: muchas bandas no salen de gira y otras solo tocan en estadios, explicó a El Español. Puso como ejemplo a Radiohead, un deseo del festival desde hace años que, dijo, posiblemente no haga festivales. El evento cumple diez años de trayectoria.</p><p>El anuncio llega en plena temporada de carteles. En México, <a href=\"#pal-norte-2027-cartel-travis-scott-post-malone-charli-xcx\" style=\"text-decoration:underline\">Pa'l Norte 2027 ya reveló sus cabezas de cartel</a>, y en España bandas como <a href=\"#vetusta-morla-2027-conciertos-festivales-fechas\" style=\"text-decoration:underline\">Vetusta Morla ya tienen su verano de festivales</a> confirmado.</p><h2>Qué sigue</h2><p>En la rueda de prensa no se anunció ningún artista. Arnáiz aseguró que el cartel se conocerá antes de este fin de semana, el 28 y 29 de noviembre, y lo describió como “bastante fuerte”. Precios y venta de entradas todavía no se han anunciado.</p>",
+  "src": [
+   [
+    "MariskalRock — Mad Cool se renueva para 2027 con Zurich como patrocinador y una grada",
+    "https://mariskalrock.com/actualidad/mad-cool-se-renueva-para-2027-con-zurich-como-patrocinador-una-grada-en-su-espacio-principal-y-mejoras-en-sus-instalaciones-no-hay-nada-similar-a-lo-que-queremos-plantear/"
+   ],
+   [
+    "Jenesaispop — Mad Cool anuncia novedades, inspirado por el Estadio Shakira",
+    "https://jenesaispop.com/2026/11/24/534469/mad-cool-anuncia-novedades-inspirado-por-el-estadio-shakira/"
+   ],
+   [
+    "El Español — El Mad Cool se reinventa tras un año complicado",
+    "https://www.elespanol.com/madrid/ocio/20261124/mad-cool-reinventa-ano-complicado-cambia-nombre-copia-formato-shakira-anade-zona-vip/1003744469812_0.html"
+   ],
+   [
+    "DOD Magazine — Mad Cool 2027 confirma fechas",
+    "https://www.dodmagazine.es/mad-cool-2027-fechas/"
+   ]
+  ],
+  "cov": {
+   "f": "57<br>mil",
+   "bg": "#1d3ea0",
+   "fg": "#ffd400",
+   "c": "Personas por día",
+   "e": "Mad Cool Zurich 2027"
+  },
+  "minuto": [
+   "Mad Cool será Mad Cool Zurich en 2027, con grada gratis y cartel antes del fin de semana.",
+   "Mad Cool becomes Mad Cool Zurich in 2027, adding a free grandstand; lineup due this week."
+  ],
+  "propia": false
+ },
+ {
   "id": "u2-gira-2027-norteamerica-fechas-preventa-boletas",
   "date": "2026-11-25",
   "hora": "04:30",
