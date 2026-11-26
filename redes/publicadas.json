@@ -950,5 +950,23 @@
   "cancelada": true,
   "motivo": "restricción de Instagram: pasada a borrador en Metricool el 24 nov",
   "registrada": "2026-11-24 09:36"
+ },
+ {
+  "id": "andy-taylor-duran-duran-muere-65-anos",
+  "redes": [
+   "instagram"
+  ],
+  "programada": "2026-11-26T10:20:00-05:00",
+  "metricool": "https://app.metricool.com/planner/calendar?blogId=8183189&openWithPostUuid=2252196670388194832",
+  "registrada": "2026-11-26 09:52"
+ },
+ {
+  "id": "andy-taylor-duran-duran-muere-65-anos",
+  "redes": [
+   "instagram-story"
+  ],
+  "programada": "2026-11-26T10:10:00-05:00",
+  "metricool": "https://app.metricool.com/planner/calendar?blogId=8183189&openWithPostUuid=937474564654778402",
+  "registrada": "2026-11-26 09:52"
  }
 ]
