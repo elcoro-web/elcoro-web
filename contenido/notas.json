@@ -1,5 +1,45 @@
 [
  {
+  "id": "letra-cancion-spotify-musixmatch-como-agregar",
+  "date": "2026-11-26",
+  "hora": "00:50",
+  "sec": "artistas",
+  "tag": "Para artistas",
+  "min": 4,
+  "title": "Cómo poner la letra de tu canción en Spotify con Musixmatch",
+  "titleEn": "How to get your song lyrics on Spotify through Musixmatch",
+  "dek": "Spotify no recibe letras de tu distribuidora: las toma de Musixmatch. Verificarte es gratis y la revisión tarda unos días hábiles.",
+  "brief": [
+   "Las letras que ves en Spotify las provee Musixmatch, salvo en Japón, donde las da PetitLyrics.",
+   "Para subir y sincronizar las tuyas necesitas una cuenta verificada en Musixmatch Pro, que tiene un plan gratuito.",
+   "Los cambios tardan unos días en aparecer en Spotify y la letra debe estar transcrita por ti, completa y sin atajos como x2."
+  ],
+  "en": "Spotify doesn't take lyrics from your distributor: they come from Musixmatch (PetitLyrics in Japan). Independent artists can get verified on Musixmatch Pro for free, add their lyrics, sync them line by line and send them to Spotify, where changes take a few days to show. Musixmatch asks for full, self-made transcriptions with no shortcuts like 'x2'.",
+  "body": "<p class=\"lede\">La letra que aparece debajo de una canción en Spotify no la sube tu distribuidora: la entrega Musixmatch, la empresa que licencia letras sincronizadas para la plataforma. Si quieres que la tuya salga bien escrita y al ritmo de la voz, el trámite se hace en Musixmatch Pro, y la versión gratuita alcanza.</p><p>La ayuda oficial de Spotify for Artists y el centro de soporte de Musixmatch describen el mismo camino. Estos son los pasos, de la cuenta a la sincronización.</p><h2>1. Crea tu cuenta en Musixmatch Pro con un correo profesional</h2><p>Entra en Musixmatch Pro y elige un plan; el gratuito aparece debajo de los de pago. Spotify recomienda abrir la cuenta con un correo ligado a tu proyecto, tu sello o tu mánager, porque eso acelera la verificación. Un correo personal sin relación con el artista suele frenar el proceso.</p><h2>2. Verifícate como artista con tu enlace de Spotify</h2><p>En Musixmatch Pro ve a Roster, pulsa Add artist, pega el enlace de tu perfil de Spotify y completa los datos. Musixmatch revisa la solicitud y responde por correo en unos días hábiles. Sin esa verificación no puedes agregar ni editar letras oficiales.</p><h2>3. Conecta Spotify o sube el audio</h2><p>Para escribir y sincronizar hace falta el audio de la canción. Si vinculas una cuenta de Spotify Premium, tu catálogo se empareja solo. La otra opción es subir el archivo en la pestaña Audio. En la App Store, el equipo de Musixmatch aclaró que su herramienta de inteligencia artificial necesita el archivo real, no la conexión con Spotify.</p><h2>4. Transcribe la letra tú mismo, completa</h2><p>Abre la canción en Roster, entra en Lyrics, escribe y pulsa Send. Musixmatch pone reglas claras: solo letras transcritas por ti, nada copiado de otras webs, todas las repeticiones escritas (sin “x2”) y solo lo que se canta. Las partes se marcan con etiquetas como #VERSE y #CHORUS, y cada idioma va en su propio alfabeto.</p><h2>5. Sincroniza línea por línea</h2><p>En Roster, la opción Sync te deja marcar cuándo entra cada línea. La regla es fijarla cuando se canta la primera palabra, o menos de medio segundo antes, nunca tarde. Si hay más de 5 segundos sin voz, va la etiqueta de instrumental; en los coros con varias voces, manda la voz principal. La sincronización palabra por palabra solo está en la app móvil de la comunidad.</p><h2>6. Agrega lo que falta y espera unos días</h2><p>Si una canción no aparece en tu catálogo de Musixmatch, usa Music y luego Add missing release: puede tardar hasta 48 horas en mostrarse. Una vez enviada la letra o la sincronización, Spotify advierte que el cambio puede tardar unos días en verse en la app.</p><h2>7. Decide si pagas por ayuda</h2><p>Si no tienes tiempo, Musixmatch ofrece encargar la transcripción a sus curadores. En la App Store de EE. UU., la curaduría de una canción figura a 5 dólares y los planes para artistas, desde 29,99. Es opcional: todo lo anterior se puede hacer gratis.</p><h2>Por qué importa</h2><p>La letra sincronizada mantiene a la gente dentro de tu canción y facilita que la canten y la compartan. Además, Musixmatch distribuye esas letras a otros servicios: su app en la App Store menciona Apple Music, Instagram y Google. En nuestra <a href=\"#apple-music-for-artists-reclamar-perfil\" style=\"text-decoration:underline\">guía de Apple Music for Artists</a> contamos que Apple también remite a Musixmatch para las letras de Shazam.</p><h2>Qué sigue</h2><p>Haz este trámite antes o justo después de cada estreno, y combínalo con <a href=\"#spotify-for-artists-reclamar-perfil-acceso\" style=\"text-decoration:underline\">tu perfil verificado en Spotify for Artists</a>, desde donde también puedes <a href=\"#pitch-spotify-playlists-editoriales\" style=\"text-decoration:underline\">enviar tu canción a las playlists editoriales</a>.</p><p class=\"mono g\">Pasos según la ayuda oficial de Spotify for Artists, el centro de soporte de Musixmatch y la ficha de Musixmatch Pro en la App Store, consultados el 26 de noviembre de 2026.</p>",
+  "src": [
+   [
+    "Spotify for Artists — Managing your lyrics on Spotify",
+    "https://support.spotify.com/artists/article/lyrics/"
+   ],
+   [
+    "Musixmatch — How can artists add and synchronize lyrics on Musixmatch Pro?",
+    "https://musixmatch.helpscoutdocs.com/article/190-how-can-artists-add-and-synchronize-lyrics-on-musixmatch-pro"
+   ],
+   [
+    "App Store — Musixmatch Pro",
+    "https://apps.apple.com/us/app/musixmatch-pro/id1588257741"
+   ]
+  ],
+  "cov": {
+   "f": "7",
+   "bg": "#1d3ea0",
+   "fg": "#ffd400",
+   "c": "Pasos para tu letra en Spotify",
+   "e": "Musixmatch"
+  },
+  "propia": true
+ },
+ {
   "id": "u2-medio-tiempo-nfl-dolly-parton-torn-setlist",
   "date": "2026-11-25",
   "hora": "22:50",
