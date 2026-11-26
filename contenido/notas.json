@@ -1,5 +1,53 @@
 [
  {
+  "id": "mon-laferte-estadio-gnp-2027-fecha-preventa-boletos",
+  "date": "2026-11-26",
+  "hora": "07:45",
+  "sec": "noticias",
+  "tag": "Agenda",
+  "min": 2,
+  "title": "Mon Laferte en el Estadio GNP 2027: fecha, preventa y boletos",
+  "titleEn": "Mon Laferte books Mexico City's Estadio GNP Seguros for May 2027",
+  "dek": "La chilena canta el 22 de mayo de 2027 en el Estadio GNP Seguros y el 29 en Guadalajara. La preventa Banamex abre el lunes 30 de noviembre a las 14:00.",
+  "brief": [
+   "Mon Laferte llevará el Femme Fatale Tour al Estadio GNP Seguros de Ciudad de México el sábado 22 de mayo de 2027.",
+   "Una semana después, el 29 de mayo, canta en el Coliseo GNP Seguros de Guadalajara.",
+   "La preventa Banamex es el 30 de noviembre y la venta general el 1 de diciembre, ambas a las 14:00 en Ticketmaster."
+  ],
+  "en": "Chilean singer Mon Laferte will take her Femme Fatale Tour to Mexico City's Estadio GNP Seguros on May 22, 2027, followed by Guadalajara's Coliseo GNP Seguros on May 29. A Banamex presale opens Nov. 30 at 2 p.m., with general sale on Dec. 1 via Ticketmaster; prices have not been announced.",
+  "body": "<p>Mon Laferte cantará el sábado 22 de mayo de 2027 en el Estadio GNP Seguros de Ciudad de México, con una nueva etapa del Femme Fatale Tour. Una semana después, el sábado 29 de mayo, se presenta en el Coliseo GNP Seguros de Zapopan, en Guadalajara.</p><p>Es un salto de escala para la chilena: en mayo de 2026 agotó tres noches seguidas en el Palacio de los Deportes, y ahora pasa a un estadio. Varios medios mexicanos lo presentan como el concierto más grande de su carrera.</p><h2>¿Cuándo es la preventa de Mon Laferte?</h2><ul class=\"list\"><li><span>Preventa Banamex</span><span>Lun 30 nov, 14:00</span></li><li><span>Venta general</span><span>Mar 1 dic, 14:00</span></li><li><span>CDMX · Estadio GNP Seguros</span><span>Sáb 22 may 2027, 21:00</span></li><li><span>Guadalajara · Coliseo GNP Seguros</span><span>Sáb 29 may 2027, 21:00</span></li></ul><p>Los boletos se venden en Ticketmaster. Según Excélsior, habrá paquetes VIP para las dos fechas y un límite general de 8 boletos por persona, aunque algunas categorías pueden tener reglas distintas.</p><h2>¿Cuánto cuestan los boletos?</h2><p>La promotora Ocesa y Ticketmaster todavía no publican precios ni mapa de localidades. Circulan cifras estimadas en algunos portales, pero ninguna es oficial: conviene esperar a que abra la preventa.</p><h2>Contexto: de Femme Fatale al estadio</h2><p>La gira acompaña sus discos <em>Femme Fatale</em> (2025) y <em>Femme Fatale Vol. 2</em> (2026). Ocesa adelantó que el espectáculo tendrá actos y elementos teatrales cercanos a un musical. No se han anunciado invitados.</p><p>El Estadio GNP Seguros tiene una agenda cargada para 2027: NSQK abre allí su <a href=\"#nsqk-gira-mosca-2027-fechas-boletos\" style=\"text-decoration:underline\">gira Mosca</a> el 23 de enero. El recinto también recibió este mes el <a href=\"#karol-g-cdmx-17nov\" style=\"text-decoration:underline\">cierre aplazado de Karol G</a>.</p><h2>Qué sigue</h2><p>Lo próximo es la preventa del lunes 30 de noviembre, cuando deberían conocerse los precios. Si la fecha de Ciudad de México se agota, falta saber si Ocesa abrirá una segunda.</p>",
+  "src": [
+   [
+    "Excélsior — Mon Laferte anuncia concierto en el Estadio GNP Seguros para 2027; fecha y preventa de boletos",
+    "https://www.excelsior.com.mx/espectaculos/mon-laferte-anuncia-concierto-estadio-gnp-seguros-para-2027-fecha-y-preventa-boletos"
+   ],
+   [
+    "Nueva Mujer — Mon Laferte anuncia conciertos en México: fechas y boletos",
+    "https://www.nuevamujer.com/espectaculos/2026/11/25/prepara-la-cartera-mon-laferte-rompe-el-silencio-y-anuncia-sus-conciertos-mas-grandes-en-mexico/"
+   ],
+   [
+    "SDP Noticias — Mon Laferte en el Estadio GNP Seguros: fecha, preventa y precios de boletos",
+    "https://www.sdpnoticias.com/espectaculos/musica/mon-laferte-en-el-estadio-gnp-seguros-fecha-preventa-y-precios-de-boletos/"
+   ],
+   [
+    "Sopitas — Mon Laferte anuncia su primer show en el Estadio GNP Seguros",
+    "https://www.sopitas.com/musica/mon-laferte-estadio-gnp-seguros-boletos-fechas/"
+   ]
+  ],
+  "cov": {
+   "f": "22<br>may",
+   "bg": "#e3120b",
+   "fg": "#ffffff",
+   "c": "Estadio GNP Seguros",
+   "e": "Mon Laferte"
+  },
+  "minuto": [
+   "Mon Laferte canta el 22 de mayo de 2027 en el Estadio GNP; preventa el 30 de noviembre.",
+   "Mon Laferte plays Estadio GNP Seguros on May 22, 2027; presale Nov. 30."
+  ],
+  "propia": false
+ },
+ {
   "id": "flow-fest-2026-cartel-por-dia-precios-como-llegar",
   "date": "2026-11-26",
   "hora": "06:40",
