@@ -1,5 +1,53 @@
 [
  {
+  "id": "fuerza-regida-dream-tour-2027-centroamerica-sudamerica",
+  "date": "2026-11-26",
+  "hora": "11:45",
+  "sec": "noticias",
+  "tag": "Gira",
+  "min": 3,
+  "title": "Fuerza Regida lleva This Is Our Dream Tour a 9 países en 2027",
+  "titleEn": "Fuerza Regida takes This Is Our Dream Tour to Latin America in 2027",
+  "dek": "La banda tocará en 9 países entre el 11 de febrero y el 3 de marzo de 2027; la primera preventa abre el 27 de noviembre en Bogotá.",
+  "brief": [
+   "Fuerza Regida llevará su This Is Our Dream Tour a Centroamérica y Sudamérica en 2027.",
+   "Son 9 conciertos entre el 11 de febrero y el 3 de marzo, de Honduras a Ecuador.",
+   "La primera preventa es la de Bogotá, el viernes 27 de noviembre."
+  ],
+  "en": "Fuerza Regida will take its This Is Our Dream Tour to nine Latin American countries from Feb. 11 to March 3, 2027, Live Nation announced. The run follows 15 sold-out shows in Mexico, and the first presale opens Nov. 27 in Bogotá.",
+  "body": "<p>Fuerza Regida llevará su gira <em>This Is Our Dream Tour</em> a Centroamérica y Sudamérica en 2027, con 9 conciertos entre el 11 de febrero y el 3 de marzo. Live Nation, la promotora, publicó el calendario el 25 de noviembre: arranca en San Pedro Sula, Honduras, y termina en Quito, Ecuador.</p><p>El anuncio llega después de 15 conciertos agotados en México: 10 seguidos en el Palacio de los Deportes de Ciudad de México y 5 en Monterrey, según Consequence y El Tiempo.</p><h2>¿Cuáles son las fechas de la gira de Fuerza Regida en 2027?</h2><ul class=\"list\"><li><span>11 feb · San Pedro Sula, Honduras</span><span>Estadio Francisco Morazán</span></li><li><span>13 feb · San Salvador, El Salvador</span><span>Estadio Cuscatlán</span></li><li><span>16 feb · Managua, Nicaragua</span><span>Estadio Soberanía</span></li><li><span>18 feb · Ciudad de Guatemala</span><span>Estadio Cementos Progreso</span></li><li><span>20 feb · Bogotá, Colombia</span><span>Vive Claro</span></li><li><span>23 feb · Lima, Perú</span><span>Multiespacio Costa 21</span></li><li><span>26 feb · Santa Cruz, Bolivia</span><span>Estadio Real Santa Cruz</span></li><li><span>28 feb · Santiago, Chile</span><span>Santander Arena</span></li><li><span>3 mar · Quito, Ecuador</span><span>Coliseo Rumiñahui</span></li></ul><p class=\"mono g\">Calendario oficial de Live Nation, 25 de noviembre de 2026.</p><h2>¿Cuándo salen las boletas?</h2><p>Live Nation explicó que los detalles de venta se anuncian en cada país por separado, así que no hay una fecha única. La primera es Colombia: según El Tiempo, la preventa para clientes Claro abre el viernes 27 de noviembre, la preventa bancaria el lunes 30 y la venta general el miércoles 2 de diciembre, por Ticketmaster. Ninguna de las fuentes publicó precios todavía.</p><h2>Por qué importa</h2><p>La ruta pasa por recintos que hoy reciben a las giras más grandes de la región. El Estadio Cementos Progreso, por ejemplo, también está en el calendario de <a href=\"#shakira-guatemala-2027-estadio-cementos-progreso\" style=\"text-decoration:underline\">Shakira en Guatemala</a> en enero, y el Vive Claro de Bogotá fue el escenario del <a href=\"#anuel-aa-bogota-vive-claro-retraso-show-corto\" style=\"text-decoration:underline\">concierto corto de Anuel AA</a> la semana pasada.</p><p>Que una banda de corridos llene 10 noches seguidas en Ciudad de México y salga a 9 países de Centroamérica y Sudamérica confirma que el regional mexicano ya no depende solo del público de México y Estados Unidos.</p><h2>Qué sigue</h2><p>Después de Bogotá, cada país irá anunciando su preventa en las próximas semanas, con los canales locales de Live Nation. El Coro actualizará esta nota con horarios y precios cuando sean oficiales.</p>",
+  "src": [
+   [
+    "Live Nation — Fuerza Regida Brings This Is Our Dream Tour To Latin America In 2027",
+    "https://news.livenationentertainment.com/news/fuerza-regida-brings-this-is-our-dream-tour-to-latin-america-in-2027"
+   ],
+   [
+    "Consequence en Español — Fuerza Regida anuncia gira por Centroamérica y Sudamérica para 2027",
+    "https://consequence.net/es/2026/11/fuerza-regida-gira-centroamerica-sudamerica-2027/"
+   ],
+   [
+    "El Tiempo — Fuerza Regida llega a Bogotá en 2027: fechas y boletería",
+    "https://www.eltiempo.com/amp/cultura/gente/fuerza-regida-llega-a-bogota-en-2027-con-su-gira-this-is-our-dream-tour-fechas-y-boleteria-3604197"
+   ],
+   [
+    "Consequence — Fuerza Regida Announce Central and South American Tour",
+    "https://consequence.net/2026/11/fuerza-regida-announce-2027-latin-america-tour/"
+   ]
+  ],
+  "cov": {
+   "f": "9",
+   "bg": "#0a0a0a",
+   "fg": "#ffd400",
+   "c": "Fechas en Latinoamérica",
+   "e": "Fuerza Regida"
+  },
+  "minuto": [
+   "Fuerza Regida anuncia 9 fechas en Latinoamérica para 2027; Bogotá abre preventa el 27 de noviembre.",
+   "Fuerza Regida adds nine Latin American dates for 2027."
+  ],
+  "propia": false
+ },
+ {
   "id": "feid-snoop-dogg-gracias-x-todo-estreno-26-noviembre",
   "date": "2026-11-26",
   "hora": "09:40",
