@@ -1,5 +1,60 @@
 [
  {
+  "id": "ed-maverick-sin-agua-es-ruta-yerma-canciones-album-doble",
+  "date": "2026-11-27",
+  "hora": "09:50",
+  "sec": "lanzamientos",
+  "tag": "Lanzamiento",
+  "min": 3,
+  "title": "Ed Maverick estrena Sin Agua Es Ruta Yerma: 20 canciones en 2 volúmenes",
+  "titleEn": "Ed Maverick releases Sin Agua Es Ruta Yerma, a 20-song double album",
+  "dek": "El álbum doble salió el 26 de noviembre en dos tandas de 10 temas, grabado en Delicias, Chihuahua, con Little Jesus, Niño Viejo y Seb Rodríguez.",
+  "brief": [
+   "Ed Maverick publicó el 26 de noviembre su álbum doble Sin Agua Es Ruta Yerma.",
+   "Son 20 canciones repartidas en dos volúmenes de 10, que salieron con 12 horas de diferencia.",
+   "Lo produjo él mismo en su estudio de Delicias, Chihuahua, antes de su paso por el Vive Latino 2027."
+  ],
+  "en": "Mexican singer-songwriter Ed Maverick released Sin Agua Es Ruta Yerma on November 26, a 20-song double album split into two 10-track volumes that dropped 12 hours apart. He produced it himself at his studio in Delicias, Chihuahua, with guests Little Jesus, Niño Viejo and Seb Rodríguez. He is on the Vive Latino 2027 lineup in March.",
+  "body": "<p>Ed Maverick publicó el jueves 26 de noviembre <em>Sin Agua Es Ruta Yerma</em>, un álbum doble de 20 canciones. El primer volumen salió a las 6:00 de la mañana y el segundo a las 6:00 de la tarde, cada uno con 10 temas.</p><p>El cantautor de Chihuahua grabó el disco en su estudio personal de Delicias y lo produjo él mismo, tocando la mayoría de los instrumentos. La mezcla es de Jens Jungkurth y la masterización de Dave Kutch. Los arreglos de cuerdas son de Juan Andrés Vergara, que ya había tocado con él en la presentación en vivo de <em>La Nube en el Jardín</em> en la Sala Nezahualcóyotl, en 2025.</p><h2>Las 20 canciones</h2><p>El primer volumen trae una sola colaboración y el segundo, dos:</p><ul class=\"list\"><li><span>Vol. I</span><span>“No todo es parte de la vida”, “Esqueleto”, “Toda la ciudad”, “Ser”, “Desierto”, “Escombro”, “Sahuaro” (con Little Jesus), “El sol se cae”, “Regresión”, “Llagas”</span></li><li><span>Vol. II</span><span>“Me inundo” (con Niño Viejo), “Haciendo tanto” (con Seb Rodríguez), “En las buenas y en las malas”, “Otra vez”, “Tendría que hablar de luz”, “Viniste”, “En esta realidad”, “Sintiendo el rosa amanecer”, “Blues correcto”, “Vestido blanco”</span></li></ul><h2>Cómo se hizo</h2><p>Según contó a La Esquina 506, el proceso empezó como un reto personal: “Estaba intentando ponerme a prueba”. De esas sesiones, explicó, le quedaron unas 50 maquetas, que fue depurando hasta las 20 del disco. Grita Radio detalla que trabajó con una grabadora de cinta Studer y un método de 12 pistas.</p><p>Antes del estreno, el músico organizó escuchas del disco para sus seguidores. La primera fue el 25 de noviembre en el Revo Stage de Ciudad de México, y el anuncio sumaba ciudades como Guadalajara, Monterrey, Tijuana, Mérida y Phoenix, en Arizona.</p><h2>Por qué importa</h2><p>Publicar 20 canciones de una vez, sin productores externos y desde un pueblo del norte de México, va contra la lógica de sencillos sueltos que domina el streaming. Es también el material que Ed Maverick llevará a su presentación más grande del próximo año.</p><h2>Qué sigue</h2><p>Ed Maverick está en el cartel del Vive Latino 2027, que se hará el 13 y 14 de marzo en el Estadio GNP Seguros de Ciudad de México, con Mötley Crüe, Placebo, Residente y 31 Minutos. El festival aún no publica qué día toca cada artista. Para ver cómo se mueve la temporada de festivales mexicanos, repasa el cartel de <a href=\"#pal-norte-2027-cartel-travis-scott-post-malone-charli-xcx\" style=\"text-decoration:underline\">Pa'l Norte 2027</a>.</p>",
+  "src": [
+   [
+    "La Esquina 506 — ED MAVERICK estrena la primer mitad de su nuevo álbum doble",
+    "https://laesquina506.com/ed-maverick-estrena-la-primer-mitad-de-su-nuevo-album-doble/"
+   ],
+   [
+    "Grita Radio — Ed Maverick estrena Sin Agua Es Ruta Yerma (Vol. I)",
+    "https://gritaradio.com/ed-maverick-sin-agua-es-ruta-yerma-vol-1/"
+   ],
+   [
+    "Grita Radio — Ed Maverick estrena «Sin Agua Es Ruta Yerma», un álbum doble dividido en dos volúmenes",
+    "https://gritaradio.com/ed-maverick-estrena-sin-agua-es-ruta-yerma-un-album-doble-dividido-en-dos-volumenes/"
+   ],
+   [
+    "Bizarro — Ed Maverick revela el lanzamiento de su nueva música",
+    "https://bizarro.fm/2026/11/ed-maverick-saery-lanzamiento/"
+   ],
+   [
+    "Chilango — Revelan cartel del Vive Latino 2027",
+    "https://www.chilango.com/que-hacer/musica/vive-latino-2027-cartel-completo-fechas-y-boletos-del-festival/"
+   ],
+   [
+    "Grupo Animal — Vive Latino 2027 revela lineup",
+    "https://grupoanimal.mx/entretenimiento/vive-latino-lineup-fechas-boletos-y-mas"
+   ]
+  ],
+  "cov": {
+   "f": "20",
+   "bg": "#f0ece4",
+   "fg": "#0a0a0a",
+   "c": "Canciones en 2 volúmenes",
+   "e": "Ed Maverick"
+  },
+  "minuto": [
+   "Ed Maverick estrena Sin Agua Es Ruta Yerma, álbum doble de 20 canciones.",
+   "Ed Maverick drops a 20-song double album."
+  ]
+ },
+ {
   "id": "gta-6-album-deluxe-23-canciones-travis-scott-anitta",
   "date": "2026-11-27",
   "hora": "08:45",
