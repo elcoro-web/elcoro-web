@@ -1,5 +1,66 @@
 [
  {
+  "id": "spotify-canvas-como-subir-video-requisitos",
+  "date": "2026-11-27",
+  "hora": "00:35",
+  "sec": "artistas",
+  "tag": "Para artistas",
+  "min": 4,
+  "title": "Spotify Canvas: cómo subir el video en bucle de tu canción",
+  "titleEn": "Spotify Canvas: how to add a looping video to your song",
+  "dek": "Canvas es un video vertical de 3 a 8 segundos que reemplaza la portada en el celular. Se sube gratis desde Spotify for Artists, con reglas claras.",
+  "brief": [
+   "Canvas es un clip vertical 9:16 de 3 a 8 segundos que se ve en la pantalla de reproducción de la app móvil de Spotify.",
+   "Lo sube el artista principal con acceso de Admin o Editor en Spotify for Artists, incluso antes del estreno.",
+   "No admite enlaces, llamados a seguir en redes ni promociones, y no conviene que muestre a alguien cantando."
+  ],
+  "en": "Spotify Canvas is a 3-to-8-second vertical (9:16) loop that replaces the cover art in the mobile app's Now Playing view. Main artists with Admin or Editor access can add one in Spotify for Artists, even to unreleased tracks, as an MP4 or JPG between 720 and 1080 pixels tall. Spotify bans URLs, social calls to action and promotional text in Canvas.",
+  "body": "<p class=\"lede\">Canvas es el video corto que se repite en lugar de la portada cuando alguien escucha tu canción en la app de Spotify para celular. Dura de 3 a 8 segundos, se sube gratis desde Spotify for Artists y puedes ponerlo en cualquier canción, incluso antes del estreno.</p><p>Estos pasos salen de las páginas de ayuda oficiales de Spotify for Artists: las pautas de Canvas, la guía para agregarlo y la política de contenido. Antes de empezar, necesitas tener tu perfil reclamado; si aún no lo hiciste, sigue nuestra guía para <a href=\"#spotify-for-artists-reclamar-perfil-acceso\" style=\"text-decoration:underline\">reclamar tu perfil en Spotify for Artists</a>.</p><h2>1. Confirma que tienes permiso para subirlo</h2><p>Spotify solo deja agregar un Canvas al primer artista principal de la canción, o al artista principal de la canción y del lanzamiento. Además, tu cuenta del equipo debe tener rol de Admin o Editor. Si eres invitado en el tema de otro, el Canvas lo sube su equipo.</p><h2>2. Prepara el archivo con las medidas exactas</h2><p>El clip va en formato vertical 9:16, con una altura de entre 720 y 1.080 píxeles. Debe durar de 3 a 8 segundos y subirse en MP4 o JPG. Deja lo importante lejos de los bordes, porque algunos teléfonos los recortan.</p><h2>3. Elige cómo se repite</h2><p>Spotify propone tres tipos de bucle: continuo (Continuous Loop), corte seco (Hard Cut) y rebote (Rebound). Decide cuál antes de editar, porque cambia cómo planeas el primer y el último cuadro del clip.</p><h2>4. Evita bocas que cantan y cortes rápidos</h2><p>Un clip de 8 segundos no se sincroniza con la voz, así que Spotify recomienda no mostrar a nadie hablando, cantando o rapeando. También pide evitar los cortes rápidos y los destellos intensos. No hace falta escribir tu nombre ni el de la canción: ya aparecen debajo.</p><h2>5. Respeta la política de contenido</h2><p>Canvas no admite páginas web ni enlaces, venta de boletas, pedidos de seguir o dar me gusta en redes, logos de marcas ni concursos. Cualquier texto debe tener que ver con la canción. Si el clip incluye groserías, violencia, drogas o contenido sexual, hay que marcarlo como explícito. Spotify retira los Canvas que rompen esas reglas.</p><h2>6. Súbelo desde la web o desde la app</h2><p>En la web, entra a artists.spotify.com, abre la pestaña Música, elige la canción y pulsa Add Canvas. En la app de Spotify for Artists, ve a Música, toca la canción y luego el ícono de editar junto a Canvas.</p><h2>7. Revisa que se vea y mide las vistas</h2><p>Canvas solo se reproduce en la app móvil, con iOS 12 o Android 6.0 en adelante. Si no lo ves, revisa en Ajustes que el ahorro de datos esté apagado y la opción Canvas encendida. Spotify cuenta una vista cuando alguien abre la pantalla de reproducción y lo ve, con un máximo de una por reproducción; por eso las vistas pueden superar a los streams, que solo cuentan después de 30 segundos.</p><h2>Por qué vale la pena</h2><p>Cuando un fan comparte la canción en sus historias de Instagram desde Spotify, el Canvas sale de fondo detrás de la portada, aunque sin audio. En 2019, Spotify informó que un Canvas de calidad había subido las reproducciones hasta 120 % y los guardados hasta 114 %, cifras que Music Business Worldwide recogió. La propia empresa aclara que el efecto varía con cada video.</p><blockquote>El Canvas es la única imagen en movimiento que el oyente ve mientras escucha tu canción, sin salir de Spotify.</blockquote><h2>Qué sigue</h2><p>Spotify sugiere renovar el Canvas con el tiempo; las vistas se acumulan aunque cambies el clip. Completa la ficha con la letra sincronizada: te lo explicamos en <a href=\"#letra-cancion-spotify-musixmatch-como-agregar\" style=\"text-decoration:underline\">cómo poner la letra en Spotify con Musixmatch</a>.</p><p class=\"mono g\">Fuentes: ayuda oficial de Spotify for Artists y blog de Spotify for Artists, consultados el 27 de noviembre de 2026.</p>",
+  "src": [
+   [
+    "Spotify for Artists — Canvas guidelines",
+    "https://support.spotify.com/us/artists/article/canvas-guidelines/"
+   ],
+   [
+    "Spotify for Artists — Adding a Canvas to Spotify",
+    "https://support.spotify.com/us/artists/article/adding-a-canvas/"
+   ],
+   [
+    "Spotify for Artists — Canvas content policy",
+    "https://support.spotify.com/us/artists/article/canvas-content-policy/"
+   ],
+   [
+    "Spotify for Artists — Canvas not showing in the Spotify app",
+    "https://support.spotify.com/us/artists/article/canvas-not-showing-in-spotify-app/"
+   ],
+   [
+    "Spotify for Artists — How we count Canvas views",
+    "https://support.spotify.com/us/artists/article/how-we-count-canvas-views/"
+   ],
+   [
+    "Spotify for Artists — Share Your Canvas to Your Instagram Story",
+    "https://artists.spotify.com/blog/share-your-canvas-to-your-instagram-story"
+   ],
+   [
+    "Spotify for Artists — Canvas Metrics Guide",
+    "https://artists.spotify.com/blog/canvas-metrics-guide"
+   ],
+   [
+    "Music Business Worldwide — Spotify expands Canvas beta",
+    "https://www.musicbusinessworldwide.com/spotify-expands-canvas-beta-says-visuals-can-increase-streams-saves-artist-profile-visits-and-shares"
+   ]
+  ],
+  "cov": {
+   "f": "8<br>seg",
+   "fs": "min(40cqw,360px)",
+   "bg": "#0a0a0a",
+   "fg": "#ffd400",
+   "c": "Pasos para tu Canvas",
+   "e": "Spotify"
+  },
+  "propia": true
+ },
+ {
   "id": "lana-del-rey-stove-spyda-casi-terminados-fecha",
   "date": "2026-11-26",
   "hora": "17:55",
