@@ -1,5 +1,45 @@
 [
  {
+  "id": "cuanto-paga-spotify-por-reproduccion-regalias",
+  "date": "2026-11-28",
+  "hora": "00:40",
+  "sec": "artistas",
+  "tag": "Para artistas",
+  "min": 4,
+  "title": "Cuánto paga Spotify por reproducción: cómo se calculan tus regalías",
+  "titleEn": "How much Spotify pays per stream: how your royalties are calculated",
+  "dek": "Spotify no tiene una tarifa fija por reproducción: reparte un fondo según tu parte del total, y solo si la canción pasa las 1.000 escuchas al año.",
+  "brief": [
+   "Spotify no paga una cifra fija por reproducción: reparte cada mes un fondo según la parte del total que tiene cada canción.",
+   "Desde abril de 2024, una canción necesita al menos 1.000 reproducciones en los últimos 12 meses para generar regalías de grabación.",
+   "La regla no toca las regalías editoriales, que se cobran por otra vía."
+  ],
+  "en": "Spotify has no fixed per-stream rate: it splits a monthly royalty pool by each track's share of total streams. Since April 2024, a track needs at least 1,000 streams in the previous 12 months, plus a minimum of unique listeners, to earn recording royalties. Publishing royalties are not affected.",
+  "body": "<p>La pregunta que más se hacen los artistas independientes, cuánto paga Spotify por reproducción, tiene una respuesta incómoda: no hay una tarifa fija. Spotify reparte cada mes un fondo de regalías según la parte del total de reproducciones que tiene cada canción, y desde abril de 2024 solo entran las canciones que pasan un mínimo de escuchas.</p><p>Estos son los pasos para entender cuánto puede generar tu música y no dejar dinero en la mesa. Todos los datos salen de las páginas oficiales de Spotify for Artists.</p><h2>1. Olvida la tarifa por reproducción</h2><p>Spotify calcula las regalías de grabación por <em>streamshare</em>, es decir, por cuota de reproducciones. Si tu canción tuvo el 1 % de las reproducciones de un mes en un mercado, recibe el 1 % del fondo de ese mes. Como el fondo y el total de escuchas cambian cada mes, ninguna “tarifa” que circula en redes es oficial.</p><p>Ese fondo equivale, según Spotify, a cerca de dos tercios de cada dólar que la plataforma gana con la música. El dinero no llega directo al artista: lo cobra quien tiene los derechos de la grabación, tu sello o tu distribuidora, que luego te paga según tu contrato.</p><h2>2. Pasa las 1.000 reproducciones en 12 meses</h2><p>Desde abril de 2024, una canción tiene que haber sumado al menos 1.000 reproducciones en los 12 meses anteriores para generar regalías de grabación. También necesita un número mínimo de oyentes únicos, que Spotify no hace público. La revisión es mensual: una canción puede entrar, salir y volver a entrar.</p><p>Un detalle que pocos conocen: cuando una canción se vuelve elegible, cobra por las reproducciones de ese mes, no por las de los meses anteriores. Si tuvo 750 escuchas el primer mes y 500 el segundo, cobra solo por las 500.</p><h2>3. No dividas tus escuchas entre versiones</h2><p>Cada código ISRC se cuenta por separado. Una versión en vivo, una acústica o un remix con otro ISRC son canciones distintas para el umbral. Si publicas cinco versiones de un tema pequeño, cada una tiene que llegar a las 1.000 por su cuenta. Antes de lanzar variantes, mira si tu canción principal ya pasa el mínimo. Si no tienes claro qué es el ISRC, lo explicamos en <a href=\"#isrc-iswc\" style=\"text-decoration:underline\">esta guía de los dos códigos</a>.</p><h2>4. Aléjate de las reproducciones compradas</h2><p>Desde 2024, Spotify cobra a sellos y distribuidoras por cada canción en la que detecta reproducciones artificiales evidentes. Las escuchas falsas no suman y ponen en riesgo tu relación con la distribuidora.</p><h2>5. Cobra la otra mitad: las regalías editoriales</h2><p>El umbral de 1.000 reproducciones solo aplica a las regalías de grabación. Las regalías editoriales, las que le tocan a quien compuso la canción, se siguen calculando igual. Ese dinero no lo cobra tu distribuidora: necesitas una sociedad de autores y, en Estados Unidos, también <a href=\"#registrarse-the-mlc-regalias-mecanicas-streaming\" style=\"text-decoration:underline\">registrarte en The MLC</a>.</p><h2>Por qué importa</h2><p>Spotify justificó el cambio con cifras propias. Las canciones de entre 1 y 1.000 reproducciones anuales generaban en promedio 0,03 dólares al mes y representaban el 0,5 % de las reproducciones. Sumadas, eran unos 40 millones de dólares al año. Ahora ese dinero se reparte entre las canciones elegibles, que según la empresa ganan un 0,5 % más.</p><p>Spotify estimó en 2023 que el cambio movería cerca de 1.000 millones de dólares adicionales hacia artistas emergentes y profesionales en cinco años. Es una proyección de la empresa, no un resultado medido. Lo que sí es seguro: para un artista que empieza, la meta real no es una tarifa, sino llegar a las 1.000 escuchas de oyentes reales por canción.</p><h2>Qué sigue</h2><p>Revisa en Spotify for Artists cuántas reproducciones lleva cada canción en el último año. Si todavía no tienes acceso, empieza por <a href=\"#spotify-for-artists-reclamar-perfil-acceso\" style=\"text-decoration:underline\">reclamar tu perfil</a>.</p><p class=\"mono g\">Datos de Spotify for Artists (página de elegibilidad y anuncio del 21 de noviembre de 2023) y Music Business Worldwide.</p>",
+  "src": [
+   [
+    "Spotify for Artists — Track monetization eligibility",
+    "https://support.spotify.com/mo-en/artists/article/track-monetization-eligibility/"
+   ],
+   [
+    "Spotify for Artists — Modernizing Our Royalty System",
+    "https://artists.spotify.com/en/blog/modernizing-our-royalty-system"
+   ],
+   [
+    "Music Business Worldwide — How Spotify's 1,000 annual streams royalty policy works",
+    "https://www.musicbusinessworldwide.com/heres-exactly-spotifys-new-1000-annual-streams-royalty-policy-works123/"
+   ]
+  ],
+  "cov": {
+   "f": "1.000",
+   "bg": "#ffd400",
+   "fg": "#0a0a0a",
+   "c": "Reproducciones al año para cobrar",
+   "e": "Spotify"
+  },
+  "propia": true
+ },
+ {
   "id": "nicole-scherzinger-thom-evans-ruptura-compromiso",
   "date": "2026-11-27",
   "hora": "19:40",
