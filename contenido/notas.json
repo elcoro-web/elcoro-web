@@ -1,5 +1,49 @@
 [
  {
+  "id": "olivia-rodrigo-miss-this-christmas-amazon-music",
+  "date": "2026-11-28",
+  "hora": "01:40",
+  "sec": "lanzamientos",
+  "tag": "Estreno",
+  "min": 2,
+  "title": "Olivia Rodrigo publica “miss this christmas” solo en Amazon Music",
+  "titleEn": "Olivia Rodrigo releases “miss this christmas” as an Amazon Music exclusive",
+  "dek": "La balada triste que estrenó en vivo en Nashville ya tiene versión oficial en streaming, escrita con Dan Nigro y Amy Allen y producida por Nigro.",
+  "brief": [
+   "Olivia Rodrigo publicó el 27 de noviembre la versión oficial de “miss this christmas”, exclusiva de Amazon Music.",
+   "Es la cara B de “take me home (4 christmas)”, su primera canción navideña, que salió el 6 de noviembre.",
+   "La escribió con Dan Nigro y Amy Allen, y la produjo Nigro."
+  ],
+  "en": "Olivia Rodrigo released the official version of “miss this christmas” on Nov. 27 as an Amazon Music Original, days after debuting the melancholy ballad live in Nashville. The B-side of “take me home (4 christmas)” was written with Dan Nigro and Amy Allen and produced by Nigro.",
+  "body": "<p>Olivia Rodrigo publicó el viernes 27 de noviembre la versión oficial de “miss this christmas”, su canción navideña triste, en exclusiva para Amazon Music. Sale con la etiqueta Amazon Music Original, cuatro días después de que la <a href=\"#olivia-rodrigo-miss-this-christmas-en-vivo-nashville\" style=\"text-decoration:underline\">cantara en vivo por primera vez en Nashville</a>.</p><p>Es la cara B de “take me home (4 christmas)”, la primera canción navideña oficial de Rodrigo, que salió el 6 de noviembre, según BroadwayWorld. Hasta ahora, “miss this christmas” no tenía una versión propia en las plataformas de streaming.</p><h2>Qué trae la canción</h2><p>Rolling Stone la describe como una balada de piano melancólica sobre extrañar a alguien en las fiestas, lo opuesto al tono alegre y ochentero de la cara A. Rodrigo la escribió con Dan Nigro y Amy Allen, y Nigro la produjo, coinciden SPIN y BroadwayWorld.</p><p>En el Bridgestone Arena, antes de tocarla, la cantante había presentado la canción como una Navidad muy triste que casi nadie había escuchado, contó Rolling Stone.</p><h2>Cómo escucharla</h2><ul class=\"list\"><li><span>“miss this christmas”</span><span>Solo en Amazon Music</span></li><li><span>“take me home (4 christmas)”</span><span>Sencillo, desde el 6 nov</span></li><li><span>Songline Version de “take me home”</span><span>Amazon Music y video en YouTube</span></li></ul><p>La Songline Version de la cara A se grabó en el Jardín Botánico de Brooklyn, con dirección de Bradley J. Calder.</p><h2>Por qué importa</h2><p>Rodrigo llega a diciembre en su mejor momento: su tercer disco, <em>you seem pretty sad for a girl so in love</em>, tiene 7 nominaciones al Grammy, entre ellas Álbum, Grabación y Canción del Año. Su gira The Unraveled Tour supera el millón de boletos vendidos, según las dos publicaciones.</p><p>La canción entra en la serie de estrenos navideños exclusivos de Amazon Music, que este año también incluye a Elton John con CMAT, The Beaches, The Head and the Heart y, en español, a Elvis Crespo con Fernando Villalona y Lomiiel, según BroadwayWorld.</p><h2>Qué sigue</h2><p>La etapa norteamericana de The Unraveled Tour sigue hasta el 20 de diciembre en Las Vegas, y Rodrigo tiene una residencia en Los Ángeles del 12 al 29 de enero, informó Rolling Stone. La próxima cita grande es la ceremonia de los Grammy, donde también compiten varios <a href=\"#latinos-nominados-grammy-2027-lista\" style=\"text-decoration:underline\">latinos nominados</a>.</p>",
+  "src": [
+   [
+    "Rolling Stone — Olivia Rodrigo Drops Official Version of Melancholy ‘Miss This Christmas’ on Amazon Music",
+    "https://ca.rollingstone.com/music/olivia-rodrigo-miss-this-christmas-amazon-music/"
+   ],
+   [
+    "SPIN — O-Rod Doubles Down On Xmas With Amazon Exclusive",
+    "https://www.spinmagazine.com/2026/11/olivia-rodrigo-holiday-song-amazon/"
+   ],
+   [
+    "BroadwayWorld — Olivia Rodrigo Releases Holiday Song ‘miss this christmas’ Exclusively on Amazon Music",
+    "https://www.broadwayworld.com/bwwtv/article/Olivia-Rodrigo-Releases-Holiday-Song-miss-this-christmas-Exclusively-on-Amazon-Music-20261127"
+   ]
+  ],
+  "cov": {
+   "f": "<i>miss</i>",
+   "bg": "#1d3ea0",
+   "fg": "#ffffff",
+   "c": "Solo en Amazon Music",
+   "e": "Olivia Rodrigo"
+  },
+  "minuto": [
+   "Olivia Rodrigo publica “miss this christmas”, su balada navideña, solo en Amazon Music.",
+   "Olivia Rodrigo releases “miss this christmas” exclusively on Amazon Music."
+  ],
+  "propia": false
+ },
+ {
   "id": "cuanto-paga-spotify-por-reproduccion-regalias",
   "date": "2026-11-28",
   "hora": "00:40",
